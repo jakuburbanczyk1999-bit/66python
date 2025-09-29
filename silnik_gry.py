@@ -101,9 +101,8 @@ class Rozdanie:
         
         self.punkty_w_rozdaniu = {druzyny[0].nazwa: 0, druzyny[1].nazwa: 0}
         
-        # NOWE ATRYBUTY DO ZARZĄDZANIA ROZGRYWKĄ
         self.kolej_gracza_idx: Optional[int] = None
-        self.aktualna_lewa: list[tuple[Gracz, Karta]] = [] # Lista par (gracz, zagrana karta)
+        self.aktualna_lewa: list[tuple[Gracz, Karta]] = []
 
     def rozdaj_karty(self, ilosc: int):
         start_idx = (self.rozdajacy_idx + 1) % 4
@@ -123,33 +122,57 @@ class Rozdanie:
             self.atut = None
             
         self.stawka = 1
-        
-        # Ustawienie gracza rozpoczynającego pierwszą lewę
         self.kolej_gracza_idx = self.gracze.index(self.grajacy)
         
-    # --- NOWE METODY ---
     def _waliduj_ruch(self, gracz: Gracz, karta: Karta) -> bool:
-        """Sprawdza, czy zagranie karty przez gracza jest legalne."""
-        # Na razie bardzo prosta walidacja. Rozbudujemy ją w kolejnym kroku.
         if gracz != self.gracze[self.kolej_gracza_idx]:
-            print(f"BŁĄD WALIDACJI: Nie jest kolej gracza {gracz.nazwa}!")
             return False
         if karta not in gracz.reka:
-            print(f"BŁĄD WALIDACJI: Gracz {gracz.nazwa} nie ma karty {karta}!")
             return False
-        
-        # TODO: Dodać logikę obowiązku koloru, przebijania, grania atutem.
         return True
 
+    def _zakoncz_lewe(self):
+        """Logika kończąca lewę: wyłania zwycięzcę, liczy punkty i czyści stół."""
+        if not self.aktualna_lewa:
+            return
+
+        # Ustalenie koloru wiodącego (kolor pierwszej zagranej karty)
+        kolor_wiodacy = self.aktualna_lewa[0][1].kolor
+        
+        # Znajdź najsilniejszą kartę atutową na stole
+        karty_atutowe = [(gracz, karta) for gracz, karta in self.aktualna_lewa if karta.kolor == self.atut]
+        
+        if karty_atutowe:
+            # Jeśli są atuty, wygrywa najsilniejszy atut
+            zwyciezca_pary = max(karty_atutowe, key=lambda para: para[1].ranga.value)
+        else:
+            # Jeśli nie ma atutów, wygrywa najsilniejsza karta w kolorze wiodącym
+            karty_wiodace = [(gracz, karta) for gracz, karta in self.aktualna_lewa if karta.kolor == kolor_wiodacy]
+            zwyciezca_pary = max(karty_wiodace, key=lambda para: para[1].ranga.value)
+
+        zwyciezca_lewy = zwyciezca_pary[0]
+        punkty_w_lewie = sum(karta.wartosc for _, karta in self.aktualna_lewa)
+        
+        # Przypisz punkty i karty do zwycięzcy
+        self.punkty_w_rozdaniu[zwyciezca_lewy.druzyna.nazwa] += punkty_w_lewie
+        zwyciezca_lewy.wygrane_karty.extend([karta for _, karta in self.aktualna_lewa])
+        
+        # Wyczyść stół i ustaw kolej na zwycięzcę
+        self.aktualna_lewa.clear()
+        self.kolej_gracza_idx = self.gracze.index(zwyciezca_lewy)
+        
+        # Zwracamy zwycięzcę i punkty, aby móc je wyświetlić w teście
+        return zwyciezca_lewy, punkty_w_lewie
+
     def zagraj_karte(self, gracz: Gracz, karta: Karta):
-        """Wykonuje ruch zagrania karty przez gracza."""
+        """Wykonuje ruch zagrania karty i kończy lewę, jeśli to czwarta karta."""
         if not self._waliduj_ruch(gracz, karta):
-            return # Przerwij, jeśli ruch jest nielegalny
+            return
 
         gracz.reka.remove(karta)
         self.aktualna_lewa.append((gracz, karta))
-        
-        # Przekaż kolejkę następnemu graczowi
         self.kolej_gracza_idx = (self.kolej_gracza_idx + 1) % 4
         
-        # TODO: Dodać logikę kończenia lewy po 4 zagraniach.
+        # Jeśli na stole są 4 karty, zakończ lewę
+        if len(self.aktualna_lewa) == 4:
+            self._zakoncz_lewe()

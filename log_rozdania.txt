@@ -1,41 +1,43 @@
 --- ROZDANIE #1 ---
 Rozdającym był: Jakub
 Wygrał licytację: Przeciwnik1
-Ustalony kontrakt: GORSZA
-Kolor atutowy: Brak
+Ustalony kontrakt: NORMALNA
+Kolor atutowy: ZOLADZ
 
 --- Rozgrywka: Pierwsza lewa ---
-[Przeciwnik1] zagrywa: Krol Czerwien
-[Nasz] zagrywa: Dziesiatka Dzwonek
-[Przeciwnik2] zagrywa: Dziewiatka Wino
-[Jakub] zagrywa: Dziewiatka Zoladz
+[Przeciwnik1] zagrywa: Dziesiatka Wino
+[Nasz] zagrywa: Dziewiatka Czerwien
+[Przeciwnik2] zagrywa: As Zoladz
+[Jakub] zagrywa: Dama Wino
 
 --- Stan po pierwszej lewie ---
-Karty na stole: Krol Czerwien, Dziesiatka Dzwonek, Dziewiatka Wino, Dziewiatka Zoladz
-Ręka gracza 'Jakub' ma teraz 5 kart.
-Ręka gracza 'Przeciwnik1' ma teraz 5 kart.
-Ręka gracza 'Nasz' ma teraz 5 kart.
-Ręka gracza 'Przeciwnik2' ma teraz 5 kart.
+Punkty w rozdaniu: My 0 - 24 Oni
+Gracz 'Jakub' ma 5 kart w ręku i 0 wygranych kart.
+Gracz 'Przeciwnik1' ma 5 kart w ręku i 0 wygranych kart.
+Gracz 'Nasz' ma 5 kart w ręku i 0 wygranych kart.
+Gracz 'Przeciwnik2' ma 5 kart w ręku i 4 wygranych kart.
+Następną lewę rozpoczyna: Przeciwnik2
 -------------------------
 
 --- ROZDANIE #2 ---
 Rozdającym był: Przeciwnik1
 Wygrał licytację: Nasz
-Ustalony kontrakt: LEPSZA
+Ustalony kontrakt: GORSZA
 Kolor atutowy: Brak
 
 --- Rozgrywka: Pierwsza lewa ---
-[Nasz] zagrywa: As Wino
-[Przeciwnik2] zagrywa: Dziesiatka Dzwonek
-[Jakub] zagrywa: Krol Czerwien
-[Przeciwnik1] zagrywa: Krol Dzwonek
+[Nasz] zagrywa: As Dzwonek
+[Przeciwnik2] zagrywa: Walet Dzwonek
+[Jakub] zagrywa: Krol Dzwonek
+[Przeciwnik1] zagrywa: Krol Zoladz
 
 --- Stan po pierwszej lewie ---
-Karty na stole: As Wino, Dziesiatka Dzwonek, Krol Czerwien, Krol Dzwonek
-Ręka gracza 'Jakub' ma teraz 5 kart.
-Ręka gracza 'Przeciwnik1' ma teraz 5 kart.
-Ręka gracza 'Nasz' ma teraz 5 kart.
-Ręka gracza 'Przeciwnik2' ma teraz 5 kart.
+Punkty w rozdaniu: My 21 - 0 Oni
+Gracz 'Jakub' ma 5 kart w ręku i 0 wygranych kart.
+Gracz 'Przeciwnik1' ma 5 kart w ręku i 0 wygranych kart.
+Gracz 'Nasz' ma 5 kart w ręku i 4 wygranych kart.
+Gracz 'Przeciwnik2' ma 5 kart w ręku i 0 wygranych kart.
+Następną lewę rozpoczyna: Nasz
 -------------------------
 
 --- ROZDANIE #3 ---
@@ -45,56 +47,59 @@ Ustalony kontrakt: LEPSZA
 Kolor atutowy: Brak
 
 --- Rozgrywka: Pierwsza lewa ---
-[Przeciwnik2] zagrywa: Dziesiatka Czerwien
-[Jakub] zagrywa: As Wino
-[Przeciwnik1] zagrywa: Krol Dzwonek
-[Nasz] zagrywa: Dama Zoladz
+[Przeciwnik2] zagrywa: Walet Zoladz
+[Jakub] zagrywa: As Czerwien
+[Przeciwnik1] zagrywa: Krol Czerwien
+[Nasz] zagrywa: Dziewiatka Zoladz
 
 --- Stan po pierwszej lewie ---
-Karty na stole: Dziesiatka Czerwien, As Wino, Krol Dzwonek, Dama Zoladz
-Ręka gracza 'Jakub' ma teraz 5 kart.
-Ręka gracza 'Przeciwnik1' ma teraz 5 kart.
-Ręka gracza 'Nasz' ma teraz 5 kart.
-Ręka gracza 'Przeciwnik2' ma teraz 5 kart.
+Punkty w rozdaniu: My 0 - 17 Oni
+Gracz 'Jakub' ma 5 kart w ręku i 0 wygranych kart.
+Gracz 'Przeciwnik1' ma 5 kart w ręku i 0 wygranych kart.
+Gracz 'Nasz' ma 5 kart w ręku i 0 wygranych kart.
+Gracz 'Przeciwnik2' ma 5 kart w ręku i 4 wygranych kart.
+Następną lewę rozpoczyna: Przeciwnik2
 -------------------------
 
 --- ROZDANIE #4 ---
 Rozdającym był: Przeciwnik2
 Wygrał licytację: Jakub
-Ustalony kontrakt: NORMALNA
-Kolor atutowy: ZOLADZ
+Ustalony kontrakt: GORSZA
+Kolor atutowy: Brak
 
 --- Rozgrywka: Pierwsza lewa ---
-[Jakub] zagrywa: As Czerwien
-[Przeciwnik1] zagrywa: Dziesiatka Dzwonek
-[Nasz] zagrywa: Krol Zoladz
-[Przeciwnik2] zagrywa: Dziewiatka Zoladz
+[Jakub] zagrywa: Dama Wino
+[Przeciwnik1] zagrywa: Walet Czerwien
+[Nasz] zagrywa: Dziewiatka Wino
+[Przeciwnik2] zagrywa: Krol Zoladz
 
 --- Stan po pierwszej lewie ---
-Karty na stole: As Czerwien, Dziesiatka Dzwonek, Krol Zoladz, Dziewiatka Zoladz
-Ręka gracza 'Jakub' ma teraz 5 kart.
-Ręka gracza 'Przeciwnik1' ma teraz 5 kart.
-Ręka gracza 'Nasz' ma teraz 5 kart.
-Ręka gracza 'Przeciwnik2' ma teraz 5 kart.
+Punkty w rozdaniu: My 9 - 0 Oni
+Gracz 'Jakub' ma 5 kart w ręku i 4 wygranych kart.
+Gracz 'Przeciwnik1' ma 5 kart w ręku i 0 wygranych kart.
+Gracz 'Nasz' ma 5 kart w ręku i 0 wygranych kart.
+Gracz 'Przeciwnik2' ma 5 kart w ręku i 0 wygranych kart.
+Następną lewę rozpoczyna: Jakub
 -------------------------
 
 --- ROZDANIE #5 ---
 Rozdającym był: Jakub
 Wygrał licytację: Przeciwnik1
-Ustalony kontrakt: BEZ_PYTANIA
-Kolor atutowy: WINO
+Ustalony kontrakt: LEPSZA
+Kolor atutowy: Brak
 
 --- Rozgrywka: Pierwsza lewa ---
-[Przeciwnik1] zagrywa: Dziewiatka Wino
-[Nasz] zagrywa: Krol Dzwonek
-[Przeciwnik2] zagrywa: As Wino
+[Przeciwnik1] zagrywa: Dama Zoladz
+[Nasz] zagrywa: Krol Zoladz
+[Przeciwnik2] zagrywa: Walet Czerwien
 [Jakub] zagrywa: Dama Wino
 
 --- Stan po pierwszej lewie ---
-Karty na stole: Dziewiatka Wino, Krol Dzwonek, As Wino, Dama Wino
-Ręka gracza 'Jakub' ma teraz 5 kart.
-Ręka gracza 'Przeciwnik1' ma teraz 5 kart.
-Ręka gracza 'Nasz' ma teraz 5 kart.
-Ręka gracza 'Przeciwnik2' ma teraz 5 kart.
+Punkty w rozdaniu: My 12 - 0 Oni
+Gracz 'Jakub' ma 5 kart w ręku i 0 wygranych kart.
+Gracz 'Przeciwnik1' ma 5 kart w ręku i 0 wygranych kart.
+Gracz 'Nasz' ma 5 kart w ręku i 4 wygranych kart.
+Gracz 'Przeciwnik2' ma 5 kart w ręku i 0 wygranych kart.
+Następną lewę rozpoczyna: Nasz
 -------------------------
 
