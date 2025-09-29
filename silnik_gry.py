@@ -71,7 +71,7 @@ class Druzyna:
     nazwa: str
     gracze: list[Gracz] = field(default_factory=list)
     punkty_meczu: int = 0
-
+    przeciwnicy: 'Druzyna' = None 
     def dodaj_gracza(self, gracz: Gracz):
         """Dodaje gracza do drużyny i ustawia mu referencję do tej drużyny."""
         if len(self.gracze) < 2:
@@ -87,6 +87,7 @@ class Kontrakt(Enum):
 
 class Rozdanie:
     def __init__(self, gracze: list[Gracz], druzyny: list[Druzyna], rozdajacy_idx: int):
+        # ... (stare atrybuty bez zmian) ...
         self.gracze = gracze; self.druzyny = druzyny; self.rozdajacy_idx = rozdajacy_idx
         self.talia = Talia()
         self.kontrakt: Optional[Kontrakt] = None; self.grajacy: Optional[Gracz] = None
@@ -95,7 +96,10 @@ class Rozdanie:
         self.kolej_gracza_idx: Optional[int] = None
         self.aktualna_lewa: list[tuple[Gracz, Karta]] = []
         self.zadeklarowane_meldunki: list[tuple[Gracz, Kolor]] = []
-
+        
+        self.rozdanie_zakonczone: bool = False
+        self.zwyciezca_rozdania: Optional[Druzyna] = None
+        self.powod_zakonczenia: str = ""
     def rozdaj_karty(self, ilosc: int):
         start_idx = (self.rozdajacy_idx + 1) % 4
         for _ in range(ilosc):
@@ -126,6 +130,7 @@ class Rozdanie:
         return True
 
     def _zakoncz_lewe(self):
+        # ... (logika wyłaniania zwycięzcy lewy bez zmian) ...
         kolor_wiodacy = self.aktualna_lewa[0][1].kolor
         karty_atutowe = [(g, k) for g, k in self.aktualna_lewa if k.kolor == self.atut]
         if karty_atutowe: zwyciezca_pary = max(karty_atutowe, key=lambda p: p[1].ranga.value)
@@ -134,10 +139,35 @@ class Rozdanie:
             zwyciezca_pary = max(karty_wiodace, key=lambda p: p[1].ranga.value)
         zwyciezca_lewy = zwyciezca_pary[0]
         punkty_w_lewie = sum(karta.wartosc for _, karta in self.aktualna_lewa)
-        self.punkty_w_rozdaniu[zwyciezca_lewy.druzyna.nazwa] += punkty_w_lewie
+        
+        druzyna_zwyciezcy = zwyciezca_lewy.druzyna
+        self.punkty_w_rozdaniu[druzyna_zwyciezcy.nazwa] += punkty_w_lewie
         zwyciezca_lewy.wygrane_karty.extend([karta for _, karta in self.aktualna_lewa])
+        
+        # --- NOWA LOGIKA SPRAWDZANIA KOŃCA ROZDANIA ---
+        if self.kontrakt in [Kontrakt.NORMALNA, Kontrakt.BEZ_PYTANIA]:
+            if self.punkty_w_rozdaniu[druzyna_zwyciezcy.nazwa] >= 66:
+                self.rozdanie_zakonczone = True
+                self.zwyciezca_rozdania = druzyna_zwyciezcy
+                self.powod_zakonczenia = f"osiągnięcie {self.punkty_w_rozdaniu[druzyna_zwyciezcy.nazwa]} punktów"
+
+        if not self.rozdanie_zakonczone:
+            if self.kontrakt == Kontrakt.BEZ_PYTANIA and zwyciezca_lewy != self.grajacy:
+                self.rozdanie_zakonczone = True
+                self.zwyciezca_rozdania = druzyna_zwyciezcy # Przeciwnicy wygrywają
+                self.powod_zakonczenia = f"przejęcie lewy przez gracza {zwyciezca_lewy.nazwa}"
+            elif self.kontrakt == Kontrakt.LEPSZA and zwyciezca_lewy.druzyna != self.grajacy.druzyna:
+                self.rozdanie_zakonczone = True
+                self.zwyciezca_rozdania = zwyciezca_lewy.druzyna
+                self.powod_zakonczenia = "przejęcie lewy przez przeciwnika"
+            elif self.kontrakt == Kontrakt.GORSZA and zwyciezca_lewy == self.grajacy:
+                self.rozdanie_zakonczone = True
+                self.zwyciezca_rozdania = zwyciezca_lewy.druzyna.przeciwnicy # UWAGA: to musimy dodać
+                self.powod_zakonczenia = f"wzięcie lewy przez gracza {self.grajacy.nazwa}"
+
         self.aktualna_lewa.clear()
         self.kolej_gracza_idx = self.gracze.index(zwyciezca_lewy)
+
         
     def zagraj_karte(self, gracz: Gracz, karta: Karta) -> int:
         """Wykonuje ruch, sprawdza meldunek i zwraca punkty z meldunku."""

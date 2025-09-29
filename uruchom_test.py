@@ -13,6 +13,8 @@ def uruchom_symulacje_rozdania(numer_rozdania: int):
 
     # Setup
     druzyna_a = Druzyna(nazwa="My"); druzyna_b = Druzyna(nazwa="Oni")
+    druzyna_a.przeciwnicy = druzyna_b; druzyna_b.przeciwnicy = druzyna_a # Łączymy drużyny
+
     gracze = [
         Gracz(nazwa="Jakub"), Gracz(nazwa="Przeciwnik1"),
         Gracz(nazwa="Nasz"), Gracz(nazwa="Przeciwnik2")
@@ -37,7 +39,10 @@ def uruchom_symulacje_rozdania(numer_rozdania: int):
         print(f"\n-- Lewa #{numer_lewy} --")
         start_idx = rozdanie.kolej_gracza_idx
         kolejnosc_graczy = [gracze[(start_idx + i) % 4] for i in range(4)]
-        
+        if rozdanie.rozdanie_zakonczone:
+            print(f"\n!!! Rozdanie zakończone przed czasem !!!")
+            print(f"Powód: {rozdanie.powod_zakonczenia}")
+            break
         for gracz in kolejnosc_graczy:
             karta_do_zagrania = znajdz_legalny_ruch(rozdanie, gracz)
             if karta_do_zagrania:
@@ -57,7 +62,7 @@ def uruchom_symulacje_rozdania(numer_rozdania: int):
 
 
 if __name__ == "__main__":
-    LICZBA_ITERACJI = 120
+    LICZBA_ITERACJI = 100
     NAZWA_PLIKU_LOGU = "log_rozdania.txt"
     oryginalny_stdout = sys.stdout 
     with open(NAZWA_PLIKU_LOGU, 'w', encoding='utf-8') as f:
