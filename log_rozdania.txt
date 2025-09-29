@@ -1,70 +1,119 @@
 --- ROZDANIE #1 ---
-Kontrakt: BEZ_PYTANIA, Atut: DZWONEK
+Kontrakt: NORMALNA, Atut: ZOLADZ
 
 --- Rozgrywka ---
 
 -- Lewa #1 --
-[Przeciwnik1] zagrywa: Krol Wino
-[Nasz] zagrywa: Walet Dzwonek
-[Przeciwnik2] zagrywa: Dziesiatka Wino
-[Jakub] zagrywa: As Wino
+[Przeciwnik1] zagrywa: Dziewiatka Wino
+[Nasz] zagrywa: Dziesiatka Wino
+[Przeciwnik2] zagrywa: Walet Wino
+[Jakub] zagrywa: Dama Wino
 
 -- Lewa #2 --
+[Nasz] zagrywa: As Wino
+[Przeciwnik2] zagrywa: Walet Zoladz
+[Jakub] zagrywa: Dziewiatka Zoladz
+[Przeciwnik1] zagrywa: Krol Wino
 
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez gracza Nasz
+-- Lewa #3 --
+[Przeciwnik2] zagrywa: Dziesiatka Dzwonek
+[Jakub] zagrywa: Krol Dzwonek
+[Przeciwnik1] zagrywa: As Dzwonek
+[Nasz] zagrywa: Dama Dzwonek
+
+-- Lewa #4 --
+[Przeciwnik1] zagrywa: As Zoladz
+[Nasz] zagrywa: Krol Zoladz
+[Przeciwnik2] zagrywa: Dama Zoladz
+[Jakub] zagrywa: Dziewiatka Czerwien
+
+-- Lewa #5 --
+[Przeciwnik1] zagrywa: Dziewiatka Dzwonek
+[Nasz] zagrywa: Dama Czerwien
+[Przeciwnik2] zagrywa: As Czerwien
+[Jakub] zagrywa: Walet Dzwonek
+
+-- Lewa #6 --
+[Jakub] zagrywa: Dziesiatka Czerwien
+[Przeciwnik1] zagrywa: Dziesiatka Zoladz
+[Nasz] zagrywa: Walet Czerwien
+[Przeciwnik2] zagrywa: Krol Czerwien
+
+!!! Rozdanie zakończone przed czasem: osiągnięcie 89 punktów !!!
 
 =========================
 --- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 27 - 0 Oni
+Bonus za ostatnią lewę (+12 pkt) dla drużyny: Oni
+Punkty z kart i meldunków: My 31 - 89 Oni
+Rozdanie wygrywa: Oni
+Przyznane punkty meczowe: 2 (mnożnik: x2)
+OGÓLNY WYNIK MECZU: My 0 - Oni 2
 =========================
 
 --- ROZDANIE #2 ---
-Kontrakt: BEZ_PYTANIA, Atut: DZWONEK
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Nasz] zagrywa: Dziewiatka Zoladz
-[Przeciwnik2] zagrywa: Walet Zoladz
-[Jakub] zagrywa: Dziesiatka Zoladz
-[Przeciwnik1] zagrywa: Dama Zoladz
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez gracza Jakub
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 15 - 0 Oni
-=========================
-
---- ROZDANIE #3 ---
 Kontrakt: BEZ_PYTANIA, Atut: WINO
 
 --- Rozgrywka ---
 
 -- Lewa #1 --
-[Przeciwnik2] zagrywa: Dziesiatka Zoladz
-[Jakub] zagrywa: Dama Zoladz
-[Przeciwnik1] zagrywa: Krol Zoladz
-[Nasz] zagrywa: Walet Zoladz
+[Nasz] zagrywa: Dziesiatka Zoladz
+[Przeciwnik2] zagrywa: Dziesiatka Wino
+[Jakub] zagrywa: Dziewiatka Zoladz
+[Przeciwnik1] zagrywa: As Zoladz
 
--- Lewa #2 --
-[Przeciwnik2] zagrywa: Krol Dzwonek
-[Jakub] zagrywa: Dziewiatka Dzwonek
-[Przeciwnik1] zagrywa: Dama Dzwonek
-[Nasz] zagrywa: As Dzwonek
-
--- Lewa #3 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez gracza Nasz
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Przeciwnik2 !!!
 
 =========================
 --- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 18 - 19 Oni
+Punkty z kart i meldunków: My 0 - 31 Oni
+Rozdanie wygrywa: Oni
+Przyznane punkty meczowe: 6 (mnożnik: x1)
+OGÓLNY WYNIK MECZU: My 0 - Oni 8
+=========================
+
+--- ROZDANIE #3 ---
+Kontrakt: GORSZA, Atut: Brak
+
+--- Rozgrywka ---
+
+-- Lewa #1 --
+[Przeciwnik2] zagrywa: Dama Wino
+[Jakub] zagrywa: Dziewiatka Czerwien
+[Przeciwnik1] zagrywa: Dziewiatka Wino
+[Nasz] zagrywa: As Wino
+
+-- Lewa #2 --
+[Nasz] zagrywa: As Zoladz
+[Przeciwnik2] zagrywa: Dziesiatka Zoladz
+[Jakub] zagrywa: Krol Zoladz
+[Przeciwnik1] zagrywa: Dziewiatka Zoladz
+
+-- Lewa #3 --
+[Nasz] zagrywa: As Dzwonek
+[Przeciwnik2] zagrywa: Walet Dzwonek
+[Jakub] zagrywa: Dziesiatka Czerwien
+[Przeciwnik1] zagrywa: Krol Dzwonek
+
+-- Lewa #4 --
+[Nasz] zagrywa: Dziesiatka Dzwonek
+[Przeciwnik2] zagrywa: Dama Dzwonek
+[Jakub] zagrywa: Dama Zoladz
+[Przeciwnik1] zagrywa: Krol Czerwien
+
+-- Lewa #5 --
+[Nasz] zagrywa: Krol Wino
+[Przeciwnik2] zagrywa: Dziesiatka Wino
+[Jakub] zagrywa: Walet Zoladz
+[Przeciwnik1] zagrywa: Walet Wino
+
+!!! Rozdanie zakończone przed czasem: wzięcie lewy przez gracza Przeciwnik2 !!!
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+Punkty z kart i meldunków: My 86 - 18 Oni
+Rozdanie wygrywa: My
+Przyznane punkty meczowe: 6 (mnożnik: x1)
+OGÓLNY WYNIK MECZU: My 6 - Oni 8
 =========================
 
 --- ROZDANIE #4 ---
@@ -73,131 +122,125 @@ Kontrakt: GORSZA, Atut: Brak
 --- Rozgrywka ---
 
 -- Lewa #1 --
-[Jakub] zagrywa: Krol Czerwien
-[Przeciwnik1] zagrywa: Walet Czerwien
-[Nasz] zagrywa: Dziewiatka Czerwien
-[Przeciwnik2] zagrywa: As Czerwien
+[Jakub] zagrywa: Dziewiatka Czerwien
+[Przeciwnik1] zagrywa: Dama Czerwien
+[Nasz] zagrywa: Dama Wino
+[Przeciwnik2] zagrywa: Walet Czerwien
 
 -- Lewa #2 --
-[Przeciwnik2] zagrywa: Dama Dzwonek
-[Jakub] zagrywa: Dziesiatka Dzwonek
-[Przeciwnik1] zagrywa: As Dzwonek
+[Przeciwnik1] zagrywa: Krol Czerwien
 [Nasz] zagrywa: Dziewiatka Dzwonek
+[Przeciwnik2] zagrywa: Dziesiatka Wino
+[Jakub] zagrywa: Dziesiatka Czerwien
 
--- Lewa #3 --
-[Przeciwnik1] zagrywa: Dziewiatka Wino
-[Nasz] zagrywa: Dziesiatka Wino
-[Przeciwnik2] zagrywa: Dama Wino
-[Jakub] zagrywa: Krol Wino
-
--- Lewa #4 --
-[Nasz] zagrywa: Dziesiatka Zoladz
-[Przeciwnik2] zagrywa: Walet Dzwonek
-[Jakub] zagrywa: Dziewiatka Zoladz
-[Przeciwnik1] zagrywa: Walet Zoladz
-
--- Lewa #5 --
-[Nasz] zagrywa: Dziesiatka Czerwien
-[Przeciwnik2] zagrywa: Dama Czerwien
-[Jakub] zagrywa: Krol Zoladz
-[Przeciwnik1] zagrywa: Walet Wino
-
--- Lewa #6 --
-[Nasz] zagrywa: As Zoladz
-[Przeciwnik2] zagrywa: Krol Dzwonek
-[Jakub] zagrywa: Dama Zoladz
-[Przeciwnik1] zagrywa: As Wino
+!!! Rozdanie zakończone przed czasem: wzięcie lewy przez gracza Jakub !!!
 
 =========================
 --- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 79 - 41 Oni
+Punkty z kart i meldunków: My 24 - 8 Oni
+Rozdanie wygrywa: Oni
+Przyznane punkty meczowe: 6 (mnożnik: x1)
+OGÓLNY WYNIK MECZU: My 6 - Oni 14
 =========================
 
 --- ROZDANIE #5 ---
-Kontrakt: NORMALNA, Atut: ZOLADZ
+Kontrakt: NORMALNA, Atut: CZERWIEN
 
 --- Rozgrywka ---
 
 -- Lewa #1 --
-[Przeciwnik1] zagrywa: Dziesiatka Wino
-[Nasz] zagrywa: Krol Wino
-[Przeciwnik2] zagrywa: Walet Zoladz
-[Jakub] zagrywa: Walet Wino
+[Przeciwnik1] zagrywa: As Wino
+[Nasz] zagrywa: Dama Czerwien
+[Przeciwnik2] zagrywa: Dziewiatka Wino
+[Jakub] zagrywa: Dziesiatka Wino
 
 -- Lewa #2 --
-[Przeciwnik2] zagrywa: Krol Dzwonek (MELDUNEK! +20 pkt)
-[Jakub] zagrywa: Dziewiatka Zoladz
-[Przeciwnik1] zagrywa: Dziewiatka Dzwonek
-[Nasz] zagrywa: Krol Zoladz
+[Nasz] zagrywa: Walet Dzwonek
+[Przeciwnik2] zagrywa: Dama Dzwonek
+[Jakub] zagrywa: Krol Czerwien
+[Przeciwnik1] zagrywa: As Czerwien
 
 -- Lewa #3 --
-[Nasz] zagrywa: Krol Czerwien (MELDUNEK! +20 pkt)
-[Przeciwnik2] zagrywa: Dama Dzwonek
-[Jakub] zagrywa: As Czerwien
-[Przeciwnik1] zagrywa: Dziesiatka Czerwien
+[Przeciwnik1] zagrywa: As Zoladz
+[Nasz] zagrywa: Walet Zoladz
+[Przeciwnik2] zagrywa: Dziewiatka Czerwien
+[Jakub] zagrywa: Dama Zoladz
 
 -- Lewa #4 --
-[Jakub] zagrywa: As Wino
-[Przeciwnik1] zagrywa: Dziesiatka Zoladz
-[Nasz] zagrywa: Dziewiatka Czerwien
-[Przeciwnik2] zagrywa: Walet Dzwonek
+[Przeciwnik2] zagrywa: Dziewiatka Dzwonek
+[Jakub] zagrywa: Walet Czerwien
+[Przeciwnik1] zagrywa: Dama Wino
+[Nasz] zagrywa: Krol Dzwonek
 
 -- Lewa #5 --
-[Przeciwnik1] zagrywa: As Zoladz
-[Nasz] zagrywa: Walet Czerwien
-[Przeciwnik2] zagrywa: Dziesiatka Dzwonek
-[Jakub] zagrywa: Dziewiatka Wino
+[Jakub] zagrywa: Krol Wino
+[Przeciwnik1] zagrywa: Krol Zoladz
+[Nasz] zagrywa: As Dzwonek
+[Przeciwnik2] zagrywa: Dziesiatka Czerwien
 
 -- Lewa #6 --
+[Przeciwnik2] zagrywa: Dziesiatka Dzwonek
+[Jakub] zagrywa: Walet Wino
+[Przeciwnik1] zagrywa: Dziesiatka Zoladz
+[Nasz] zagrywa: Dziewiatka Zoladz
 
-!!! Rozdanie zakończone przed czasem !!!
-Powód: osiągnięcie 84 punktów
+!!! Rozdanie zakończone przed czasem: osiągnięcie 87 punktów !!!
 
 =========================
 --- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 56 - 84 Oni
+Bonus za ostatnią lewę (+12 pkt) dla drużyny: Oni
+Punkty z kart i meldunków: My 33 - 87 Oni
+Rozdanie wygrywa: Oni
+Przyznane punkty meczowe: 1 (mnożnik: x1)
+OGÓLNY WYNIK MECZU: My 6 - Oni 15
 =========================
 
 --- ROZDANIE #6 ---
-Kontrakt: GORSZA, Atut: Brak
+Kontrakt: LEPSZA, Atut: Brak
 
 --- Rozgrywka ---
 
 -- Lewa #1 --
-[Nasz] zagrywa: Krol Zoladz
-[Przeciwnik2] zagrywa: Dziewiatka Zoladz
-[Jakub] zagrywa: Dama Zoladz
-[Przeciwnik1] zagrywa: Walet Zoladz
+[Nasz] zagrywa: Dziesiatka Czerwien
+[Przeciwnik2] zagrywa: Walet Czerwien
+[Jakub] zagrywa: As Czerwien
+[Przeciwnik1] zagrywa: Dama Czerwien
 
 -- Lewa #2 --
+[Jakub] zagrywa: Dziewiatka Zoladz
+[Przeciwnik1] zagrywa: Dziesiatka Zoladz
+[Nasz] zagrywa: As Wino
+[Przeciwnik2] zagrywa: Walet Zoladz
 
-!!! Rozdanie zakończone przed czasem !!!
-Powód: wzięcie lewy przez gracza Nasz
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez przeciwnika !!!
 
 =========================
 --- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 9 - 0 Oni
+Punkty z kart i meldunków: My 26 - 23 Oni
+Rozdanie wygrywa: Oni
+Przyznane punkty meczowe: 12 (mnożnik: x1)
+OGÓLNY WYNIK MECZU: My 6 - Oni 27
 =========================
 
 --- ROZDANIE #7 ---
-Kontrakt: GORSZA, Atut: Brak
+Kontrakt: BEZ_PYTANIA, Atut: DZWONEK
 
 --- Rozgrywka ---
 
 -- Lewa #1 --
-[Przeciwnik2] zagrywa: As Dzwonek
-[Jakub] zagrywa: Krol Dzwonek
-[Przeciwnik1] zagrywa: Walet Dzwonek
-[Nasz] zagrywa: Dziewiatka Dzwonek
+[Przeciwnik2] zagrywa: Krol Czerwien
+[Jakub] zagrywa: As Czerwien
+[Przeciwnik1] zagrywa: Dziewiatka Czerwien
+[Nasz] zagrywa: Dziesiatka Czerwien
 
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: wzięcie lewy przez gracza Przeciwnik2
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Jakub !!!
 
 =========================
 --- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 0 - 17 Oni
+Punkty z kart i meldunków: My 25 - 0 Oni
+Rozdanie wygrywa: My
+Przyznane punkty meczowe: 6 (mnożnik: x1)
+OGÓLNY WYNIK MECZU: My 12 - Oni 27
 =========================
 
 --- ROZDANIE #8 ---
@@ -206,117 +249,90 @@ Kontrakt: GORSZA, Atut: Brak
 --- Rozgrywka ---
 
 -- Lewa #1 --
-[Jakub] zagrywa: Walet Wino
-[Przeciwnik1] zagrywa: Dama Wino
-[Nasz] zagrywa: Krol Wino
-[Przeciwnik2] zagrywa: Dziewiatka Wino
-
--- Lewa #2 --
-[Nasz] zagrywa: Krol Czerwien
-[Przeciwnik2] zagrywa: Walet Czerwien
 [Jakub] zagrywa: Dama Czerwien
-[Przeciwnik1] zagrywa: Dziesiatka Czerwien
-
--- Lewa #3 --
-[Przeciwnik1] zagrywa: Dziesiatka Zoladz
-[Nasz] zagrywa: Walet Zoladz
-[Przeciwnik2] zagrywa: Krol Zoladz
-[Jakub] zagrywa: Dama Zoladz
-
--- Lewa #4 --
-[Przeciwnik1] zagrywa: Walet Dzwonek
-[Nasz] zagrywa: Dziesiatka Dzwonek
-[Przeciwnik2] zagrywa: Krol Dzwonek
-[Jakub] zagrywa: Dziewiatka Zoladz
-
--- Lewa #5 --
-[Nasz] zagrywa: As Czerwien
-[Przeciwnik2] zagrywa: As Zoladz
-[Jakub] zagrywa: As Wino
-[Przeciwnik1] zagrywa: Dziewiatka Czerwien
-
--- Lewa #6 --
-[Nasz] zagrywa: Dama Dzwonek
-[Przeciwnik2] zagrywa: As Dzwonek
-[Jakub] zagrywa: Dziesiatka Wino
-[Przeciwnik1] zagrywa: Dziewiatka Dzwonek
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 58 - 62 Oni
-=========================
-
---- ROZDANIE #9 ---
-Kontrakt: LEPSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik1] zagrywa: Dziewiatka Czerwien
-[Nasz] zagrywa: Dziesiatka Czerwien
-[Przeciwnik2] zagrywa: As Czerwien
-[Jakub] zagrywa: Dziesiatka Dzwonek
+[Przeciwnik1] zagrywa: As Czerwien
+[Nasz] zagrywa: Walet Czerwien
+[Przeciwnik2] zagrywa: Dziesiatka Czerwien
 
 -- Lewa #2 --
-[Przeciwnik2] zagrywa: Dama Zoladz
-[Jakub] zagrywa: Dziesiatka Zoladz
-[Przeciwnik1] zagrywa: Krol Zoladz
+[Przeciwnik1] zagrywa: Dziewiatka Dzwonek
 [Nasz] zagrywa: As Dzwonek
-
--- Lewa #3 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez przeciwnika
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 28 - 31 Oni
-=========================
-
---- ROZDANIE #10 ---
-Kontrakt: NORMALNA, Atut: CZERWIEN
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Nasz] zagrywa: Krol Wino
-[Przeciwnik2] zagrywa: As Wino
-[Jakub] zagrywa: Dama Wino
-[Przeciwnik1] zagrywa: Dziewiatka Czerwien
-
--- Lewa #2 --
-[Przeciwnik1] zagrywa: Dziewiatka Dzwonek
-[Nasz] zagrywa: Dama Dzwonek
-[Przeciwnik2] zagrywa: Dziesiatka Dzwonek
+[Przeciwnik2] zagrywa: Dama Zoladz
 [Jakub] zagrywa: Krol Dzwonek
 
 -- Lewa #3 --
-[Przeciwnik2] zagrywa: Walet Wino
-[Jakub] zagrywa: Dziesiatka Wino
-[Przeciwnik1] zagrywa: As Czerwien
-[Nasz] zagrywa: Dama Czerwien
+[Nasz] zagrywa: As Zoladz
+[Przeciwnik2] zagrywa: Krol Zoladz
+[Jakub] zagrywa: Walet Zoladz
+[Przeciwnik1] zagrywa: Dziewiatka Zoladz
 
 -- Lewa #4 --
-[Przeciwnik1] zagrywa: Walet Dzwonek
-[Nasz] zagrywa: Krol Czerwien
-[Przeciwnik2] zagrywa: Walet Czerwien
-[Jakub] zagrywa: As Dzwonek
+[Nasz] zagrywa: Dziewiatka Wino
+[Przeciwnik2] zagrywa: Dziesiatka Wino
+[Jakub] zagrywa: Krol Wino
+[Przeciwnik1] zagrywa: Dama Wino
 
 -- Lewa #5 --
-[Nasz] zagrywa: Dziesiatka Zoladz
-[Przeciwnik2] zagrywa: Dama Zoladz
-[Jakub] zagrywa: Dziesiatka Czerwien
-[Przeciwnik1] zagrywa: Walet Zoladz
+[Przeciwnik2] zagrywa: Dziesiatka Zoladz
+[Jakub] zagrywa: Krol Czerwien
+[Przeciwnik1] zagrywa: Dziesiatka Dzwonek
+[Nasz] zagrywa: Walet Dzwonek
 
 -- Lewa #6 --
-[Jakub] zagrywa: Dziewiatka Wino
-[Przeciwnik1] zagrywa: As Zoladz
-[Nasz] zagrywa: Dziewiatka Zoladz
-[Przeciwnik2] zagrywa: Krol Zoladz
+[Przeciwnik2] zagrywa: As Wino
+[Jakub] zagrywa: Dama Dzwonek
+[Przeciwnik1] zagrywa: Dziewiatka Czerwien
+[Nasz] zagrywa: Walet Wino
 
 =========================
 --- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 59 - 61 Oni
+Bonus za ostatnią lewę (+12 pkt) dla drużyny: Oni
+Punkty z kart i meldunków: My 35 - 97 Oni
+Rozdanie wygrywa: Oni
+Przyznane punkty meczowe: 6 (mnożnik: x1)
+OGÓLNY WYNIK MECZU: My 12 - Oni 33
+=========================
+
+--- ROZDANIE #9 ---
+Kontrakt: GORSZA, Atut: Brak
+
+--- Rozgrywka ---
+
+-- Lewa #1 --
+[Przeciwnik1] zagrywa: As Zoladz
+[Nasz] zagrywa: Dama Zoladz
+[Przeciwnik2] zagrywa: Dziewiatka Zoladz
+[Jakub] zagrywa: Dziesiatka Zoladz
+
+!!! Rozdanie zakończone przed czasem: wzięcie lewy przez gracza Przeciwnik1 !!!
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+Punkty z kart i meldunków: My 0 - 24 Oni
+Rozdanie wygrywa: My
+Przyznane punkty meczowe: 6 (mnożnik: x1)
+OGÓLNY WYNIK MECZU: My 18 - Oni 33
+=========================
+
+--- ROZDANIE #10 ---
+Kontrakt: BEZ_PYTANIA, Atut: DZWONEK
+
+--- Rozgrywka ---
+
+-- Lewa #1 --
+[Nasz] zagrywa: Walet Czerwien
+[Przeciwnik2] zagrywa: Dama Czerwien
+[Jakub] zagrywa: Dziewiatka Czerwien
+[Przeciwnik1] zagrywa: Walet Dzwonek
+
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Przeciwnik1 !!!
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+Punkty z kart i meldunków: My 0 - 7 Oni
+Rozdanie wygrywa: Oni
+Przyznane punkty meczowe: 6 (mnożnik: x1)
+OGÓLNY WYNIK MECZU: My 18 - Oni 39
 =========================
 
 --- ROZDANIE #11 ---
@@ -325,2700 +341,166 @@ Kontrakt: LEPSZA, Atut: Brak
 --- Rozgrywka ---
 
 -- Lewa #1 --
-[Przeciwnik2] zagrywa: Dama Czerwien
-[Jakub] zagrywa: As Czerwien
-[Przeciwnik1] zagrywa: Dziesiatka Czerwien
-[Nasz] zagrywa: Walet Czerwien
+[Przeciwnik2] zagrywa: Dama Wino
+[Jakub] zagrywa: Dziewiatka Wino
+[Przeciwnik1] zagrywa: As Wino
+[Nasz] zagrywa: Dama Czerwien
 
 -- Lewa #2 --
+[Przeciwnik1] zagrywa: Dziewiatka Dzwonek
+[Nasz] zagrywa: Dama Dzwonek
+[Przeciwnik2] zagrywa: Dziesiatka Dzwonek
+[Jakub] zagrywa: Walet Dzwonek
 
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez przeciwnika
+-- Lewa #3 --
+[Przeciwnik2] zagrywa: Dziesiatka Wino
+[Jakub] zagrywa: Krol Wino
+[Przeciwnik1] zagrywa: Walet Wino
+[Nasz] zagrywa: Dziesiatka Czerwien
+
+-- Lewa #4 --
+[Przeciwnik2] zagrywa: Dziesiatka Zoladz
+[Jakub] zagrywa: Krol Dzwonek
+[Przeciwnik1] zagrywa: Krol Zoladz
+[Nasz] zagrywa: Dziewiatka Zoladz
+
+-- Lewa #5 --
+[Przeciwnik2] zagrywa: Krol Czerwien
+[Jakub] zagrywa: Dziewiatka Czerwien
+[Przeciwnik1] zagrywa: Walet Czerwien
+[Nasz] zagrywa: Walet Zoladz
+
+-- Lewa #6 --
+[Przeciwnik2] zagrywa: As Zoladz
+[Jakub] zagrywa: As Dzwonek
+[Przeciwnik1] zagrywa: As Czerwien
+[Nasz] zagrywa: Dama Zoladz
 
 =========================
 --- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 26 - 0 Oni
+Bonus za ostatnią lewę (+12 pkt) dla drużyny: Oni
+Punkty z kart i meldunków: My 0 - 132 Oni
+Rozdanie wygrywa: Oni
+Przyznane punkty meczowe: 12 (mnożnik: x1)
+OGÓLNY WYNIK MECZU: My 18 - Oni 51
 =========================
 
 --- ROZDANIE #12 ---
-Kontrakt: LEPSZA, Atut: Brak
+Kontrakt: GORSZA, Atut: Brak
 
 --- Rozgrywka ---
 
 -- Lewa #1 --
-[Jakub] zagrywa: Dziewiatka Zoladz
-[Przeciwnik1] zagrywa: As Zoladz
-[Nasz] zagrywa: Walet Czerwien
-[Przeciwnik2] zagrywa: Krol Zoladz
+[Jakub] zagrywa: Krol Wino
+[Przeciwnik1] zagrywa: Dziewiatka Wino
+[Nasz] zagrywa: Dziesiatka Wino
+[Przeciwnik2] zagrywa: As Wino
 
 -- Lewa #2 --
+[Przeciwnik2] zagrywa: As Czerwien
+[Jakub] zagrywa: As Zoladz
+[Przeciwnik1] zagrywa: Walet Czerwien
+[Nasz] zagrywa: Krol Czerwien
 
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez przeciwnika
+-- Lewa #3 --
+[Przeciwnik2] zagrywa: Dziesiatka Zoladz
+[Jakub] zagrywa: Krol Zoladz
+[Przeciwnik1] zagrywa: Dama Zoladz
+[Nasz] zagrywa: Dziewiatka Zoladz
+
+-- Lewa #4 --
+[Przeciwnik2] zagrywa: Walet Zoladz
+[Jakub] zagrywa: Walet Wino
+[Przeciwnik1] zagrywa: Dziesiatka Czerwien
+[Nasz] zagrywa: Dziewiatka Czerwien
+
+-- Lewa #5 --
+[Przeciwnik2] zagrywa: Dziesiatka Dzwonek
+[Jakub] zagrywa: Dziewiatka Dzwonek
+[Przeciwnik1] zagrywa: Walet Dzwonek
+[Nasz] zagrywa: As Dzwonek
+
+-- Lewa #6 --
+[Nasz] zagrywa: Dama Dzwonek
+[Przeciwnik2] zagrywa: Dama Czerwien
+[Jakub] zagrywa: Dama Wino
+[Przeciwnik1] zagrywa: Krol Dzwonek
 
 =========================
 --- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 0 - 17 Oni
+Bonus za ostatnią lewę (+12 pkt) dla drużyny: Oni
+Punkty z kart i meldunków: My 23 - 109 Oni
+Rozdanie wygrywa: Oni
+Przyznane punkty meczowe: 6 (mnożnik: x1)
+OGÓLNY WYNIK MECZU: My 18 - Oni 57
 =========================
 
 --- ROZDANIE #13 ---
-Kontrakt: BEZ_PYTANIA, Atut: ZOLADZ
+Kontrakt: BEZ_PYTANIA, Atut: DZWONEK
 
 --- Rozgrywka ---
 
 -- Lewa #1 --
-[Przeciwnik1] zagrywa: Dama Czerwien
-[Nasz] zagrywa: Dziewiatka Czerwien
-[Przeciwnik2] zagrywa: As Czerwien
-[Jakub] zagrywa: Dziesiatka Czerwien
+[Przeciwnik1] zagrywa: Dama Zoladz (MELDUNEK! +20 pkt)
+[Nasz] zagrywa: Dziesiatka Zoladz
+[Przeciwnik2] zagrywa: As Zoladz
+[Jakub] zagrywa: As Dzwonek
 
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez gracza Przeciwnik2
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Jakub !!!
 
 =========================
 --- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 0 - 24 Oni
+Punkty z kart i meldunków: My 35 - 20 Oni
+Rozdanie wygrywa: My
+Przyznane punkty meczowe: 6 (mnożnik: x1)
+OGÓLNY WYNIK MECZU: My 24 - Oni 57
 =========================
 
 --- ROZDANIE #14 ---
-Kontrakt: LEPSZA, Atut: Brak
+Kontrakt: BEZ_PYTANIA, Atut: WINO
 
 --- Rozgrywka ---
 
 -- Lewa #1 --
-[Nasz] zagrywa: Krol Dzwonek
-[Przeciwnik2] zagrywa: As Zoladz
-[Jakub] zagrywa: Dziesiatka Dzwonek
-[Przeciwnik1] zagrywa: As Dzwonek
+[Nasz] zagrywa: Walet Dzwonek
+[Przeciwnik2] zagrywa: Krol Wino
+[Jakub] zagrywa: As Dzwonek
+[Przeciwnik1] zagrywa: Dziesiatka Dzwonek
 
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez przeciwnika
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Przeciwnik2 !!!
 
 =========================
 --- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 0 - 36 Oni
+Punkty z kart i meldunków: My 0 - 27 Oni
+Rozdanie wygrywa: Oni
+Przyznane punkty meczowe: 6 (mnożnik: x1)
+OGÓLNY WYNIK MECZU: My 24 - Oni 63
 =========================
 
 --- ROZDANIE #15 ---
-Kontrakt: BEZ_PYTANIA, Atut: ZOLADZ
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik2] zagrywa: Dziesiatka Zoladz
-[Jakub] zagrywa: Dziewiatka Zoladz
-[Przeciwnik1] zagrywa: Walet Zoladz
-[Nasz] zagrywa: As Zoladz
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez gracza Nasz
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 23 - 0 Oni
-=========================
-
---- ROZDANIE #16 ---
-Kontrakt: BEZ_PYTANIA, Atut: ZOLADZ
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Jakub] zagrywa: Dama Dzwonek
-[Przeciwnik1] zagrywa: Dziewiatka Zoladz
-[Nasz] zagrywa: Krol Dzwonek
-[Przeciwnik2] zagrywa: Dziesiatka Dzwonek
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez gracza Przeciwnik1
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 0 - 17 Oni
-=========================
-
---- ROZDANIE #17 ---
-Kontrakt: LEPSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik1] zagrywa: As Dzwonek
-[Nasz] zagrywa: Dziewiatka Dzwonek
-[Przeciwnik2] zagrywa: Krol Dzwonek
-[Jakub] zagrywa: Dama Zoladz
-
--- Lewa #2 --
-[Przeciwnik1] zagrywa: Dziewiatka Czerwien
-[Nasz] zagrywa: Dama Czerwien
-[Przeciwnik2] zagrywa: Walet Czerwien
-[Jakub] zagrywa: As Czerwien
-
--- Lewa #3 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez przeciwnika
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 16 - 18 Oni
-=========================
-
---- ROZDANIE #18 ---
-Kontrakt: LEPSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Nasz] zagrywa: Dziesiatka Czerwien
-[Przeciwnik2] zagrywa: Dama Czerwien
-[Jakub] zagrywa: Krol Wino
-[Przeciwnik1] zagrywa: Krol Czerwien
-
--- Lewa #2 --
-[Nasz] zagrywa: Dziewiatka Dzwonek
-[Przeciwnik2] zagrywa: Walet Wino
-[Jakub] zagrywa: Dziesiatka Dzwonek
-[Przeciwnik1] zagrywa: As Dzwonek
-
--- Lewa #3 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez przeciwnika
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 21 - 23 Oni
-=========================
-
---- ROZDANIE #19 ---
-Kontrakt: NORMALNA, Atut: ZOLADZ
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik2] zagrywa: As Dzwonek
-[Jakub] zagrywa: Dziewiatka Dzwonek
-[Przeciwnik1] zagrywa: Walet Dzwonek
-[Nasz] zagrywa: Dama Dzwonek
-
--- Lewa #2 --
-[Przeciwnik2] zagrywa: Dziewiatka Zoladz
-[Jakub] zagrywa: Dama Zoladz
-[Przeciwnik1] zagrywa: Krol Zoladz
-[Nasz] zagrywa: Krol Wino
-
--- Lewa #3 --
-[Przeciwnik1] zagrywa: Dziewiatka Wino
-[Nasz] zagrywa: Dziewiatka Czerwien
-[Przeciwnik2] zagrywa: Dama Wino
-[Jakub] zagrywa: Walet Wino
-
--- Lewa #4 --
-[Przeciwnik2] zagrywa: Walet Czerwien
-[Jakub] zagrywa: Krol Czerwien
-[Przeciwnik1] zagrywa: Dziesiatka Czerwien
-[Nasz] zagrywa: As Czerwien
-
--- Lewa #5 --
-[Nasz] zagrywa: Dziesiatka Dzwonek
-[Przeciwnik2] zagrywa: Dama Czerwien
-[Jakub] zagrywa: Walet Zoladz
-[Przeciwnik1] zagrywa: As Zoladz
-
--- Lewa #6 --
-[Przeciwnik1] zagrywa: As Wino
-[Nasz] zagrywa: Krol Dzwonek
-[Przeciwnik2] zagrywa: Dziesiatka Wino
-[Jakub] zagrywa: Dziesiatka Zoladz
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 62 - 58 Oni
-=========================
-
---- ROZDANIE #20 ---
-Kontrakt: BEZ_PYTANIA, Atut: WINO
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Jakub] zagrywa: Krol Wino
-[Przeciwnik1] zagrywa: Walet Zoladz
-[Nasz] zagrywa: Dama Wino
-[Przeciwnik2] zagrywa: Dziewiatka Wino
-
--- Lewa #2 --
-[Jakub] zagrywa: Dziesiatka Dzwonek
-[Przeciwnik1] zagrywa: Krol Dzwonek
-[Nasz] zagrywa: Dama Dzwonek
-[Przeciwnik2] zagrywa: Walet Dzwonek
-
--- Lewa #3 --
-[Jakub] zagrywa: As Dzwonek
-[Przeciwnik1] zagrywa: Dziewiatka Dzwonek
-[Nasz] zagrywa: Walet Wino
-[Przeciwnik2] zagrywa: Dziesiatka Wino
-
--- Lewa #4 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez gracza Przeciwnik2
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 28 - 23 Oni
-=========================
-
---- ROZDANIE #21 ---
-Kontrakt: GORSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik1] zagrywa: Dziewiatka Dzwonek
-[Nasz] zagrywa: Dama Dzwonek
-[Przeciwnik2] zagrywa: Dziesiatka Dzwonek
-[Jakub] zagrywa: Walet Dzwonek
-
--- Lewa #2 --
-[Przeciwnik2] zagrywa: As Zoladz
-[Jakub] zagrywa: Walet Zoladz
-[Przeciwnik1] zagrywa: Krol Czerwien
-[Nasz] zagrywa: Dziewiatka Zoladz
-
--- Lewa #3 --
-[Przeciwnik2] zagrywa: As Dzwonek
-[Jakub] zagrywa: Dziesiatka Czerwien
-[Przeciwnik1] zagrywa: Dziewiatka Czerwien
-[Nasz] zagrywa: Krol Dzwonek
-
--- Lewa #4 --
-[Przeciwnik2] zagrywa: Dziesiatka Wino
-[Jakub] zagrywa: Walet Wino
-[Przeciwnik1] zagrywa: Dziewiatka Wino
-[Nasz] zagrywa: Krol Wino
-
--- Lewa #5 --
-[Przeciwnik2] zagrywa: Dama Zoladz
-[Jakub] zagrywa: As Wino
-[Przeciwnik1] zagrywa: Walet Czerwien
-[Nasz] zagrywa: Krol Zoladz
-
--- Lewa #6 --
-[Nasz] zagrywa: Dziesiatka Zoladz
-[Przeciwnik2] zagrywa: Dama Wino
-[Jakub] zagrywa: As Czerwien
-[Przeciwnik1] zagrywa: Dama Czerwien
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 47 - 73 Oni
-=========================
-
---- ROZDANIE #22 ---
-Kontrakt: NORMALNA, Atut: CZERWIEN
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Nasz] zagrywa: Dziesiatka Czerwien
-[Przeciwnik2] zagrywa: Walet Czerwien
-[Jakub] zagrywa: Dziesiatka Wino
-[Przeciwnik1] zagrywa: Krol Czerwien
-
--- Lewa #2 --
-[Nasz] zagrywa: Krol Zoladz
-[Przeciwnik2] zagrywa: As Czerwien
-[Jakub] zagrywa: As Zoladz
-[Przeciwnik1] zagrywa: Walet Zoladz
-
--- Lewa #3 --
-[Przeciwnik2] zagrywa: Walet Dzwonek
-[Jakub] zagrywa: Dziewiatka Dzwonek
-[Przeciwnik1] zagrywa: As Dzwonek
-[Nasz] zagrywa: Dziewiatka Wino
-
--- Lewa #4 --
-[Przeciwnik1] zagrywa: Dziewiatka Czerwien
-[Nasz] zagrywa: Dama Wino
-[Przeciwnik2] zagrywa: Dziesiatka Dzwonek
-[Jakub] zagrywa: Krol Wino
-
--- Lewa #5 --
-[Przeciwnik1] zagrywa: Dama Czerwien
-[Nasz] zagrywa: Walet Wino
-[Przeciwnik2] zagrywa: Krol Dzwonek
-[Jakub] zagrywa: Dama Zoladz
-
--- Lewa #6 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: osiągnięcie 70 punktów
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 26 - 70 Oni
-=========================
-
---- ROZDANIE #23 ---
-Kontrakt: GORSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik2] zagrywa: Dama Zoladz
-[Jakub] zagrywa: Dziewiatka Zoladz
-[Przeciwnik1] zagrywa: As Zoladz
-[Nasz] zagrywa: Walet Zoladz
-
--- Lewa #2 --
-[Przeciwnik1] zagrywa: Dziewiatka Dzwonek
-[Nasz] zagrywa: Walet Wino
-[Przeciwnik2] zagrywa: Krol Dzwonek
-[Jakub] zagrywa: Dziesiatka Dzwonek
-
--- Lewa #3 --
-[Jakub] zagrywa: Dziewiatka Wino
-[Przeciwnik1] zagrywa: Dziesiatka Wino
-[Nasz] zagrywa: Krol Wino
-[Przeciwnik2] zagrywa: Dziesiatka Zoladz
-
--- Lewa #4 --
-[Przeciwnik1] zagrywa: As Dzwonek
-[Nasz] zagrywa: As Czerwien
-[Przeciwnik2] zagrywa: Walet Dzwonek
-[Jakub] zagrywa: Dama Dzwonek
-
--- Lewa #5 --
-[Przeciwnik1] zagrywa: Dama Czerwien
-[Nasz] zagrywa: Dama Wino
-[Przeciwnik2] zagrywa: Dziesiatka Czerwien
-[Jakub] zagrywa: Walet Czerwien
-
--- Lewa #6 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: wzięcie lewy przez gracza Przeciwnik2
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 16 - 85 Oni
-=========================
-
---- ROZDANIE #24 ---
-Kontrakt: LEPSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Jakub] zagrywa: Dziewiatka Dzwonek
-[Przeciwnik1] zagrywa: Dama Dzwonek
-[Nasz] zagrywa: Krol Dzwonek
-[Przeciwnik2] zagrywa: Dziesiatka Wino
-
--- Lewa #2 --
-[Nasz] zagrywa: Dziewiatka Zoladz
-[Przeciwnik2] zagrywa: As Zoladz
-[Jakub] zagrywa: Krol Zoladz
-[Przeciwnik1] zagrywa: Walet Zoladz
-
--- Lewa #3 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez przeciwnika
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 17 - 17 Oni
-=========================
-
---- ROZDANIE #25 ---
-Kontrakt: LEPSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik1] zagrywa: Walet Wino
-[Nasz] zagrywa: Krol Wino
-[Przeciwnik2] zagrywa: Dziewiatka Wino
-[Jakub] zagrywa: As Wino
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez przeciwnika
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 17 - 0 Oni
-=========================
-
---- ROZDANIE #26 ---
-Kontrakt: GORSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Nasz] zagrywa: Dziewiatka Czerwien
-[Przeciwnik2] zagrywa: Dziesiatka Czerwien
-[Jakub] zagrywa: As Czerwien
-[Przeciwnik1] zagrywa: Dama Dzwonek
-
--- Lewa #2 --
-[Jakub] zagrywa: Krol Wino
-[Przeciwnik1] zagrywa: As Wino
-[Nasz] zagrywa: Dziesiatka Wino
-[Przeciwnik2] zagrywa: Dziewiatka Wino
-
--- Lewa #3 --
-[Przeciwnik1] zagrywa: Krol Zoladz
-[Nasz] zagrywa: Dziesiatka Zoladz
-[Przeciwnik2] zagrywa: As Zoladz
-[Jakub] zagrywa: Walet Wino
-
--- Lewa #4 --
-[Przeciwnik2] zagrywa: Walet Czerwien
-[Jakub] zagrywa: Dama Czerwien
-[Przeciwnik1] zagrywa: Dama Zoladz
-[Nasz] zagrywa: Krol Czerwien
-
--- Lewa #5 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: wzięcie lewy przez gracza Nasz
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 36 - 52 Oni
-=========================
-
---- ROZDANIE #27 ---
-Kontrakt: LEPSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik2] zagrywa: Dama Dzwonek
-[Jakub] zagrywa: Dziesiatka Dzwonek
-[Przeciwnik1] zagrywa: As Dzwonek
-[Nasz] zagrywa: Krol Dzwonek
-
--- Lewa #2 --
-[Przeciwnik1] zagrywa: Dziewiatka Zoladz
-[Nasz] zagrywa: Dziesiatka Zoladz
-[Przeciwnik2] zagrywa: Walet Zoladz
-[Jakub] zagrywa: Krol Zoladz
-
--- Lewa #3 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez przeciwnika
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 16 - 28 Oni
-=========================
-
---- ROZDANIE #28 ---
-Kontrakt: BEZ_PYTANIA, Atut: ZOLADZ
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Jakub] zagrywa: Dziesiatka Czerwien
-[Przeciwnik1] zagrywa: Dama Zoladz
-[Nasz] zagrywa: Dziewiatka Czerwien
-[Przeciwnik2] zagrywa: Dama Czerwien
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez gracza Przeciwnik1
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 0 - 16 Oni
-=========================
-
---- ROZDANIE #29 ---
-Kontrakt: BEZ_PYTANIA, Atut: CZERWIEN
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik1] zagrywa: Dziesiatka Czerwien
-[Nasz] zagrywa: Walet Czerwien
-[Przeciwnik2] zagrywa: Krol Czerwien
-[Jakub] zagrywa: Dziewiatka Czerwien
-
--- Lewa #2 --
-[Przeciwnik1] zagrywa: Dama Czerwien
-[Nasz] zagrywa: As Czerwien
-[Przeciwnik2] zagrywa: Dama Wino
-[Jakub] zagrywa: Krol Dzwonek
-
--- Lewa #3 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez gracza Nasz
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 21 - 16 Oni
-=========================
-
---- ROZDANIE #30 ---
-Kontrakt: GORSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Nasz] zagrywa: Krol Dzwonek
-[Przeciwnik2] zagrywa: Walet Dzwonek
-[Jakub] zagrywa: Dziewiatka Dzwonek
-[Przeciwnik1] zagrywa: Dziesiatka Dzwonek
-
--- Lewa #2 --
-[Przeciwnik1] zagrywa: As Czerwien
-[Nasz] zagrywa: Dziesiatka Czerwien
-[Przeciwnik2] zagrywa: Walet Czerwien
-[Jakub] zagrywa: Dziewiatka Zoladz
-
--- Lewa #3 --
-[Przeciwnik1] zagrywa: Dziewiatka Czerwien
-[Nasz] zagrywa: Walet Wino
-[Przeciwnik2] zagrywa: Krol Czerwien
-[Jakub] zagrywa: Krol Wino
-
--- Lewa #4 --
-[Przeciwnik2] zagrywa: Walet Zoladz
-[Jakub] zagrywa: Dama Zoladz
-[Przeciwnik1] zagrywa: Dziesiatka Zoladz
-[Nasz] zagrywa: Krol Zoladz
-
--- Lewa #5 --
-[Przeciwnik1] zagrywa: Dama Dzwonek
-[Nasz] zagrywa: As Dzwonek
-[Przeciwnik2] zagrywa: Dziewiatka Wino
-[Jakub] zagrywa: Dziesiatka Wino
-
--- Lewa #6 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: wzięcie lewy przez gracza Nasz
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 24 - 68 Oni
-=========================
-
---- ROZDANIE #31 ---
-Kontrakt: BEZ_PYTANIA, Atut: ZOLADZ
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik2] zagrywa: Dama Wino (MELDUNEK! +20 pkt)
-[Jakub] zagrywa: Dziewiatka Wino
-[Przeciwnik1] zagrywa: As Wino
-[Nasz] zagrywa: As Zoladz
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez gracza Nasz
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 25 - 20 Oni
-=========================
-
---- ROZDANIE #32 ---
-Kontrakt: GORSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Jakub] zagrywa: Krol Wino
-[Przeciwnik1] zagrywa: Walet Zoladz
-[Nasz] zagrywa: Dziewiatka Wino
-[Przeciwnik2] zagrywa: As Wino
-
--- Lewa #2 --
-[Przeciwnik2] zagrywa: Walet Wino
-[Jakub] zagrywa: As Czerwien
-[Przeciwnik1] zagrywa: Krol Zoladz
-[Nasz] zagrywa: Dama Wino
-
--- Lewa #3 --
-[Nasz] zagrywa: Dama Czerwien
-[Przeciwnik2] zagrywa: Walet Czerwien
-[Jakub] zagrywa: Krol Czerwien
-[Przeciwnik1] zagrywa: Dziewiatka Czerwien
-
--- Lewa #4 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: wzięcie lewy przez gracza Jakub
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 29 - 17 Oni
-=========================
-
---- ROZDANIE #33 ---
-Kontrakt: LEPSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik1] zagrywa: As Czerwien
-[Nasz] zagrywa: Krol Czerwien
-[Przeciwnik2] zagrywa: Dziesiatka Czerwien
-[Jakub] zagrywa: Walet Czerwien
-
--- Lewa #2 --
-[Przeciwnik1] zagrywa: Dama Czerwien
-[Nasz] zagrywa: Dziewiatka Czerwien
-[Przeciwnik2] zagrywa: Dziesiatka Wino
-[Jakub] zagrywa: Dama Wino
-
--- Lewa #3 --
-[Przeciwnik1] zagrywa: Dziewiatka Wino
-[Nasz] zagrywa: As Wino
-[Przeciwnik2] zagrywa: Walet Dzwonek
-[Jakub] zagrywa: Walet Wino
-
--- Lewa #4 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez przeciwnika
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 15 - 43 Oni
-=========================
-
---- ROZDANIE #34 ---
-Kontrakt: LEPSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Nasz] zagrywa: Dziesiatka Czerwien
-[Przeciwnik2] zagrywa: Dziesiatka Dzwonek
-[Jakub] zagrywa: Walet Wino
-[Przeciwnik1] zagrywa: As Czerwien
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez przeciwnika
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 0 - 33 Oni
-=========================
-
---- ROZDANIE #35 ---
-Kontrakt: BEZ_PYTANIA, Atut: CZERWIEN
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik2] zagrywa: Dama Wino
-[Jakub] zagrywa: Dziesiatka Wino
-[Przeciwnik1] zagrywa: Krol Wino
-[Nasz] zagrywa: As Czerwien
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez gracza Nasz
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 28 - 0 Oni
-=========================
-
---- ROZDANIE #36 ---
-Kontrakt: LEPSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Jakub] zagrywa: Dziewiatka Dzwonek
-[Przeciwnik1] zagrywa: Dziesiatka Dzwonek
-[Nasz] zagrywa: Krol Dzwonek
-[Przeciwnik2] zagrywa: Dama Wino
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez przeciwnika
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 0 - 17 Oni
-=========================
-
---- ROZDANIE #37 ---
-Kontrakt: NORMALNA, Atut: ZOLADZ
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik1] zagrywa: As Dzwonek
-[Nasz] zagrywa: Dziesiatka Dzwonek
-[Przeciwnik2] zagrywa: Dama Dzwonek
-[Jakub] zagrywa: Dziewiatka Dzwonek
-
--- Lewa #2 --
-[Przeciwnik1] zagrywa: Dziewiatka Zoladz
-[Nasz] zagrywa: Dama Zoladz
-[Przeciwnik2] zagrywa: Krol Zoladz
-[Jakub] zagrywa: Walet Wino
-
--- Lewa #3 --
-[Przeciwnik2] zagrywa: Dama Wino
-[Jakub] zagrywa: As Wino
-[Przeciwnik1] zagrywa: Krol Wino
-[Nasz] zagrywa: Dziewiatka Wino
-
--- Lewa #4 --
-[Jakub] zagrywa: Dziesiatka Czerwien
-[Przeciwnik1] zagrywa: Dama Czerwien
-[Nasz] zagrywa: Dziesiatka Zoladz
-[Przeciwnik2] zagrywa: Walet Czerwien
-
--- Lewa #5 --
-[Nasz] zagrywa: Dziesiatka Wino
-[Przeciwnik2] zagrywa: Krol Czerwien
-[Jakub] zagrywa: As Czerwien
-[Przeciwnik1] zagrywa: As Zoladz
-
--- Lewa #6 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: osiągnięcie 69 punktów
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 43 - 69 Oni
-=========================
-
---- ROZDANIE #38 ---
-Kontrakt: BEZ_PYTANIA, Atut: CZERWIEN
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Nasz] zagrywa: Dziewiatka Czerwien
-[Przeciwnik2] zagrywa: Dama Czerwien
-[Jakub] zagrywa: As Czerwien
-[Przeciwnik1] zagrywa: Krol Zoladz
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez gracza Jakub
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 18 - 0 Oni
-=========================
-
---- ROZDANIE #39 ---
-Kontrakt: GORSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik2] zagrywa: Dama Wino
-[Jakub] zagrywa: Dziesiatka Zoladz
-[Przeciwnik1] zagrywa: Dziesiatka Wino
-[Nasz] zagrywa: Walet Wino
-
--- Lewa #2 --
-[Przeciwnik1] zagrywa: As Dzwonek
-[Nasz] zagrywa: Walet Dzwonek
-[Przeciwnik2] zagrywa: Dziesiatka Dzwonek
-[Jakub] zagrywa: Dziewiatka Dzwonek
-
--- Lewa #3 --
-[Przeciwnik1] zagrywa: Krol Dzwonek
-[Nasz] zagrywa: Dziewiatka Zoladz
-[Przeciwnik2] zagrywa: Dama Dzwonek
-[Jakub] zagrywa: Krol Czerwien
-
--- Lewa #4 --
-[Przeciwnik1] zagrywa: Dama Zoladz
-[Nasz] zagrywa: As Zoladz
-[Przeciwnik2] zagrywa: Walet Zoladz
-[Jakub] zagrywa: Krol Zoladz
-
--- Lewa #5 --
-[Nasz] zagrywa: Krol Wino
-[Przeciwnik2] zagrywa: Dziewiatka Wino
-[Jakub] zagrywa: Walet Czerwien
-[Przeciwnik1] zagrywa: As Wino
-
--- Lewa #6 --
-[Przeciwnik1] zagrywa: As Czerwien
-[Nasz] zagrywa: Dama Czerwien
-[Przeciwnik2] zagrywa: Dziewiatka Czerwien
-[Jakub] zagrywa: Dziesiatka Czerwien
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 20 - 100 Oni
-=========================
-
---- ROZDANIE #40 ---
-Kontrakt: BEZ_PYTANIA, Atut: CZERWIEN
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Jakub] zagrywa: Dziewiatka Zoladz
-[Przeciwnik1] zagrywa: As Zoladz
-[Nasz] zagrywa: Dziesiatka Zoladz
-[Przeciwnik2] zagrywa: Dama Zoladz
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez gracza Przeciwnik1
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 0 - 24 Oni
-=========================
-
---- ROZDANIE #41 ---
-Kontrakt: BEZ_PYTANIA, Atut: ZOLADZ
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik1] zagrywa: Dama Wino
-[Nasz] zagrywa: As Wino
-[Przeciwnik2] zagrywa: Dziesiatka Wino
-[Jakub] zagrywa: Walet Wino
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez gracza Nasz
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 26 - 0 Oni
-=========================
-
---- ROZDANIE #42 ---
-Kontrakt: GORSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Nasz] zagrywa: Dziesiatka Czerwien
-[Przeciwnik2] zagrywa: Krol Czerwien
-[Jakub] zagrywa: Dama Dzwonek
-[Przeciwnik1] zagrywa: Dziewiatka Czerwien
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: wzięcie lewy przez gracza Nasz
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 17 - 0 Oni
-=========================
-
---- ROZDANIE #43 ---
-Kontrakt: NORMALNA, Atut: DZWONEK
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik2] zagrywa: Dziewiatka Czerwien
-[Jakub] zagrywa: Dziesiatka Czerwien
-[Przeciwnik1] zagrywa: Dama Czerwien
-[Nasz] zagrywa: Walet Dzwonek
-
--- Lewa #2 --
-[Nasz] zagrywa: Dziewiatka Wino
-[Przeciwnik2] zagrywa: As Wino
-[Jakub] zagrywa: Krol Wino
-[Przeciwnik1] zagrywa: Walet Wino
-
--- Lewa #3 --
-[Przeciwnik2] zagrywa: Walet Czerwien
-[Jakub] zagrywa: Krol Czerwien
-[Przeciwnik1] zagrywa: Dama Zoladz
-[Nasz] zagrywa: Dziewiatka Dzwonek
-
--- Lewa #4 --
-[Nasz] zagrywa: Dziewiatka Zoladz
-[Przeciwnik2] zagrywa: Dziesiatka Zoladz
-[Jakub] zagrywa: Dama Dzwonek
-[Przeciwnik1] zagrywa: Walet Zoladz
-
--- Lewa #5 --
-[Jakub] zagrywa: Dama Wino
-[Przeciwnik1] zagrywa: Dziesiatka Wino
-[Nasz] zagrywa: Dziesiatka Dzwonek
-[Przeciwnik2] zagrywa: Krol Dzwonek
-
--- Lewa #6 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: osiągnięcie 66 punktów
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 66 - 17 Oni
-=========================
-
---- ROZDANIE #44 ---
-Kontrakt: LEPSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Jakub] zagrywa: Krol Czerwien
-[Przeciwnik1] zagrywa: As Czerwien
-[Nasz] zagrywa: Walet Czerwien
-[Przeciwnik2] zagrywa: Dama Czerwien
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez przeciwnika
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 0 - 20 Oni
-=========================
-
---- ROZDANIE #45 ---
-Kontrakt: GORSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik1] zagrywa: Dama Czerwien
-[Nasz] zagrywa: Dziesiatka Czerwien
-[Przeciwnik2] zagrywa: Walet Czerwien
-[Jakub] zagrywa: Dziewiatka Czerwien
-
--- Lewa #2 --
-[Nasz] zagrywa: Dziesiatka Zoladz
-[Przeciwnik2] zagrywa: As Dzwonek
-[Jakub] zagrywa: Krol Zoladz
-[Przeciwnik1] zagrywa: As Zoladz
-
--- Lewa #3 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: wzięcie lewy przez gracza Przeciwnik1
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 15 - 36 Oni
-=========================
-
---- ROZDANIE #46 ---
-Kontrakt: BEZ_PYTANIA, Atut: CZERWIEN
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Nasz] zagrywa: As Czerwien
-[Przeciwnik2] zagrywa: Dziewiatka Dzwonek
-[Jakub] zagrywa: Walet Czerwien
-[Przeciwnik1] zagrywa: Dziesiatka Czerwien
-
--- Lewa #2 --
-[Nasz] zagrywa: Walet Zoladz
-[Przeciwnik2] zagrywa: Krol Zoladz
-[Jakub] zagrywa: Dama Zoladz
-[Przeciwnik1] zagrywa: Dziewiatka Zoladz
-
--- Lewa #3 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez gracza Przeciwnik2
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 23 - 9 Oni
-=========================
-
---- ROZDANIE #47 ---
-Kontrakt: BEZ_PYTANIA, Atut: WINO
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik2] zagrywa: Dama Dzwonek (MELDUNEK! +20 pkt)
-[Jakub] zagrywa: Dziesiatka Dzwonek
-[Przeciwnik1] zagrywa: As Wino
-[Nasz] zagrywa: Walet Dzwonek
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez gracza Przeciwnik1
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 0 - 46 Oni
-=========================
-
---- ROZDANIE #48 ---
-Kontrakt: LEPSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Jakub] zagrywa: Dziewiatka Dzwonek
-[Przeciwnik1] zagrywa: Dziesiatka Dzwonek
-[Nasz] zagrywa: Walet Dzwonek
-[Przeciwnik2] zagrywa: Dama Dzwonek
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez przeciwnika
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 0 - 15 Oni
-=========================
-
---- ROZDANIE #49 ---
-Kontrakt: NORMALNA, Atut: ZOLADZ
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik1] zagrywa: Dziesiatka Wino
-[Nasz] zagrywa: As Wino
-[Przeciwnik2] zagrywa: Dama Wino
-[Jakub] zagrywa: Krol Wino
-
--- Lewa #2 --
-[Nasz] zagrywa: Krol Czerwien
-[Przeciwnik2] zagrywa: As Czerwien
-[Jakub] zagrywa: Dziesiatka Zoladz
-[Przeciwnik1] zagrywa: Dziesiatka Czerwien
-
--- Lewa #3 --
-[Jakub] zagrywa: Krol Zoladz (MELDUNEK! +40 pkt)
-[Przeciwnik1] zagrywa: Dziewiatka Zoladz
-[Nasz] zagrywa: As Zoladz
-[Przeciwnik2] zagrywa: Dziewiatka Dzwonek
-
--- Lewa #4 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: osiągnięcie 118 punktów
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 118 - 0 Oni
-=========================
-
---- ROZDANIE #50 ---
-Kontrakt: GORSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Nasz] zagrywa: Krol Czerwien
-[Przeciwnik2] zagrywa: Dziewiatka Czerwien
-[Jakub] zagrywa: Dziesiatka Czerwien
-[Przeciwnik1] zagrywa: Dama Czerwien
-
--- Lewa #2 --
-[Jakub] zagrywa: Dama Dzwonek
-[Przeciwnik1] zagrywa: Dziesiatka Zoladz
-[Nasz] zagrywa: Krol Dzwonek
-[Przeciwnik2] zagrywa: Dziesiatka Dzwonek
-
--- Lewa #3 --
-[Przeciwnik2] zagrywa: Walet Wino
-[Jakub] zagrywa: Dama Wino
-[Przeciwnik1] zagrywa: As Wino
-[Nasz] zagrywa: As Zoladz
-
--- Lewa #4 --
-[Przeciwnik1] zagrywa: Dama Zoladz
-[Nasz] zagrywa: As Czerwien
-[Przeciwnik2] zagrywa: Dziewiatka Zoladz
-[Jakub] zagrywa: Walet Zoladz
-
--- Lewa #5 --
-[Przeciwnik1] zagrywa: Dziesiatka Wino
-[Nasz] zagrywa: As Dzwonek
-[Przeciwnik2] zagrywa: Dziewiatka Wino
-[Jakub] zagrywa: Krol Wino
-
--- Lewa #6 --
-[Przeciwnik1] zagrywa: Krol Zoladz
-[Nasz] zagrywa: Dziewiatka Dzwonek
-[Przeciwnik2] zagrywa: Walet Czerwien
-[Jakub] zagrywa: Walet Dzwonek
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 17 - 103 Oni
-=========================
-
---- ROZDANIE #51 ---
-Kontrakt: LEPSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik2] zagrywa: Dama Wino
-[Jakub] zagrywa: Dziewiatka Wino
-[Przeciwnik1] zagrywa: As Wino
-[Nasz] zagrywa: Walet Wino
-
--- Lewa #2 --
-[Przeciwnik1] zagrywa: Dziesiatka Dzwonek
-[Nasz] zagrywa: Krol Dzwonek
-[Przeciwnik2] zagrywa: Walet Dzwonek
-[Jakub] zagrywa: Dama Dzwonek
-
--- Lewa #3 --
-[Przeciwnik1] zagrywa: Dama Czerwien
-[Nasz] zagrywa: Walet Czerwien
-[Przeciwnik2] zagrywa: As Czerwien
-[Jakub] zagrywa: Dziewiatka Czerwien
-
--- Lewa #4 --
-[Przeciwnik2] zagrywa: Dziesiatka Czerwien
-[Jakub] zagrywa: Dama Zoladz
-[Przeciwnik1] zagrywa: Krol Czerwien
-[Nasz] zagrywa: As Zoladz
-
--- Lewa #5 --
-[Przeciwnik2] zagrywa: Krol Wino
-[Jakub] zagrywa: Dziewiatka Zoladz
-[Przeciwnik1] zagrywa: Krol Zoladz
-[Nasz] zagrywa: Walet Zoladz
-
--- Lewa #6 --
-[Przeciwnik2] zagrywa: Dziesiatka Wino
-[Jakub] zagrywa: Dziewiatka Dzwonek
-[Przeciwnik1] zagrywa: As Dzwonek
-[Nasz] zagrywa: Dziesiatka Zoladz
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 0 - 120 Oni
-=========================
-
---- ROZDANIE #52 ---
-Kontrakt: GORSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Jakub] zagrywa: Walet Czerwien
-[Przeciwnik1] zagrywa: Dziewiatka Czerwien
-[Nasz] zagrywa: As Czerwien
-[Przeciwnik2] zagrywa: Dziesiatka Czerwien
-
--- Lewa #2 --
-[Nasz] zagrywa: Walet Zoladz
-[Przeciwnik2] zagrywa: As Zoladz
-[Jakub] zagrywa: Dama Zoladz
-[Przeciwnik1] zagrywa: Dziesiatka Zoladz
-
--- Lewa #3 --
-[Przeciwnik2] zagrywa: Krol Zoladz
-[Jakub] zagrywa: Dziewiatka Zoladz
-[Przeciwnik1] zagrywa: Dziesiatka Wino
-[Nasz] zagrywa: Walet Dzwonek
-
--- Lewa #4 --
-[Przeciwnik2] zagrywa: Krol Wino
-[Jakub] zagrywa: Krol Dzwonek
-[Przeciwnik1] zagrywa: Walet Wino
-[Nasz] zagrywa: Dziewiatka Wino
-
--- Lewa #5 --
-[Przeciwnik2] zagrywa: Dama Wino
-[Jakub] zagrywa: Dama Czerwien
-[Przeciwnik1] zagrywa: Dziewiatka Dzwonek
-[Nasz] zagrywa: Dama Dzwonek
-
--- Lewa #6 --
-[Przeciwnik2] zagrywa: As Wino
-[Jakub] zagrywa: Dziesiatka Dzwonek
-[Przeciwnik1] zagrywa: Krol Czerwien
-[Nasz] zagrywa: As Dzwonek
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 23 - 97 Oni
-=========================
-
---- ROZDANIE #53 ---
-Kontrakt: LEPSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik1] zagrywa: Walet Dzwonek
-[Nasz] zagrywa: Dziesiatka Dzwonek
-[Przeciwnik2] zagrywa: Dziewiatka Dzwonek
-[Jakub] zagrywa: Krol Dzwonek
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez przeciwnika
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 16 - 0 Oni
-=========================
-
---- ROZDANIE #54 ---
-Kontrakt: GORSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Nasz] zagrywa: Dama Zoladz
-[Przeciwnik2] zagrywa: Krol Zoladz
-[Jakub] zagrywa: Dziewiatka Zoladz
-[Przeciwnik1] zagrywa: Dziesiatka Zoladz
-
--- Lewa #2 --
-[Przeciwnik1] zagrywa: Dziewiatka Czerwien
-[Nasz] zagrywa: Dziesiatka Czerwien
-[Przeciwnik2] zagrywa: Dama Czerwien
-[Jakub] zagrywa: Walet Czerwien
-
--- Lewa #3 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: wzięcie lewy przez gracza Nasz
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 15 - 17 Oni
-=========================
-
---- ROZDANIE #55 ---
-Kontrakt: NORMALNA, Atut: ZOLADZ
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik2] zagrywa: Dama Wino
-[Jakub] zagrywa: As Wino
-[Przeciwnik1] zagrywa: Walet Wino
-[Nasz] zagrywa: Krol Wino
-
--- Lewa #2 --
-[Jakub] zagrywa: Dziesiatka Dzwonek
-[Przeciwnik1] zagrywa: Walet Dzwonek
-[Nasz] zagrywa: Dama Dzwonek
-[Przeciwnik2] zagrywa: As Dzwonek
-
--- Lewa #3 --
-[Przeciwnik2] zagrywa: Dziewiatka Wino
-[Jakub] zagrywa: Krol Zoladz
-[Przeciwnik1] zagrywa: As Zoladz
-[Nasz] zagrywa: Dziesiatka Zoladz
-
--- Lewa #4 --
-[Przeciwnik1] zagrywa: Dziewiatka Czerwien
-[Nasz] zagrywa: Krol Czerwien
-[Przeciwnik2] zagrywa: As Czerwien
-[Jakub] zagrywa: Dama Czerwien
-
--- Lewa #5 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: osiągnięcie 69 punktów
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 20 - 69 Oni
-=========================
-
---- ROZDANIE #56 ---
-Kontrakt: LEPSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Jakub] zagrywa: Dama Dzwonek
-[Przeciwnik1] zagrywa: Krol Dzwonek
-[Nasz] zagrywa: Dziesiatka Dzwonek
-[Przeciwnik2] zagrywa: Krol Wino
-
--- Lewa #2 --
-[Nasz] zagrywa: Krol Czerwien
-[Przeciwnik2] zagrywa: Walet Czerwien
-[Jakub] zagrywa: Dziewiatka Czerwien
-[Przeciwnik1] zagrywa: As Czerwien
-
--- Lewa #3 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez przeciwnika
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 21 - 17 Oni
-=========================
-
---- ROZDANIE #57 ---
-Kontrakt: GORSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik1] zagrywa: Dziewiatka Czerwien
-[Nasz] zagrywa: Krol Czerwien
-[Przeciwnik2] zagrywa: Dama Czerwien
-[Jakub] zagrywa: Walet Czerwien
-
--- Lewa #2 --
-[Nasz] zagrywa: Dziewiatka Wino
-[Przeciwnik2] zagrywa: As Wino
-[Jakub] zagrywa: As Zoladz
-[Przeciwnik1] zagrywa: Dama Wino
-
--- Lewa #3 --
-[Przeciwnik2] zagrywa: Walet Dzwonek
-[Jakub] zagrywa: Dziesiatka Dzwonek
-[Przeciwnik1] zagrywa: Dziewiatka Dzwonek
-[Nasz] zagrywa: As Dzwonek
-
--- Lewa #4 --
-[Nasz] zagrywa: Walet Wino
-[Przeciwnik2] zagrywa: Dama Dzwonek
-[Jakub] zagrywa: Krol Zoladz
-[Przeciwnik1] zagrywa: Dziesiatka Wino
-
--- Lewa #5 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: wzięcie lewy przez gracza Przeciwnik1
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 32 - 44 Oni
-=========================
-
---- ROZDANIE #58 ---
-Kontrakt: NORMALNA, Atut: CZERWIEN
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Nasz] zagrywa: Dziewiatka Wino
-[Przeciwnik2] zagrywa: Dama Wino
-[Jakub] zagrywa: Krol Wino
-[Przeciwnik1] zagrywa: Krol Czerwien
-
--- Lewa #2 --
-[Przeciwnik1] zagrywa: Walet Zoladz
-[Nasz] zagrywa: Krol Zoladz
-[Przeciwnik2] zagrywa: Dziesiatka Czerwien
-[Jakub] zagrywa: As Zoladz
-
--- Lewa #3 --
-[Przeciwnik2] zagrywa: Walet Dzwonek
-[Jakub] zagrywa: Dziewiatka Dzwonek
-[Przeciwnik1] zagrywa: Dama Dzwonek
-[Nasz] zagrywa: Krol Dzwonek
-
--- Lewa #4 --
-[Nasz] zagrywa: Dziesiatka Wino
-[Przeciwnik2] zagrywa: Walet Wino
-[Jakub] zagrywa: Dama Czerwien
-[Przeciwnik1] zagrywa: As Czerwien
-
--- Lewa #5 --
-[Przeciwnik1] zagrywa: Dama Zoladz
-[Nasz] zagrywa: Dziesiatka Zoladz
-[Przeciwnik2] zagrywa: Dziewiatka Czerwien
-[Jakub] zagrywa: Walet Czerwien
-
--- Lewa #6 --
-[Jakub] zagrywa: As Dzwonek
-[Przeciwnik1] zagrywa: Dziewiatka Zoladz
-[Nasz] zagrywa: As Wino
-[Przeciwnik2] zagrywa: Dziesiatka Dzwonek
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 56 - 64 Oni
-=========================
-
---- ROZDANIE #59 ---
-Kontrakt: BEZ_PYTANIA, Atut: WINO
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik2] zagrywa: Dziesiatka Zoladz
-[Jakub] zagrywa: As Wino
-[Przeciwnik1] zagrywa: Krol Zoladz
-[Nasz] zagrywa: Dama Zoladz
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez gracza Jakub
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 28 - 0 Oni
-=========================
-
---- ROZDANIE #60 ---
-Kontrakt: GORSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Jakub] zagrywa: Walet Zoladz
-[Przeciwnik1] zagrywa: Dziewiatka Czerwien
-[Nasz] zagrywa: Dama Zoladz
-[Przeciwnik2] zagrywa: Dziesiatka Zoladz
-
--- Lewa #2 --
-[Przeciwnik2] zagrywa: Dama Dzwonek
-[Jakub] zagrywa: Dziewiatka Dzwonek
-[Przeciwnik1] zagrywa: Walet Dzwonek
-[Nasz] zagrywa: Dziesiatka Dzwonek
-
--- Lewa #3 --
-[Nasz] zagrywa: Krol Czerwien
-[Przeciwnik2] zagrywa: Dama Czerwien
-[Jakub] zagrywa: Krol Zoladz
-[Przeciwnik1] zagrywa: As Czerwien
-
--- Lewa #4 --
-[Przeciwnik1] zagrywa: Dziesiatka Czerwien
-[Nasz] zagrywa: Walet Czerwien
-[Przeciwnik2] zagrywa: Dama Wino
-[Jakub] zagrywa: Dziewiatka Zoladz
-
--- Lewa #5 --
-[Przeciwnik1] zagrywa: Dziewiatka Wino
-[Nasz] zagrywa: Dziesiatka Wino
-[Przeciwnik2] zagrywa: Walet Wino
-[Jakub] zagrywa: As Zoladz
-
--- Lewa #6 --
-[Nasz] zagrywa: Krol Wino
-[Przeciwnik2] zagrywa: As Dzwonek
-[Jakub] zagrywa: Krol Dzwonek
-[Przeciwnik1] zagrywa: As Wino
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 38 - 82 Oni
-=========================
-
---- ROZDANIE #61 ---
-Kontrakt: LEPSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik1] zagrywa: Dziewiatka Czerwien
-[Nasz] zagrywa: As Czerwien
-[Przeciwnik2] zagrywa: Krol Czerwien
-[Jakub] zagrywa: Dama Czerwien
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez przeciwnika
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 18 - 0 Oni
-=========================
-
---- ROZDANIE #62 ---
-Kontrakt: BEZ_PYTANIA, Atut: WINO
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Nasz] zagrywa: Dama Zoladz
-[Przeciwnik2] zagrywa: Krol Zoladz
-[Jakub] zagrywa: Walet Zoladz
-[Przeciwnik1] zagrywa: As Zoladz
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez gracza Przeciwnik1
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 0 - 20 Oni
-=========================
-
---- ROZDANIE #63 ---
-Kontrakt: GORSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik2] zagrywa: Walet Czerwien
-[Jakub] zagrywa: Dziewiatka Dzwonek
-[Przeciwnik1] zagrywa: Dziesiatka Dzwonek
-[Nasz] zagrywa: As Czerwien
-
--- Lewa #2 --
-[Nasz] zagrywa: Dama Zoladz
-[Przeciwnik2] zagrywa: Dziesiatka Zoladz
-[Jakub] zagrywa: Krol Zoladz
-[Przeciwnik1] zagrywa: Dziewiatka Zoladz
-
--- Lewa #3 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: wzięcie lewy przez gracza Przeciwnik2
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 23 - 17 Oni
-=========================
-
---- ROZDANIE #64 ---
 Kontrakt: BEZ_PYTANIA, Atut: DZWONEK
 
 --- Rozgrywka ---
 
 -- Lewa #1 --
-[Jakub] zagrywa: Walet Dzwonek
-[Przeciwnik1] zagrywa: Dziesiatka Dzwonek
-[Nasz] zagrywa: Dziewiatka Dzwonek
-[Przeciwnik2] zagrywa: Dama Dzwonek
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez gracza Przeciwnik1
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 0 - 15 Oni
-=========================
-
---- ROZDANIE #65 ---
-Kontrakt: LEPSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik1] zagrywa: Dziewiatka Zoladz
-[Nasz] zagrywa: Dama Zoladz
-[Przeciwnik2] zagrywa: Walet Zoladz
-[Jakub] zagrywa: As Zoladz
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez przeciwnika
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 16 - 0 Oni
-=========================
-
---- ROZDANIE #66 ---
-Kontrakt: LEPSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Nasz] zagrywa: Walet Czerwien
-[Przeciwnik2] zagrywa: Dziesiatka Czerwien
-[Jakub] zagrywa: Dama Czerwien
-[Przeciwnik1] zagrywa: Dziewiatka Czerwien
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez przeciwnika
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 0 - 15 Oni
-=========================
-
---- ROZDANIE #67 ---
-Kontrakt: NORMALNA, Atut: DZWONEK
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik2] zagrywa: Dziesiatka Czerwien
-[Jakub] zagrywa: As Czerwien
-[Przeciwnik1] zagrywa: As Dzwonek
-[Nasz] zagrywa: Dama Czerwien
-
--- Lewa #2 --
-[Przeciwnik1] zagrywa: Dziewiatka Wino
-[Nasz] zagrywa: As Wino
-[Przeciwnik2] zagrywa: Dama Wino
-[Jakub] zagrywa: Dziewiatka Czerwien
-
--- Lewa #3 --
-[Nasz] zagrywa: Dziewiatka Dzwonek
-[Przeciwnik2] zagrywa: Krol Dzwonek
-[Jakub] zagrywa: Walet Zoladz
-[Przeciwnik1] zagrywa: Walet Dzwonek
-
--- Lewa #4 --
-[Przeciwnik2] zagrywa: Dama Zoladz
-[Jakub] zagrywa: Krol Zoladz
-[Przeciwnik1] zagrywa: As Zoladz
-[Nasz] zagrywa: Dziewiatka Zoladz
-
--- Lewa #5 --
-[Przeciwnik1] zagrywa: Dama Dzwonek
-[Nasz] zagrywa: Krol Wino
-[Przeciwnik2] zagrywa: Dziesiatka Wino
-[Jakub] zagrywa: Krol Czerwien
-
--- Lewa #6 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: osiągnięcie 82 punktów
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 14 - 82 Oni
-=========================
-
---- ROZDANIE #68 ---
-Kontrakt: NORMALNA, Atut: WINO
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Jakub] zagrywa: Dziesiatka Zoladz
-[Przeciwnik1] zagrywa: Krol Zoladz
-[Nasz] zagrywa: Walet Zoladz
-[Przeciwnik2] zagrywa: Dama Zoladz
-
--- Lewa #2 --
-[Jakub] zagrywa: Dziewiatka Wino
-[Przeciwnik1] zagrywa: Dziesiatka Wino
-[Nasz] zagrywa: Krol Wino
-[Przeciwnik2] zagrywa: Walet Wino
-
--- Lewa #3 --
-[Przeciwnik1] zagrywa: As Zoladz
-[Nasz] zagrywa: Dziewiatka Zoladz
-[Przeciwnik2] zagrywa: Dama Wino
+[Przeciwnik2] zagrywa: Walet Dzwonek
 [Jakub] zagrywa: Krol Dzwonek
-
--- Lewa #4 --
-[Przeciwnik2] zagrywa: Dama Czerwien
-[Jakub] zagrywa: Krol Czerwien
-[Przeciwnik1] zagrywa: Dziesiatka Czerwien
-[Nasz] zagrywa: Walet Dzwonek
-
--- Lewa #5 --
-[Przeciwnik1] zagrywa: As Wino
-[Nasz] zagrywa: Dziewiatka Dzwonek
-[Przeciwnik2] zagrywa: Dama Dzwonek
-[Jakub] zagrywa: As Dzwonek
-
--- Lewa #6 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: osiągnięcie 78 punktów
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 19 - 78 Oni
-=========================
-
---- ROZDANIE #69 ---
-Kontrakt: NORMALNA, Atut: DZWONEK
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik1] zagrywa: As Dzwonek
-[Nasz] zagrywa: Dama Zoladz
-[Przeciwnik2] zagrywa: Krol Dzwonek
-[Jakub] zagrywa: Dziewiatka Dzwonek
-
--- Lewa #2 --
-[Przeciwnik1] zagrywa: Dziewiatka Zoladz
-[Nasz] zagrywa: Krol Czerwien
-[Przeciwnik2] zagrywa: As Zoladz
-[Jakub] zagrywa: Dziesiatka Zoladz
-
--- Lewa #3 --
-[Przeciwnik2] zagrywa: Krol Wino
-[Jakub] zagrywa: Walet Wino
-[Przeciwnik1] zagrywa: Dama Wino
-[Nasz] zagrywa: Dziesiatka Wino
-
--- Lewa #4 --
-[Nasz] zagrywa: Walet Czerwien
-[Przeciwnik2] zagrywa: Dziewiatka Wino
-[Jakub] zagrywa: Dama Czerwien
-[Przeciwnik1] zagrywa: Dziewiatka Czerwien
-
--- Lewa #5 --
-[Jakub] zagrywa: Dama Dzwonek
 [Przeciwnik1] zagrywa: Dziesiatka Dzwonek
-[Nasz] zagrywa: Dziesiatka Czerwien
-[Przeciwnik2] zagrywa: As Wino
-
--- Lewa #6 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: osiągnięcie 77 punktów
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 24 - 77 Oni
-=========================
-
---- ROZDANIE #70 ---
-Kontrakt: NORMALNA, Atut: WINO
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Nasz] zagrywa: Dama Czerwien
-[Przeciwnik2] zagrywa: Krol Czerwien
-[Jakub] zagrywa: Dziewiatka Czerwien
-[Przeciwnik1] zagrywa: Dziesiatka Czerwien
-
--- Lewa #2 --
-[Przeciwnik1] zagrywa: Dziesiatka Wino
-[Nasz] zagrywa: Krol Wino
-[Przeciwnik2] zagrywa: Dama Wino
-[Jakub] zagrywa: Dziewiatka Wino
-
--- Lewa #3 --
-[Przeciwnik1] zagrywa: As Dzwonek
-[Nasz] zagrywa: Krol Dzwonek
-[Przeciwnik2] zagrywa: As Wino
-[Jakub] zagrywa: Dama Dzwonek
-
--- Lewa #4 --
-[Przeciwnik2] zagrywa: Walet Zoladz
-[Jakub] zagrywa: As Zoladz
-[Przeciwnik1] zagrywa: Dziewiatka Zoladz
-[Nasz] zagrywa: Krol Zoladz
-
--- Lewa #5 --
-[Jakub] zagrywa: Dziewiatka Dzwonek
-[Przeciwnik1] zagrywa: Dziesiatka Dzwonek
-[Nasz] zagrywa: Walet Dzwonek
-[Przeciwnik2] zagrywa: As Czerwien
-
--- Lewa #6 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: osiągnięcie 86 punktów
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 17 - 86 Oni
-=========================
-
---- ROZDANIE #71 ---
-Kontrakt: BEZ_PYTANIA, Atut: WINO
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik2] zagrywa: Dziesiatka Czerwien
-[Jakub] zagrywa: Walet Czerwien
-[Przeciwnik1] zagrywa: As Czerwien
 [Nasz] zagrywa: Dama Zoladz
 
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez gracza Przeciwnik1
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Przeciwnik1 !!!
 
 =========================
 --- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 0 - 26 Oni
+Punkty z kart i meldunków: My 0 - 19 Oni
+Rozdanie wygrywa: Oni
+Przyznane punkty meczowe: 6 (mnożnik: x1)
+OGÓLNY WYNIK MECZU: My 24 - Oni 69
 =========================
 
---- ROZDANIE #72 ---
-Kontrakt: BEZ_PYTANIA, Atut: ZOLADZ
 
---- Rozgrywka ---
-
--- Lewa #1 --
-[Jakub] zagrywa: Dziewiatka Czerwien
-[Przeciwnik1] zagrywa: Krol Czerwien
-[Nasz] zagrywa: Dziesiatka Czerwien
-[Przeciwnik2] zagrywa: As Czerwien
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez gracza Przeciwnik2
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 0 - 25 Oni
-=========================
-
---- ROZDANIE #73 ---
-Kontrakt: BEZ_PYTANIA, Atut: CZERWIEN
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik1] zagrywa: Dziewiatka Czerwien
-[Nasz] zagrywa: Dziesiatka Dzwonek
-[Przeciwnik2] zagrywa: As Czerwien
-[Jakub] zagrywa: Krol Czerwien
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez gracza Przeciwnik2
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 0 - 25 Oni
-=========================
-
---- ROZDANIE #74 ---
-Kontrakt: NORMALNA, Atut: WINO
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Nasz] zagrywa: Krol Dzwonek
-[Przeciwnik2] zagrywa: Krol Wino
-[Jakub] zagrywa: Dama Dzwonek
-[Przeciwnik1] zagrywa: Dziewiatka Dzwonek
-
--- Lewa #2 --
-[Przeciwnik2] zagrywa: Dziesiatka Czerwien
-[Jakub] zagrywa: Dama Czerwien
-[Przeciwnik1] zagrywa: As Czerwien
-[Nasz] zagrywa: Dziewiatka Czerwien
-
--- Lewa #3 --
-[Przeciwnik1] zagrywa: Krol Zoladz
-[Nasz] zagrywa: Dziewiatka Zoladz
-[Przeciwnik2] zagrywa: Walet Zoladz
-[Jakub] zagrywa: As Zoladz
-
--- Lewa #4 --
-[Jakub] zagrywa: As Wino
-[Przeciwnik1] zagrywa: Dziesiatka Zoladz
-[Nasz] zagrywa: Dama Wino
-[Przeciwnik2] zagrywa: Dziesiatka Wino
-
--- Lewa #5 --
-[Jakub] zagrywa: Walet Wino
-[Przeciwnik1] zagrywa: As Dzwonek
-[Nasz] zagrywa: Dziewiatka Wino
-[Przeciwnik2] zagrywa: Dama Zoladz
-
--- Lewa #6 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: osiągnięcie 67 punktów
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 67 - 35 Oni
-=========================
-
---- ROZDANIE #75 ---
-Kontrakt: GORSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik2] zagrywa: Walet Czerwien
-[Jakub] zagrywa: Dama Czerwien
-[Przeciwnik1] zagrywa: Krol Czerwien
-[Nasz] zagrywa: Dziesiatka Czerwien
-
--- Lewa #2 --
-[Nasz] zagrywa: Walet Wino
-[Przeciwnik2] zagrywa: Dama Wino
-[Jakub] zagrywa: Dziesiatka Wino
-[Przeciwnik1] zagrywa: Dama Dzwonek
-
--- Lewa #3 --
-[Jakub] zagrywa: As Wino
-[Przeciwnik1] zagrywa: Dziesiatka Zoladz
-[Nasz] zagrywa: Dziewiatka Wino
-[Przeciwnik2] zagrywa: Krol Wino
-
--- Lewa #4 --
-[Jakub] zagrywa: Walet Zoladz
-[Przeciwnik1] zagrywa: Dama Zoladz
-[Nasz] zagrywa: As Czerwien
-[Przeciwnik2] zagrywa: Krol Zoladz
-
--- Lewa #5 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: wzięcie lewy przez gracza Przeciwnik2
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 62 - 20 Oni
-=========================
-
---- ROZDANIE #76 ---
-Kontrakt: BEZ_PYTANIA, Atut: ZOLADZ
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Jakub] zagrywa: Walet Zoladz
-[Przeciwnik1] zagrywa: Dziewiatka Zoladz
-[Nasz] zagrywa: Walet Wino
-[Przeciwnik2] zagrywa: Krol Zoladz
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez gracza Przeciwnik2
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 0 - 8 Oni
-=========================
-
---- ROZDANIE #77 ---
-Kontrakt: BEZ_PYTANIA, Atut: CZERWIEN
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik1] zagrywa: Walet Dzwonek
-[Nasz] zagrywa: Dziesiatka Czerwien
-[Przeciwnik2] zagrywa: Krol Dzwonek
-[Jakub] zagrywa: Dama Dzwonek
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez gracza Nasz
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 19 - 0 Oni
-=========================
-
---- ROZDANIE #78 ---
-Kontrakt: LEPSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Nasz] zagrywa: As Zoladz
-[Przeciwnik2] zagrywa: Walet Zoladz
-[Jakub] zagrywa: Dziesiatka Zoladz
-[Przeciwnik1] zagrywa: Dama Dzwonek
-
--- Lewa #2 --
-[Nasz] zagrywa: Krol Zoladz
-[Przeciwnik2] zagrywa: Dziesiatka Czerwien
-[Jakub] zagrywa: Dziesiatka Dzwonek
-[Przeciwnik1] zagrywa: Dziewiatka Dzwonek
-
--- Lewa #3 --
-[Nasz] zagrywa: As Wino
-[Przeciwnik2] zagrywa: Walet Wino
-[Jakub] zagrywa: Dama Wino
-[Przeciwnik1] zagrywa: Dziewiatka Wino
-
--- Lewa #4 --
-[Nasz] zagrywa: Dama Zoladz
-[Przeciwnik2] zagrywa: As Dzwonek
-[Jakub] zagrywa: As Czerwien
-[Przeciwnik1] zagrywa: Walet Dzwonek
-
--- Lewa #5 --
-[Nasz] zagrywa: Dama Czerwien
-[Przeciwnik2] zagrywa: Krol Czerwien
-[Jakub] zagrywa: Dziewiatka Czerwien
-[Przeciwnik1] zagrywa: Krol Wino
-
--- Lewa #6 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez przeciwnika
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 93 - 11 Oni
-=========================
-
---- ROZDANIE #79 ---
-Kontrakt: BEZ_PYTANIA, Atut: CZERWIEN
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik2] zagrywa: Dziewiatka Wino
-[Jakub] zagrywa: Walet Wino
-[Przeciwnik1] zagrywa: Dama Wino
-[Nasz] zagrywa: Dziesiatka Wino
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez gracza Nasz
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 15 - 0 Oni
-=========================
-
---- ROZDANIE #80 ---
-Kontrakt: BEZ_PYTANIA, Atut: DZWONEK
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Jakub] zagrywa: Dziesiatka Zoladz
-[Przeciwnik1] zagrywa: Walet Zoladz
-[Nasz] zagrywa: Dama Zoladz
-[Przeciwnik2] zagrywa: Dziewiatka Dzwonek
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez gracza Przeciwnik2
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 0 - 15 Oni
-=========================
-
---- ROZDANIE #81 ---
-Kontrakt: NORMALNA, Atut: WINO
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik1] zagrywa: Dziesiatka Czerwien
-[Nasz] zagrywa: Dama Czerwien
-[Przeciwnik2] zagrywa: As Wino
-[Jakub] zagrywa: Dziewiatka Czerwien
-
--- Lewa #2 --
-[Przeciwnik2] zagrywa: Dama Zoladz
-[Jakub] zagrywa: Dziesiatka Zoladz
-[Przeciwnik1] zagrywa: Walet Zoladz
-[Nasz] zagrywa: Krol Zoladz
-
--- Lewa #3 --
-[Jakub] zagrywa: Dziewiatka Wino
-[Przeciwnik1] zagrywa: Dziesiatka Wino
-[Nasz] zagrywa: Krol Wino
-[Przeciwnik2] zagrywa: Dama Wino
-
--- Lewa #4 --
-[Przeciwnik1] zagrywa: Walet Czerwien
-[Nasz] zagrywa: Krol Czerwien
-[Przeciwnik2] zagrywa: Walet Dzwonek
-[Jakub] zagrywa: As Czerwien
-
--- Lewa #5 --
-[Jakub] zagrywa: Dama Dzwonek
-[Przeciwnik1] zagrywa: Krol Dzwonek
-[Nasz] zagrywa: Dziesiatka Dzwonek
-[Przeciwnik2] zagrywa: As Zoladz
-
--- Lewa #6 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: osiągnięcie 66 punktów
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 66 - 41 Oni
-=========================
-
---- ROZDANIE #82 ---
-Kontrakt: LEPSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Nasz] zagrywa: Dziewiatka Wino
-[Przeciwnik2] zagrywa: Dziesiatka Wino
-[Jakub] zagrywa: Walet Wino
-[Przeciwnik1] zagrywa: As Wino
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez przeciwnika
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 0 - 23 Oni
-=========================
-
---- ROZDANIE #83 ---
-Kontrakt: GORSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik2] zagrywa: As Wino
-[Jakub] zagrywa: Dziewiatka Wino
-[Przeciwnik1] zagrywa: Walet Wino
-[Nasz] zagrywa: Dziesiatka Wino
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: wzięcie lewy przez gracza Przeciwnik2
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 0 - 23 Oni
-=========================
-
---- ROZDANIE #84 ---
-Kontrakt: GORSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Jakub] zagrywa: Walet Czerwien
-[Przeciwnik1] zagrywa: Krol Zoladz
-[Nasz] zagrywa: Krol Czerwien
-[Przeciwnik2] zagrywa: Dziesiatka Zoladz
-
--- Lewa #2 --
-[Nasz] zagrywa: As Dzwonek
-[Przeciwnik2] zagrywa: Dziesiatka Dzwonek
-[Jakub] zagrywa: Walet Dzwonek
-[Przeciwnik1] zagrywa: Dziewiatka Dzwonek
-
--- Lewa #3 --
-[Nasz] zagrywa: Walet Zoladz
-[Przeciwnik2] zagrywa: Dziewiatka Zoladz
-[Jakub] zagrywa: Dama Czerwien
-[Przeciwnik1] zagrywa: Dama Zoladz
-
--- Lewa #4 --
-[Przeciwnik1] zagrywa: Walet Wino
-[Nasz] zagrywa: Krol Wino
-[Przeciwnik2] zagrywa: Dziesiatka Wino
-[Jakub] zagrywa: Dziesiatka Czerwien
-
--- Lewa #5 --
-[Przeciwnik2] zagrywa: As Zoladz
-[Jakub] zagrywa: Krol Dzwonek
-[Przeciwnik1] zagrywa: As Wino
-[Nasz] zagrywa: As Czerwien
-
--- Lewa #6 --
-[Przeciwnik2] zagrywa: Dama Wino
-[Jakub] zagrywa: Dziewiatka Czerwien
-[Przeciwnik1] zagrywa: Dziewiatka Wino
-[Nasz] zagrywa: Dama Dzwonek
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 43 - 77 Oni
-=========================
-
---- ROZDANIE #85 ---
-Kontrakt: GORSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik1] zagrywa: Dama Dzwonek
-[Nasz] zagrywa: Dziewiatka Dzwonek
-[Przeciwnik2] zagrywa: As Dzwonek
-[Jakub] zagrywa: Dziesiatka Dzwonek
-
--- Lewa #2 --
-[Przeciwnik2] zagrywa: As Zoladz
-[Jakub] zagrywa: Dziesiatka Zoladz
-[Przeciwnik1] zagrywa: Dama Zoladz
-[Nasz] zagrywa: Dziewiatka Zoladz
-
--- Lewa #3 --
-[Przeciwnik2] zagrywa: Walet Dzwonek
-[Jakub] zagrywa: Walet Zoladz
-[Przeciwnik1] zagrywa: Krol Dzwonek
-[Nasz] zagrywa: Dziesiatka Czerwien
-
--- Lewa #4 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: wzięcie lewy przez gracza Przeciwnik1
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 0 - 66 Oni
-=========================
-
---- ROZDANIE #86 ---
-Kontrakt: GORSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Nasz] zagrywa: Walet Wino
-[Przeciwnik2] zagrywa: Krol Wino
-[Jakub] zagrywa: As Wino
-[Przeciwnik1] zagrywa: Dziewiatka Wino
-
--- Lewa #2 --
-[Jakub] zagrywa: Walet Dzwonek
-[Przeciwnik1] zagrywa: Dziesiatka Dzwonek
-[Nasz] zagrywa: Krol Dzwonek
-[Przeciwnik2] zagrywa: Dziewiatka Dzwonek
-
--- Lewa #3 --
-[Przeciwnik1] zagrywa: Krol Czerwien
-[Nasz] zagrywa: Dama Zoladz
-[Przeciwnik2] zagrywa: Walet Czerwien
-[Jakub] zagrywa: Dama Czerwien
-
--- Lewa #4 --
-[Przeciwnik1] zagrywa: Dama Wino
-[Nasz] zagrywa: Dziesiatka Wino
-[Przeciwnik2] zagrywa: Dziewiatka Czerwien
-[Jakub] zagrywa: Walet Zoladz
-
--- Lewa #5 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: wzięcie lewy przez gracza Nasz
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 32 - 28 Oni
-=========================
-
---- ROZDANIE #87 ---
-Kontrakt: NORMALNA, Atut: ZOLADZ
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik2] zagrywa: Dziewiatka Czerwien
-[Jakub] zagrywa: As Czerwien
-[Przeciwnik1] zagrywa: Dziesiatka Czerwien
-[Nasz] zagrywa: Walet Czerwien
-
--- Lewa #2 --
-[Jakub] zagrywa: Dama Dzwonek
-[Przeciwnik1] zagrywa: As Dzwonek
-[Nasz] zagrywa: Walet Dzwonek
-[Przeciwnik2] zagrywa: Dziesiatka Zoladz
-
--- Lewa #3 --
-[Przeciwnik2] zagrywa: Dama Wino
-[Jakub] zagrywa: Krol Wino
-[Przeciwnik1] zagrywa: As Wino
-[Nasz] zagrywa: Dziesiatka Wino
-
--- Lewa #4 --
-[Przeciwnik1] zagrywa: Dama Czerwien (MELDUNEK! +20 pkt)
-[Nasz] zagrywa: Dama Zoladz
-[Przeciwnik2] zagrywa: Krol Zoladz
-[Jakub] zagrywa: Walet Wino
-
--- Lewa #5 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: osiągnięcie 86 punktów
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 23 - 86 Oni
-=========================
-
---- ROZDANIE #88 ---
-Kontrakt: BEZ_PYTANIA, Atut: WINO
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Jakub] zagrywa: As Czerwien
-[Przeciwnik1] zagrywa: As Wino
-[Nasz] zagrywa: Dziewiatka Czerwien
-[Przeciwnik2] zagrywa: Dama Czerwien
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez gracza Przeciwnik1
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 0 - 25 Oni
-=========================
-
---- ROZDANIE #89 ---
-Kontrakt: BEZ_PYTANIA, Atut: DZWONEK
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik1] zagrywa: Dziesiatka Dzwonek
-[Nasz] zagrywa: Walet Dzwonek
-[Przeciwnik2] zagrywa: As Wino
-[Jakub] zagrywa: Krol Dzwonek
-
--- Lewa #2 --
-[Przeciwnik1] zagrywa: Dama Wino
-[Nasz] zagrywa: As Dzwonek
-[Przeciwnik2] zagrywa: Krol Wino
-[Jakub] zagrywa: Dziesiatka Wino
-
--- Lewa #3 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez gracza Nasz
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 28 - 27 Oni
-=========================
-
---- ROZDANIE #90 ---
-Kontrakt: BEZ_PYTANIA, Atut: CZERWIEN
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Nasz] zagrywa: Dziewiatka Czerwien
-[Przeciwnik2] zagrywa: Krol Wino
-[Jakub] zagrywa: Walet Czerwien
-[Przeciwnik1] zagrywa: Dziesiatka Czerwien
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez gracza Przeciwnik1
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 0 - 16 Oni
-=========================
-
---- ROZDANIE #91 ---
-Kontrakt: LEPSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik2] zagrywa: As Czerwien
-[Jakub] zagrywa: Dziesiatka Czerwien
-[Przeciwnik1] zagrywa: Krol Czerwien
-[Nasz] zagrywa: Walet Czerwien
-
--- Lewa #2 --
-[Przeciwnik2] zagrywa: Dziesiatka Wino
-[Jakub] zagrywa: Dama Wino
-[Przeciwnik1] zagrywa: Walet Wino
-[Nasz] zagrywa: As Wino
-
--- Lewa #3 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez przeciwnika
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 26 - 27 Oni
-=========================
-
---- ROZDANIE #92 ---
-Kontrakt: BEZ_PYTANIA, Atut: ZOLADZ
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Jakub] zagrywa: Krol Zoladz (MELDUNEK! +40 pkt)
-[Przeciwnik1] zagrywa: Walet Zoladz
-[Nasz] zagrywa: Dziewiatka Zoladz
-[Przeciwnik2] zagrywa: Dama Wino
-
--- Lewa #2 --
-[Jakub] zagrywa: Dziesiatka Wino
-[Przeciwnik1] zagrywa: Krol Wino
-[Nasz] zagrywa: Dama Czerwien
-[Przeciwnik2] zagrywa: Dziewiatka Wino
-
--- Lewa #3 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: osiągnięcie 66 punktów
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 66 - 0 Oni
-=========================
-
---- ROZDANIE #93 ---
-Kontrakt: NORMALNA, Atut: ZOLADZ
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik1] zagrywa: Dziewiatka Zoladz
-[Nasz] zagrywa: Dama Dzwonek
-[Przeciwnik2] zagrywa: Dama Zoladz
-[Jakub] zagrywa: Dziesiatka Zoladz
-
--- Lewa #2 --
-[Jakub] zagrywa: Dziesiatka Dzwonek
-[Przeciwnik1] zagrywa: As Dzwonek
-[Nasz] zagrywa: Dziesiatka Czerwien
-[Przeciwnik2] zagrywa: Krol Dzwonek
-
--- Lewa #3 --
-[Przeciwnik1] zagrywa: Walet Zoladz
-[Nasz] zagrywa: As Wino
-[Przeciwnik2] zagrywa: As Zoladz
-[Jakub] zagrywa: Krol Zoladz
-
--- Lewa #4 --
-[Przeciwnik2] zagrywa: Dziewiatka Czerwien
-[Jakub] zagrywa: As Czerwien
-[Przeciwnik1] zagrywa: Krol Wino
-[Nasz] zagrywa: Dama Czerwien
-
--- Lewa #5 --
-[Jakub] zagrywa: Dziewiatka Dzwonek
-[Przeciwnik1] zagrywa: Dziewiatka Wino
-[Nasz] zagrywa: Dama Wino
-[Przeciwnik2] zagrywa: Walet Dzwonek
-
--- Lewa #6 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: osiągnięcie 68 punktów
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 34 - 68 Oni
-=========================
-
---- ROZDANIE #94 ---
-Kontrakt: LEPSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Nasz] zagrywa: Dziewiatka Zoladz
-[Przeciwnik2] zagrywa: Walet Dzwonek
-[Jakub] zagrywa: Dama Czerwien
-[Przeciwnik1] zagrywa: Dama Zoladz
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez przeciwnika
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 0 - 8 Oni
-=========================
-
---- ROZDANIE #95 ---
-Kontrakt: LEPSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik2] zagrywa: Dama Dzwonek
-[Jakub] zagrywa: Dziesiatka Dzwonek
-[Przeciwnik1] zagrywa: Dziewiatka Wino
-[Nasz] zagrywa: Krol Dzwonek
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez przeciwnika
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 17 - 0 Oni
-=========================
-
---- ROZDANIE #96 ---
-Kontrakt: GORSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Jakub] zagrywa: Dama Zoladz
-[Przeciwnik1] zagrywa: Dziewiatka Zoladz
-[Nasz] zagrywa: Dziesiatka Wino
-[Przeciwnik2] zagrywa: Krol Zoladz
-
--- Lewa #2 --
-[Przeciwnik2] zagrywa: Dama Czerwien
-[Jakub] zagrywa: Dziesiatka Czerwien
-[Przeciwnik1] zagrywa: Dziewiatka Czerwien
-[Nasz] zagrywa: Walet Czerwien
-
--- Lewa #3 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: wzięcie lewy przez gracza Jakub
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 15 - 17 Oni
-=========================
-
---- ROZDANIE #97 ---
-Kontrakt: NORMALNA, Atut: CZERWIEN
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik1] zagrywa: Dziesiatka Czerwien
-[Nasz] zagrywa: Krol Czerwien
-[Przeciwnik2] zagrywa: Walet Czerwien
-[Jakub] zagrywa: Dama Zoladz
-
--- Lewa #2 --
-[Przeciwnik1] zagrywa: As Czerwien
-[Nasz] zagrywa: Dziewiatka Czerwien
-[Przeciwnik2] zagrywa: Dama Czerwien
-[Jakub] zagrywa: Walet Wino
-
--- Lewa #3 --
-[Przeciwnik1] zagrywa: As Dzwonek
-[Nasz] zagrywa: Krol Dzwonek
-[Przeciwnik2] zagrywa: Walet Dzwonek
-[Jakub] zagrywa: Dziesiatka Dzwonek
-
--- Lewa #4 --
-[Przeciwnik1] zagrywa: Walet Zoladz
-[Nasz] zagrywa: Dziewiatka Wino
-[Przeciwnik2] zagrywa: Krol Wino
-[Jakub] zagrywa: Dziesiatka Zoladz
-
--- Lewa #5 --
-[Jakub] zagrywa: Krol Zoladz
-[Przeciwnik1] zagrywa: As Zoladz
-[Nasz] zagrywa: Dziesiatka Wino
-[Przeciwnik2] zagrywa: Dama Dzwonek
-
--- Lewa #6 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: osiągnięcie 90 punktów
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 16 - 90 Oni
-=========================
-
---- ROZDANIE #98 ---
-Kontrakt: LEPSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Nasz] zagrywa: Krol Czerwien
-[Przeciwnik2] zagrywa: As Czerwien
-[Jakub] zagrywa: Dziesiatka Zoladz
-[Przeciwnik1] zagrywa: Dama Czerwien
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez przeciwnika
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 0 - 28 Oni
-=========================
-
---- ROZDANIE #99 ---
-Kontrakt: BEZ_PYTANIA, Atut: ZOLADZ
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik2] zagrywa: Dziesiatka Dzwonek
-[Jakub] zagrywa: Krol Dzwonek
-[Przeciwnik1] zagrywa: As Dzwonek
-[Nasz] zagrywa: Dama Dzwonek
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: przejęcie lewy przez gracza Przeciwnik1
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 0 - 28 Oni
-=========================
-
---- ROZDANIE #100 ---
-Kontrakt: GORSZA, Atut: Brak
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Jakub] zagrywa: As Zoladz
-[Przeciwnik1] zagrywa: Krol Zoladz
-[Nasz] zagrywa: As Dzwonek
-[Przeciwnik2] zagrywa: Dziesiatka Zoladz
-
--- Lewa #2 --
-
-!!! Rozdanie zakończone przed czasem !!!
-Powód: wzięcie lewy przez gracza Jakub
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty: My 36 - 0 Oni
-=========================
-
+##############################
+!!! KONIEC GRY !!!
+Mecz wygrywa drużyna: Oni
+OSTATECZNY WYNIK: My 24 - 69 69
+##############################
