@@ -173,15 +173,15 @@ class Rozdanie:
         zwyciezca_lewy = zwyciezca_pary[0]
         punkty_w_lewie = sum(karta.wartosc for _, karta in self.aktualna_lewa)
         
-        # Przypisz punkty i karty do zwycięzcy
         self.punkty_w_rozdaniu[zwyciezca_lewy.druzyna.nazwa] += punkty_w_lewie
         zwyciezca_lewy.wygrane_karty.extend([karta for _, karta in self.aktualna_lewa])
         
-        # Wyczyść stół i ustaw kolej na zwycięzcę
         self.aktualna_lewa.clear()
         self.kolej_gracza_idx = self.gracze.index(zwyciezca_lewy)
         
-        # Zwracamy zwycięzcę i punkty, aby móc je wyświetlić w teście
+        # TODO: W przyszłości dodamy tu sprawdzanie, czy rozdanie się nie zakończyło
+        # (np. osiągnięcie 66 pkt, przegranie kontraktu Lepsza/Gorsza)
+        
         return zwyciezca_lewy, punkty_w_lewie
 
     def zagraj_karte(self, gracz: Gracz, karta: Karta):
