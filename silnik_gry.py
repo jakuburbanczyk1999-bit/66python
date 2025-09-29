@@ -155,11 +155,17 @@ class Rozdanie:
         druzyna_wygrana.punkty_meczu += punkty_meczu
         return druzyna_wygrana, punkty_meczu, mnoznik
     def przeprowadz_licytacje(self, wybrany_kontrakt: Kontrakt, wybrany_atut: Optional[Kolor]):
+        """Ustawia stan gry na podstawie ZEWNĘTRZNEJ decyzji licytacyjnej."""
+        # Ta metoda już niczego nie losuje - jest tylko wykonawcą.
         self.grajacy = self.gracze[(self.rozdajacy_idx + 1) % 4]
+        
         self.kontrakt = wybrany_kontrakt
         self.atut = wybrany_atut
-        if self.kontrakt in [Kontrakt.GORSZA, Kontrakt.LEPSZA]: self.atut = None
-        self.stawka = 1
+        
+        if self.kontrakt in [Kontrakt.GORSZA, Kontrakt.LEPSZA] and self.atut is not None:
+            self.atut = None
+            
+        self.stawka = 1 # Na razie uproszczone
         self.kolej_gracza_idx = self.gracze.index(self.grajacy)
         
     def _waliduj_ruch(self, gracz: Gracz, karta: Karta) -> bool:
