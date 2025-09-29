@@ -1,105 +1,300 @@
 --- ROZDANIE #1 ---
-Rozdającym był: Jakub
-Wygrał licytację: Przeciwnik1
-Ustalony kontrakt: NORMALNA
-Kolor atutowy: ZOLADZ
+Rozdającym był: Jakub, Wygrał licytację: Przeciwnik1
+Kontrakt: GORSZA, Atut: Brak
 
 --- Rozgrywka: Pierwsza lewa ---
-[Przeciwnik1] zagrywa: Dziesiatka Wino
-[Nasz] zagrywa: Dziewiatka Czerwien
-[Przeciwnik2] zagrywa: As Zoladz
-[Jakub] zagrywa: Dama Wino
+[Przeciwnik1] zagrywa: Dziewiatka Zoladz
+[Nasz] zagrywa: Dziesiatka Zoladz
+[Przeciwnik2] zagrywa: Krol Zoladz
+[Jakub] zagrywa: As Zoladz
 
 --- Stan po pierwszej lewie ---
-Punkty w rozdaniu: My 0 - 24 Oni
-Gracz 'Jakub' ma 5 kart w ręku i 0 wygranych kart.
-Gracz 'Przeciwnik1' ma 5 kart w ręku i 0 wygranych kart.
-Gracz 'Nasz' ma 5 kart w ręku i 0 wygranych kart.
-Gracz 'Przeciwnik2' ma 5 kart w ręku i 4 wygranych kart.
-Następną lewę rozpoczyna: Przeciwnik2
+Punkty w rozdaniu: My 25 - 0 Oni
+Następną lewę rozpoczyna: Jakub
 -------------------------
 
 --- ROZDANIE #2 ---
-Rozdającym był: Przeciwnik1
-Wygrał licytację: Nasz
-Ustalony kontrakt: GORSZA
-Kolor atutowy: Brak
+Rozdającym był: Przeciwnik1, Wygrał licytację: Nasz
+Kontrakt: GORSZA, Atut: Brak
 
 --- Rozgrywka: Pierwsza lewa ---
-[Nasz] zagrywa: As Dzwonek
-[Przeciwnik2] zagrywa: Walet Dzwonek
-[Jakub] zagrywa: Krol Dzwonek
-[Przeciwnik1] zagrywa: Krol Zoladz
+[Nasz] zagrywa: Walet Czerwien
+[Przeciwnik2] zagrywa: As Czerwien
+[Jakub] zagrywa: Krol Zoladz
+[Przeciwnik1] zagrywa: Krol Czerwien
 
 --- Stan po pierwszej lewie ---
-Punkty w rozdaniu: My 21 - 0 Oni
-Gracz 'Jakub' ma 5 kart w ręku i 0 wygranych kart.
-Gracz 'Przeciwnik1' ma 5 kart w ręku i 0 wygranych kart.
-Gracz 'Nasz' ma 5 kart w ręku i 4 wygranych kart.
-Gracz 'Przeciwnik2' ma 5 kart w ręku i 0 wygranych kart.
-Następną lewę rozpoczyna: Nasz
+Punkty w rozdaniu: My 0 - 21 Oni
+Następną lewę rozpoczyna: Przeciwnik2
 -------------------------
 
 --- ROZDANIE #3 ---
-Rozdającym był: Nasz
-Wygrał licytację: Przeciwnik2
-Ustalony kontrakt: LEPSZA
-Kolor atutowy: Brak
+Rozdającym był: Nasz, Wygrał licytację: Przeciwnik2
+Kontrakt: BEZ_PYTANIA, Atut: ZOLADZ
 
 --- Rozgrywka: Pierwsza lewa ---
-[Przeciwnik2] zagrywa: Walet Zoladz
-[Jakub] zagrywa: As Czerwien
-[Przeciwnik1] zagrywa: Krol Czerwien
+[Przeciwnik2] zagrywa: Dama Zoladz
+[Jakub] zagrywa: Krol Wino
+[Przeciwnik1] zagrywa: Dziesiatka Zoladz
 [Nasz] zagrywa: Dziewiatka Zoladz
 
 --- Stan po pierwszej lewie ---
 Punkty w rozdaniu: My 0 - 17 Oni
-Gracz 'Jakub' ma 5 kart w ręku i 0 wygranych kart.
-Gracz 'Przeciwnik1' ma 5 kart w ręku i 0 wygranych kart.
-Gracz 'Nasz' ma 5 kart w ręku i 0 wygranych kart.
-Gracz 'Przeciwnik2' ma 5 kart w ręku i 4 wygranych kart.
-Następną lewę rozpoczyna: Przeciwnik2
+Następną lewę rozpoczyna: Przeciwnik1
 -------------------------
 
 --- ROZDANIE #4 ---
-Rozdającym był: Przeciwnik2
-Wygrał licytację: Jakub
-Ustalony kontrakt: GORSZA
-Kolor atutowy: Brak
+Rozdającym był: Przeciwnik2, Wygrał licytację: Jakub
+Kontrakt: BEZ_PYTANIA, Atut: WINO
 
 --- Rozgrywka: Pierwsza lewa ---
-[Jakub] zagrywa: Dama Wino
-[Przeciwnik1] zagrywa: Walet Czerwien
-[Nasz] zagrywa: Dziewiatka Wino
-[Przeciwnik2] zagrywa: Krol Zoladz
+[Jakub] zagrywa: As Wino
+[Przeciwnik1] zagrywa: Dziesiatka Wino
+[Nasz] zagrywa: Walet Zoladz
+[Przeciwnik2] zagrywa: Walet Wino
 
 --- Stan po pierwszej lewie ---
-Punkty w rozdaniu: My 9 - 0 Oni
-Gracz 'Jakub' ma 5 kart w ręku i 4 wygranych kart.
-Gracz 'Przeciwnik1' ma 5 kart w ręku i 0 wygranych kart.
-Gracz 'Nasz' ma 5 kart w ręku i 0 wygranych kart.
-Gracz 'Przeciwnik2' ma 5 kart w ręku i 0 wygranych kart.
+Punkty w rozdaniu: My 25 - 0 Oni
 Następną lewę rozpoczyna: Jakub
 -------------------------
 
 --- ROZDANIE #5 ---
-Rozdającym był: Jakub
-Wygrał licytację: Przeciwnik1
-Ustalony kontrakt: LEPSZA
-Kolor atutowy: Brak
+Rozdającym był: Jakub, Wygrał licytację: Przeciwnik1
+Kontrakt: LEPSZA, Atut: Brak
 
 --- Rozgrywka: Pierwsza lewa ---
+[Przeciwnik1] zagrywa: As Dzwonek
+[Nasz] zagrywa: Dama Czerwien
+[Przeciwnik2] zagrywa: Krol Dzwonek
+[Jakub] zagrywa: Walet Dzwonek
+
+--- Stan po pierwszej lewie ---
+Punkty w rozdaniu: My 0 - 20 Oni
+Następną lewę rozpoczyna: Przeciwnik1
+-------------------------
+
+--- ROZDANIE #6 ---
+Rozdającym był: Przeciwnik1, Wygrał licytację: Nasz
+Kontrakt: GORSZA, Atut: Brak
+
+--- Rozgrywka: Pierwsza lewa ---
+[Nasz] zagrywa: Krol Wino
+[Przeciwnik2] zagrywa: Walet Wino
+[Jakub] zagrywa: Dziewiatka Wino
+[Przeciwnik1] zagrywa: As Wino
+
+--- Stan po pierwszej lewie ---
+Punkty w rozdaniu: My 0 - 17 Oni
+Następną lewę rozpoczyna: Przeciwnik1
+-------------------------
+
+--- ROZDANIE #7 ---
+Rozdającym był: Nasz, Wygrał licytację: Przeciwnik2
+Kontrakt: BEZ_PYTANIA, Atut: CZERWIEN
+
+--- Rozgrywka: Pierwsza lewa ---
+[Przeciwnik2] zagrywa: Dziewiatka Czerwien
+[Jakub] zagrywa: Dama Czerwien
+[Przeciwnik1] zagrywa: Dziesiatka Czerwien
+[Nasz] zagrywa: Dama Zoladz
+
+--- Stan po pierwszej lewie ---
+Punkty w rozdaniu: My 0 - 16 Oni
+Następną lewę rozpoczyna: Przeciwnik1
+-------------------------
+
+--- ROZDANIE #8 ---
+Rozdającym był: Przeciwnik2, Wygrał licytację: Jakub
+Kontrakt: NORMALNA, Atut: CZERWIEN
+
+--- Rozgrywka: Pierwsza lewa ---
+[Jakub] zagrywa: Dziewiatka Dzwonek
+[Przeciwnik1] zagrywa: Krol Dzwonek
+[Nasz] zagrywa: Dama Dzwonek
+[Przeciwnik2] zagrywa: Dziesiatka Dzwonek
+
+--- Stan po pierwszej lewie ---
+Punkty w rozdaniu: My 0 - 17 Oni
+Następną lewę rozpoczyna: Przeciwnik2
+-------------------------
+
+--- ROZDANIE #9 ---
+Rozdającym był: Jakub, Wygrał licytację: Przeciwnik1
+Kontrakt: BEZ_PYTANIA, Atut: DZWONEK
+
+--- Rozgrywka: Pierwsza lewa ---
+[Przeciwnik1] zagrywa: Walet Wino
+[Nasz] zagrywa: Dziewiatka Wino
+[Przeciwnik2] zagrywa: Dama Wino
+[Jakub] zagrywa: As Wino
+
+--- Stan po pierwszej lewie ---
+Punkty w rozdaniu: My 16 - 0 Oni
+Następną lewę rozpoczyna: Jakub
+-------------------------
+
+--- ROZDANIE #10 ---
+Rozdającym był: Przeciwnik1, Wygrał licytację: Nasz
+Kontrakt: GORSZA, Atut: Brak
+
+--- Rozgrywka: Pierwsza lewa ---
+[Nasz] zagrywa: Dziewiatka Zoladz
+[Przeciwnik2] zagrywa: Krol Zoladz
+[Jakub] zagrywa: Krol Wino
 [Przeciwnik1] zagrywa: Dama Zoladz
+
+--- Stan po pierwszej lewie ---
+Punkty w rozdaniu: My 0 - 11 Oni
+Następną lewę rozpoczyna: Przeciwnik2
+-------------------------
+
+--- ROZDANIE #11 ---
+Rozdającym był: Nasz, Wygrał licytację: Przeciwnik2
+Kontrakt: BEZ_PYTANIA, Atut: WINO
+
+--- Rozgrywka: Pierwsza lewa ---
+[Przeciwnik2] zagrywa: Dama Dzwonek
+[Jakub] zagrywa: As Dzwonek
+[Przeciwnik1] zagrywa: Walet Dzwonek
+[Nasz] zagrywa: Dziewiatka Dzwonek
+
+--- Stan po pierwszej lewie ---
+Punkty w rozdaniu: My 16 - 0 Oni
+Następną lewę rozpoczyna: Jakub
+-------------------------
+
+--- ROZDANIE #12 ---
+Rozdającym był: Przeciwnik2, Wygrał licytację: Jakub
+Kontrakt: GORSZA, Atut: Brak
+
+--- Rozgrywka: Pierwsza lewa ---
+[Jakub] zagrywa: Dziesiatka Czerwien
+[Przeciwnik1] zagrywa: Dziewiatka Czerwien
 [Nasz] zagrywa: Krol Zoladz
-[Przeciwnik2] zagrywa: Walet Czerwien
+[Przeciwnik2] zagrywa: As Czerwien
+
+--- Stan po pierwszej lewie ---
+Punkty w rozdaniu: My 0 - 25 Oni
+Następną lewę rozpoczyna: Przeciwnik2
+-------------------------
+
+--- ROZDANIE #13 ---
+Rozdającym był: Jakub, Wygrał licytację: Przeciwnik1
+Kontrakt: NORMALNA, Atut: DZWONEK
+
+--- Rozgrywka: Pierwsza lewa ---
+[Przeciwnik1] zagrywa: Walet Czerwien
+[Nasz] zagrywa: Krol Czerwien
+[Przeciwnik2] zagrywa: Dziesiatka Czerwien
+[Jakub] zagrywa: Krol Dzwonek
+
+--- Stan po pierwszej lewie ---
+Punkty w rozdaniu: My 20 - 0 Oni
+Następną lewę rozpoczyna: Jakub
+-------------------------
+
+--- ROZDANIE #14 ---
+Rozdającym był: Przeciwnik1, Wygrał licytację: Nasz
+Kontrakt: LEPSZA, Atut: Brak
+
+--- Rozgrywka: Pierwsza lewa ---
+[Nasz] zagrywa: Dama Dzwonek
+[Przeciwnik2] zagrywa: Walet Dzwonek
+[Jakub] zagrywa: Dziesiatka Dzwonek
+[Przeciwnik1] zagrywa: As Dzwonek
+
+--- Stan po pierwszej lewie ---
+Punkty w rozdaniu: My 0 - 26 Oni
+Następną lewę rozpoczyna: Przeciwnik1
+-------------------------
+
+--- ROZDANIE #15 ---
+Rozdającym był: Nasz, Wygrał licytację: Przeciwnik2
+Kontrakt: BEZ_PYTANIA, Atut: ZOLADZ
+
+--- Rozgrywka: Pierwsza lewa ---
+[Przeciwnik2] zagrywa: Dama Dzwonek
+[Jakub] zagrywa: Dziewiatka Dzwonek
+[Przeciwnik1] zagrywa: Walet Dzwonek
+[Nasz] zagrywa: Krol Dzwonek
+
+--- Stan po pierwszej lewie ---
+Punkty w rozdaniu: My 9 - 0 Oni
+Następną lewę rozpoczyna: Nasz
+-------------------------
+
+--- ROZDANIE #16 ---
+Rozdającym był: Przeciwnik2, Wygrał licytację: Jakub
+Kontrakt: GORSZA, Atut: Brak
+
+--- Rozgrywka: Pierwsza lewa ---
+[Jakub] zagrywa: Dziesiatka Dzwonek
+[Przeciwnik1] zagrywa: Dama Dzwonek
+[Nasz] zagrywa: Dziewiatka Dzwonek
+[Przeciwnik2] zagrywa: Walet Wino
+
+--- Stan po pierwszej lewie ---
+Punkty w rozdaniu: My 15 - 0 Oni
+Następną lewę rozpoczyna: Jakub
+-------------------------
+
+--- ROZDANIE #17 ---
+Rozdającym był: Jakub, Wygrał licytację: Przeciwnik1
+Kontrakt: BEZ_PYTANIA, Atut: ZOLADZ
+
+--- Rozgrywka: Pierwsza lewa ---
+[Przeciwnik1] zagrywa: Dziewiatka Wino
+[Nasz] zagrywa: As Wino
+[Przeciwnik2] zagrywa: Dziesiatka Wino
 [Jakub] zagrywa: Dama Wino
 
 --- Stan po pierwszej lewie ---
-Punkty w rozdaniu: My 12 - 0 Oni
-Gracz 'Jakub' ma 5 kart w ręku i 0 wygranych kart.
-Gracz 'Przeciwnik1' ma 5 kart w ręku i 0 wygranych kart.
-Gracz 'Nasz' ma 5 kart w ręku i 4 wygranych kart.
-Gracz 'Przeciwnik2' ma 5 kart w ręku i 0 wygranych kart.
+Punkty w rozdaniu: My 24 - 0 Oni
 Następną lewę rozpoczyna: Nasz
+-------------------------
+
+--- ROZDANIE #18 ---
+Rozdającym był: Przeciwnik1, Wygrał licytację: Nasz
+Kontrakt: LEPSZA, Atut: Brak
+
+--- Rozgrywka: Pierwsza lewa ---
+[Nasz] zagrywa: Dziesiatka Dzwonek
+[Przeciwnik2] zagrywa: As Dzwonek
+[Jakub] zagrywa: Krol Dzwonek
+[Przeciwnik1] zagrywa: Dama Dzwonek
+
+--- Stan po pierwszej lewie ---
+Punkty w rozdaniu: My 0 - 28 Oni
+Następną lewę rozpoczyna: Przeciwnik2
+-------------------------
+
+--- ROZDANIE #19 ---
+Rozdającym był: Nasz, Wygrał licytację: Przeciwnik2
+Kontrakt: NORMALNA, Atut: ZOLADZ
+
+--- Rozgrywka: Pierwsza lewa ---
+[Przeciwnik2] zagrywa: Dama Dzwonek
+[Jakub] zagrywa: Dziewiatka Dzwonek
+[Przeciwnik1] zagrywa: Krol Dzwonek
+[Nasz] zagrywa: As Zoladz
+
+--- Stan po pierwszej lewie ---
+Punkty w rozdaniu: My 18 - 0 Oni
+Następną lewę rozpoczyna: Nasz
+-------------------------
+
+--- ROZDANIE #20 ---
+Rozdającym był: Przeciwnik2, Wygrał licytację: Jakub
+Kontrakt: LEPSZA, Atut: Brak
+
+--- Rozgrywka: Pierwsza lewa ---
+[Jakub] zagrywa: As Czerwien
+[Przeciwnik1] zagrywa: Walet Czerwien
+[Nasz] zagrywa: Krol Czerwien
+[Przeciwnik2] zagrywa: Dama Czerwien
+
+--- Stan po pierwszej lewie ---
+Punkty w rozdaniu: My 20 - 0 Oni
+Następną lewę rozpoczyna: Jakub
 -------------------------
 

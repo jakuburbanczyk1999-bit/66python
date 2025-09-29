@@ -93,14 +93,11 @@ class Rozdanie:
         self.druzyny = druzyny
         self.rozdajacy_idx = rozdajacy_idx
         self.talia = Talia()
-        
         self.kontrakt: Optional[Kontrakt] = None
         self.grajacy: Optional[Gracz] = None
         self.atut: Optional[Kolor] = None
         self.stawka = 0
-        
         self.punkty_w_rozdaniu = {druzyny[0].nazwa: 0, druzyny[1].nazwa: 0}
-        
         self.kolej_gracza_idx: Optional[int] = None
         self.aktualna_lewa: list[tuple[Gracz, Karta]] = []
 
@@ -125,10 +122,33 @@ class Rozdanie:
         self.kolej_gracza_idx = self.gracze.index(self.grajacy)
         
     def _waliduj_ruch(self, gracz: Gracz, karta: Karta) -> bool:
-        if gracz != self.gracze[self.kolej_gracza_idx]:
-            return False
-        if karta not in gracz.reka:
-            return False
+        """Sprawdza, czy zagranie karty przez gracza jest zgodne z zasadami."""
+        # Podstawowe sprawdzenia
+        if gracz != self.gracze[self.kolej_gracza_idx]: return False
+        if karta not in gracz.reka: return False
+
+        # Jeśli to pierwsza karta w lewie, każdy ruch jest dozwolony
+        if not self.aktualna_lewa:
+            return True
+
+        # Logika dla kolejnych kart w lewie
+        kolor_wiodacy = self.aktualna_lewa[0][1].kolor
+        reka_gracza = gracz.reka
+
+        # 1. Sprawdź obowiązek koloru
+        karty_do_koloru = [k for k in reka_gracza if k.kolor == kolor_wiodacy]
+        if karty_do_koloru:
+            return karta.kolor == kolor_wiodacy
+
+        # 2. Jeśli nie ma koloru, sprawdź obowiązek grania atutem
+        # (Ta zasada nie obowiązuje w kontraktach bez atutu)
+        if self.atut:
+            karty_atutowe = [k for k in reka_gracza if k.kolor == self.atut]
+            if karty_atutowe:
+                return karta.kolor == self.atut
+        
+        # 3. Jeśli gracz nie ma kart do koloru ani atutów (lub nie musi ich użyć),
+        # może zagrać dowolną kartą.
         return True
 
     def _zakoncz_lewe(self):
@@ -165,14 +185,16 @@ class Rozdanie:
         return zwyciezca_lewy, punkty_w_lewie
 
     def zagraj_karte(self, gracz: Gracz, karta: Karta):
-        """Wykonuje ruch zagrania karty i kończy lewę, jeśli to czwarta karta."""
         if not self._waliduj_ruch(gracz, karta):
+            # W przyszłości można tu zgłosić błąd, na razie cicho ignorujemy
+            print(f"BŁĄD: Ruch gracza {gracz} kartą {karta} jest nielegalny!")
             return
 
         gracz.reka.remove(karta)
         self.aktualna_lewa.append((gracz, karta))
-        self.kolej_gracza_idx = (self.kolej_gracza_idx + 1) % 4
         
-        # Jeśli na stole są 4 karty, zakończ lewę
         if len(self.aktualna_lewa) == 4:
             self._zakoncz_lewe()
+        else:
+            # Przekaż kolejkę następnemu graczowi tylko jeśli lewa się nie skończyła
+            self.kolej_gracza_idx = (self.kolej_gracza_idx + 1) % 4
