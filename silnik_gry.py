@@ -87,12 +87,13 @@ class Kontrakt(Enum):
 
 class FazaGry(Enum):
     """Definiuje, w jakim stanie znajduje się aktualnie rozdanie."""
-    PRZED_LICYTACJA = auto()
-    LICYTACJA_1 = auto() # Pierwsza faza licytacji po 3 kartach
-    LICYTACJA_2 = auto() # Faza Pytania po 6 kartach
+    PRZED_ROZDANIEM = auto()
+    DEKLARACJA_1 = auto() # Pierwsza faza licytacji po 3 kartach
+    LICYTACJA = auto() # Faza Pytania po 6 kartach
     LUFA = auto()
     ROZGRYWKA = auto()
     ZAKONCZONE = auto()
+    FAZA_PYTANIA = auto()
 
 STAWKI_KONTRAKTOW = {
     Kontrakt.NORMALNA: 1, # Bazowa stawka, później mnożona przez 1, 2 lub 3
@@ -116,42 +117,100 @@ class Rozdanie:
         self.zwyciezca_rozdania: Optional[Druzyna] = None
         self.powod_zakonczenia: str = ""
         self.zwyciezca_ostatniej_lewy: Optional[Gracz] = None
+        self.faza: FazaGry = FazaGry.PRZED_ROZDANIEM
+        self.historia_licytacji: list[tuple[Gracz, dict]] = []
+        self.pasujacy_gracze: list[Gracz] = []
+
 
     def rozpocznij_nowe_rozdanie(self):
         """Przygotowuje rozdanie do pierwszej decyzji licytacyjnej."""
         self.rozdaj_karty(3)
-        self.faza = FazaGry.LICYTACJA_1
+        self.faza = FazaGry.DEKLARACJA_1
         self.kolej_gracza_idx = (self.rozdajacy_idx + 1) % 4
         
-    def get_mozliwe_akcje_licytacji(self, gracz: Gracz) -> list[dict]:
-        """Zwraca listę wszystkich możliwych do wykonania akcji licytacyjnych."""
-        if self.faza == FazaGry.LICYTACJA_1 and gracz == self.gracze[self.kolej_gracza_idx]:
+    def get_mozliwe_akcje(self, gracz: Gracz) -> list[dict]:
+        """Zwraca listę możliwych do wykonania akcji dla danego gracza."""
+        if gracz != self.gracze[self.kolej_gracza_idx]: return []
+
+        # Akcje w pierwszej deklaracji (bez zmian)
+        if self.faza == FazaGry.DEKLARACJA_1:
             akcje = []
-            # Akcje dla kontraktów z atutem
             for kontrakt in [Kontrakt.NORMALNA, Kontrakt.BEZ_PYTANIA]:
                 for kolor in Kolor:
-                    akcje.append({'typ': 'kontrakt', 'kontrakt': kontrakt, 'atut': kolor})
-            
-            # Akcje dla kontraktów bez atutu
+                    akcje.append({'typ': 'deklaracja', 'kontrakt': kontrakt, 'atut': kolor})
             for kontrakt in [Kontrakt.GORSZA, Kontrakt.LEPSZA]:
-                akcje.append({'typ': 'kontrakt', 'kontrakt': kontrakt, 'atut': None})
-            
+                akcje.append({'typ': 'deklaracja', 'kontrakt': kontrakt, 'atut': None})
             return akcje
+
+        # NOWA LOGIKA: Akcje w Fazie Pytania
+        if self.faza == FazaGry.FAZA_PYTANIA:
+            return [
+                {'typ': 'zmiana_kontraktu', 'kontrakt': Kontrakt.LEPSZA},
+                {'typ': 'zmiana_kontraktu', 'kontrakt': Kontrakt.GORSZA},
+                {'typ': 'zmiana_kontraktu', 'kontrakt': Kontrakt.BEZ_PYTANIA},
+                {'typ': 'pytanie'},
+            ]
+        
+        # TODO: Logika dla LICYTACJI (przebicia)
         return []
 
-    def wykonaj_decyzje_licytacyjna(self, gracz: Gracz, akcja: dict):
-       """Przetwarza decyzję licytacyjną gracza i aktualizuje stan gry."""
-        # TODO: Dodać pełną walidację
-        
-       if akcja['typ'] == 'kontrakt':
+    def wykonaj_akcje(self, gracz: Gracz, akcja: dict):
+        """Przetwarza akcję gracza i aktualizuje stan gry."""
+        self.historia_licytacji.append((gracz, akcja))
+
+        if self.faza == FazaGry.DEKLARACJA_1:
+            if akcja['typ'] == 'deklaracja':
+                self.grajacy = gracz
+                self.kontrakt = akcja['kontrakt']
+                self.atut = akcja.get('atut')
+                
+                self.rozdaj_karty(3)
+                
+                # Warunek przejścia do Fazy Pytania
+                # Na razie pomijamy warunek braku lufy
+                if self.kontrakt == Kontrakt.NORMALNA:
+                    self.faza = FazaGry.FAZA_PYTANIA
+                    # Kolejka wciąż należy do tego samego gracza
+                else:
+                    self.faza = FazaGry.ROZGRYWKA # Inne kontrakty na razie kończą licytację
+                    self.kolej_gracza_idx = self.gracze.index(self.grajacy)
+            
+        elif self.faza == FazaGry.FAZA_PYTANIA:
+            if akcja['typ'] == 'zmiana_kontraktu':
+                self.kontrakt = akcja['kontrakt']
+                if self.kontrakt in [Kontrakt.LEPSZA, Kontrakt.GORSZA]: self.atut = None
+                self.faza = FazaGry.ROZGRYWKA # Koniec licytacji, gramy
+            elif akcja['typ'] == 'pytanie':
+                self.faza = FazaGry.LICYTACJA # Zaczynamy drugą turę licytacji (przebicia)
+                self.kolej_gracza_idx = (self.kolej_gracza_idx + 1) % 4
+    
+
+    def wykonaj_akcje(self, gracz: Gracz, akcja: dict):
+        self.historia_licytacji.append((gracz, akcja))
+
+        if self.faza == FazaGry.DEKLARACJA_1:
             self.grajacy = gracz
             self.kontrakt = akcja['kontrakt']
-            self.atut = akcja.get('atut', None) # Pobierz atut z akcji, jeśli istnieje
+            self.atut = akcja.get('atut')
             
-            # Po decyzji rozdajemy resztę kart i przechodzimy do rozgrywki
-            self.rozdaj_karty(3)
-            self.faza = FazaGry.ROZGRYWKA
-            self.kolej_gracza_idx = self.gracze.index(self.grajacy)    
+            self.rozdaj_karty(3) # Dajemy resztę kart
+            
+            # Sprawdzamy, czy przechodzimy do Fazy Pytania
+            if self.kontrakt == Kontrakt.NORMALNA: # Na razie pomijamy warunek lufy
+                self.faza = FazaGry.FAZA_PYTANIA
+                # Kolejka wciąż należy do tego samego gracza
+            else:
+                self.faza = FazaGry.ROZGRYWKA
+                self.kolej_gracza_idx = self.gracze.index(self.grajacy)
+                
+        elif self.faza == FazaGry.FAZA_PYTANIA:
+            if akcja['typ'] == 'zmiana_kontraktu':
+                self.kontrakt = akcja['kontrakt']
+                if self.kontrakt in [Kontrakt.LEPSZA, Kontrakt.GORSZA]: self.atut = None
+                self.faza = FazaGry.ROZGRYWKA # Koniec licytacji
+            elif akcja['typ'] == 'pytanie': 
+                self.faza = FazaGry.LICYTACJA
+                self.kolej_gracza_idx = (self.kolej_gracza_idx + 1) % 4
     def rozdaj_karty(self, ilosc: int):
         start_idx = (self.rozdajacy_idx + 1) % 4
         for _ in range(ilosc):

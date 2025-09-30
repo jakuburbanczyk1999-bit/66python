@@ -1,7 +1,7 @@
 import sys
 import random
 from typing import Union
-from silnik_gry import Gracz, Druzyna, Rozdanie, Kontrakt, Kolor, Karta, Ranga
+from silnik_gry import Gracz, Druzyna, Rozdanie, Kontrakt, Kolor, Karta, Ranga, FazaGry
 
 def znajdz_legalny_ruch(rozdanie: Rozdanie, gracz: Gracz) -> Union[Karta, None]:
     """Prosta AI: znajduje pierwszą legalną kartę do zagrania z ręki gracza."""
@@ -20,8 +20,7 @@ def uruchom_symulacje_rozdania(numer_rozdania: int, druzyny: list[Druzyna]):
         Gracz(nazwa="Nasz"), Gracz(nazwa="Przeciwnik2")
     ]
     for gracz in gracze:
-        gracz.reka.clear()
-        gracz.wygrane_karty.clear()
+        gracz.reka.clear(); gracz.wygrane_karty.clear()
     druzyny[0].gracze.clear(); druzyny[1].gracze.clear()
     druzyny[0].dodaj_gracza(gracze[0]); druzyny[0].dodaj_gracza(gracze[2])
     druzyny[1].dodaj_gracza(gracze[1]); druzyny[1].dodaj_gracza(gracze[3])
@@ -34,36 +33,49 @@ def uruchom_symulacje_rozdania(numer_rozdania: int, druzyny: list[Druzyna]):
     )
     
     print(f"Rozdającym jest: {gracze[rozdajacy_idx].nazwa}")
-
-    # --- POPRAWIONA KOLEJNOŚĆ ---
-    # 1. Silnik rozpoczyna rozdanie (rozdaje 3 karty i ustawia, czyja kolej)
     rozdanie.rozpocznij_nowe_rozdanie()
     
-    # 2. Skrypt loguje rozdane karty
     print("\n--- Faza 1: Rozdanie 3 kart ---")
     for gracz in gracze:
         print(f"Ręka gracza '{gracz.nazwa}': {', '.join(map(str, gracz.reka))}")
 
-    # 3. Skrypt pyta, kto licytuje (teraz kolej_gracza_idx jest już ustawione)
-    print("\n--- Faza 2: Licytacja ---")
-    gracz_licytujacy = rozdanie.gracze[rozdanie.kolej_gracza_idx]
-    print(f"Licytację rozpoczyna: {gracz_licytujacy.nazwa}")
+    # --- POPRAWIONA SEKCJA DEKLARACJI ---
+    print("\n--- Faza 2: Deklaracja ---")
+    gracz_deklarujacy = rozdanie.gracze[rozdanie.kolej_gracza_idx]
+    print(f"Deklaruje: {gracz_deklarujacy.nazwa}")
     
-    # 4. Skrypt steruje resztą licytacji
-    mozliwe_akcje = rozdanie.get_mozliwe_akcje_licytacji(gracz_licytujacy)
-    wybrana_akcja = random.choice(mozliwe_akcje)
-    kontrakt_info = wybrana_akcja['kontrakt'].name
-    atut_info = wybrana_akcja.get('atut')
-    atut_str = atut_info.name if atut_info else "Brak"
-    print(f"Decyzja: {kontrakt_info}, Atut: {atut_str}")
-    rozdanie.wykonaj_decyzje_licytacyjna(gracz_licytujacy, wybrana_akcja)
-    
-    print("\n--- Pełne ręce graczy przed rozgrywką ---")
-    for gracz in gracze:
-        posortowana_reka = sorted(gracz.reka, key=lambda k: (k.kolor.name, k.ranga.value))
-        print(f"Ręka gracza '{gracz.nazwa}': {', '.join(map(str, posortowana_reka))}")
-    
-    # Pętla rozgrywki
+    # Symulujemy, że gracz zawsze wybiera NORMALNA, aby przetestować Fazę Pytania
+    wybrana_akcja_1 = {'typ': 'deklaracja', 'kontrakt': Kontrakt.NORMALNA, 'atut': random.choice(list(Kolor))}
+    print(f"Decyzja: {wybrana_akcja_1['kontrakt'].name}, Atut: {wybrana_akcja_1['atut'].name}")
+    rozdanie.wykonaj_akcje(gracz_deklarujacy, wybrana_akcja_1)
+
+    # --- FAZA PYTANIA ---
+    if rozdanie.faza == FazaGry.FAZA_PYTANIA:
+        print("\n--- Faza 3: Faza Pytania ---")
+        print(f"Ponownie decyduje: {gracz_deklarujacy.nazwa}")
+        mozliwe_akcje_2 = rozdanie.get_mozliwe_akcje(gracz_deklarujacy)
+        
+        # Logujemy możliwe akcje
+        akcje_str = [a.get('kontrakt', a.get('decyzja', 'pytanie')).name if hasattr(a.get('kontrakt', a.get('decyzja', 'pytanie')), 'name') else 'pytanie' for a in mozliwe_akcje_2]
+        print(f"Możliwe akcje: {akcje_str}")
+        
+        # Symulujemy losową decyzję
+        wybrana_akcja_2 = random.choice(mozliwe_akcje_2)
+        if wybrana_akcja_2['typ'] == 'zmiana_kontraktu':
+            print(f"Decyzja: Zmiana na {wybrana_akcja_2['kontrakt'].name}")
+        else:
+            print(f"Decyzja: Pytam")
+            
+        rozdanie.wykonaj_akcje(gracz_deklarujacy, wybrana_akcja_2)
+
+    # --- LICYTACJA 2 (jeśli wystąpiła) ---
+    if rozdanie.faza == FazaGry.LICYTACJA:
+        print("\n--- Faza 4: Licytacja 2 (Przebicie) ---")
+        # Na razie tylko informacja, logikę dodamy w następnym kroku
+        print("Gracze będą mieli szansę na przebicie (teraz pominięte).")
+        rozdanie.faza = FazaGry.ROZGRYWKA # Ręczne przestawienie stanu do rozgrywki
+        
+    print("\n--- Faza 3: Rozdanie pozostałych 3 kart ---")
     print("\n--- Rozgrywka ---")
     for numer_lewy in range(1, 7):
         if rozdanie.rozdanie_zakonczone:
