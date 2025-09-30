@@ -112,7 +112,6 @@ class Rozdanie:
         self.kolej_gracza_idx: Optional[int] = None
         self.aktualna_lewa: list[tuple[Gracz, Karta]] = []
         self.zadeklarowane_meldunki: list[tuple[Gracz, Kolor]] = []
-        
         self.rozdanie_zakonczone: bool = False
         self.zwyciezca_rozdania: Optional[Druzyna] = None
         self.powod_zakonczenia: str = ""
@@ -167,26 +166,24 @@ class Rozdanie:
         self.historia_licytacji.append((gracz, akcja))
 
         if self.faza == FazaGry.DEKLARACJA_1:
-            self.grajacy = gracz
-            self.kontrakt = akcja['kontrakt']
-            self.atut = akcja.get('atut')
-            
-            self.rozdaj_karty(3) # Dajemy resztę kart
-            
-            # Sprawdzamy, czy przechodzimy do Fazy Pytania
-            if self.kontrakt == Kontrakt.NORMALNA: # Na razie pomijamy warunek lufy
-                self.faza = FazaGry.FAZA_PYTANIA
-                # Kolejka wciąż należy do tego samego gracza
-            else:
-                self.faza = FazaGry.ROZGRYWKA
-                self.kolej_gracza_idx = self.gracze.index(self.grajacy)
-                
+            if akcja['typ'] == 'deklaracja':
+                self.grajacy = gracz
+                self.kontrakt = akcja['kontrakt']
+                self.atut = akcja.get('atut')
+                # Na razie pomijamy Fazę Lufy, więc rozdajemy karty
+                self.rozdaj_karty(3)
+                if self.kontrakt == Kontrakt.NORMALNA:
+                    self.faza = FazaGry.FAZA_PYTANIA
+                else:
+                    self.faza = FazaGry.ROZGRYWKA
+                    self.kolej_gracza_idx = self.gracze.index(self.grajacy)
+        
         elif self.faza == FazaGry.FAZA_PYTANIA:
             if akcja['typ'] == 'zmiana_kontraktu':
                 self.kontrakt = akcja['kontrakt']
                 if self.kontrakt in [Kontrakt.LEPSZA, Kontrakt.GORSZA]: self.atut = None
-                self.faza = FazaGry.ROZGRYWKA # Koniec licytacji
-            elif akcja['typ'] == 'pytanie': 
+                self.faza = FazaGry.ROZGRYWKA
+            elif akcja['typ'] == 'pytanie':
                 self.faza = FazaGry.LICYTACJA
                 self.kolej_gracza_idx = (self.kolej_gracza_idx + 1) % 4
         elif self.faza == FazaGry.LICYTACJA:
@@ -246,19 +243,6 @@ class Rozdanie:
         
         druzyna_wygrana.punkty_meczu += punkty_meczu
         return druzyna_wygrana, punkty_meczu, mnoznik
-    def przeprowadz_licytacje(self, wybrany_kontrakt: Kontrakt, wybrany_atut: Optional[Kolor]):
-        """Ustawia stan gry na podstawie ZEWNĘTRZNEJ decyzji licytacyjnej."""
-        # Ta metoda już niczego nie losuje - jest tylko wykonawcą.
-        self.grajacy = self.gracze[(self.rozdajacy_idx + 1) % 4]
-        
-        self.kontrakt = wybrany_kontrakt
-        self.atut = wybrany_atut
-        
-        if self.kontrakt in [Kontrakt.GORSZA, Kontrakt.LEPSZA] and self.atut is not None:
-            self.atut = None
-            
-        self.stawka = 1 # Na razie uproszczone
-        self.kolej_gracza_idx = self.gracze.index(self.grajacy)
         
     def _waliduj_ruch(self, gracz: Gracz, karta: Karta) -> bool:
         """Sprawdza, czy zagranie karty przez gracza jest zgodne ze wszystkimi zasadami."""
@@ -355,20 +339,16 @@ class Rozdanie:
         self.kolej_gracza_idx = self.gracze.index(zwyciezca_lewy)
         
     def zagraj_karte(self, gracz: Gracz, karta: Karta) -> int:
-        """Wykonuje ruch, sprawdza meldunek i zwraca punkty z meldunku."""
+        """Wykonuje ruch, sprawdza meldunek i zwraca słownik z wynikami."""
         if not self._waliduj_ruch(gracz, karta):
             print(f"BŁĄD: Ruch gracza {gracz} kartą {karta} jest nielegalny!")
-            return 0
+            return {}
 
         punkty_z_meldunku = 0
-        # --- NOWA LOGIKA MELDUNKU ---
-        # Sprawdź meldunek tylko jeśli to pierwsza karta w lewie i odpowiedni kontrakt
         if not self.aktualna_lewa and self.kontrakt in [Kontrakt.NORMALNA, Kontrakt.BEZ_PYTANIA]:
-            if karta.ranga == Ranga.KROL or karta.ranga == Ranga.DAMA:
-                # Sprawdź, czy gracz ma drugą kartę do pary
+            if karta.ranga in [Ranga.KROL, Ranga.DAMA]:
                 szukana_ranga = Ranga.DAMA if karta.ranga == Ranga.KROL else Ranga.KROL
                 if any(k.ranga == szukana_ranga and k.kolor == karta.kolor for k in gracz.reka):
-                    # Sprawdź, czy ten meldunek nie był już zgłoszony
                     if (gracz, karta.kolor) not in self.zadeklarowane_meldunki:
                         punkty_z_meldunku = 40 if karta.kolor == self.atut else 20
                         self.punkty_w_rozdaniu[gracz.druzyna.nazwa] += punkty_z_meldunku
@@ -377,12 +357,17 @@ class Rozdanie:
         gracz.reka.remove(karta)
         self.aktualna_lewa.append((gracz, karta))
         
+        wynik = {
+            'meldunek_pkt': punkty_z_meldunku,
+            'wynik_lewy': None
+        }
+        
         if len(self.aktualna_lewa) == 4:
-            self._zakoncz_lewe()
+            wynik['wynik_lewy'] = self._zakoncz_lewe()
         else:
             self.kolej_gracza_idx = (self.kolej_gracza_idx + 1) % 4
             
-        return punkty_z_meldunku
+        return wynik
     def _rozstrzygnij_licytacje_2(self):
         """Wyłania zwycięzcę po zakończeniu fazy przebicia."""
         # Sprawdź, czy ktoś zalicytował "Lepsza"
