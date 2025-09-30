@@ -2,14 +2,14 @@
 Rozdającym jest: Jakub
 
 --- Faza 1: Rozdanie 3 kart ---
-Ręka gracza 'Jakub': Walet Wino, Dziesiatka Dzwonek, As Czerwien
-Ręka gracza 'Przeciwnik1': Dama Wino, Dziewiatka Czerwien, Dama Zoladz
-Ręka gracza 'Nasz': Dziesiatka Czerwien, Dziewiatka Wino, Walet Zoladz
-Ręka gracza 'Przeciwnik2': Dziewiatka Dzwonek, Dziesiatka Zoladz, As Zoladz
+Ręka gracza 'Jakub': Dziewiatka Wino, Krol Czerwien, Dziewiatka Zoladz
+Ręka gracza 'Przeciwnik1': Dziesiatka Dzwonek, Walet Zoladz, Krol Dzwonek
+Ręka gracza 'Nasz': Krol Zoladz, As Zoladz, Dziesiatka Wino
+Ręka gracza 'Przeciwnik2': As Czerwien, Dama Dzwonek, Dziesiatka Czerwien
 
 --- Faza 2: Deklaracja ---
 Deklaruje: Przeciwnik1
-Decyzja: NORMALNA, Atut: ZOLADZ
+Decyzja: NORMALNA, Atut: CZERWIEN
 
 --- Faza 3: Faza Pytania ---
 Ponownie decyduje: Przeciwnik1
@@ -17,104 +17,113 @@ Możliwe akcje: ['LEPSZA', 'GORSZA', 'BEZ_PYTANIA', 'pytanie']
 Decyzja: Pytam
 
 --- Faza 4: Licytacja 2 (Przebicie) ---
-Gracze będą mieli szansę na przebicie (teraz pominięte).
+Licytuje: Nasz, Decyzja: Pas
+Licytuje: Przeciwnik2, Decyzja: Pas
+Licytuje: Jakub, Decyzja: Pas
+  INFO: Wszyscy spasowali, pierwotny kontrakt zostaje.
 
 --- Faza 3: Rozdanie pozostałych 3 kart ---
 
 --- Rozgrywka ---
 
 -- Lewa #1 --
-[Nasz] zagrywa: Dziesiatka Czerwien
-[Przeciwnik2] zagrywa: Walet Czerwien
-[Jakub] zagrywa: As Czerwien
-[Przeciwnik1] zagrywa: Dziewiatka Czerwien
+[Przeciwnik1] zagrywa: Dziesiatka Dzwonek
+[Nasz] zagrywa: Walet Czerwien
+[Przeciwnik2] zagrywa: Dama Dzwonek
+[Jakub] zagrywa: Dziewiatka Dzwonek
 
 -- Lewa #2 --
-[Jakub] zagrywa: Walet Wino
-[Przeciwnik1] zagrywa: Dama Wino
-[Nasz] zagrywa: Dziewiatka Wino
-[Przeciwnik2] zagrywa: As Wino
+[Nasz] zagrywa: Krol Zoladz
+[Przeciwnik2] zagrywa: As Czerwien
+[Jakub] zagrywa: Dziewiatka Zoladz
+[Przeciwnik1] zagrywa: Walet Zoladz
 
 -- Lewa #3 --
-[Przeciwnik2] zagrywa: Dziewiatka Dzwonek
-[Jakub] zagrywa: Dziesiatka Dzwonek
-[Przeciwnik1] zagrywa: As Dzwonek
-[Nasz] zagrywa: Walet Dzwonek
+[Przeciwnik2] zagrywa: Dziesiatka Czerwien
+[Jakub] zagrywa: Krol Czerwien
+[Przeciwnik1] zagrywa: Dama Czerwien
+[Nasz] zagrywa: As Zoladz
 
 -- Lewa #4 --
-[Przeciwnik1] zagrywa: Dama Zoladz
-[Nasz] zagrywa: Walet Zoladz
-[Przeciwnik2] zagrywa: Dziesiatka Zoladz
-[Jakub] zagrywa: Krol Wino
+[Przeciwnik2] zagrywa: Dama Wino
+[Jakub] zagrywa: Dziewiatka Wino
+[Przeciwnik1] zagrywa: Krol Dzwonek
+[Nasz] zagrywa: Dziesiatka Wino
 
 -- Lewa #5 --
-[Przeciwnik2] zagrywa: As Zoladz
-[Jakub] zagrywa: Krol Dzwonek
-[Przeciwnik1] zagrywa: Krol Czerwien
-[Nasz] zagrywa: Dziewiatka Zoladz
+[Nasz] zagrywa: Krol Wino
+[Przeciwnik2] zagrywa: Walet Dzwonek
+[Jakub] zagrywa: Walet Wino
+[Przeciwnik1] zagrywa: Dama Zoladz
 
-!!! Rozdanie zakończone przed czasem: osiągnięcie 77 punktów !!!
+-- Lewa #6 --
+[Nasz] zagrywa: As Wino
+[Przeciwnik2] zagrywa: As Dzwonek
+[Jakub] zagrywa: Dziewiatka Czerwien
+[Przeciwnik1] zagrywa: Dziesiatka Zoladz
+
+!!! Rozdanie zakończone przed czasem: osiągnięcie 75 punktów !!!
 
 =========================
 --- WYNIK KOŃCOWY ROZDANIA ---
-Punkty z kart (z bonusem): My 23 - 77 Oni
-Rozdanie wygrywa: Oni
-Przyznane punkty meczowe: 2 (mnożnik: x2)
-OGÓLNY WYNIK MECZU: My 0 - 2 2
+Punkty z kart (z bonusem): My 75 - 45 Oni
+Rozdanie wygrywa: My
+Przyznane punkty meczowe: 1 (mnożnik: x1)
+OGÓLNY WYNIK MECZU: My 1 - 0 0
 =========================
 
 --- ROZDANIE #2 ---
 Rozdającym jest: Przeciwnik1
 
 --- Faza 1: Rozdanie 3 kart ---
-Ręka gracza 'Jakub': Dama Zoladz, Dziesiatka Czerwien, Krol Dzwonek
-Ręka gracza 'Przeciwnik1': Krol Czerwien, Walet Dzwonek, Walet Wino
-Ręka gracza 'Nasz': As Wino, Dziewiatka Zoladz, Dama Czerwien
-Ręka gracza 'Przeciwnik2': Dziewiatka Dzwonek, Walet Czerwien, Dziewiatka Czerwien
+Ręka gracza 'Jakub': Dziesiatka Zoladz, Walet Dzwonek, As Wino
+Ręka gracza 'Przeciwnik1': Walet Czerwien, Dziewiatka Wino, Krol Wino
+Ręka gracza 'Nasz': Dziesiatka Wino, Dziewiatka Zoladz, Dama Czerwien
+Ręka gracza 'Przeciwnik2': As Zoladz, Dziewiatka Dzwonek, Walet Zoladz
 
 --- Faza 2: Deklaracja ---
 Deklaruje: Nasz
-Decyzja: NORMALNA, Atut: DZWONEK
+Decyzja: NORMALNA, Atut: ZOLADZ
 
 --- Faza 3: Faza Pytania ---
 Ponownie decyduje: Nasz
 Możliwe akcje: ['LEPSZA', 'GORSZA', 'BEZ_PYTANIA', 'pytanie']
-Decyzja: Zmiana na BEZ_PYTANIA
+Decyzja: Pytam
+
+--- Faza 4: Licytacja 2 (Przebicie) ---
+Licytuje: Przeciwnik2, Decyzja: Przebijam na GORSZA
+Licytuje: Jakub, Decyzja: Przebijam na GORSZA
+Licytuje: Przeciwnik1, Decyzja: Pas
+  INFO: Licytację przebił Przeciwnik2 z kontraktem GORSZA.
 
 --- Faza 3: Rozdanie pozostałych 3 kart ---
 
 --- Rozgrywka ---
 
 -- Lewa #1 --
-[Nasz] zagrywa: As Wino
-[Przeciwnik2] zagrywa: Dama Wino
-[Jakub] zagrywa: Krol Wino
-[Przeciwnik1] zagrywa: Walet Wino
-
--- Lewa #2 --
+[Przeciwnik2] zagrywa: As Zoladz
+[Jakub] zagrywa: Dziesiatka Zoladz
+[Przeciwnik1] zagrywa: Krol Zoladz
 [Nasz] zagrywa: Dziewiatka Zoladz
-[Przeciwnik2] zagrywa: Krol Zoladz
-[Jakub] zagrywa: Dama Zoladz
-[Przeciwnik1] zagrywa: As Zoladz
 
-!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Przeciwnik1 !!!
+!!! Rozdanie zakończone przed czasem: wzięcie lewy przez gracza Przeciwnik2 !!!
 
 =========================
 --- WYNIK KOŃCOWY ROZDANIA ---
-Punkty z kart (z bonusem): My 20 - 18 Oni
-Rozdanie wygrywa: Oni
+Punkty z kart (z bonusem): My 0 - 25 Oni
+Rozdanie wygrywa: My
 Przyznane punkty meczowe: 6 (mnożnik: x1)
-OGÓLNY WYNIK MECZU: My 0 - 8 8
+OGÓLNY WYNIK MECZU: My 7 - 0 0
 =========================
 
 --- ROZDANIE #3 ---
 Rozdającym jest: Nasz
 
 --- Faza 1: Rozdanie 3 kart ---
-Ręka gracza 'Jakub': Dama Czerwien, Krol Czerwien, As Dzwonek
-Ręka gracza 'Przeciwnik1': Walet Wino, Dziewiatka Zoladz, Dziesiatka Wino
-Ręka gracza 'Nasz': Dziesiatka Zoladz, Krol Dzwonek, Walet Zoladz
-Ręka gracza 'Przeciwnik2': Dama Wino, Dziewiatka Czerwien, Walet Dzwonek
+Ręka gracza 'Jakub': Walet Dzwonek, Walet Czerwien, Dziewiatka Dzwonek
+Ręka gracza 'Przeciwnik1': Walet Wino, Dziesiatka Wino, Dziewiatka Czerwien
+Ręka gracza 'Nasz': Dziewiatka Wino, Dziesiatka Zoladz, Dama Zoladz
+Ręka gracza 'Przeciwnik2': As Czerwien, Krol Czerwien, Dziesiatka Dzwonek
 
 --- Faza 2: Deklaracja ---
 Deklaruje: Przeciwnik2
@@ -123,40 +132,64 @@ Decyzja: NORMALNA, Atut: DZWONEK
 --- Faza 3: Faza Pytania ---
 Ponownie decyduje: Przeciwnik2
 Możliwe akcje: ['LEPSZA', 'GORSZA', 'BEZ_PYTANIA', 'pytanie']
-Decyzja: Zmiana na LEPSZA
+Decyzja: Pytam
+
+--- Faza 4: Licytacja 2 (Przebicie) ---
+Licytuje: Jakub, Decyzja: Przebijam na GORSZA
+Licytuje: Przeciwnik1, Decyzja: Przebijam na GORSZA
+Licytuje: Nasz, Decyzja: Przebijam na LEPSZA
+  INFO: Licytację przebił Nasz z kontraktem LEPSZA.
 
 --- Faza 3: Rozdanie pozostałych 3 kart ---
 
 --- Rozgrywka ---
 
 -- Lewa #1 --
-[Przeciwnik2] zagrywa: Dama Wino
-[Jakub] zagrywa: Dziewiatka Wino
+[Nasz] zagrywa: Dziewiatka Wino
+[Przeciwnik2] zagrywa: As Czerwien
+[Jakub] zagrywa: Krol Wino
 [Przeciwnik1] zagrywa: Walet Wino
-[Nasz] zagrywa: As Wino
+
+-- Lewa #2 --
+[Jakub] zagrywa: Walet Dzwonek
+[Przeciwnik1] zagrywa: Krol Dzwonek
+[Nasz] zagrywa: As Dzwonek
+[Przeciwnik2] zagrywa: Dziesiatka Dzwonek
+
+-- Lewa #3 --
+[Nasz] zagrywa: Dziesiatka Zoladz
+[Przeciwnik2] zagrywa: Krol Zoladz
+[Jakub] zagrywa: As Zoladz
+[Przeciwnik1] zagrywa: Walet Zoladz
+
+-- Lewa #4 --
+[Jakub] zagrywa: Walet Czerwien
+[Przeciwnik1] zagrywa: Dziewiatka Czerwien
+[Nasz] zagrywa: Dama Zoladz
+[Przeciwnik2] zagrywa: Krol Czerwien
 
 !!! Rozdanie zakończone przed czasem: przejęcie lewy przez przeciwnika !!!
 
 =========================
 --- WYNIK KOŃCOWY ROZDANIA ---
-Punkty z kart (z bonusem): My 16 - 0 Oni
-Rozdanie wygrywa: My
+Punkty z kart (z bonusem): My 71 - 9 Oni
+Rozdanie wygrywa: Oni
 Przyznane punkty meczowe: 12 (mnożnik: x1)
-OGÓLNY WYNIK MECZU: My 12 - 8 8
+OGÓLNY WYNIK MECZU: My 7 - 12 12
 =========================
 
 --- ROZDANIE #4 ---
 Rozdającym jest: Przeciwnik2
 
 --- Faza 1: Rozdanie 3 kart ---
-Ręka gracza 'Jakub': Dziewiatka Zoladz, Dama Czerwien, Krol Dzwonek
-Ręka gracza 'Przeciwnik1': Dziewiatka Czerwien, Dziesiatka Wino, As Czerwien
-Ręka gracza 'Nasz': As Zoladz, Walet Czerwien, Dziesiatka Zoladz
-Ręka gracza 'Przeciwnik2': Dziesiatka Czerwien, Krol Czerwien, Dziesiatka Dzwonek
+Ręka gracza 'Jakub': Krol Wino, Dziewiatka Czerwien, As Dzwonek
+Ręka gracza 'Przeciwnik1': Walet Dzwonek, Dziewiatka Zoladz, Dziesiatka Wino
+Ręka gracza 'Nasz': Walet Czerwien, Walet Wino, Krol Dzwonek
+Ręka gracza 'Przeciwnik2': As Zoladz, Dziesiatka Czerwien, Krol Czerwien
 
 --- Faza 2: Deklaracja ---
 Deklaruje: Jakub
-Decyzja: NORMALNA, Atut: CZERWIEN
+Decyzja: NORMALNA, Atut: DZWONEK
 
 --- Faza 3: Faza Pytania ---
 Ponownie decyduje: Jakub
@@ -164,58 +197,43 @@ Możliwe akcje: ['LEPSZA', 'GORSZA', 'BEZ_PYTANIA', 'pytanie']
 Decyzja: Pytam
 
 --- Faza 4: Licytacja 2 (Przebicie) ---
-Gracze będą mieli szansę na przebicie (teraz pominięte).
+Licytuje: Przeciwnik1, Decyzja: Przebijam na GORSZA
+Licytuje: Nasz, Decyzja: Przebijam na LEPSZA
+Licytuje: Przeciwnik2, Decyzja: Przebijam na LEPSZA
+  INFO: Licytację przebił Nasz z kontraktem LEPSZA.
 
 --- Faza 3: Rozdanie pozostałych 3 kart ---
 
 --- Rozgrywka ---
 
 -- Lewa #1 --
-[Przeciwnik1] zagrywa: Dziewiatka Czerwien
 [Nasz] zagrywa: Walet Czerwien
 [Przeciwnik2] zagrywa: Dziesiatka Czerwien
-[Jakub] zagrywa: Dama Czerwien
+[Jakub] zagrywa: Dziewiatka Czerwien
+[Przeciwnik1] zagrywa: Dama Czerwien
 
--- Lewa #2 --
-[Przeciwnik2] zagrywa: Krol Czerwien
-[Jakub] zagrywa: Dziewiatka Zoladz
-[Przeciwnik1] zagrywa: As Czerwien
-[Nasz] zagrywa: As Zoladz
-
--- Lewa #3 --
-[Przeciwnik1] zagrywa: Dziesiatka Wino
-[Nasz] zagrywa: Walet Wino
-[Przeciwnik2] zagrywa: Dziewiatka Wino
-[Jakub] zagrywa: Dama Wino
-
--- Lewa #4 --
-[Przeciwnik1] zagrywa: Krol Wino
-[Nasz] zagrywa: Dziesiatka Zoladz
-[Przeciwnik2] zagrywa: Dziesiatka Dzwonek
-[Jakub] zagrywa: Krol Dzwonek
-
-!!! Rozdanie zakończone przed czasem: osiągnięcie 84 punktów !!!
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez przeciwnika !!!
 
 =========================
 --- WYNIK KOŃCOWY ROZDANIA ---
-Punkty z kart (z bonusem): My 0 - 84 Oni
+Punkty z kart (z bonusem): My 0 - 15 Oni
 Rozdanie wygrywa: Oni
-Przyznane punkty meczowe: 3 (mnożnik: x3)
-OGÓLNY WYNIK MECZU: My 12 - 11 11
+Przyznane punkty meczowe: 12 (mnożnik: x1)
+OGÓLNY WYNIK MECZU: My 7 - 24 24
 =========================
 
 --- ROZDANIE #5 ---
 Rozdającym jest: Jakub
 
 --- Faza 1: Rozdanie 3 kart ---
-Ręka gracza 'Jakub': Dziesiatka Dzwonek, Krol Czerwien, Walet Zoladz
-Ręka gracza 'Przeciwnik1': Krol Dzwonek, Krol Wino, Dziewiatka Wino
-Ręka gracza 'Nasz': As Wino, As Czerwien, Dziesiatka Wino
-Ręka gracza 'Przeciwnik2': Walet Czerwien, Dama Wino, Dziewiatka Czerwien
+Ręka gracza 'Jakub': As Zoladz, Dziesiatka Czerwien, Dama Dzwonek
+Ręka gracza 'Przeciwnik1': Dziesiatka Zoladz, Dziewiatka Czerwien, Dziewiatka Zoladz
+Ręka gracza 'Nasz': Walet Zoladz, As Czerwien, As Dzwonek
+Ręka gracza 'Przeciwnik2': Dziewiatka Wino, Walet Czerwien, Dziesiatka Dzwonek
 
 --- Faza 2: Deklaracja ---
 Deklaruje: Przeciwnik1
-Decyzja: NORMALNA, Atut: WINO
+Decyzja: NORMALNA, Atut: DZWONEK
 
 --- Faza 3: Faza Pytania ---
 Ponownie decyduje: Przeciwnik1
@@ -223,134 +241,93 @@ Możliwe akcje: ['LEPSZA', 'GORSZA', 'BEZ_PYTANIA', 'pytanie']
 Decyzja: Pytam
 
 --- Faza 4: Licytacja 2 (Przebicie) ---
-Gracze będą mieli szansę na przebicie (teraz pominięte).
+Licytuje: Nasz, Decyzja: Przebijam na GORSZA
+Licytuje: Przeciwnik2, Decyzja: Przebijam na GORSZA
+Licytuje: Jakub, Decyzja: Przebijam na GORSZA
+  INFO: Licytację przebił Nasz z kontraktem GORSZA.
 
 --- Faza 3: Rozdanie pozostałych 3 kart ---
 
 --- Rozgrywka ---
 
 -- Lewa #1 --
-[Nasz] zagrywa: As Wino
-[Przeciwnik2] zagrywa: Dama Wino
-[Jakub] zagrywa: Dziesiatka Dzwonek
-[Przeciwnik1] zagrywa: Krol Wino
+[Nasz] zagrywa: Walet Zoladz
+[Przeciwnik2] zagrywa: Dziewiatka Wino
+[Jakub] zagrywa: As Zoladz
+[Przeciwnik1] zagrywa: Dziesiatka Zoladz
 
 -- Lewa #2 --
+[Jakub] zagrywa: Dziesiatka Czerwien
+[Przeciwnik1] zagrywa: Dziewiatka Czerwien
 [Nasz] zagrywa: As Czerwien
 [Przeciwnik2] zagrywa: Walet Czerwien
-[Jakub] zagrywa: Krol Czerwien
-[Przeciwnik1] zagrywa: Dama Czerwien
 
--- Lewa #3 --
-[Nasz] zagrywa: Dziesiatka Wino
-[Przeciwnik2] zagrywa: Dziewiatka Czerwien
-[Jakub] zagrywa: Walet Zoladz
-[Przeciwnik1] zagrywa: Dziewiatka Wino
-
--- Lewa #4 --
-[Nasz] zagrywa: Dama Dzwonek
-[Przeciwnik2] zagrywa: Dziewiatka Dzwonek
-[Jakub] zagrywa: Walet Dzwonek
-[Przeciwnik1] zagrywa: Krol Dzwonek
-
--- Lewa #5 --
-[Przeciwnik1] zagrywa: Walet Wino
-[Nasz] zagrywa: Dziesiatka Zoladz
-[Przeciwnik2] zagrywa: Dziewiatka Zoladz
-[Jakub] zagrywa: Dama Zoladz
-
--- Lewa #6 --
-[Przeciwnik1] zagrywa: As Dzwonek
-[Nasz] zagrywa: Dziesiatka Czerwien
-[Przeciwnik2] zagrywa: As Zoladz
-[Jakub] zagrywa: Krol Zoladz
+!!! Rozdanie zakończone przed czasem: wzięcie lewy przez gracza Nasz !!!
 
 =========================
 --- WYNIK KOŃCOWY ROZDANIA ---
-Punkty z kart (z bonusem): My 60 - 72 Oni
+Punkty z kart (z bonusem): My 46 - 0 Oni
 Rozdanie wygrywa: Oni
-Przyznane punkty meczowe: 1 (mnożnik: x1)
-OGÓLNY WYNIK MECZU: My 12 - 12 12
+Przyznane punkty meczowe: 6 (mnożnik: x1)
+OGÓLNY WYNIK MECZU: My 7 - 30 30
 =========================
 
 --- ROZDANIE #6 ---
 Rozdającym jest: Przeciwnik1
 
 --- Faza 1: Rozdanie 3 kart ---
-Ręka gracza 'Jakub': Krol Czerwien, As Wino, Walet Zoladz
-Ręka gracza 'Przeciwnik1': Dziesiatka Dzwonek, Krol Zoladz, As Dzwonek
-Ręka gracza 'Nasz': Krol Dzwonek, Krol Wino, Dziewiatka Wino
-Ręka gracza 'Przeciwnik2': Dama Dzwonek, Dama Zoladz, Walet Wino
+Ręka gracza 'Jakub': Dama Dzwonek, Dziewiatka Dzwonek, Dziesiatka Czerwien
+Ręka gracza 'Przeciwnik1': Dziesiatka Wino, Dziewiatka Zoladz, As Zoladz
+Ręka gracza 'Nasz': As Dzwonek, Dziesiatka Dzwonek, Krol Wino
+Ręka gracza 'Przeciwnik2': Dziesiatka Zoladz, As Czerwien, Dama Czerwien
 
 --- Faza 2: Deklaracja ---
 Deklaruje: Nasz
-Decyzja: NORMALNA, Atut: CZERWIEN
+Decyzja: NORMALNA, Atut: WINO
 
 --- Faza 3: Faza Pytania ---
 Ponownie decyduje: Nasz
 Możliwe akcje: ['LEPSZA', 'GORSZA', 'BEZ_PYTANIA', 'pytanie']
-Decyzja: Zmiana na GORSZA
+Decyzja: Pytam
+
+--- Faza 4: Licytacja 2 (Przebicie) ---
+Licytuje: Przeciwnik2, Decyzja: Przebijam na GORSZA
+Licytuje: Jakub, Decyzja: Przebijam na GORSZA
+Licytuje: Przeciwnik1, Decyzja: Pas
+  INFO: Licytację przebił Przeciwnik2 z kontraktem GORSZA.
 
 --- Faza 3: Rozdanie pozostałych 3 kart ---
 
 --- Rozgrywka ---
 
 -- Lewa #1 --
-[Nasz] zagrywa: Krol Dzwonek
-[Przeciwnik2] zagrywa: Dama Dzwonek
-[Jakub] zagrywa: Dziewiatka Dzwonek
-[Przeciwnik1] zagrywa: Dziesiatka Dzwonek
-
--- Lewa #2 --
-[Przeciwnik1] zagrywa: Krol Zoladz
-[Nasz] zagrywa: Krol Wino
-[Przeciwnik2] zagrywa: Dama Zoladz
+[Przeciwnik2] zagrywa: Dziesiatka Zoladz
 [Jakub] zagrywa: Walet Zoladz
-
--- Lewa #3 --
-[Przeciwnik1] zagrywa: As Dzwonek
-[Nasz] zagrywa: Dziewiatka Wino
-[Przeciwnik2] zagrywa: Walet Wino
-[Jakub] zagrywa: Krol Czerwien
-
--- Lewa #4 --
-[Przeciwnik1] zagrywa: Walet Dzwonek
-[Nasz] zagrywa: Dziesiatka Wino
-[Przeciwnik2] zagrywa: Dziesiatka Czerwien
-[Jakub] zagrywa: As Wino
-
--- Lewa #5 --
-[Przeciwnik1] zagrywa: Dziesiatka Zoladz
-[Nasz] zagrywa: Dama Czerwien
-[Przeciwnik2] zagrywa: As Zoladz
-[Jakub] zagrywa: As Czerwien
-
--- Lewa #6 --
-[Przeciwnik2] zagrywa: Dziewiatka Czerwien
-[Jakub] zagrywa: Walet Czerwien
 [Przeciwnik1] zagrywa: Dziewiatka Zoladz
-[Nasz] zagrywa: Dama Wino
+[Nasz] zagrywa: Krol Zoladz
+
+!!! Rozdanie zakończone przed czasem: wzięcie lewy przez gracza Przeciwnik2 !!!
 
 =========================
 --- WYNIK KOŃCOWY ROZDANIA ---
-Punkty z kart (z bonusem): My 17 - 115 Oni
-Rozdanie wygrywa: Oni
+Punkty z kart (z bonusem): My 0 - 16 Oni
+Rozdanie wygrywa: My
 Przyznane punkty meczowe: 6 (mnożnik: x1)
-OGÓLNY WYNIK MECZU: My 12 - 18 18
+OGÓLNY WYNIK MECZU: My 13 - 30 30
 =========================
 
 --- ROZDANIE #7 ---
 Rozdającym jest: Nasz
 
 --- Faza 1: Rozdanie 3 kart ---
-Ręka gracza 'Jakub': As Zoladz, Walet Czerwien, Dama Zoladz
-Ręka gracza 'Przeciwnik1': Dziewiatka Zoladz, As Czerwien, Dama Dzwonek
-Ręka gracza 'Nasz': Krol Czerwien, Dziesiatka Czerwien, Dziesiatka Zoladz
-Ręka gracza 'Przeciwnik2': As Dzwonek, Dziewiatka Dzwonek, Krol Zoladz
+Ręka gracza 'Jakub': As Czerwien, Dama Zoladz, Walet Czerwien
+Ręka gracza 'Przeciwnik1': Dziewiatka Zoladz, As Dzwonek, Walet Dzwonek
+Ręka gracza 'Nasz': Dziesiatka Zoladz, Dziewiatka Dzwonek, As Wino
+Ręka gracza 'Przeciwnik2': Dziewiatka Wino, Krol Zoladz, Dama Czerwien
 
 --- Faza 2: Deklaracja ---
 Deklaruje: Przeciwnik2
-Decyzja: NORMALNA, Atut: CZERWIEN
+Decyzja: NORMALNA, Atut: ZOLADZ
 
 --- Faza 3: Faza Pytania ---
 Ponownie decyduje: Przeciwnik2
@@ -358,409 +335,20 @@ Możliwe akcje: ['LEPSZA', 'GORSZA', 'BEZ_PYTANIA', 'pytanie']
 Decyzja: Pytam
 
 --- Faza 4: Licytacja 2 (Przebicie) ---
-Gracze będą mieli szansę na przebicie (teraz pominięte).
+Licytuje: Jakub, Decyzja: Przebijam na GORSZA
+Licytuje: Przeciwnik1, Decyzja: Przebijam na LEPSZA
+Licytuje: Nasz, Decyzja: Przebijam na LEPSZA
+  INFO: Licytację przebił Przeciwnik1 z kontraktem LEPSZA.
 
 --- Faza 3: Rozdanie pozostałych 3 kart ---
 
 --- Rozgrywka ---
 
 -- Lewa #1 --
-[Jakub] zagrywa: As Zoladz
 [Przeciwnik1] zagrywa: Dziewiatka Zoladz
 [Nasz] zagrywa: Dziesiatka Zoladz
 [Przeciwnik2] zagrywa: Krol Zoladz
-
--- Lewa #2 --
-[Jakub] zagrywa: Walet Czerwien
-[Przeciwnik1] zagrywa: As Czerwien
-[Nasz] zagrywa: Krol Czerwien
-[Przeciwnik2] zagrywa: As Dzwonek
-
--- Lewa #3 --
-[Przeciwnik1] zagrywa: Dama Dzwonek
-[Nasz] zagrywa: Krol Dzwonek
-[Przeciwnik2] zagrywa: Dziewiatka Dzwonek
-[Jakub] zagrywa: Dziewiatka Czerwien
-
--- Lewa #4 --
 [Jakub] zagrywa: Dama Zoladz
-[Przeciwnik1] zagrywa: Walet Zoladz
-[Nasz] zagrywa: Dziesiatka Czerwien
-[Przeciwnik2] zagrywa: As Wino
-
--- Lewa #5 --
-[Nasz] zagrywa: Dama Czerwien
-[Przeciwnik2] zagrywa: Dziewiatka Wino
-[Jakub] zagrywa: Dziesiatka Wino
-[Przeciwnik1] zagrywa: Dama Wino
-
-!!! Rozdanie zakończone przed czasem: osiągnięcie 74 punktów !!!
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty z kart (z bonusem): My 74 - 28 Oni
-Rozdanie wygrywa: My
-Przyznane punkty meczowe: 2 (mnożnik: x2)
-OGÓLNY WYNIK MECZU: My 14 - 18 18
-=========================
-
---- ROZDANIE #8 ---
-Rozdającym jest: Przeciwnik2
-
---- Faza 1: Rozdanie 3 kart ---
-Ręka gracza 'Jakub': Walet Czerwien, Dziewiatka Wino, Krol Czerwien
-Ręka gracza 'Przeciwnik1': Krol Dzwonek, Dziewiatka Czerwien, Walet Zoladz
-Ręka gracza 'Nasz': Krol Wino, Dziewiatka Zoladz, Dama Dzwonek
-Ręka gracza 'Przeciwnik2': As Zoladz, As Dzwonek, Dama Czerwien
-
---- Faza 2: Deklaracja ---
-Deklaruje: Jakub
-Decyzja: NORMALNA, Atut: CZERWIEN
-
---- Faza 3: Faza Pytania ---
-Ponownie decyduje: Jakub
-Możliwe akcje: ['LEPSZA', 'GORSZA', 'BEZ_PYTANIA', 'pytanie']
-Decyzja: Zmiana na BEZ_PYTANIA
-
---- Faza 3: Rozdanie pozostałych 3 kart ---
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Jakub] zagrywa: Walet Czerwien
-[Przeciwnik1] zagrywa: Dziewiatka Czerwien
-[Nasz] zagrywa: Krol Wino
-[Przeciwnik2] zagrywa: Dama Czerwien
-
-!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Przeciwnik2 !!!
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty z kart (z bonusem): My 0 - 9 Oni
-Rozdanie wygrywa: Oni
-Przyznane punkty meczowe: 6 (mnożnik: x1)
-OGÓLNY WYNIK MECZU: My 14 - 24 24
-=========================
-
---- ROZDANIE #9 ---
-Rozdającym jest: Jakub
-
---- Faza 1: Rozdanie 3 kart ---
-Ręka gracza 'Jakub': Dama Zoladz, Walet Wino, Walet Zoladz
-Ręka gracza 'Przeciwnik1': As Zoladz, Dziewiatka Wino, Walet Czerwien
-Ręka gracza 'Nasz': Krol Czerwien, Dama Czerwien, As Czerwien
-Ręka gracza 'Przeciwnik2': Dama Wino, Dziesiatka Zoladz, Krol Zoladz
-
---- Faza 2: Deklaracja ---
-Deklaruje: Przeciwnik1
-Decyzja: NORMALNA, Atut: DZWONEK
-
---- Faza 3: Faza Pytania ---
-Ponownie decyduje: Przeciwnik1
-Możliwe akcje: ['LEPSZA', 'GORSZA', 'BEZ_PYTANIA', 'pytanie']
-Decyzja: Zmiana na GORSZA
-
---- Faza 3: Rozdanie pozostałych 3 kart ---
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik1] zagrywa: As Zoladz
-[Nasz] zagrywa: Krol Czerwien
-[Przeciwnik2] zagrywa: Dziesiatka Zoladz
-[Jakub] zagrywa: Dama Zoladz
-
-!!! Rozdanie zakończone przed czasem: wzięcie lewy przez gracza Przeciwnik1 !!!
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty z kart (z bonusem): My 0 - 28 Oni
-Rozdanie wygrywa: My
-Przyznane punkty meczowe: 6 (mnożnik: x1)
-OGÓLNY WYNIK MECZU: My 20 - 24 24
-=========================
-
---- ROZDANIE #10 ---
-Rozdającym jest: Przeciwnik1
-
---- Faza 1: Rozdanie 3 kart ---
-Ręka gracza 'Jakub': Krol Dzwonek, Walet Zoladz, Dziesiatka Dzwonek
-Ręka gracza 'Przeciwnik1': As Wino, As Zoladz, Dziewiatka Zoladz
-Ręka gracza 'Nasz': Dziesiatka Wino, Krol Czerwien, Dziesiatka Zoladz
-Ręka gracza 'Przeciwnik2': Walet Wino, Krol Zoladz, Dama Dzwonek
-
---- Faza 2: Deklaracja ---
-Deklaruje: Nasz
-Decyzja: NORMALNA, Atut: DZWONEK
-
---- Faza 3: Faza Pytania ---
-Ponownie decyduje: Nasz
-Możliwe akcje: ['LEPSZA', 'GORSZA', 'BEZ_PYTANIA', 'pytanie']
-Decyzja: Zmiana na BEZ_PYTANIA
-
---- Faza 3: Rozdanie pozostałych 3 kart ---
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Nasz] zagrywa: Dziesiatka Wino
-[Przeciwnik2] zagrywa: Walet Wino
-[Jakub] zagrywa: Krol Dzwonek
-[Przeciwnik1] zagrywa: As Wino
-
-!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Jakub !!!
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty z kart (z bonusem): My 27 - 0 Oni
-Rozdanie wygrywa: Oni
-Przyznane punkty meczowe: 6 (mnożnik: x1)
-OGÓLNY WYNIK MECZU: My 20 - 30 30
-=========================
-
---- ROZDANIE #11 ---
-Rozdającym jest: Nasz
-
---- Faza 1: Rozdanie 3 kart ---
-Ręka gracza 'Jakub': As Wino, Walet Dzwonek, Krol Dzwonek
-Ręka gracza 'Przeciwnik1': Dziesiatka Dzwonek, Krol Wino, Dziewiatka Dzwonek
-Ręka gracza 'Nasz': Dama Wino, Dziesiatka Zoladz, Walet Wino
-Ręka gracza 'Przeciwnik2': Walet Czerwien, Walet Zoladz, Dziewiatka Czerwien
-
---- Faza 2: Deklaracja ---
-Deklaruje: Przeciwnik2
-Decyzja: NORMALNA, Atut: WINO
-
---- Faza 3: Faza Pytania ---
-Ponownie decyduje: Przeciwnik2
-Możliwe akcje: ['LEPSZA', 'GORSZA', 'BEZ_PYTANIA', 'pytanie']
-Decyzja: Zmiana na BEZ_PYTANIA
-
---- Faza 3: Rozdanie pozostałych 3 kart ---
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik2] zagrywa: Walet Czerwien
-[Jakub] zagrywa: As Wino
-[Przeciwnik1] zagrywa: Dziesiatka Czerwien
-[Nasz] zagrywa: Dama Czerwien
-
-!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Jakub !!!
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty z kart (z bonusem): My 26 - 0 Oni
-Rozdanie wygrywa: My
-Przyznane punkty meczowe: 6 (mnożnik: x1)
-OGÓLNY WYNIK MECZU: My 26 - 30 30
-=========================
-
---- ROZDANIE #12 ---
-Rozdającym jest: Przeciwnik2
-
---- Faza 1: Rozdanie 3 kart ---
-Ręka gracza 'Jakub': Dziewiatka Dzwonek, Dziewiatka Zoladz, Dziewiatka Czerwien
-Ręka gracza 'Przeciwnik1': Krol Czerwien, Walet Zoladz, Dziewiatka Wino
-Ręka gracza 'Nasz': Dama Zoladz, Walet Dzwonek, As Wino
-Ręka gracza 'Przeciwnik2': Krol Zoladz, Dziesiatka Wino, Walet Czerwien
-
---- Faza 2: Deklaracja ---
-Deklaruje: Jakub
-Decyzja: NORMALNA, Atut: CZERWIEN
-
---- Faza 3: Faza Pytania ---
-Ponownie decyduje: Jakub
-Możliwe akcje: ['LEPSZA', 'GORSZA', 'BEZ_PYTANIA', 'pytanie']
-Decyzja: Zmiana na BEZ_PYTANIA
-
---- Faza 3: Rozdanie pozostałych 3 kart ---
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Jakub] zagrywa: Dziewiatka Dzwonek
-[Przeciwnik1] zagrywa: Krol Dzwonek
-[Nasz] zagrywa: Walet Dzwonek
-[Przeciwnik2] zagrywa: Walet Czerwien
-
-!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Przeciwnik2 !!!
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty z kart (z bonusem): My 0 - 8 Oni
-Rozdanie wygrywa: Oni
-Przyznane punkty meczowe: 6 (mnożnik: x1)
-OGÓLNY WYNIK MECZU: My 26 - 36 36
-=========================
-
---- ROZDANIE #13 ---
-Rozdającym jest: Jakub
-
---- Faza 1: Rozdanie 3 kart ---
-Ręka gracza 'Jakub': Krol Wino, As Zoladz, Krol Zoladz
-Ręka gracza 'Przeciwnik1': Krol Dzwonek, Dziesiatka Zoladz, As Czerwien
-Ręka gracza 'Nasz': As Wino, As Dzwonek, Dziesiatka Dzwonek
-Ręka gracza 'Przeciwnik2': Walet Dzwonek, Walet Czerwien, Walet Wino
-
---- Faza 2: Deklaracja ---
-Deklaruje: Przeciwnik1
-Decyzja: NORMALNA, Atut: CZERWIEN
-
---- Faza 3: Faza Pytania ---
-Ponownie decyduje: Przeciwnik1
-Możliwe akcje: ['LEPSZA', 'GORSZA', 'BEZ_PYTANIA', 'pytanie']
-Decyzja: Pytam
-
---- Faza 4: Licytacja 2 (Przebicie) ---
-Gracze będą mieli szansę na przebicie (teraz pominięte).
-
---- Faza 3: Rozdanie pozostałych 3 kart ---
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Nasz] zagrywa: As Wino
-[Przeciwnik2] zagrywa: Walet Wino
-[Jakub] zagrywa: Krol Wino
-[Przeciwnik1] zagrywa: Dziewiatka Wino
-
--- Lewa #2 --
-[Nasz] zagrywa: As Dzwonek
-[Przeciwnik2] zagrywa: Walet Dzwonek
-[Jakub] zagrywa: Dziewiatka Czerwien
-[Przeciwnik1] zagrywa: Krol Dzwonek
-
--- Lewa #3 --
-[Jakub] zagrywa: As Zoladz
-[Przeciwnik1] zagrywa: Dziesiatka Zoladz
-[Nasz] zagrywa: Dama Zoladz
-[Przeciwnik2] zagrywa: Walet Zoladz
-
--- Lewa #4 --
-[Jakub] zagrywa: Krol Zoladz
-[Przeciwnik1] zagrywa: As Czerwien
-[Nasz] zagrywa: Dziesiatka Czerwien
-[Przeciwnik2] zagrywa: Walet Czerwien
-
--- Lewa #5 --
-[Przeciwnik1] zagrywa: Krol Czerwien
-[Nasz] zagrywa: Dziesiatka Dzwonek
-[Przeciwnik2] zagrywa: Dama Czerwien
-[Jakub] zagrywa: Dziewiatka Zoladz
-
--- Lewa #6 --
-[Przeciwnik1] zagrywa: Dama Dzwonek
-[Nasz] zagrywa: Dziewiatka Dzwonek
-[Przeciwnik2] zagrywa: Dziesiatka Wino
-[Jakub] zagrywa: Dama Wino
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty z kart (z bonusem): My 60 - 72 Oni
-Rozdanie wygrywa: Oni
-Przyznane punkty meczowe: 1 (mnożnik: x1)
-OGÓLNY WYNIK MECZU: My 26 - 37 37
-=========================
-
---- ROZDANIE #14 ---
-Rozdającym jest: Przeciwnik1
-
---- Faza 1: Rozdanie 3 kart ---
-Ręka gracza 'Jakub': Krol Czerwien, Dziesiatka Czerwien, Dama Zoladz
-Ręka gracza 'Przeciwnik1': Walet Dzwonek, Dziewiatka Dzwonek, Krol Wino
-Ręka gracza 'Nasz': Walet Wino, Walet Czerwien, Dziesiatka Wino
-Ręka gracza 'Przeciwnik2': Walet Zoladz, Dziewiatka Wino, As Dzwonek
-
---- Faza 2: Deklaracja ---
-Deklaruje: Nasz
-Decyzja: NORMALNA, Atut: WINO
-
---- Faza 3: Faza Pytania ---
-Ponownie decyduje: Nasz
-Możliwe akcje: ['LEPSZA', 'GORSZA', 'BEZ_PYTANIA', 'pytanie']
-Decyzja: Pytam
-
---- Faza 4: Licytacja 2 (Przebicie) ---
-Gracze będą mieli szansę na przebicie (teraz pominięte).
-
---- Faza 3: Rozdanie pozostałych 3 kart ---
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik2] zagrywa: Walet Zoladz
-[Jakub] zagrywa: Dama Zoladz
-[Przeciwnik1] zagrywa: Dziesiatka Zoladz
-[Nasz] zagrywa: Walet Wino
-
--- Lewa #2 --
-[Nasz] zagrywa: Walet Czerwien
-[Przeciwnik2] zagrywa: Dziewiatka Wino
-[Jakub] zagrywa: Krol Czerwien
-[Przeciwnik1] zagrywa: As Czerwien
-
--- Lewa #3 --
-[Przeciwnik2] zagrywa: As Dzwonek
-[Jakub] zagrywa: Dziesiatka Czerwien
-[Przeciwnik1] zagrywa: Walet Dzwonek
-[Nasz] zagrywa: Krol Dzwonek
-
--- Lewa #4 --
-[Przeciwnik2] zagrywa: Dama Wino
-[Jakub] zagrywa: Dziewiatka Czerwien
-[Przeciwnik1] zagrywa: Krol Wino
-[Nasz] zagrywa: Dziesiatka Wino
-
--- Lewa #5 --
-[Nasz] zagrywa: Dama Czerwien
-[Przeciwnik2] zagrywa: As Zoladz
-[Jakub] zagrywa: Dziewiatka Zoladz
-[Przeciwnik1] zagrywa: Dziewiatka Dzwonek
-
--- Lewa #6 --
-[Nasz] zagrywa: As Wino
-[Przeciwnik2] zagrywa: Dama Dzwonek
-[Jakub] zagrywa: Krol Zoladz
-[Przeciwnik1] zagrywa: Dziesiatka Dzwonek
-
-!!! Rozdanie zakończone przed czasem: osiągnięcie 76 punktów !!!
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty z kart (z bonusem): My 76 - 44 Oni
-Rozdanie wygrywa: My
-Przyznane punkty meczowe: 1 (mnożnik: x1)
-OGÓLNY WYNIK MECZU: My 27 - 37 37
-=========================
-
---- ROZDANIE #15 ---
-Rozdającym jest: Nasz
-
---- Faza 1: Rozdanie 3 kart ---
-Ręka gracza 'Jakub': Dziesiatka Zoladz, Dziesiatka Wino, Walet Wino
-Ręka gracza 'Przeciwnik1': Walet Dzwonek, Krol Wino, As Dzwonek
-Ręka gracza 'Nasz': Dama Zoladz, Dama Dzwonek, Walet Czerwien
-Ręka gracza 'Przeciwnik2': Dziewiatka Wino, As Wino, Walet Zoladz
-
---- Faza 2: Deklaracja ---
-Deklaruje: Przeciwnik2
-Decyzja: NORMALNA, Atut: CZERWIEN
-
---- Faza 3: Faza Pytania ---
-Ponownie decyduje: Przeciwnik2
-Możliwe akcje: ['LEPSZA', 'GORSZA', 'BEZ_PYTANIA', 'pytanie']
-Decyzja: Zmiana na LEPSZA
-
---- Faza 3: Rozdanie pozostałych 3 kart ---
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik2] zagrywa: Dziewiatka Wino
-[Jakub] zagrywa: Dziesiatka Wino
-[Przeciwnik1] zagrywa: Krol Wino
-[Nasz] zagrywa: Dama Zoladz
 
 !!! Rozdanie zakończone przed czasem: przejęcie lewy przez przeciwnika !!!
 
@@ -769,17 +357,17 @@ Decyzja: Zmiana na LEPSZA
 Punkty z kart (z bonusem): My 17 - 0 Oni
 Rozdanie wygrywa: My
 Przyznane punkty meczowe: 12 (mnożnik: x1)
-OGÓLNY WYNIK MECZU: My 39 - 37 37
+OGÓLNY WYNIK MECZU: My 25 - 30 30
 =========================
 
---- ROZDANIE #16 ---
+--- ROZDANIE #8 ---
 Rozdającym jest: Przeciwnik2
 
 --- Faza 1: Rozdanie 3 kart ---
-Ręka gracza 'Jakub': Dziewiatka Czerwien, Dama Czerwien, Dziesiatka Zoladz
-Ręka gracza 'Przeciwnik1': Dziesiatka Dzwonek, Walet Wino, Krol Czerwien
-Ręka gracza 'Nasz': As Wino, Walet Dzwonek, Dama Zoladz
-Ręka gracza 'Przeciwnik2': As Dzwonek, Krol Zoladz, Krol Wino
+Ręka gracza 'Jakub': Krol Wino, Dziewiatka Wino, Walet Dzwonek
+Ręka gracza 'Przeciwnik1': Dziewiatka Czerwien, Dama Czerwien, Walet Zoladz
+Ręka gracza 'Nasz': Dziesiatka Zoladz, Dama Zoladz, Dama Dzwonek
+Ręka gracza 'Przeciwnik2': Walet Wino, Dziewiatka Zoladz, Dama Wino
 
 --- Faza 2: Deklaracja ---
 Deklaruje: Jakub
@@ -791,60 +379,45 @@ Możliwe akcje: ['LEPSZA', 'GORSZA', 'BEZ_PYTANIA', 'pytanie']
 Decyzja: Pytam
 
 --- Faza 4: Licytacja 2 (Przebicie) ---
-Gracze będą mieli szansę na przebicie (teraz pominięte).
+Licytuje: Przeciwnik1, Decyzja: Pas
+Licytuje: Nasz, Decyzja: Przebijam na LEPSZA
+Licytuje: Przeciwnik2, Decyzja: Przebijam na GORSZA
+  INFO: Licytację przebił Nasz z kontraktem LEPSZA.
 
 --- Faza 3: Rozdanie pozostałych 3 kart ---
 
 --- Rozgrywka ---
 
 -- Lewa #1 --
-[Przeciwnik1] zagrywa: Dziesiatka Dzwonek
-[Nasz] zagrywa: Walet Dzwonek
-[Przeciwnik2] zagrywa: As Dzwonek
-[Jakub] zagrywa: Krol Dzwonek
+[Nasz] zagrywa: Dziesiatka Zoladz
+[Przeciwnik2] zagrywa: Dziewiatka Zoladz
+[Jakub] zagrywa: Krol Wino
+[Przeciwnik1] zagrywa: Walet Zoladz
 
 -- Lewa #2 --
-[Przeciwnik2] zagrywa: Krol Zoladz
-[Jakub] zagrywa: Dziesiatka Zoladz
-[Przeciwnik1] zagrywa: Dziewiatka Zoladz
 [Nasz] zagrywa: Dama Zoladz
+[Przeciwnik2] zagrywa: Walet Wino
+[Jakub] zagrywa: Dziewiatka Wino
+[Przeciwnik1] zagrywa: As Zoladz
 
--- Lewa #3 --
-[Jakub] zagrywa: Dziewiatka Czerwien
-[Przeciwnik1] zagrywa: Krol Czerwien
-[Nasz] zagrywa: As Wino
-[Przeciwnik2] zagrywa: Dziesiatka Czerwien
-
--- Lewa #4 --
-[Nasz] zagrywa: Dziewiatka Dzwonek
-[Przeciwnik2] zagrywa: Dama Dzwonek
-[Jakub] zagrywa: Dama Czerwien
-[Przeciwnik1] zagrywa: Walet Wino
-
--- Lewa #5 --
-[Przeciwnik1] zagrywa: Dziewiatka Wino
-[Nasz] zagrywa: Dziesiatka Wino
-[Przeciwnik2] zagrywa: Krol Wino
-[Jakub] zagrywa: As Czerwien
-
-!!! Rozdanie zakończone przed czasem: osiągnięcie 67 punktów !!!
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez przeciwnika !!!
 
 =========================
 --- WYNIK KOŃCOWY ROZDANIA ---
-Punkty z kart (z bonusem): My 67 - 35 Oni
-Rozdanie wygrywa: My
-Przyznane punkty meczowe: 1 (mnożnik: x1)
-OGÓLNY WYNIK MECZU: My 40 - 37 37
+Punkty z kart (z bonusem): My 16 - 16 Oni
+Rozdanie wygrywa: Oni
+Przyznane punkty meczowe: 12 (mnożnik: x1)
+OGÓLNY WYNIK MECZU: My 25 - 42 42
 =========================
 
---- ROZDANIE #17 ---
+--- ROZDANIE #9 ---
 Rozdającym jest: Jakub
 
 --- Faza 1: Rozdanie 3 kart ---
-Ręka gracza 'Jakub': Walet Wino, Dziewiatka Dzwonek, Dama Czerwien
-Ręka gracza 'Przeciwnik1': Dziewiatka Czerwien, Dziesiatka Wino, Walet Zoladz
-Ręka gracza 'Nasz': Krol Dzwonek, Dama Zoladz, Dziewiatka Wino
-Ręka gracza 'Przeciwnik2': As Wino, Dziesiatka Czerwien, As Czerwien
+Ręka gracza 'Jakub': Krol Wino, Walet Czerwien, Dama Zoladz
+Ręka gracza 'Przeciwnik1': Walet Wino, Dama Czerwien, Walet Zoladz
+Ręka gracza 'Nasz': Krol Dzwonek, Dziewiatka Dzwonek, Krol Zoladz
+Ręka gracza 'Przeciwnik2': Dziewiatka Zoladz, As Dzwonek, Dziesiatka Dzwonek
 
 --- Faza 2: Deklaracja ---
 Deklaruje: Przeciwnik1
@@ -853,66 +426,42 @@ Decyzja: NORMALNA, Atut: ZOLADZ
 --- Faza 3: Faza Pytania ---
 Ponownie decyduje: Przeciwnik1
 Możliwe akcje: ['LEPSZA', 'GORSZA', 'BEZ_PYTANIA', 'pytanie']
-Decyzja: Zmiana na GORSZA
+Decyzja: Pytam
+
+--- Faza 4: Licytacja 2 (Przebicie) ---
+Licytuje: Nasz, Decyzja: Przebijam na LEPSZA
+Licytuje: Przeciwnik2, Decyzja: Przebijam na GORSZA
+Licytuje: Jakub, Decyzja: Pas
+  INFO: Licytację przebił Nasz z kontraktem LEPSZA.
 
 --- Faza 3: Rozdanie pozostałych 3 kart ---
 
 --- Rozgrywka ---
 
 -- Lewa #1 --
-[Przeciwnik1] zagrywa: Dziewiatka Czerwien
 [Nasz] zagrywa: Krol Dzwonek
-[Przeciwnik2] zagrywa: Dziesiatka Czerwien
-[Jakub] zagrywa: Dama Czerwien
+[Przeciwnik2] zagrywa: As Dzwonek
+[Jakub] zagrywa: Dama Dzwonek
+[Przeciwnik1] zagrywa: Walet Wino
 
--- Lewa #2 --
-[Przeciwnik2] zagrywa: As Wino
-[Jakub] zagrywa: Walet Wino
-[Przeciwnik1] zagrywa: Dziesiatka Wino
-[Nasz] zagrywa: Dziewiatka Wino
-
--- Lewa #3 --
-[Przeciwnik2] zagrywa: As Czerwien
-[Jakub] zagrywa: Krol Czerwien
-[Przeciwnik1] zagrywa: Walet Zoladz
-[Nasz] zagrywa: Dama Zoladz
-
--- Lewa #4 --
-[Przeciwnik2] zagrywa: Walet Czerwien
-[Jakub] zagrywa: Dziewiatka Dzwonek
-[Przeciwnik1] zagrywa: Walet Dzwonek
-[Nasz] zagrywa: As Zoladz
-
--- Lewa #5 --
-[Przeciwnik2] zagrywa: Krol Wino
-[Jakub] zagrywa: Dziesiatka Dzwonek
-[Przeciwnik1] zagrywa: Dama Wino
-[Nasz] zagrywa: Dziesiatka Zoladz
-
--- Lewa #6 --
-[Przeciwnik2] zagrywa: Dziewiatka Zoladz
-[Jakub] zagrywa: As Dzwonek
-[Przeciwnik1] zagrywa: Krol Zoladz
-[Nasz] zagrywa: Dama Dzwonek
-
-!!! Rozdanie zakończone przed czasem: wzięcie lewy przez gracza Przeciwnik1 !!!
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez przeciwnika !!!
 
 =========================
 --- WYNIK KOŃCOWY ROZDANIA ---
-Punkty z kart (z bonusem): My 0 - 120 Oni
-Rozdanie wygrywa: My
-Przyznane punkty meczowe: 6 (mnożnik: x1)
-OGÓLNY WYNIK MECZU: My 46 - 37 37
+Punkty z kart (z bonusem): My 0 - 20 Oni
+Rozdanie wygrywa: Oni
+Przyznane punkty meczowe: 12 (mnożnik: x1)
+OGÓLNY WYNIK MECZU: My 25 - 54 54
 =========================
 
---- ROZDANIE #18 ---
+--- ROZDANIE #10 ---
 Rozdającym jest: Przeciwnik1
 
 --- Faza 1: Rozdanie 3 kart ---
-Ręka gracza 'Jakub': Krol Wino, As Czerwien, Krol Czerwien
-Ręka gracza 'Przeciwnik1': Walet Dzwonek, Dama Dzwonek, Dziesiatka Dzwonek
-Ręka gracza 'Nasz': Dama Czerwien, Dziesiatka Zoladz, Krol Zoladz
-Ręka gracza 'Przeciwnik2': As Zoladz, As Wino, As Dzwonek
+Ręka gracza 'Jakub': Dziesiatka Dzwonek, Krol Czerwien, Dama Czerwien
+Ręka gracza 'Przeciwnik1': Walet Dzwonek, As Dzwonek, Walet Czerwien
+Ręka gracza 'Nasz': Dziesiatka Zoladz, Walet Zoladz, Krol Wino
+Ręka gracza 'Przeciwnik2': Dama Dzwonek, Dama Wino, Dziesiatka Czerwien
 
 --- Faza 2: Deklaracja ---
 Deklaruje: Nasz
@@ -921,208 +470,81 @@ Decyzja: NORMALNA, Atut: WINO
 --- Faza 3: Faza Pytania ---
 Ponownie decyduje: Nasz
 Możliwe akcje: ['LEPSZA', 'GORSZA', 'BEZ_PYTANIA', 'pytanie']
-Decyzja: Zmiana na GORSZA
+Decyzja: Pytam
+
+--- Faza 4: Licytacja 2 (Przebicie) ---
+Licytuje: Przeciwnik2, Decyzja: Przebijam na LEPSZA
+Licytuje: Jakub, Decyzja: Przebijam na LEPSZA
+Licytuje: Przeciwnik1, Decyzja: Pas
+  INFO: Licytację przebił Przeciwnik2 z kontraktem LEPSZA.
 
 --- Faza 3: Rozdanie pozostałych 3 kart ---
 
 --- Rozgrywka ---
 
 -- Lewa #1 --
-[Nasz] zagrywa: Dama Czerwien
-[Przeciwnik2] zagrywa: As Zoladz
-[Jakub] zagrywa: As Czerwien
-[Przeciwnik1] zagrywa: Dziesiatka Czerwien
-
--- Lewa #2 --
-[Jakub] zagrywa: Krol Wino
+[Przeciwnik2] zagrywa: Dama Dzwonek
+[Jakub] zagrywa: Dziesiatka Dzwonek
 [Przeciwnik1] zagrywa: Walet Dzwonek
-[Nasz] zagrywa: Walet Wino
-[Przeciwnik2] zagrywa: As Wino
-
--- Lewa #3 --
-[Przeciwnik2] zagrywa: As Dzwonek
-[Jakub] zagrywa: Krol Czerwien
-[Przeciwnik1] zagrywa: Dama Dzwonek
-[Nasz] zagrywa: Dziewiatka Dzwonek
-
--- Lewa #4 --
-[Przeciwnik2] zagrywa: Dziewiatka Zoladz
-[Jakub] zagrywa: Dziesiatka Wino
-[Przeciwnik1] zagrywa: Walet Zoladz
 [Nasz] zagrywa: Dziesiatka Zoladz
 
-!!! Rozdanie zakończone przed czasem: wzięcie lewy przez gracza Nasz !!!
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez przeciwnika !!!
 
 =========================
 --- WYNIK KOŃCOWY ROZDANIA ---
-Punkty z kart (z bonusem): My 57 - 37 Oni
-Rozdanie wygrywa: Oni
-Przyznane punkty meczowe: 6 (mnożnik: x1)
-OGÓLNY WYNIK MECZU: My 46 - 43 43
+Punkty z kart (z bonusem): My 25 - 0 Oni
+Rozdanie wygrywa: My
+Przyznane punkty meczowe: 12 (mnożnik: x1)
+OGÓLNY WYNIK MECZU: My 37 - 54 54
 =========================
 
---- ROZDANIE #19 ---
+--- ROZDANIE #11 ---
 Rozdającym jest: Nasz
 
 --- Faza 1: Rozdanie 3 kart ---
-Ręka gracza 'Jakub': Krol Zoladz, As Czerwien, Dziesiatka Wino
-Ręka gracza 'Przeciwnik1': As Zoladz, Dziewiatka Zoladz, Dziesiatka Dzwonek
-Ręka gracza 'Nasz': Walet Dzwonek, Krol Wino, Dziewiatka Dzwonek
-Ręka gracza 'Przeciwnik2': As Dzwonek, Dziesiatka Czerwien, Dama Dzwonek
+Ręka gracza 'Jakub': Dama Wino, Krol Zoladz, Dziewiatka Czerwien
+Ręka gracza 'Przeciwnik1': Dziewiatka Zoladz, Walet Dzwonek, As Zoladz
+Ręka gracza 'Nasz': Dziesiatka Wino, As Dzwonek, Dziesiatka Dzwonek
+Ręka gracza 'Przeciwnik2': As Wino, Dama Dzwonek, Dziesiatka Czerwien
 
 --- Faza 2: Deklaracja ---
 Deklaruje: Przeciwnik2
-Decyzja: NORMALNA, Atut: CZERWIEN
+Decyzja: NORMALNA, Atut: ZOLADZ
 
 --- Faza 3: Faza Pytania ---
 Ponownie decyduje: Przeciwnik2
 Możliwe akcje: ['LEPSZA', 'GORSZA', 'BEZ_PYTANIA', 'pytanie']
-Decyzja: Zmiana na LEPSZA
-
---- Faza 3: Rozdanie pozostałych 3 kart ---
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik2] zagrywa: As Dzwonek
-[Jakub] zagrywa: Krol Dzwonek
-[Przeciwnik1] zagrywa: Dziesiatka Dzwonek
-[Nasz] zagrywa: Walet Dzwonek
-
--- Lewa #2 --
-[Przeciwnik2] zagrywa: Dziesiatka Czerwien
-[Jakub] zagrywa: As Czerwien
-[Przeciwnik1] zagrywa: As Zoladz
-[Nasz] zagrywa: Dziewiatka Czerwien
-
-!!! Rozdanie zakończone przed czasem: przejęcie lewy przez przeciwnika !!!
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty z kart (z bonusem): My 32 - 27 Oni
-Rozdanie wygrywa: My
-Przyznane punkty meczowe: 12 (mnożnik: x1)
-OGÓLNY WYNIK MECZU: My 58 - 43 43
-=========================
-
---- ROZDANIE #20 ---
-Rozdającym jest: Przeciwnik2
-
---- Faza 1: Rozdanie 3 kart ---
-Ręka gracza 'Jakub': As Wino, Dziewiatka Zoladz, Krol Czerwien
-Ręka gracza 'Przeciwnik1': Dama Zoladz, Walet Dzwonek, Krol Zoladz
-Ręka gracza 'Nasz': As Zoladz, Dziewiatka Czerwien, Dziesiatka Wino
-Ręka gracza 'Przeciwnik2': As Dzwonek, Dziewiatka Dzwonek, Dziewiatka Wino
-
---- Faza 2: Deklaracja ---
-Deklaruje: Jakub
-Decyzja: NORMALNA, Atut: CZERWIEN
-
---- Faza 3: Faza Pytania ---
-Ponownie decyduje: Jakub
-Możliwe akcje: ['LEPSZA', 'GORSZA', 'BEZ_PYTANIA', 'pytanie']
 Decyzja: Pytam
 
 --- Faza 4: Licytacja 2 (Przebicie) ---
-Gracze będą mieli szansę na przebicie (teraz pominięte).
+Licytuje: Jakub, Decyzja: Przebijam na LEPSZA
+Licytuje: Przeciwnik1, Decyzja: Przebijam na LEPSZA
+Licytuje: Nasz, Decyzja: Przebijam na LEPSZA
+  INFO: Licytację przebił Jakub z kontraktem LEPSZA.
 
 --- Faza 3: Rozdanie pozostałych 3 kart ---
 
 --- Rozgrywka ---
 
 -- Lewa #1 --
-[Przeciwnik1] zagrywa: Dama Zoladz (MELDUNEK! +20 pkt)
-[Nasz] zagrywa: As Zoladz
-[Przeciwnik2] zagrywa: Dziesiatka Czerwien
-[Jakub] zagrywa: Dziewiatka Zoladz
-
--- Lewa #2 --
-[Przeciwnik2] zagrywa: As Dzwonek
-[Jakub] zagrywa: Krol Czerwien
-[Przeciwnik1] zagrywa: Walet Dzwonek
-[Nasz] zagrywa: Dama Dzwonek
-
--- Lewa #3 --
-[Jakub] zagrywa: As Wino
-[Przeciwnik1] zagrywa: Krol Wino
-[Nasz] zagrywa: Dziesiatka Wino
-[Przeciwnik2] zagrywa: Dziewiatka Wino
-
--- Lewa #4 --
-[Jakub] zagrywa: Walet Czerwien
-[Przeciwnik1] zagrywa: As Czerwien
-[Nasz] zagrywa: Dziewiatka Czerwien
-[Przeciwnik2] zagrywa: Dama Czerwien
-
--- Lewa #5 --
-[Przeciwnik1] zagrywa: Krol Zoladz
-[Nasz] zagrywa: Dziesiatka Zoladz
-[Przeciwnik2] zagrywa: Dziewiatka Dzwonek
-[Jakub] zagrywa: Walet Zoladz
-
--- Lewa #6 --
-[Nasz] zagrywa: Krol Dzwonek
-[Przeciwnik2] zagrywa: Walet Wino
 [Jakub] zagrywa: Dama Wino
-[Przeciwnik1] zagrywa: Dziesiatka Dzwonek
-
-!!! Rozdanie zakończone przed czasem: osiągnięcie 79 punktów !!!
-
-=========================
---- WYNIK KOŃCOWY ROZDANIA ---
-Punkty z kart (z bonusem): My 61 - 79 Oni
-Rozdanie wygrywa: Oni
-Przyznane punkty meczowe: 1 (mnożnik: x1)
-OGÓLNY WYNIK MECZU: My 58 - 44 44
-=========================
-
---- ROZDANIE #21 ---
-Rozdającym jest: Jakub
-
---- Faza 1: Rozdanie 3 kart ---
-Ręka gracza 'Jakub': Walet Czerwien, As Wino, Dziesiatka Zoladz
-Ręka gracza 'Przeciwnik1': Dziesiatka Czerwien, Dziewiatka Czerwien, As Czerwien
-Ręka gracza 'Nasz': Walet Zoladz, Dama Zoladz, As Zoladz
-Ręka gracza 'Przeciwnik2': Dziewiatka Wino, Dziewiatka Zoladz, Dama Dzwonek
-
---- Faza 2: Deklaracja ---
-Deklaruje: Przeciwnik1
-Decyzja: NORMALNA, Atut: CZERWIEN
-
---- Faza 3: Faza Pytania ---
-Ponownie decyduje: Przeciwnik1
-Możliwe akcje: ['LEPSZA', 'GORSZA', 'BEZ_PYTANIA', 'pytanie']
-Decyzja: Zmiana na LEPSZA
-
---- Faza 3: Rozdanie pozostałych 3 kart ---
-
---- Rozgrywka ---
-
--- Lewa #1 --
-[Przeciwnik1] zagrywa: Dziesiatka Czerwien
-[Nasz] zagrywa: Walet Zoladz
-[Przeciwnik2] zagrywa: Dama Czerwien
-[Jakub] zagrywa: Walet Czerwien
-
--- Lewa #2 --
-[Przeciwnik1] zagrywa: Dziewiatka Czerwien
-[Nasz] zagrywa: Dama Zoladz
-[Przeciwnik2] zagrywa: Dziewiatka Wino
-[Jakub] zagrywa: Krol Czerwien
+[Przeciwnik1] zagrywa: Dziewiatka Wino
+[Nasz] zagrywa: Dziesiatka Wino
+[Przeciwnik2] zagrywa: As Wino
 
 !!! Rozdanie zakończone przed czasem: przejęcie lewy przez przeciwnika !!!
 
 =========================
 --- WYNIK KOŃCOWY ROZDANIA ---
-Punkty z kart (z bonusem): My 7 - 17 Oni
-Rozdanie wygrywa: My
+Punkty z kart (z bonusem): My 0 - 24 Oni
+Rozdanie wygrywa: Oni
 Przyznane punkty meczowe: 12 (mnożnik: x1)
-OGÓLNY WYNIK MECZU: My 70 - 44 44
+OGÓLNY WYNIK MECZU: My 37 - 66 66
 =========================
 
 
 ##############################
 !!! KONIEC GRY !!!
-Mecz wygrywa drużyna: My
-OSTATECZNY WYNIK: My 70 - 44 44
+Mecz wygrywa drużyna: Oni
+OSTATECZNY WYNIK: My 37 - 66 66
 ##############################

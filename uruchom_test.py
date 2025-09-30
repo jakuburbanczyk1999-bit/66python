@@ -60,21 +60,28 @@ def uruchom_symulacje_rozdania(numer_rozdania: int, druzyny: list[Druzyna]):
         print(f"Możliwe akcje: {akcje_str}")
         
         # Symulujemy losową decyzję
-        wybrana_akcja_2 = random.choice(mozliwe_akcje_2)
-        if wybrana_akcja_2['typ'] == 'zmiana_kontraktu':
-            print(f"Decyzja: Zmiana na {wybrana_akcja_2['kontrakt'].name}")
-        else:
-            print(f"Decyzja: Pytam")
+        wybrana_akcja_2 = {'typ': 'pytanie'}
+        print(f"Decyzja: Pytam") # Logujemy na stałe tę decyzję
             
         rozdanie.wykonaj_akcje(gracz_deklarujacy, wybrana_akcja_2)
 
     # --- LICYTACJA 2 (jeśli wystąpiła) ---
     if rozdanie.faza == FazaGry.LICYTACJA:
         print("\n--- Faza 4: Licytacja 2 (Przebicie) ---")
-        # Na razie tylko informacja, logikę dodamy w następnym kroku
-        print("Gracze będą mieli szansę na przebicie (teraz pominięte).")
-        rozdanie.faza = FazaGry.ROZGRYWKA # Ręczne przestawienie stanu do rozgrywki
-        
+        for _ in range(3): # Pętla dla 3 pozostałych graczy
+            licytujacy = rozdanie.gracze[rozdanie.kolej_gracza_idx]
+            mozliwe_akcje = rozdanie.get_mozliwe_akcje(licytujacy)
+            
+            # Symulujemy losową decyzję
+            wybrana_akcja_3 = random.choice(mozliwe_akcje)
+            
+            # Logowanie
+            decyzja_str = "Pas"
+            if wybrana_akcja_3['typ'] == 'przebicie':
+                decyzja_str = f"Przebijam na {wybrana_akcja_3['kontrakt'].name}"
+            print(f"Licytuje: {licytujacy.nazwa}, Decyzja: {decyzja_str}")
+            
+            rozdanie.wykonaj_akcje(licytujacy, wybrana_akcja_3)
     print("\n--- Faza 3: Rozdanie pozostałych 3 kart ---")
     print("\n--- Rozgrywka ---")
     for numer_lewy in range(1, 7):
