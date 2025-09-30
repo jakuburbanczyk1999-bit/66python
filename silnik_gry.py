@@ -85,6 +85,15 @@ class Kontrakt(Enum):
     GORSZA = auto()
     LEPSZA = auto()
 
+class FazaGry(Enum):
+    """Definiuje, w jakim stanie znajduje się aktualnie rozdanie."""
+    PRZED_LICYTACJA = auto()
+    LICYTACJA_1 = auto() # Pierwsza faza licytacji po 3 kartach
+    LICYTACJA_2 = auto() # Faza Pytania po 6 kartach
+    LUFA = auto()
+    ROZGRYWKA = auto()
+    ZAKONCZONE = auto()
+
 STAWKI_KONTRAKTOW = {
     Kontrakt.NORMALNA: 1, # Bazowa stawka, później mnożona przez 1, 2 lub 3
     Kontrakt.BEZ_PYTANIA: 6,
@@ -107,6 +116,42 @@ class Rozdanie:
         self.zwyciezca_rozdania: Optional[Druzyna] = None
         self.powod_zakonczenia: str = ""
         self.zwyciezca_ostatniej_lewy: Optional[Gracz] = None
+
+    def rozpocznij_nowe_rozdanie(self):
+        """Przygotowuje rozdanie do pierwszej decyzji licytacyjnej."""
+        self.rozdaj_karty(3)
+        self.faza = FazaGry.LICYTACJA_1
+        self.kolej_gracza_idx = (self.rozdajacy_idx + 1) % 4
+        
+    def get_mozliwe_akcje_licytacji(self, gracz: Gracz) -> list[dict]:
+        """Zwraca listę wszystkich możliwych do wykonania akcji licytacyjnych."""
+        if self.faza == FazaGry.LICYTACJA_1 and gracz == self.gracze[self.kolej_gracza_idx]:
+            akcje = []
+            # Akcje dla kontraktów z atutem
+            for kontrakt in [Kontrakt.NORMALNA, Kontrakt.BEZ_PYTANIA]:
+                for kolor in Kolor:
+                    akcje.append({'typ': 'kontrakt', 'kontrakt': kontrakt, 'atut': kolor})
+            
+            # Akcje dla kontraktów bez atutu
+            for kontrakt in [Kontrakt.GORSZA, Kontrakt.LEPSZA]:
+                akcje.append({'typ': 'kontrakt', 'kontrakt': kontrakt, 'atut': None})
+            
+            return akcje
+        return []
+
+    def wykonaj_decyzje_licytacyjna(self, gracz: Gracz, akcja: dict):
+       """Przetwarza decyzję licytacyjną gracza i aktualizuje stan gry."""
+        # TODO: Dodać pełną walidację
+        
+       if akcja['typ'] == 'kontrakt':
+            self.grajacy = gracz
+            self.kontrakt = akcja['kontrakt']
+            self.atut = akcja.get('atut', None) # Pobierz atut z akcji, jeśli istnieje
+            
+            # Po decyzji rozdajemy resztę kart i przechodzimy do rozgrywki
+            self.rozdaj_karty(3)
+            self.faza = FazaGry.ROZGRYWKA
+            self.kolej_gracza_idx = self.gracze.index(self.grajacy)    
     def rozdaj_karty(self, ilosc: int):
         start_idx = (self.rozdajacy_idx + 1) % 4
         for _ in range(ilosc):
@@ -210,43 +255,50 @@ class Rozdanie:
             return True
 
     def _zakoncz_lewe(self):
-        
+        """Logika kończąca lewę: wyłania zwycięzcę, liczy punkty i czyści stół."""
+        if not self.aktualna_lewa:
+            return
+
         kolor_wiodacy = self.aktualna_lewa[0][1].kolor
-        karty_atutowe = [(g, k) for g, k in self.aktualna_lewa if k.kolor == self.atut]
-        if karty_atutowe: zwyciezca_pary = max(karty_atutowe, key=lambda p: p[1].ranga.value)
+        karty_atutowe = [(gracz, karta) for gracz, karta in self.aktualna_lewa if karta.kolor == self.atut]
+        
+        if karty_atutowe:
+            zwyciezca_pary = max(karty_atutowe, key=lambda para: para[1].ranga.value)
         else:
-            karty_wiodace = [(g, k) for g, k in self.aktualna_lewa if k.kolor == kolor_wiodacy]
-            zwyciezca_pary = max(karty_wiodace, key=lambda p: p[1].ranga.value)
+            karty_wiodace = [(gracz, karta) for gracz, karta in self.aktualna_lewa if karta.kolor == kolor_wiodacy]
+            zwyciezca_pary = max(karty_wiodace, key=lambda para: para[1].ranga.value)
+
         zwyciezca_lewy = zwyciezca_pary[0]
         punkty_w_lewie = sum(karta.wartosc for _, karta in self.aktualna_lewa)
         
-        druzyna_zwyciezcy = zwyciezca_lewy.druzyna
-        self.punkty_w_rozdaniu[druzyna_zwyciezcy.nazwa] += punkty_w_lewie
+        druzyna_zwyciezcy_lewy = zwyciezca_lewy.druzyna
+        self.punkty_w_rozdaniu[druzyna_zwyciezcy_lewy.nazwa] += punkty_w_lewie
         zwyciezca_lewy.wygrane_karty.extend([karta for _, karta in self.aktualna_lewa])
+        
         liczba_wygranych_kart = sum(len(g.wygrane_karty) for g in self.gracze)
         if liczba_wygranych_kart == 24:
             self.zwyciezca_ostatniej_lewy = zwyciezca_lewy
 
-        
-        # --- NOWA LOGIKA SPRAWDZANIA KOŃCA ROZDANIA ---
+        # --- Logika sprawdzania końca rozdania ---
+        druzyna_grajacego = self.grajacy.druzyna
         if self.kontrakt in [Kontrakt.NORMALNA, Kontrakt.BEZ_PYTANIA]:
-            if self.punkty_w_rozdaniu[druzyna_zwyciezcy.nazwa] >= 66:
+            if self.punkty_w_rozdaniu[druzyna_zwyciezcy_lewy.nazwa] >= 66:
                 self.rozdanie_zakonczone = True
-                self.zwyciezca_rozdania = druzyna_zwyciezcy
-                self.powod_zakonczenia = f"osiągnięcie {self.punkty_w_rozdaniu[druzyna_zwyciezcy.nazwa]} punktów"
+                self.zwyciezca_rozdania = druzyna_zwyciezcy_lewy
+                self.powod_zakonczenia = f"osiągnięcie {self.punkty_w_rozdaniu[druzyna_zwyciezcy_lewy.nazwa]} punktów"
 
         if not self.rozdanie_zakonczone:
             if self.kontrakt == Kontrakt.BEZ_PYTANIA and zwyciezca_lewy != self.grajacy:
                 self.rozdanie_zakonczone = True
-                self.zwyciezca_rozdania = druzyna_zwyciezcy # Przeciwnicy wygrywają
+                self.zwyciezca_rozdania = druzyna_grajacego.przeciwnicy # <-- POPRAWKA
                 self.powod_zakonczenia = f"przejęcie lewy przez gracza {zwyciezca_lewy.nazwa}"
-            elif self.kontrakt == Kontrakt.LEPSZA and zwyciezca_lewy.druzyna != self.grajacy.druzyna:
+            elif self.kontrakt == Kontrakt.LEPSZA and druzyna_zwyciezcy_lewy != druzyna_grajacego:
                 self.rozdanie_zakonczone = True
-                self.zwyciezca_rozdania = zwyciezca_lewy.druzyna
+                self.zwyciezca_rozdania = druzyna_grajacego.przeciwnicy # <-- POPRAWKA
                 self.powod_zakonczenia = "przejęcie lewy przez przeciwnika"
             elif self.kontrakt == Kontrakt.GORSZA and zwyciezca_lewy == self.grajacy:
                 self.rozdanie_zakonczone = True
-                self.zwyciezca_rozdania = zwyciezca_lewy.druzyna.przeciwnicy # UWAGA: to musimy dodać
+                self.zwyciezca_rozdania = druzyna_grajacego.przeciwnicy # <-- POPRAWKA
                 self.powod_zakonczenia = f"wzięcie lewy przez gracza {self.grajacy.nazwa}"
 
         self.aktualna_lewa.clear()

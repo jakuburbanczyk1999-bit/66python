@@ -33,36 +33,37 @@ def uruchom_symulacje_rozdania(numer_rozdania: int, druzyny: list[Druzyna]):
         rozdajacy_idx=rozdajacy_idx
     )
     
-    # --- Pełne sterowanie z pliku testowego z nowymi PRINTAMI ---
     print(f"Rozdającym jest: {gracze[rozdajacy_idx].nazwa}")
 
-    # Etap 1: Rozdaj pierwsze 3 karty
+    # --- POPRAWIONA KOLEJNOŚĆ ---
+    # 1. Silnik rozpoczyna rozdanie (rozdaje 3 karty i ustawia, czyja kolej)
+    rozdanie.rozpocznij_nowe_rozdanie()
+    
+    # 2. Skrypt loguje rozdane karty
     print("\n--- Faza 1: Rozdanie 3 kart ---")
-    rozdanie.rozdaj_karty(3)
     for gracz in gracze:
         print(f"Ręka gracza '{gracz.nazwa}': {', '.join(map(str, gracz.reka))}")
 
-    # Etap 2: Licytacja
-    print("\n--- Faza 2: Licytacja (symulowana) ---")
-    grajacy_idx = (rozdajacy_idx + 1) % 4
-    print(f"Licytację rozpoczyna: {gracze[grajacy_idx].nazwa}")
+    # 3. Skrypt pyta, kto licytuje (teraz kolej_gracza_idx jest już ustawione)
+    print("\n--- Faza 2: Licytacja ---")
+    gracz_licytujacy = rozdanie.gracze[rozdanie.kolej_gracza_idx]
+    print(f"Licytację rozpoczyna: {gracz_licytujacy.nazwa}")
     
-    losowy_kontrakt = random.choice(list(Kontrakt))
-    losowy_atut = None
-    if losowy_kontrakt in [Kontrakt.NORMALNA, Kontrakt.BEZ_PYTANIA]:
-        losowy_atut = random.choice(list(Kolor))
+    # 4. Skrypt steruje resztą licytacji
+    mozliwe_akcje = rozdanie.get_mozliwe_akcje_licytacji(gracz_licytujacy)
+    wybrana_akcja = random.choice(mozliwe_akcje)
+    kontrakt_info = wybrana_akcja['kontrakt'].name
+    atut_info = wybrana_akcja.get('atut')
+    atut_str = atut_info.name if atut_info else "Brak"
+    print(f"Decyzja: {kontrakt_info}, Atut: {atut_str}")
+    rozdanie.wykonaj_decyzje_licytacyjna(gracz_licytujacy, wybrana_akcja)
     
-    print(f"Decyzja: {losowy_kontrakt.name}, Atut: {losowy_atut.name if losowy_atut else 'Brak'}")
-    rozdanie.przeprowadz_licytacje(losowy_kontrakt, losowy_atut)
-    
-    # Etap 3: Rozdaj pozostałe 3 karty
-    print("\n--- Faza 3: Rozdanie pozostałych 3 kart ---")
-    rozdanie.rozdaj_karty(3)
     print("\n--- Pełne ręce graczy przed rozgrywką ---")
     for gracz in gracze:
         posortowana_reka = sorted(gracz.reka, key=lambda k: (k.kolor.name, k.ranga.value))
         print(f"Ręka gracza '{gracz.nazwa}': {', '.join(map(str, posortowana_reka))}")
-    # Etap 4: Pętla rozgrywki
+    
+    # Pętla rozgrywki
     print("\n--- Rozgrywka ---")
     for numer_lewy in range(1, 7):
         if rozdanie.rozdanie_zakonczone:
