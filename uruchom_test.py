@@ -58,7 +58,10 @@ def uruchom_symulacje_rozdania(numer_rozdania: int, druzyny: list[Druzyna]):
     # Etap 3: Rozdaj pozostałe 3 karty
     print("\n--- Faza 3: Rozdanie pozostałych 3 kart ---")
     rozdanie.rozdaj_karty(3)
-    
+    print("\n--- Pełne ręce graczy przed rozgrywką ---")
+    for gracz in gracze:
+        posortowana_reka = sorted(gracz.reka, key=lambda k: (k.kolor.name, k.ranga.value))
+        print(f"Ręka gracza '{gracz.nazwa}': {', '.join(map(str, posortowana_reka))}")
     # Etap 4: Pętla rozgrywki
     print("\n--- Rozgrywka ---")
     for numer_lewy in range(1, 7):

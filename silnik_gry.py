@@ -116,40 +116,37 @@ class Rozdanie:
                 if karta: self.gracze[idx].reka.append(karta)
     
     def rozlicz_rozdanie(self) -> tuple[Druzyna, int, int]:
-        """FINALNA WERSJA: Prawidłowo oblicza i przyznaje punkty meczowe."""
-        druzyna_grajacego = self.grajacy.druzyna
+       
         
-        # Krok 1: Ustal ostatecznego zwycięzcę rozdania
+        # Krok 1: Dolicz bonus, TYLKO jeśli rozdanie trwało 6 lew (nikt nie zakończył go wcześniej)
+        if not self.rozdanie_zakonczone and self.zwyciezca_ostatniej_lewy:
+            druzyna_bonus = self.zwyciezca_ostatniej_lewy.druzyna
+            self.punkty_w_rozdaniu[druzyna_bonus.nazwa] += 12
+        
+        # Krok 2: Ustal zwycięzcę
         if self.rozdanie_zakonczone and self.zwyciezca_rozdania:
-            # Jeśli rozdanie zakończyło się wcześniej, zwycięzca jest już znany. To jest najważniejszy warunek.
             druzyna_wygrana = self.zwyciezca_rozdania
         else:
-            # Jeśli rozdanie trwało do końca (6 lew), rozstrzygamy na podstawie punktów
-            if self.zwyciezca_ostatniej_lewy:
-                druzyna_bonus = self.zwyciezca_ostatniej_lewy.druzyna
-                self.punkty_w_rozdaniu[druzyna_bonus.nazwa] += 12
+            punkty_grajacego = self.punkty_w_rozdaniu[self.grajacy.druzyna.nazwa]
+            punkty_przeciwnikow = self.punkty_w_rozdaniu[self.grajacy.druzyna.przeciwnicy.nazwa]
             
-            punkty_grajacego = self.punkty_w_rozdaniu[druzyna_grajacego.nazwa]
-            punkty_przeciwnikow = self.punkty_w_rozdaniu[druzyna_grajacego.przeciwnicy.nazwa]
-
-            # TODO: Dodać logikę dla wygranej w Gorsza/Lepsza do końca
             if punkty_grajacego > punkty_przeciwnikow:
-                druzyna_wygrana = druzyna_grajacego
-            else: # W przypadku remisu lub mniejszej liczby punktów, grający przegrywa
-                druzyna_wygrana = druzyna_grajacego.przeciwnicy
-        
+                druzyna_wygrana = self.grajacy.druzyna
+            else:
+                druzyna_wygrana = self.grajacy.druzyna.przeciwnicy
+
+        # Krok 3: Oblicz punkty meczowe (reszta logiki bez zmian)
         druzyna_przegrana = druzyna_wygrana.przeciwnicy
         punkty_przegranego = self.punkty_w_rozdaniu[druzyna_przegrana.nazwa]
         
-        # Krok 2: Oblicz punkty meczowe
         mnoznik = 1
         punkty_meczu = STAWKI_KONTRAKTOW.get(self.kontrakt, 0)
 
         if self.kontrakt == Kontrakt.NORMALNA:
             if punkty_przegranego < 33:
-                mnoznik = 2 # Schneider
+                mnoznik = 2
                 if not any(len(gracz.wygrane_karty) > 0 for gracz in druzyna_przegrana.gracze):
-                    mnoznik = 3 # Schwarz
+                    mnoznik = 3
             punkty_meczu *= mnoznik
         
         druzyna_wygrana.punkty_meczu += punkty_meczu
@@ -169,17 +166,48 @@ class Rozdanie:
         self.kolej_gracza_idx = self.gracze.index(self.grajacy)
         
     def _waliduj_ruch(self, gracz: Gracz, karta: Karta) -> bool:
+        """Sprawdza, czy zagranie karty przez gracza jest zgodne ze wszystkimi zasadami."""
+        # Podstawowe sprawdzenia
         if gracz != self.gracze[self.kolej_gracza_idx]: return False
         if karta not in gracz.reka: return False
-        if not self.aktualna_lewa: return True
+
+        if not self.aktualna_lewa:
+            return True # Pierwsza karta w lewie jest zawsze legalna
+
         kolor_wiodacy = self.aktualna_lewa[0][1].kolor
         reka_gracza = gracz.reka
+
+        # 1. Sprawdź obowiązek koloru
         karty_do_koloru = [k for k in reka_gracza if k.kolor == kolor_wiodacy]
-        if karty_do_koloru: return karta.kolor == kolor_wiodacy
-        if self.atut:
-            karty_atutowe = [k for k in reka_gracza if k.kolor == self.atut]
-            if karty_atutowe: return karta.kolor == self.atut
-        return True
+        if karty_do_koloru:
+            return karta.kolor == kolor_wiodacy
+
+        # Jeśli nie ma kart do koloru, przechodzimy do logiki atutów
+        if not self.atut: # Jeśli nie ma atutu w rozdaniu
+            return True # Można zagrać dowolną kartę
+
+        karty_atutowe_w_rece = [k for k in reka_gracza if k.kolor == self.atut]
+        if not karty_atutowe_w_rece: # Jeśli nie ma atutów w ręce
+            return True # Można zagrać dowolną kartą
+
+        # 2. Obowiązek grania atutem
+        if karta.kolor != self.atut:
+            return False # Gracz musi zagrać atutem, bo go ma, a nie ma do koloru
+
+        # 3. Obowiązek przebijania atutem
+        atuty_na_stole = [k for g, k in self.aktualna_lewa if k.kolor == self.atut]
+        if not atuty_na_stole:
+            return True # Gracz gra pierwszy atut w lewie, więc każdy jego atut jest legalny
+
+        najwyzszy_atut_na_stole = max(atuty_na_stole, key=lambda k: k.ranga.value)
+        wyzsze_atuty_w_rece = [k for k in karty_atutowe_w_rece if k.ranga.value > najwyzszy_atut_na_stole.ranga.value]
+
+        if wyzsze_atuty_w_rece:
+            # Gracz ma silniejsze atuty, musi zagrać jednym z nich
+            return karta in wyzsze_atuty_w_rece
+        else:
+            # Gracz nie ma silniejszych atutów, może zagrać dowolnym posiadanym atutem
+            return True
 
     def _zakoncz_lewe(self):
         
