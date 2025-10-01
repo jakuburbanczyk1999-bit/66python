@@ -26,10 +26,9 @@ def formatuj_akcje(akcje: list[dict]) -> str:
     return ", ".join(opisy)
 
 def uruchom_symulacje_rozdania(numer_rozdania: int, druzyny: list[Druzyna]):
-    """Uruchamia i loguje pojedyncze, pełne rozdanie z maksymalną ilością szczegółów."""
     print(f"--- ROZDANIE #{numer_rozdania} ---")
 
-    # Setup
+    # Setup (bez zmian)
     gracze = [
         Gracz(nazwa="Jakub"), Gracz(nazwa="Przeciwnik1"),
         Gracz(nazwa="Nasz"), Gracz(nazwa="Przeciwnik2")
@@ -40,7 +39,11 @@ def uruchom_symulacje_rozdania(numer_rozdania: int, druzyny: list[Druzyna]):
     druzyny[1].dodaj_gracza(gracze[1]); druzyny[1].dodaj_gracza(gracze[3])
     
     rozdajacy_idx = (numer_rozdania - 1) % 4
-    rozdanie = Rozdanie(gracze=gracze, druzyny=druzyny, rozdajacy_idx=rozdajacy_idx)
+    rozdanie = Rozdanie(
+        gracze=gracze, 
+        druzyny=druzyny, 
+        rozdajacy_idx=rozdajacy_idx
+    )
     print(f"Rozdającym jest: {gracze[rozdajacy_idx].nazwa}")
     
     # KROK 1: Rozdanie 3 kart
@@ -65,7 +68,13 @@ def uruchom_symulacje_rozdania(numer_rozdania: int, druzyny: list[Druzyna]):
     # KROK 3: Faza Lufy 1 (na razie tylko szkielet)
     if rozdanie.faza == FazaGry.LUFA:
         print("\n--- ETAP: Faza Lufy 1 ---")
-        # ... (logika do dodania w przyszłości)
+        gracz_odpowiadajacy = rozdanie.gracze[rozdanie.kolej_gracza_idx]
+        print(f"  Decyzję podejmuje: {gracz_odpowiadajacy.nazwa}")
+        # Na razie symulujemy pas
+        akcja_lufa = {'typ': 'pas_lufa'}
+        print("  Decyzja: Pas")
+        rozdanie.wykonaj_akcje(gracz_odpowiadajacy, akcja_lufa)
+
 
     # KROK 4: Faza Pytania
     if rozdanie.faza == FazaGry.FAZA_PYTANIA:
@@ -95,39 +104,46 @@ def uruchom_symulacje_rozdania(numer_rozdania: int, druzyny: list[Druzyna]):
                 decyzja_str = f"Przebijam na {wybrana_akcja_3['kontrakt'].name}"
             print(f"  Decyzja: {decyzja_str}")
             rozdanie.wykonaj_akcje(licytujacy, wybrana_akcja_3)
-    
-    # KROK 6: Pełne ręce i Rozgrywka
+      
+  # === ETAP ROZGRYWKI ===
     if rozdanie.faza == FazaGry.ROZGRYWKA:
-        print("\n--- ETAP: Pełne ręce graczy ---")
-        for gracz in gracze:
-            posortowana_reka = sorted(gracz.reka, key=lambda k: (k.kolor.name, k.ranga.value))
-            print(f"  Ręka gracza '{gracz.nazwa}': {', '.join(map(str, posortowana_reka))}")
-        
         print("\n" + "="*25)
         print("--- ETAP: Rozgrywka ---")
-    for numer_lewy in range(1, 7):
-        if rozdanie.rozdanie_zakonczone: break
-        print(f"\n-- Lewa #{numer_lewy} --")
-        start_idx = rozdanie.kolej_gracza_idx
-        kolejnosc_graczy = [gracze[(start_idx + i) % 4] for i in range(4)]
-        print(f"  Rozpoczyna: {kolejnosc_graczy[0].nazwa}")
+        if rozdanie.nieaktywny_gracz:
+            print(f"INFO: Gra 1 vs 2. Gracz '{rozdanie.nieaktywny_gracz.nazwa}' nie bierze udziału w rozgrywce.")
         
-        for gracz in kolejnosc_graczy:
-            karta_do_zagrania = znajdz_legalny_ruch(rozdanie, gracz)
-            if karta_do_zagrania:
-                wynik_zagrania = rozdanie.zagraj_karte(gracz, karta_do_zagrania)
-                komunikat = f"  [{gracz.nazwa}] zagrywa: {karta_do_zagrania}"
-                if wynik_zagrania.get('meldunek_pkt', 0) > 0:
-                    komunikat += f" (MELDUNEK! +{wynik_zagrania['meldunek_pkt']} pkt)"
-                print(komunikat)
-                
-                wynik_lewy = wynik_zagrania.get('wynik_lewy')
-                if wynik_lewy:
-                    zwyciezca, punkty = wynik_lewy
-                    print(f"  > Lewę wygrał {zwyciezca.nazwa}, zdobywając {punkty} pkt.")
-                    print(f"  > Aktualny stan punktów: My {rozdanie.punkty_w_rozdaniu['My']} - {rozdanie.punkty_w_rozdaniu['Oni']} Oni")
+        # POPRAWKA: Liczba lew zawsze wynosi 6
+        liczba_lew = 6
 
-    # 7. Punkty (wynik końcowy)
+        for numer_lewy in range(1, liczba_lew + 1):
+            if rozdanie.rozdanie_zakonczone: break
+            print(f"\n-- Lewa #{numer_lewy} --")
+            
+            # Pętla dla jednej lewy
+            for i in range(rozdanie.liczba_aktywnych_graczy):
+                aktualny_gracz = rozdanie.gracze[rozdanie.kolej_gracza_idx]
+                
+                if i == 0:
+                    print(f"  Rozpoczyna: {aktualny_gracz.nazwa}")
+
+                karta_do_zagrania = znajdz_legalny_ruch(rozdanie, aktualny_gracz)
+                if karta_do_zagrania:
+                    wynik_zagrania = rozdanie.zagraj_karte(aktualny_gracz, karta_do_zagrania)
+                    komunikat = f"  [{aktualny_gracz.nazwa}] zagrywa: {karta_do_zagrania}"
+                    if wynik_zagrania.get('meldunek_pkt', 0) > 0:
+                        komunikat += f" (MELDUNEK! +{wynik_zagrania['meldunek_pkt']} pkt)"
+                    print(komunikat)
+                    
+                    wynik_lewy = wynik_zagrania.get('wynik_lewy')
+                    if wynik_lewy:
+                        zwyciezca, punkty = wynik_lewy
+                        print(f"  > Lewę wygrał {zwyciezca.nazwa}, zdobywając {punkty} pkt.")
+                        print(f"  > Aktualny stan punktów: My {rozdanie.punkty_w_rozdaniu['My']} - {rozdanie.punkty_w_rozdaniu['Oni']} Oni")
+                else:
+                    print(f"BŁĄD KRYTYCZNY: Gracz {aktualny_gracz.nazwa} nie ma żadnego legalnego ruchu!")
+                    return
+
+    # KROK 7: Podsumowanie (Weryfikacja końcowa)
     if rozdanie.rozdanie_zakonczone and rozdanie.powod_zakonczenia:
          print(f"\n!!! Rozdanie zakończone przed czasem: {rozdanie.powod_zakonczenia} !!!")
 
@@ -142,7 +158,7 @@ def uruchom_symulacje_rozdania(numer_rozdania: int, druzyny: list[Druzyna]):
     
     print(f"  Rozdanie wygrywa: {druzyna_wygrana.nazwa}")
     print(f"  Przyznane punkty meczowe: {punkty_dodane} (mnożnik: x{mnoznik})")
-    print(f"  OGÓLNY WYNIK MECZU: {druzyny[0].nazwa} {druzyny[0].punkty_meczu} - {druzyny[1].punkty_meczu} {druzyny[1].punkty_meczu}")
+    print(f"  OGÓLNY WYNIK MECZU: {druzyny[0].nazwa} {druzyny[0].punkty_meczu} - {druzyny[1].nazwa} {druzyny[1].punkty_meczu}")
     print("="*25 + "\n")
 
 if __name__ == "__main__":
@@ -166,7 +182,7 @@ if __name__ == "__main__":
                 print("!!! KONIEC GRY !!!")
                 zwyciezca_meczu = druzyna_a if druzyna_a.punkty_meczu >= 66 else druzyna_b
                 print(f"Mecz wygrywa drużyna: {zwyciezca_meczu.nazwa}")
-                print(f"OSTATECZNY WYNIK: {druzyna_a.nazwa} {druzyna_a.punkty_meczu} - {druzyna_b.punkty_meczu} {druzyna_b.punkty_meczu}")
+                print(f"OSTATECZNY WYNIK: {druzyna_a.nazwa} {druzyna_a.punkty_meczu} - {druzyna_b.nazwa} {druzyna_b.punkty_meczu}")
                 print("#"*30)
                 break
                 

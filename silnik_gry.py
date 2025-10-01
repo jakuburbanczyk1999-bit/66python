@@ -120,6 +120,22 @@ class Rozdanie:
         self.historia_licytacji: list[tuple[Gracz, dict]] = []
         self.pasujacy_gracze: list[Gracz] = []
         self.oferty_przebicia: list[tuple[Gracz, dict]] = []
+        self.nieaktywny_gracz: Optional[Gracz] = None
+        self.liczba_aktywnych_graczy = 4
+        
+    def _ustaw_kontrakt(self, gracz_grajacy: Gracz, kontrakt: Kontrakt, atut: Optional[Kolor]):
+        self.grajacy = gracz_grajacy
+        self.kontrakt = kontrakt
+        self.atut = atut
+        
+        if self.kontrakt in [Kontrakt.LEPSZA, Kontrakt.GORSZA]:
+            self.atut = None
+            self.liczba_aktywnych_graczy = 3
+            for p in self.grajacy.druzyna.gracze:
+                if p != self.grajacy:
+                    self.nieaktywny_gracz = p
+                    break
+
 
 
     def rozpocznij_nowe_rozdanie(self):
@@ -163,29 +179,40 @@ class Rozdanie:
     
 
     def wykonaj_akcje(self, gracz: Gracz, akcja: dict):
+        """Przetwarza JEDNĄ akcję gracza i aktualizuje stan gry."""
         self.historia_licytacji.append((gracz, akcja))
 
         if self.faza == FazaGry.DEKLARACJA_1:
             if akcja['typ'] == 'deklaracja':
-                self.grajacy = gracz
-                self.kontrakt = akcja['kontrakt']
-                self.atut = akcja.get('atut')
-                # Na razie pomijamy Fazę Lufy, więc rozdajemy karty
+                self._ustaw_kontrakt(gracz, akcja['kontrakt'], akcja.get('atut'))
+                # Po deklaracji zawsze wchodzimy w Fazę Lufy
+                self.faza = FazaGry.LUFA
+                # Ustawiamy kolejkę na PIERWSZEGO PRZECIWNIKA
+                self.kolej_gracza_idx = (self.gracze.index(self.grajacy) + 1) % 4
+
+        elif self.faza == FazaGry.LUFA:
+            if akcja['typ'] == 'pas_lufa':
                 self.rozdaj_karty(3)
                 if self.kontrakt == Kontrakt.NORMALNA:
                     self.faza = FazaGry.FAZA_PYTANIA
+                    self.kolej_gracza_idx = self.gracze.index(self.grajacy)
                 else:
                     self.faza = FazaGry.ROZGRYWKA
+                    # POPRAWKA: Po licytacji grę ZAWSZE zaczyna grający
                     self.kolej_gracza_idx = self.gracze.index(self.grajacy)
-        
+            # TODO: Dodać obsługę akcji 'lufa'
+
         elif self.faza == FazaGry.FAZA_PYTANIA:
             if akcja['typ'] == 'zmiana_kontraktu':
-                self.kontrakt = akcja['kontrakt']
-                if self.kontrakt in [Kontrakt.LEPSZA, Kontrakt.GORSZA]: self.atut = None
+                self._ustaw_kontrakt(self.grajacy, akcja['kontrakt'], self.atut)
+                # TODO: Tutaj też powinna być faza lufy
                 self.faza = FazaGry.ROZGRYWKA
+                # POPRAWKA: Ustawiamy, że grę zaczyna grający
+                self.kolej_gracza_idx = self.gracze.index(self.grajacy)
             elif akcja['typ'] == 'pytanie':
                 self.faza = FazaGry.LICYTACJA
                 self.kolej_gracza_idx = (self.kolej_gracza_idx + 1) % 4
+
         elif self.faza == FazaGry.LICYTACJA:
             if akcja['typ'] == 'pas':
                 self.pasujacy_gracze.append(gracz)
@@ -195,10 +222,10 @@ class Rozdanie:
             # Przesuń kolejkę do następnego gracza
             self.kolej_gracza_idx = (self.kolej_gracza_idx + 1) % 4
             
-            # Sprawdź, czy licytacja 2 się zakończyła (3 decyzje)
-            liczba_decyzji = len(self.historia_licytacji) - sum(1 for _, a in self.historia_licytacji if a['typ'] in ['deklaracja', 'pytanie', 'zmiana_kontraktu'])
+            liczba_decyzji = len(self.pasujacy_gracze) + len(self.oferty_przebicia)
             if liczba_decyzji == 3:
-                self._rozstrzygnij_licytacje_2()        
+                self._rozstrzygnij_licytacje_2()
+           
     def rozdaj_karty(self, ilosc: int):
         start_idx = (self.rozdajacy_idx + 1) % 4
         for _ in range(ilosc):
@@ -362,34 +389,32 @@ class Rozdanie:
             'wynik_lewy': None
         }
         
-        if len(self.aktualna_lewa) == 4:
+        if len(self.aktualna_lewa) == self.liczba_aktywnych_graczy:
             wynik['wynik_lewy'] = self._zakoncz_lewe()
         else:
             self.kolej_gracza_idx = (self.kolej_gracza_idx + 1) % 4
+            while self.gracze[self.kolej_gracza_idx] == self.nieaktywny_gracz:
+                self.kolej_gracza_idx = (self.kolej_gracza_idx + 1) % 4
             
         return wynik
     def _rozstrzygnij_licytacje_2(self):
         """Wyłania zwycięzcę po zakończeniu fazy przebicia."""
-        # Sprawdź, czy ktoś zalicytował "Lepsza"
+        nowy_grajacy, nowa_akcja = None, None
+
         oferty_lepsza = [o for o in self.oferty_przebicia if o[1]['kontrakt'] == Kontrakt.LEPSZA]
         if oferty_lepsza:
-            nowy_grajacy, akcja = oferty_lepsza[0] # Pierwszy, kto zalicytował
-            self.grajacy = nowy_grajacy
-            self.kontrakt = akcja['kontrakt']
-            self.atut = None
-            print(f"  INFO: Licytację przebił {nowy_grajacy.nazwa} z kontraktem LEPSZA.")
+            nowy_grajacy, nowa_akcja = oferty_lepsza[0]
         else:
-            # Jeśli nie, sprawdź, czy ktoś zalicytował "Gorsza"
             oferty_gorsza = [o for o in self.oferty_przebicia if o[1]['kontrakt'] == Kontrakt.GORSZA]
             if oferty_gorsza:
-                nowy_grajacy, akcja = oferty_gorsza[0]
-                self.grajacy = nowy_grajacy
-                self.kontrakt = akcja['kontrakt']
-                self.atut = None
-                print(f"  INFO: Licytację przebił {nowy_grajacy.nazwa} z kontraktem GORSZA.")
-            else:
-                print("  INFO: Wszyscy spasowali, pierwotny kontrakt zostaje.")
+                nowy_grajacy, nowa_akcja = oferty_gorsza[0]
+
+        if nowy_grajacy and nowa_akcja:
+            print(f"  INFO: Licytację przebił {nowy_grajacy.nazwa} z kontraktem {nowa_akcja['kontrakt'].name}.")
+            # KLUCZOWA POPRAWKA: Używamy metody _ustaw_kontrakt, aby poprawnie skonfigurować grę 1 vs 2
+            self._ustaw_kontrakt(nowy_grajacy, nowa_akcja['kontrakt'], None)
+        else:
+            print("  INFO: Wszyscy spasowali, pierwotny kontrakt zostaje.")
         
-        # Po rozstrzygnięciu przechodzimy do rozgrywki
         self.faza = FazaGry.ROZGRYWKA
         self.kolej_gracza_idx = self.gracze.index(self.grajacy)
