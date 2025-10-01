@@ -439,3 +439,8 @@ class Rozdanie:
         
         self.faza = FazaGry.ROZGRYWKA
         self.kolej_gracza_idx = self.gracze.index(self.grajacy)
+    def get_legalne_karty(self, gracz: Gracz) -> list[Karta]:
+        """Zwraca listę kart, które gracz może legalnie zagrać."""
+        if gracz != self.gracze[self.kolej_gracza_idx]:
+            return []
+        return [karta for karta in gracz.reka if self._waliduj_ruch(gracz, karta)]

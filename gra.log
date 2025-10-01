@@ -1,0 +1,42 @@
+[2025-10-01 18:03:35,962] INFO: ====================
+[2025-10-01 18:03:35,962] INFO: === TWORZENIE NOWEGO ROZDANIA ===
+[2025-10-01 18:03:35,963] INFO: Rozdający: Przeciwnik2. Zaczyna: Jakub
+[2025-10-01 18:03:35,963] DEBUG:   Ręka gracza 'Jakub': Walet Zoladz, As Czerwien, Dziesiatka Zoladz
+[2025-10-01 18:03:35,963] DEBUG:   Ręka gracza 'Przeciwnik1': Dziesiatka Wino, As Dzwonek, Dama Wino
+[2025-10-01 18:03:35,963] DEBUG:   Ręka gracza 'Nasz': Dziewiatka Czerwien, Krol Wino, As Zoladz
+[2025-10-01 18:03:35,963] DEBUG:   Ręka gracza 'Przeciwnik2': Walet Dzwonek, As Wino, Krol Czerwien
+[2025-10-01 18:03:42,636] INFO: --- Wyświetlono stół. Faza: DEKLARACJA_1, Kolej na: Jakub ---
+[2025-10-01 18:03:43,804] INFO: Gracz 'Jakub' wykonał akcję: NORMALNA (CZERWIEN)
+[2025-10-01 18:03:43,805] INFO: Tura AI: Przeciwnik1 (Faza: LUFA)
+[2025-10-01 18:03:43,805] INFO:   AI 'Przeciwnik1' wykonuje akcję: {'typ': 'pas_lufa'}
+[2025-10-01 18:03:43,805] INFO: Tura AI: Przeciwnik2 (Faza: LUFA)
+[2025-10-01 18:03:43,805] INFO:   AI 'Przeciwnik2' wykonuje akcję: {'typ': 'pas_lufa'}
+[2025-10-01 18:03:43,806] INFO: --- Wyświetlono stół. Faza: FAZA_PYTANIA, Kolej na: Jakub ---
+[2025-10-01 18:03:46,511] INFO: Gracz 'Jakub' wykonał akcję: Pytanie
+[2025-10-01 18:03:46,511] INFO: Tura AI: Przeciwnik1 (Faza: LICYTACJA)
+[2025-10-01 18:03:46,511] INFO:   AI 'Przeciwnik1' wykonuje akcję: {'typ': 'pas'}
+[2025-10-01 18:03:46,511] INFO: Tura AI: Nasz (Faza: LICYTACJA)
+[2025-10-01 18:03:46,511] INFO:   AI 'Nasz' wykonuje akcję: {'typ': 'pas'}
+[2025-10-01 18:03:46,511] INFO: Tura AI: Przeciwnik2 (Faza: LICYTACJA)
+[2025-10-01 18:03:46,511] INFO:   AI 'Przeciwnik2' wykonuje akcję: {'typ': 'pas'}
+[2025-10-01 18:03:46,513] INFO: --- Wyświetlono stół. Faza: ROZGRYWKA, Kolej na: Jakub ---
+[2025-10-01 18:03:48,113] INFO: Gracz 'Jakub' zagrywa kartę: Walet Czerwien
+[2025-10-01 18:03:48,113] INFO: Tura AI: Przeciwnik1 (Faza: ROZGRYWKA)
+[2025-10-01 18:03:48,113] INFO:   AI 'Przeciwnik1' zagrywa: Dama Czerwien
+[2025-10-01 18:03:48,113] INFO: Tura AI: Nasz (Faza: ROZGRYWKA)
+[2025-10-01 18:03:48,113] INFO:   AI 'Nasz' zagrywa: Dziewiatka Czerwien
+[2025-10-01 18:03:48,113] INFO: Tura AI: Przeciwnik2 (Faza: ROZGRYWKA)
+[2025-10-01 18:03:48,113] INFO:   AI 'Przeciwnik2' zagrywa: Krol Czerwien
+[2025-10-01 18:03:48,113] INFO: Tura AI: Przeciwnik2 (Faza: ROZGRYWKA)
+[2025-10-01 18:03:48,114] INFO:   AI 'Przeciwnik2' zagrywa: Krol Dzwonek
+[2025-10-01 18:03:48,116] INFO: --- Wyświetlono stół. Faza: ROZGRYWKA, Kolej na: Jakub ---
+[2025-10-01 18:03:50,540] INFO: Gracz 'Jakub' zagrywa kartę: Dama Dzwonek
+[2025-10-01 18:03:50,540] INFO: Tura AI: Przeciwnik1 (Faza: ROZGRYWKA)
+[2025-10-01 18:03:50,541] INFO:   AI 'Przeciwnik1' zagrywa: As Dzwonek
+[2025-10-01 18:03:50,541] INFO: Tura AI: Nasz (Faza: ROZGRYWKA)
+[2025-10-01 18:03:50,541] INFO:   AI 'Nasz' zagrywa: Dziewiatka Dzwonek
+[2025-10-01 18:03:50,541] INFO: Tura AI: Przeciwnik1 (Faza: ROZGRYWKA)
+[2025-10-01 18:03:50,541] INFO:   AI 'Przeciwnik1' zagrywa: Dziesiatka Wino
+[2025-10-01 18:03:50,541] INFO: Tura AI: Nasz (Faza: ROZGRYWKA)
+[2025-10-01 18:03:50,541] INFO:   AI 'Nasz' zagrywa: Krol Wino
+[2025-10-01 18:03:50,543] INFO: --- Wyświetlono stół. Faza: ROZGRYWKA, Kolej na: Przeciwnik2 ---
