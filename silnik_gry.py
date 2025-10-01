@@ -107,7 +107,9 @@ class Rozdanie:
         self.gracze = gracze; self.druzyny = druzyny; self.rozdajacy_idx = rozdajacy_idx
         self.talia = Talia()
         self.kontrakt: Optional[Kontrakt] = None; self.grajacy: Optional[Gracz] = None
-        self.atut: Optional[Kolor] = None; self.stawka = 0
+        self.atut: Optional[Kolor] = None; 
+        self.stawka = 0
+        self.mnoznik_lufy: int = 1
         self.punkty_w_rozdaniu = {druzyny[0].nazwa: 0, druzyny[1].nazwa: 0}
         self.kolej_gracza_idx: Optional[int] = None
         self.aktualna_lewa: list[tuple[Gracz, Karta]] = []
@@ -174,6 +176,16 @@ class Rozdanie:
                 {'typ': 'przebicie', 'kontrakt': Kontrakt.LEPSZA},
                 {'typ': 'przebicie', 'kontrakt': Kontrakt.GORSZA},
             ]
+        if self.faza == FazaGry.LUFA:
+            # Sprawdzamy, czyja jest kolej na decyzję
+            druzyna_grajacego = self.grajacy.druzyna
+            czy_tura_druzyny_grajacego = gracz.druzyna == druzyna_grajacego
+            
+            # Drużyna przeciwna daje 'lufę', drużyna grającego 'kontrę'
+            akcja_podbicia = {'typ': 'kontra'} if czy_tura_druzyny_grajacego else {'typ': 'lufa'}
+            
+            # TODO: Dodać sprawdzanie limitu stawki
+            return [akcja_podbicia, {'typ': 'pas_lufa'}]
         return []
 
     
@@ -191,16 +203,32 @@ class Rozdanie:
                 self.kolej_gracza_idx = (self.gracze.index(self.grajacy) + 1) % 4
 
         elif self.faza == FazaGry.LUFA:
-            if akcja['typ'] == 'pas_lufa':
-                self.rozdaj_karty(3)
-                if self.kontrakt == Kontrakt.NORMALNA:
-                    self.faza = FazaGry.FAZA_PYTANIA
-                    self.kolej_gracza_idx = self.gracze.index(self.grajacy)
+            druzyna_grajacego = self.grajacy.druzyna
+            
+            if akcja['typ'] in ['lufa', 'kontra']:
+                self.mnoznik_lufy *= 2
+                self.pasujacy_gracze.clear() # Reset pasów po podbiciu
+                # Przekazujemy turę do gracza z przeciwnej drużyny
+                self.kolej_gracza_idx = (self.kolej_gracza_idx + 1) % 4
+            
+            elif akcja['typ'] == 'pas_lufa':
+                self.pasujacy_gracze.append(gracz)
+                
+                # Sprawdzamy, czy drugi przeciwnik też musi podjąć decyzję
+                przeciwnicy = druzyna_grajacego.przeciwnicy.gracze
+                if all(p in self.pasujacy_gracze for p in przeciwnicy):
+                    # Obaj spasowali, koniec fazy lufy
+                    self.pasujacy_gracze.clear()
+                    self.rozdaj_karty(3)
+                    if self.kontrakt == Kontrakt.NORMALNA and not self.oferty_przebicia:
+                        self.faza = FazaGry.FAZA_PYTANIA
+                        self.kolej_gracza_idx = self.gracze.index(self.grajacy)
+                    else:
+                        self.faza = FazaGry.ROZGRYWKA
+                        self.kolej_gracza_idx = self.gracze.index(self.grajacy)
                 else:
-                    self.faza = FazaGry.ROZGRYWKA
-                    # POPRAWKA: Po licytacji grę ZAWSZE zaczyna grający
-                    self.kolej_gracza_idx = self.gracze.index(self.grajacy)
-            # TODO: Dodać obsługę akcji 'lufa'
+                    # Tura przechodzi do drugiego przeciwnika
+                    self.kolej_gracza_idx = (self.kolej_gracza_idx + 2) % 4 # +2 to zawsze partner w drużynie
 
         elif self.faza == FazaGry.FAZA_PYTANIA:
             if akcja['typ'] == 'zmiana_kontraktu':
@@ -235,9 +263,11 @@ class Rozdanie:
                 if karta: self.gracze[idx].reka.append(karta)
     
     def rozlicz_rozdanie(self) -> tuple[Druzyna, int, int]:
-       
-        
-        # Krok 1: Dolicz bonus, TYLKO jeśli rozdanie trwało 6 lew (nikt nie zakończył go wcześniej)
+        """FINALNA WERSJA: Poprawnie oblicza i przyznaje punkty meczowe."""
+        # POPRAWKA: Zawsze inicjalizujemy mnożnik
+        mnoznik = 1
+
+        # Krok 1: Dolicz bonus, jeśli gra doszła do końca
         if not self.rozdanie_zakonczone and self.zwyciezca_ostatniej_lewy:
             druzyna_bonus = self.zwyciezca_ostatniej_lewy.druzyna
             self.punkty_w_rozdaniu[druzyna_bonus.nazwa] += 12
@@ -248,17 +278,15 @@ class Rozdanie:
         else:
             punkty_grajacego = self.punkty_w_rozdaniu[self.grajacy.druzyna.nazwa]
             punkty_przeciwnikow = self.punkty_w_rozdaniu[self.grajacy.druzyna.przeciwnicy.nazwa]
-            
             if punkty_grajacego > punkty_przeciwnikow:
                 druzyna_wygrana = self.grajacy.druzyna
             else:
                 druzyna_wygrana = self.grajacy.druzyna.przeciwnicy
 
-        # Krok 3: Oblicz punkty meczowe (reszta logiki bez zmian)
         druzyna_przegrana = druzyna_wygrana.przeciwnicy
         punkty_przegranego = self.punkty_w_rozdaniu[druzyna_przegrana.nazwa]
         
-        mnoznik = 1
+        # Krok 3: Oblicz punkty meczowe
         punkty_meczu = STAWKI_KONTRAKTOW.get(self.kontrakt, 0)
 
         if self.kontrakt == Kontrakt.NORMALNA:
@@ -267,6 +295,8 @@ class Rozdanie:
                 if not any(len(gracz.wygrane_karty) > 0 for gracz in druzyna_przegrana.gracze):
                     mnoznik = 3
             punkty_meczu *= mnoznik
+        
+        punkty_meczu *= self.mnoznik_lufy
         
         druzyna_wygrana.punkty_meczu += punkty_meczu
         return druzyna_wygrana, punkty_meczu, mnoznik

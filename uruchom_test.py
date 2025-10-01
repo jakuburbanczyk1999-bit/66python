@@ -67,13 +67,20 @@ def uruchom_symulacje_rozdania(numer_rozdania: int, druzyny: list[Druzyna]):
 
     # KROK 3: Faza Lufy 1 (na razie tylko szkielet)
     if rozdanie.faza == FazaGry.LUFA:
-        print("\n--- ETAP: Faza Lufy 1 ---")
-        gracz_odpowiadajacy = rozdanie.gracze[rozdanie.kolej_gracza_idx]
-        print(f"  Decyzję podejmuje: {gracz_odpowiadajacy.nazwa}")
-        # Na razie symulujemy pas
-        akcja_lufa = {'typ': 'pas_lufa'}
-        print("  Decyzja: Pas")
-        rozdanie.wykonaj_akcje(gracz_odpowiadajacy, akcja_lufa)
+        print("\n--- ETAP: Faza Lufy ---")
+        while rozdanie.faza == FazaGry.LUFA:
+            gracz_odpowiadajacy = rozdanie.gracze[rozdanie.kolej_gracza_idx]
+            print(f"  Decyzję podejmuje: {gracz_odpowiadajacy.nazwa}")
+            
+            mozliwe_akcje_lufa = rozdanie.get_mozliwe_akcje(gracz_odpowiadajacy)
+            # Prosta AI: 50% szans na podbicie, jeśli to możliwe
+            akcja_lufa = random.choice(mozliwe_akcje_lufa) if random.random() > 0.5 else {'typ': 'pas_lufa'}
+
+            decyzja_str = akcja_lufa['typ'].replace('_lufa', '').capitalize()
+            print(f"  Decyzja: {decyzja_str}")
+            rozdanie.wykonaj_akcje(gracz_odpowiadajacy, akcja_lufa)
+            if akcja_lufa['typ'] != 'pas_lufa':
+                print(f"  Stawka podbita do x{rozdanie.mnoznik_lufy}")
 
 
     # KROK 4: Faza Pytania
@@ -162,30 +169,39 @@ def uruchom_symulacje_rozdania(numer_rozdania: int, druzyny: list[Druzyna]):
     print("="*25 + "\n")
 
 if __name__ == "__main__":
-    LICZBA_ITERACJI = 100
-    NAZWA_PLIKU_LOGU = "log_rozdania.txt"
-    
-    # Inicjujemy drużyny RAZ na całą symulację, aby śledzić wynik
-    druzyna_a = Druzyna(nazwa="My")
-    druzyna_b = Druzyna(nazwa="Oni")
-    druzyna_a.przeciwnicy = druzyna_b
-    druzyna_b.przeciwnicy = druzyna_a
+    # --- NOWA KONFIGURACJA SYMULACJI ---
+    LICZBA_PARTII = 10
+    NAZWA_PLIKU_LOGU = "log_finalny.txt"
     
     oryginalny_stdout = sys.stdout 
     with open(NAZWA_PLIKU_LOGU, 'w', encoding='utf-8') as f:
         sys.stdout = f
-        for i in range(LICZBA_ITERACJI):
-            uruchom_symulacje_rozdania(i + 1, [druzyna_a, druzyna_b])
-            # Sprawdź, czy ktoś wygrał cały mecz
-            if druzyna_a.punkty_meczu >= 66 or druzyna_b.punkty_meczu >= 66:
-                print("\n" + "#"*30)
-                print("!!! KONIEC GRY !!!")
-                zwyciezca_meczu = druzyna_a if druzyna_a.punkty_meczu >= 66 else druzyna_b
-                print(f"Mecz wygrywa drużyna: {zwyciezca_meczu.nazwa}")
-                print(f"OSTATECZNY WYNIK: {druzyna_a.nazwa} {druzyna_a.punkty_meczu} - {druzyna_b.nazwa} {druzyna_b.punkty_meczu}")
-                print("#"*30)
-                break
-                
+        
+        for i in range(1, LICZBA_PARTII + 1):
+            print("\n" + "#"*40)
+            print(f"### ROZPOCZYNAMY PARTIĘ #{i} ###")
+            print("#"*40 + "\n")
+            
+            # Tworzymy nowe, świeże drużyny dla każdej partii
+            druzyna_a = Druzyna(nazwa="My")
+            druzyna_b = Druzyna(nazwa="Oni")
+            druzyna_a.przeciwnicy = druzyna_b
+            druzyna_b.przeciwnicy = druzyna_a
+            
+            numer_rozdania_w_partii = 1
+            # Pętla wewnętrzna - graj rozdania, aż ktoś wygra partię
+            while druzyna_a.punkty_meczu < 66 and druzyna_b.punkty_meczu < 66:
+                uruchom_symulacje_rozdania(numer_rozdania_w_partii, [druzyna_a, druzyna_b])
+                numer_rozdania_w_partii += 1
+
+            # Logowanie końca partii
+            print("\n" + "#"*30)
+            print("!!! KONIEC GRY !!!")
+            zwyciezca_meczu = druzyna_a if druzyna_a.punkty_meczu >= 66 else druzyna_b
+            print(f"Partię wygrywa drużyna: {zwyciezca_meczu.nazwa}")
+            print(f"OSTATECZNY WYNIK: {druzyna_a.nazwa} {druzyna_a.punkty_meczu} - {druzyna_b.punkty_meczu} {druzyna_b.punkty_meczu}")
+            print("#"*30)
+
     sys.stdout = oryginalny_stdout
     
-    print(f"✅ Symulacja zakończona. Pełny log został zapisany do pliku: {NAZWA_PLIKU_LOGU}")
+    print(f"✅ Symulacja zakończona. Pełny log z {LICZBA_PARTII} partii został zapisany do pliku: {NAZWA_PLIKU_LOGU}")
