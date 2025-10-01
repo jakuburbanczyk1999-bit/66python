@@ -27,90 +27,50 @@ def formatuj_akcje(akcje: list[dict]) -> str:
 
 def uruchom_symulacje_rozdania(numer_rozdania: int, druzyny: list[Druzyna]):
     print(f"--- ROZDANIE #{numer_rozdania} ---")
-
-    # Setup (bez zmian)
-    gracze = [
-        Gracz(nazwa="Jakub"), Gracz(nazwa="Przeciwnik1"),
-        Gracz(nazwa="Nasz"), Gracz(nazwa="Przeciwnik2")
-    ]
+    
+    # Setup
+    gracze = [Gracz(nazwa="Jakub"), Gracz(nazwa="Przeciwnik1"), Gracz(nazwa="Nasz"), Gracz(nazwa="Przeciwnik2")]
     for gracz in gracze: gracz.reka.clear(); gracz.wygrane_karty.clear()
     druzyny[0].gracze.clear(); druzyny[1].gracze.clear()
     druzyny[0].dodaj_gracza(gracze[0]); druzyny[0].dodaj_gracza(gracze[2])
     druzyny[1].dodaj_gracza(gracze[1]); druzyny[1].dodaj_gracza(gracze[3])
     
     rozdajacy_idx = (numer_rozdania - 1) % 4
-    rozdanie = Rozdanie(
-        gracze=gracze, 
-        druzyny=druzyny, 
-        rozdajacy_idx=rozdajacy_idx
-    )
-    print(f"Rozdającym jest: {gracze[rozdajacy_idx].nazwa}")
+    rozdanie = Rozdanie(gracze=gracze, druzyny=druzyny, rozdajacy_idx=rozdajacy_idx)
     
-    # KROK 1: Rozdanie 3 kart
+    print(f"Rozdającym jest: {gracze[rozdajacy_idx].nazwa}")
     rozdanie.rozpocznij_nowe_rozdanie()
-    print("\n--- ETAP: Rozdanie 3 kart ---")
-    for gracz in gracze:
-        print(f"  Ręka gracza '{gracz.nazwa}': {', '.join(map(str, gracz.reka))}")
 
-    # KROK 2: Deklaracja 1
-    if rozdanie.faza == FazaGry.DEKLARACJA_1:
-        print("\n--- ETAP: Deklaracja 1 ---")
-        gracz_deklarujacy = rozdanie.gracze[rozdanie.kolej_gracza_idx]
-        print(f"  Deklaruje: {gracz_deklarujacy.nazwa}")
-        mozliwe_akcje = rozdanie.get_mozliwe_akcje(gracz_deklarujacy)
-        print(f"  Możliwe akcje: {formatuj_akcje(mozliwe_akcje)}")
+    # === GŁÓWNA PĘTLA LICYTACJI (aż do rozpoczęcia rozgrywki) ===
+    while rozdanie.faza != FazaGry.ROZGRYWKA:
+        aktualny_gracz = rozdanie.gracze[rozdanie.kolej_gracza_idx]
+        mozliwe_akcje = rozdanie.get_mozliwe_akcje(aktualny_gracz)
+
+        if not mozliwe_akcje:
+            print("INFO: Brak możliwych akcji, licytacja zakończona.")
+            rozdanie.faza = FazaGry.ROZGRYWKA # Wymuś koniec licytacji
+            break
+
+        # Logowanie aktualnej fazy
+        if rozdanie.faza == FazaGry.DEKLARACJA_1:
+            print("\n--- ETAP: Deklaracja 1 ---")
+            print(f"  Deklaruje: {aktualny_gracz.nazwa}")
+        elif rozdanie.faza == FazaGry.LUFA:
+            print("\n--- ETAP: Faza Lufy ---")
+            print(f"  Decyzję podejmuje: {aktualny_gracz.nazwa}")
+        elif rozdanie.faza == FazaGry.FAZA_PYTANIA:
+            print("\n--- ETAP: Faza Pytania ---")
+            print(f"  Ponownie decyduje: {aktualny_gracz.nazwa}")
+        elif rozdanie.faza == FazaGry.LICYTACJA:
+            print("\n--- ETAP: Licytacja 2 (Przebicie) ---")
+            print(f"  Licytuje: {aktualny_gracz.nazwa}")
+
+        # Symulacja decyzji i jej logowanie
         wybrana_akcja = random.choice(mozliwe_akcje)
-        kontrakt_info = wybrana_akcja['kontrakt'].name
-        atut_str = wybrana_akcja.get('atut', {}).name if wybrana_akcja.get('atut') else "Brak"
-        print(f"  Decyzja: {kontrakt_info}, Atut: {atut_str}")
-        rozdanie.wykonaj_akcje(gracz_deklarujacy, wybrana_akcja)
-
-    # KROK 3: Faza Lufy 1 (na razie tylko szkielet)
-    if rozdanie.faza == FazaGry.LUFA:
-        print("\n--- ETAP: Faza Lufy ---")
-        while rozdanie.faza == FazaGry.LUFA:
-            gracz_odpowiadajacy = rozdanie.gracze[rozdanie.kolej_gracza_idx]
-            print(f"  Decyzję podejmuje: {gracz_odpowiadajacy.nazwa}")
-            
-            mozliwe_akcje_lufa = rozdanie.get_mozliwe_akcje(gracz_odpowiadajacy)
-            # Prosta AI: 50% szans na podbicie, jeśli to możliwe
-            akcja_lufa = random.choice(mozliwe_akcje_lufa) if random.random() > 0.5 else {'typ': 'pas_lufa'}
-
-            decyzja_str = akcja_lufa['typ'].replace('_lufa', '').capitalize()
-            print(f"  Decyzja: {decyzja_str}")
-            rozdanie.wykonaj_akcje(gracz_odpowiadajacy, akcja_lufa)
-            if akcja_lufa['typ'] != 'pas_lufa':
-                print(f"  Stawka podbita do x{rozdanie.mnoznik_lufy}")
-
-
-    # KROK 4: Faza Pytania
-    if rozdanie.faza == FazaGry.FAZA_PYTANIA:
-        print("\n--- ETAP: Faza Pytania ---")
-        gracz_pytajacy = rozdanie.gracze[rozdanie.kolej_gracza_idx]
-        print(f"  Ponownie decyduje: {gracz_pytajacy.nazwa}")
-        mozliwe_akcje_2 = rozdanie.get_mozliwe_akcje(gracz_pytajacy)
-        print(f"  Możliwe akcje: {formatuj_akcje(mozliwe_akcje_2)}")
-        wybrana_akcja_2 = random.choice(mozliwe_akcje_2)
-        decyzja_str = f"Zmień na {wybrana_akcja_2['kontrakt'].name}" if wybrana_akcja_2['typ'] == 'zmiana_kontraktu' else "Pytam"
-        print(f"  Decyzja: {decyzja_str}")
-        rozdanie.wykonaj_akcje(gracz_pytajacy, wybrana_akcja_2)
-
-    # KROK 5: Licytacja 2 (Przebicie)
-    if rozdanie.faza == FazaGry.LICYTACJA:
-        print("\n--- ETAP: Licytacja 2 (Przebicie) ---")
-        for _ in range(3):
-            if rozdanie.faza != FazaGry.LICYTACJA: break
-            licytujacy = rozdanie.gracze[rozdanie.kolej_gracza_idx]
-            mozliwe_akcje = rozdanie.get_mozliwe_akcje(licytujacy)
-            if not mozliwe_akcje: continue
-            print(f"  Licytuje: {licytujacy.nazwa}")
-            print(f"  Możliwe akcje: {formatuj_akcje(mozliwe_akcje)}")
-            wybrana_akcja_3 = random.choice(mozliwe_akcje)
-            decyzja_str = "Pas"
-            if wybrana_akcja_3['typ'] == 'przebicie':
-                decyzja_str = f"Przebijam na {wybrana_akcja_3['kontrakt'].name}"
-            print(f"  Decyzja: {decyzja_str}")
-            rozdanie.wykonaj_akcje(licytujacy, wybrana_akcja_3)
+        print(f"  Możliwe akcje: {formatuj_akcje(mozliwe_akcje)}")
+        print(f"  Decyzja: {formatuj_akcje([wybrana_akcja])}")
+        
+        rozdanie.wykonaj_akcje(aktualny_gracz, wybrana_akcja)
       
   # === ETAP ROZGRYWKI ===
     if rozdanie.faza == FazaGry.ROZGRYWKA:
@@ -170,7 +130,7 @@ def uruchom_symulacje_rozdania(numer_rozdania: int, druzyny: list[Druzyna]):
 
 if __name__ == "__main__":
     # --- NOWA KONFIGURACJA SYMULACJI ---
-    LICZBA_PARTII = 10
+    LICZBA_PARTII = 20
     NAZWA_PLIKU_LOGU = "log_finalny.txt"
     
     oryginalny_stdout = sys.stdout 
