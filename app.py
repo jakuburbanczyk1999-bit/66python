@@ -15,7 +15,7 @@ if not logger.handlers:
 # --- Koniec Konfiguracji ---
 
 app = FastAPI()
-app.mount("/", StaticFiles(directory="static", html=True), name="static")
+
 
 # --- Główna Logika Gry ---
 
@@ -82,7 +82,7 @@ def uruchom_ture_ai(mecz: Mecz):
                 break
 # --- Endpointy API ---
 
-@app.get("/")
+@app.get("/stan_gry")
 def get_stan_gry():
     global aktualny_mecz
     
@@ -169,3 +169,5 @@ def nowy_mecz_endpoint():
     aktualny_mecz = Mecz(nazwy_graczy=["Jakub", "Przeciwnik1", "Nasz", "Przeciwnik2"])
     aktualny_mecz.rozpocznij_mecz()
     return get_stan_gry()
+
+app.mount("/", StaticFiles(directory="static", html=True), name="static")

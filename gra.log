@@ -1,4 +1,96 @@
-[2025-10-02 21:35:42,470] INFO: ===
+[2025-10-02 21:38:33,607] INFO: ===
 ### ROZPOCZYNAMY NOWE ROZDANIE ###
 Rozdającym jest: Jakub
 ===
+[2025-10-02 21:38:56,919] INFO: Tura AI: Przeciwnik1 (Faza: DEKLARACJA_1)
+[2025-10-02 21:38:56,919] INFO:   AI 'Przeciwnik1' wykonuje akcję: {'typ': 'deklaracja', 'kontrakt': <Kontrakt.NORMALNA: 1>, 'atut': <Kolor.CZERWIEN: 1>}
+[2025-10-02 21:38:56,919] INFO: Tura AI: Nasz (Faza: LUFA)
+[2025-10-02 21:38:56,919] INFO:   AI 'Nasz' wykonuje akcję: {'typ': 'pas_lufa'}
+[2025-10-02 21:38:56,919] INFO: Tura AI: Przeciwnik2 (Faza: LUFA)
+[2025-10-02 21:38:56,919] INFO:   AI 'Przeciwnik2' wykonuje akcję: {'typ': 'pas_lufa'}
+[2025-10-02 21:39:11,706] INFO: Tura AI: Przeciwnik1 (Faza: FAZA_PYTANIA)
+[2025-10-02 21:39:11,706] INFO:   AI 'Przeciwnik1' wykonuje akcję: {'typ': 'pytanie'}
+[2025-10-02 21:39:11,706] INFO: Tura AI: Nasz (Faza: LICYTACJA)
+[2025-10-02 21:39:11,706] INFO:   AI 'Nasz' wykonuje akcję: {'typ': 'pas'}
+[2025-10-02 21:39:11,706] INFO: Tura AI: Przeciwnik2 (Faza: LICYTACJA)
+[2025-10-02 21:39:11,706] INFO:   AI 'Przeciwnik2' wykonuje akcję: {'typ': 'pas'}
+[2025-10-02 21:39:13,705] INFO:   INFO: Licytację przebił Jakub z kontraktem LEPSZA.
+[2025-10-02 21:39:57,670] INFO: ===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Jakub
+===
+[2025-10-02 21:39:57,670] INFO: Tura AI: Przeciwnik1 (Faza: DEKLARACJA_1)
+[2025-10-02 21:39:57,670] INFO:   AI 'Przeciwnik1' wykonuje akcję: {'typ': 'deklaracja', 'kontrakt': <Kontrakt.NORMALNA: 1>, 'atut': <Kolor.CZERWIEN: 1>}
+[2025-10-02 21:39:57,670] INFO: Tura AI: Nasz (Faza: LUFA)
+[2025-10-02 21:39:57,670] INFO:   AI 'Nasz' wykonuje akcję: {'typ': 'pas_lufa'}
+[2025-10-02 21:39:57,670] INFO: Tura AI: Przeciwnik2 (Faza: LUFA)
+[2025-10-02 21:39:57,671] INFO:   AI 'Przeciwnik2' wykonuje akcję: {'typ': 'pas_lufa'}
+[2025-10-02 21:40:02,613] INFO: Tura AI: Przeciwnik1 (Faza: FAZA_PYTANIA)
+[2025-10-02 21:40:02,613] INFO:   AI 'Przeciwnik1' wykonuje akcję: {'typ': 'zmiana_kontraktu', 'kontrakt': <Kontrakt.BEZ_PYTANIA: 2>}
+[2025-10-02 21:40:02,613] INFO: Tura AI: Nasz (Faza: LUFA)
+[2025-10-02 21:40:02,613] INFO:   AI 'Nasz' wykonuje akcję: {'typ': 'pas_lufa'}
+[2025-10-02 21:40:02,613] INFO: Tura AI: Przeciwnik2 (Faza: LUFA)
+[2025-10-02 21:40:02,613] INFO:   AI 'Przeciwnik2' wykonuje akcję: {'typ': 'pas_lufa'}
+[2025-10-02 21:40:11,360] INFO: 
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik1
+[2025-10-02 21:40:11,360] INFO:   [Przeciwnik1] zagrywa: As Czerwien
+[2025-10-02 21:40:11,360] INFO:   [Nasz] zagrywa: Walet Czerwien
+[2025-10-02 21:40:11,360] INFO:   [Przeciwnik2] zagrywa: Dama Czerwien
+[2025-10-02 21:40:58,120] INFO:   [Jakub] zagrywa: Dziesiatka Czerwien
+[2025-10-02 21:40:58,120] INFO:   > Lewę wygrywa Przeciwnik1 kartą Dziesiatka Czerwien (+26 pkt).
+[2025-10-02 21:40:58,120] INFO:   > Wynik w rozdaniu: My 0 - 26 Oni
+[2025-10-02 21:40:58,120] INFO: 
+-- Lewa #2 --
+  Rozpoczyna: Przeciwnik1
+[2025-10-02 21:40:58,120] INFO:   [Przeciwnik1] zagrywa: Dziesiatka Wino
+[2025-10-02 21:40:58,120] INFO:   [Nasz] zagrywa: Walet Wino
+[2025-10-02 21:40:58,120] INFO:   [Przeciwnik2] zagrywa: Dama Wino
+[2025-10-02 21:40:59,790] INFO:   [Jakub] zagrywa: Dziewiatka Czerwien
+[2025-10-02 21:40:59,790] INFO:   > Lewę wygrywa Jakub kartą Dziewiatka Czerwien (+15 pkt).
+[2025-10-02 21:40:59,790] INFO:   > Wynik w rozdaniu: My 15 - 26 Oni
+[2025-10-02 21:40:59,790] INFO: 
+=========================
+[2025-10-02 21:40:59,790] INFO: --- WYNIK KOŃCOWY ROZDANIA ---
+[2025-10-02 21:40:59,790] INFO:   Grany kontrakt: BEZ_PYTANIA
+[2025-10-02 21:40:59,790] INFO:   Powód zakończenia: przejęcie lewy przez gracza Jakub
+[2025-10-02 21:40:59,790] INFO:   Rozdanie wygrywa: My
+[2025-10-02 21:40:59,790] INFO:   Przyznane punkty meczowe: 6 (mnożnik: x1)
+[2025-10-02 21:40:59,790] INFO:   OGÓLNY WYNIK MECZU: My 6 - Oni 0
+[2025-10-02 21:40:59,790] INFO: =========================
+
+[2025-10-02 21:40:59,790] INFO: ===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Przeciwnik1
+===
+[2025-10-02 21:40:59,791] INFO: Tura AI: Nasz (Faza: DEKLARACJA_1)
+[2025-10-02 21:40:59,791] INFO:   AI 'Nasz' wykonuje akcję: {'typ': 'deklaracja', 'kontrakt': <Kontrakt.BEZ_PYTANIA: 2>, 'atut': <Kolor.DZWONEK: 2>}
+[2025-10-02 21:40:59,791] INFO: Tura AI: Przeciwnik2 (Faza: LUFA)
+[2025-10-02 21:40:59,791] INFO:   AI 'Przeciwnik2' wykonuje akcję: {'typ': 'pas_lufa'}
+[2025-10-02 21:41:02,561] INFO: Tura AI: Przeciwnik1 (Faza: LUFA)
+[2025-10-02 21:41:02,561] INFO:   AI 'Przeciwnik1' wykonuje akcję: {'typ': 'pas_lufa'}
+[2025-10-02 21:41:02,561] INFO: 
+-- Lewa #1 --
+  Rozpoczyna: Nasz
+[2025-10-02 21:41:02,561] INFO:   [Nasz] zagrywa: Krol Zoladz (MELDUNEK! +20 pkt)
+[2025-10-02 21:41:02,561] INFO:   [Przeciwnik2] zagrywa: As Zoladz
+[2025-10-02 21:43:05,697] INFO:   [Jakub] zagrywa: Dziesiatka Zoladz
+[2025-10-02 21:43:05,697] INFO:   [Przeciwnik1] zagrywa: As Dzwonek
+[2025-10-02 21:43:05,697] INFO:   > Lewę wygrywa Przeciwnik1 kartą As Dzwonek (+36 pkt).
+[2025-10-02 21:43:05,697] INFO:   > Wynik w rozdaniu: My 20 - 36 Oni
+[2025-10-02 21:43:05,697] INFO: 
+=========================
+[2025-10-02 21:43:05,697] INFO: --- WYNIK KOŃCOWY ROZDANIA ---
+[2025-10-02 21:43:05,697] INFO:   Grany kontrakt: BEZ_PYTANIA
+[2025-10-02 21:43:05,697] INFO:   Powód zakończenia: przejęcie lewy przez gracza Przeciwnik1
+[2025-10-02 21:43:05,697] INFO:   Rozdanie wygrywa: Oni
+[2025-10-02 21:43:05,697] INFO:   Przyznane punkty meczowe: 6 (mnożnik: x1)
+[2025-10-02 21:43:05,697] INFO:   OGÓLNY WYNIK MECZU: My 6 - Oni 6
+[2025-10-02 21:43:05,697] INFO: =========================
+
+[2025-10-02 21:43:05,697] INFO: ===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Nasz
+===
+[2025-10-02 21:43:05,699] INFO: Tura AI: Przeciwnik2 (Faza: DEKLARACJA_1)
+[2025-10-02 21:43:05,699] INFO:   AI 'Przeciwnik2' wykonuje akcję: {'typ': 'deklaracja', 'kontrakt': <Kontrakt.LEPSZA: 4>, 'atut': None}
