@@ -1,6 +1,7 @@
 import random
 import logging
 from fastapi import FastAPI
+from fastapi.staticfiles import StaticFiles
 from silnik_gry import Mecz, FazaGry, Karta
 
 # --- Konfiguracja Logowania ---
@@ -14,6 +15,7 @@ if not logger.handlers:
 # --- Koniec Konfiguracji ---
 
 app = FastAPI()
+app.mount("/", StaticFiles(directory="static", html=True), name="static")
 
 # --- Główna Logika Gry ---
 
