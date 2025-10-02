@@ -1,0 +1,5348 @@
+
+########################################
+### ROZPOCZYNAMY PARTIĘ #1 ###
+########################################
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Jakub
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik1
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: LEPSZA
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: As Dzwonek
+  [Nasz] zagrywa: Dziesiatka Dzwonek
+  [Jakub] zagrywa: Dama Dzwonek
+  > Lewę wygrywa Przeciwnik1 kartą As Dzwonek (+24 pkt).
+  > Wynik w rozdaniu: My 0 - 24 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Dziewiatka Czerwien
+  [Nasz] zagrywa: Krol Czerwien
+  [Jakub] zagrywa: Dziesiatka Czerwien
+  > Lewę wygrywa Jakub kartą Dziesiatka Czerwien (+14 pkt).
+  > Wynik w rozdaniu: My 14 - 24 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: LEPSZA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez przeciwnika !!!
+  Punkty z kart (z bonusem): My 14 - 24 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 24 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 24 - Oni 0
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Przeciwnik1
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Nasz
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: NORMALNA (DZWONEK)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Kontra
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: As Czerwien
+  [Przeciwnik2] zagrywa: Dama Czerwien
+  [Jakub] zagrywa: Dziesiatka Czerwien
+  [Przeciwnik1] zagrywa: Dziewiatka Czerwien
+  > Lewę wygrywa Nasz kartą As Czerwien (+24 pkt).
+  > Wynik w rozdaniu: My 24 - 0 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Dziesiatka Wino
+  [Przeciwnik2] zagrywa: As Wino
+  [Jakub] zagrywa: Dziewiatka Wino
+  [Przeciwnik1] zagrywa: Dama Wino
+  > Lewę wygrywa Przeciwnik2 kartą As Wino (+24 pkt).
+  > Wynik w rozdaniu: My 24 - 24 Oni
+
+-- Lewa #3 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: Dziewiatka Zoladz
+  [Jakub] zagrywa: Walet Dzwonek
+  [Przeciwnik1] zagrywa: Krol Zoladz
+  [Nasz] zagrywa: Dama Zoladz
+  > Lewę wygrywa Jakub kartą Walet Dzwonek (+9 pkt).
+  > Wynik w rozdaniu: My 33 - 24 Oni
+
+-- Lewa #4 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Dziesiatka Dzwonek
+  [Przeciwnik1] zagrywa: Krol Dzwonek
+  [Nasz] zagrywa: Walet Czerwien
+  [Przeciwnik2] zagrywa: Dama Dzwonek
+  > Lewę wygrywa Jakub kartą Dziesiatka Dzwonek (+19 pkt).
+  > Wynik w rozdaniu: My 52 - 24 Oni
+
+-- Lewa #5 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: As Dzwonek
+  [Przeciwnik1] zagrywa: Krol Wino
+  [Nasz] zagrywa: Krol Czerwien
+  [Przeciwnik2] zagrywa: As Zoladz
+  > Lewę wygrywa Jakub kartą As Dzwonek (+30 pkt).
+  > Wynik w rozdaniu: My 82 - 24 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: NORMALNA
+!!! Rozdanie zakończone przed czasem: osiągnięcie 82 punktów !!!
+  Punkty z kart (z bonusem): My 82 - 24 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 128 (mnożnik: x2)
+  OGÓLNY WYNIK MECZU: My 152 - Oni 0
+=========================
+
+##############################
+!!! KONIEC GRY !!!
+Partię wygrywa drużyna: My
+OSTATECZNY WYNIK: My 152 - 0 Oni
+##############################
+
+########################################
+### ROZPOCZYNAMY PARTIĘ #2 ###
+########################################
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Jakub
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik1
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: BEZ_PYTANIA (WINO)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Walet Zoladz
+  [Nasz] zagrywa: As Zoladz
+  [Przeciwnik2] zagrywa: Dama Zoladz
+  [Jakub] zagrywa: Krol Zoladz
+  > Lewę wygrywa Nasz kartą As Zoladz (+20 pkt).
+  > Wynik w rozdaniu: My 20 - 0 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: BEZ_PYTANIA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Nasz !!!
+  Punkty z kart (z bonusem): My 20 - 0 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 12 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 12 - Oni 0
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Przeciwnik1
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Nasz
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: NORMALNA (CZERWIEN)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Dziesiatka Zoladz
+  [Przeciwnik2] zagrywa: Walet Zoladz
+  [Jakub] zagrywa: As Zoladz
+  [Przeciwnik1] zagrywa: Dziewiatka Zoladz
+  > Lewę wygrywa Jakub kartą As Zoladz (+23 pkt).
+  > Wynik w rozdaniu: My 23 - 0 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: As Czerwien
+  [Przeciwnik1] zagrywa: Walet Czerwien
+  [Nasz] zagrywa: Dziewiatka Czerwien
+  [Przeciwnik2] zagrywa: Dama Czerwien
+  > Lewę wygrywa Jakub kartą As Czerwien (+16 pkt).
+  > Wynik w rozdaniu: My 39 - 0 Oni
+
+-- Lewa #3 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Krol Dzwonek
+  [Przeciwnik1] zagrywa: Dziesiatka Dzwonek
+  [Nasz] zagrywa: As Dzwonek
+  [Przeciwnik2] zagrywa: Dama Dzwonek
+  > Lewę wygrywa Nasz kartą As Dzwonek (+28 pkt).
+  > Wynik w rozdaniu: My 67 - 0 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: NORMALNA
+!!! Rozdanie zakończone przed czasem: osiągnięcie 67 punktów !!!
+  Punkty z kart (z bonusem): My 67 - 0 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 12 (mnożnik: x3)
+  OGÓLNY WYNIK MECZU: My 24 - Oni 0
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Nasz
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik2
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: GORSZA
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: As Wino
+  [Jakub] zagrywa: Dziesiatka Wino
+  [Nasz] zagrywa: Dziewiatka Dzwonek
+  > Lewę wygrywa Przeciwnik2 kartą As Wino (+21 pkt).
+  > Wynik w rozdaniu: My 0 - 21 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: GORSZA
+!!! Rozdanie zakończone przed czasem: wzięcie lewy przez gracza Przeciwnik2 !!!
+  Punkty z kart (z bonusem): My 0 - 21 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 12 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 36 - Oni 0
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Przeciwnik2
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Jakub
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: NORMALNA (CZERWIEN)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Pytania ---
+  Ponownie decyduje: Jakub
+  Możliwe akcje: Zmień na LEPSZA, Zmień na GORSZA, Zmień na BEZ_PYTANIA, Pytanie
+  Decyzja: Pytanie
+
+--- ETAP: Licytacja 2 (Przebicie) ---
+  Licytuje: Przeciwnik1
+  Możliwe akcje: Pas, Przebij na LEPSZA, Przebij na GORSZA, Lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Walet Zoladz
+  [Przeciwnik1] zagrywa: Dziesiatka Zoladz
+  [Nasz] zagrywa: Dziewiatka Zoladz
+  [Przeciwnik2] zagrywa: Krol Zoladz
+  > Lewę wygrywa Przeciwnik1 kartą Dziesiatka Zoladz (+16 pkt).
+  > Wynik w rozdaniu: My 0 - 16 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Dama Dzwonek
+  [Nasz] zagrywa: Walet Dzwonek
+  [Przeciwnik2] zagrywa: Dziesiatka Dzwonek
+  [Jakub] zagrywa: Dziewiatka Dzwonek
+  > Lewę wygrywa Przeciwnik2 kartą Dziesiatka Dzwonek (+15 pkt).
+  > Wynik w rozdaniu: My 0 - 31 Oni
+
+-- Lewa #3 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: Walet Wino
+  [Jakub] zagrywa: Dama Wino
+  [Przeciwnik1] zagrywa: Dziewiatka Wino
+  [Nasz] zagrywa: Krol Wino
+  > Lewę wygrywa Nasz kartą Krol Wino (+9 pkt).
+  > Wynik w rozdaniu: My 9 - 31 Oni
+
+-- Lewa #4 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Dziesiatka Czerwien
+  [Przeciwnik2] zagrywa: Krol Czerwien
+  [Jakub] zagrywa: Krol Dzwonek
+  [Przeciwnik1] zagrywa: As Czerwien
+  > Lewę wygrywa Przeciwnik1 kartą As Czerwien (+29 pkt).
+  > Wynik w rozdaniu: My 9 - 60 Oni
+
+-- Lewa #5 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Walet Czerwien
+  [Nasz] zagrywa: Dziewiatka Czerwien
+  [Przeciwnik2] zagrywa: As Zoladz
+  [Jakub] zagrywa: Dziesiatka Wino
+  > Lewę wygrywa Przeciwnik1 kartą Walet Czerwien (+23 pkt).
+  > Wynik w rozdaniu: My 9 - 83 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: NORMALNA
+!!! Rozdanie zakończone przed czasem: osiągnięcie 83 punktów !!!
+  Punkty z kart (z bonusem): My 9 - 83 Oni
+  Rozdanie wygrywa: Oni
+  Przyznane punkty meczowe: 4 (mnożnik: x2)
+  OGÓLNY WYNIK MECZU: My 36 - Oni 4
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Jakub
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik1
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: NORMALNA (ZOLADZ)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Kontra
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Dziesiatka Zoladz
+  [Nasz] zagrywa: Dama Zoladz
+  [Przeciwnik2] zagrywa: Walet Zoladz
+  [Jakub] zagrywa: Dama Czerwien
+  > Lewę wygrywa Przeciwnik1 kartą Dziesiatka Zoladz (+18 pkt).
+  > Wynik w rozdaniu: My 0 - 18 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Dama Dzwonek
+  [Nasz] zagrywa: As Dzwonek
+  [Przeciwnik2] zagrywa: Krol Zoladz
+  [Jakub] zagrywa: Krol Dzwonek
+  > Lewę wygrywa Przeciwnik2 kartą Krol Zoladz (+22 pkt).
+  > Wynik w rozdaniu: My 0 - 40 Oni
+
+-- Lewa #3 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: Dama Wino
+  [Jakub] zagrywa: Dziewiatka Wino
+  [Przeciwnik1] zagrywa: Krol Wino
+  [Nasz] zagrywa: As Wino
+  > Lewę wygrywa Nasz kartą As Wino (+18 pkt).
+  > Wynik w rozdaniu: My 18 - 40 Oni
+
+-- Lewa #4 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Dziesiatka Wino
+  [Przeciwnik2] zagrywa: As Zoladz
+  [Jakub] zagrywa: Dziewiatka Czerwien
+  [Przeciwnik1] zagrywa: Walet Wino
+  > Lewę wygrywa Przeciwnik2 kartą As Zoladz (+23 pkt).
+  > Wynik w rozdaniu: My 18 - 63 Oni
+
+-- Lewa #5 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: Krol Czerwien
+  [Jakub] zagrywa: Walet Czerwien
+  [Przeciwnik1] zagrywa: Dziesiatka Czerwien
+  [Nasz] zagrywa: Dziewiatka Zoladz
+  > Lewę wygrywa Nasz kartą Dziewiatka Zoladz (+16 pkt).
+  > Wynik w rozdaniu: My 34 - 63 Oni
+
+-- Lewa #6 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Walet Dzwonek
+  [Przeciwnik2] zagrywa: As Czerwien
+  [Jakub] zagrywa: Dziesiatka Dzwonek
+  [Przeciwnik1] zagrywa: Dziewiatka Dzwonek
+  > Lewę wygrywa Jakub kartą Dziesiatka Dzwonek (+23 pkt).
+  > Wynik w rozdaniu: My 57 - 63 Oni
+BŁĄD KRYTYCZNY: Gracz Jakub nie ma żadnego legalnego ruchu!
+
+########################################
+### ROZPOCZYNAMY PARTIĘ #3 ###
+########################################
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Jakub
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik1
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: BEZ_PYTANIA (WINO)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Kontra
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: As Wino
+  [Nasz] zagrywa: Dama Wino
+  [Przeciwnik2] zagrywa: Dziesiatka Wino
+  [Jakub] zagrywa: Walet Wino
+  > Lewę wygrywa Przeciwnik1 kartą As Wino (+26 pkt).
+  > Wynik w rozdaniu: My 0 - 26 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Walet Czerwien
+  [Nasz] zagrywa: Dama Czerwien
+  [Przeciwnik2] zagrywa: Krol Czerwien
+  [Jakub] zagrywa: As Dzwonek
+  > Lewę wygrywa Przeciwnik2 kartą Krol Czerwien (+20 pkt).
+  > Wynik w rozdaniu: My 0 - 46 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: BEZ_PYTANIA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Przeciwnik2 !!!
+  Punkty z kart (z bonusem): My 0 - 46 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 48 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 48 - Oni 0
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Przeciwnik1
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Nasz
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: BEZ_PYTANIA (DZWONEK)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Dziewiatka Wino
+  [Przeciwnik2] zagrywa: Krol Wino
+  [Jakub] zagrywa: Dama Wino
+  [Przeciwnik1] zagrywa: As Wino
+  > Lewę wygrywa Przeciwnik1 kartą As Wino (+18 pkt).
+  > Wynik w rozdaniu: My 0 - 18 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: BEZ_PYTANIA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Przeciwnik1 !!!
+  Punkty z kart (z bonusem): My 0 - 18 Oni
+  Rozdanie wygrywa: Oni
+  Przyznane punkty meczowe: 6 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 48 - Oni 6
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Nasz
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik2
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: LEPSZA
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: Dziewiatka Wino
+  [Jakub] zagrywa: Walet Wino
+  [Nasz] zagrywa: Dziesiatka Wino
+  > Lewę wygrywa Nasz kartą Dziesiatka Wino (+12 pkt).
+  > Wynik w rozdaniu: My 12 - 0 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: LEPSZA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez przeciwnika !!!
+  Punkty z kart (z bonusem): My 12 - 0 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 48 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 96 - Oni 6
+=========================
+
+##############################
+!!! KONIEC GRY !!!
+Partię wygrywa drużyna: My
+OSTATECZNY WYNIK: My 96 - 6 Oni
+##############################
+
+########################################
+### ROZPOCZYNAMY PARTIĘ #4 ###
+########################################
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Jakub
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik1
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: NORMALNA (WINO)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Kontra
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Dziesiatka Dzwonek
+  [Nasz] zagrywa: As Dzwonek
+  [Przeciwnik2] zagrywa: Krol Dzwonek
+  [Jakub] zagrywa: Dama Dzwonek
+  > Lewę wygrywa Nasz kartą As Dzwonek (+28 pkt).
+  > Wynik w rozdaniu: My 28 - 0 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Krol Czerwien
+  [Przeciwnik2] zagrywa: Dama Czerwien
+  [Jakub] zagrywa: Dziesiatka Czerwien
+  [Przeciwnik1] zagrywa: As Wino
+  > Lewę wygrywa Przeciwnik1 kartą As Wino (+28 pkt).
+  > Wynik w rozdaniu: My 28 - 28 Oni
+
+-- Lewa #3 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Dziesiatka Zoladz
+  [Nasz] zagrywa: As Zoladz
+  [Przeciwnik2] zagrywa: Dama Zoladz
+  [Jakub] zagrywa: Dziesiatka Wino
+  > Lewę wygrywa Jakub kartą Dziesiatka Wino (+34 pkt).
+  > Wynik w rozdaniu: My 62 - 28 Oni
+
+-- Lewa #4 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Walet Dzwonek
+  [Przeciwnik1] zagrywa: Dziewiatka Dzwonek
+  [Nasz] zagrywa: Krol Wino
+  [Przeciwnik2] zagrywa: Walet Czerwien
+  > Lewę wygrywa Nasz kartą Krol Wino (+8 pkt).
+  > Wynik w rozdaniu: My 70 - 28 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: NORMALNA
+!!! Rozdanie zakończone przed czasem: osiągnięcie 70 punktów !!!
+  Punkty z kart (z bonusem): My 70 - 28 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 128 (mnożnik: x2)
+  OGÓLNY WYNIK MECZU: My 128 - Oni 0
+=========================
+
+##############################
+!!! KONIEC GRY !!!
+Partię wygrywa drużyna: My
+OSTATECZNY WYNIK: My 128 - 0 Oni
+##############################
+
+########################################
+### ROZPOCZYNAMY PARTIĘ #5 ###
+########################################
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Jakub
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik1
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: BEZ_PYTANIA (CZERWIEN)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Dama Zoladz (MELDUNEK! +20 pkt)
+  [Nasz] zagrywa: Dziesiatka Czerwien
+  [Przeciwnik2] zagrywa: Walet Zoladz
+  [Jakub] zagrywa: Dziewiatka Zoladz
+  > Lewę wygrywa Nasz kartą Dziesiatka Czerwien (+15 pkt).
+  > Wynik w rozdaniu: My 15 - 20 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: BEZ_PYTANIA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Nasz !!!
+  Punkty z kart (z bonusem): My 15 - 20 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 6 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 6 - Oni 0
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Przeciwnik1
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Nasz
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: NORMALNA (DZWONEK)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Kontra
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: As Wino
+  [Przeciwnik2] zagrywa: Dziewiatka Wino
+  [Jakub] zagrywa: Walet Wino
+  [Przeciwnik1] zagrywa: Dziewiatka Dzwonek
+  > Lewę wygrywa Przeciwnik1 kartą Dziewiatka Dzwonek (+13 pkt).
+  > Wynik w rozdaniu: My 0 - 13 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Krol Dzwonek
+  [Nasz] zagrywa: Walet Zoladz
+  [Przeciwnik2] zagrywa: Dama Dzwonek
+  [Jakub] zagrywa: Walet Dzwonek
+  > Lewę wygrywa Przeciwnik1 kartą Krol Dzwonek (+11 pkt).
+  > Wynik w rozdaniu: My 0 - 24 Oni
+
+-- Lewa #3 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: As Czerwien
+  [Nasz] zagrywa: Dziesiatka Wino
+  [Przeciwnik2] zagrywa: Dama Czerwien
+  [Jakub] zagrywa: Dziesiatka Czerwien
+  > Lewę wygrywa Przeciwnik1 kartą As Czerwien (+34 pkt).
+  > Wynik w rozdaniu: My 0 - 58 Oni
+
+-- Lewa #4 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Walet Czerwien
+  [Nasz] zagrywa: Dama Wino
+  [Przeciwnik2] zagrywa: Dziewiatka Zoladz
+  [Jakub] zagrywa: Dziewiatka Czerwien
+  > Lewę wygrywa Przeciwnik1 kartą Walet Czerwien (+5 pkt).
+  > Wynik w rozdaniu: My 0 - 63 Oni
+
+-- Lewa #5 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: As Dzwonek
+  [Nasz] zagrywa: Dziesiatka Zoladz
+  [Przeciwnik2] zagrywa: Krol Zoladz
+  [Jakub] zagrywa: Krol Wino
+  > Lewę wygrywa Przeciwnik1 kartą As Dzwonek (+29 pkt).
+  > Wynik w rozdaniu: My 0 - 92 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: NORMALNA
+!!! Rozdanie zakończone przed czasem: osiągnięcie 92 punktów !!!
+  Punkty z kart (z bonusem): My 0 - 92 Oni
+  Rozdanie wygrywa: Oni
+  Przyznane punkty meczowe: 48 (mnożnik: x3)
+  OGÓLNY WYNIK MECZU: My 6 - Oni 48
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Nasz
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik2
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: NORMALNA (WINO)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: Dziesiatka Czerwien
+  [Jakub] zagrywa: As Czerwien
+  [Przeciwnik1] zagrywa: Walet Czerwien
+  [Nasz] zagrywa: Dziewiatka Czerwien
+  > Lewę wygrywa Jakub kartą As Czerwien (+23 pkt).
+  > Wynik w rozdaniu: My 23 - 0 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Walet Zoladz
+  [Przeciwnik1] zagrywa: Dama Zoladz
+  [Nasz] zagrywa: Krol Zoladz
+  [Przeciwnik2] zagrywa: As Zoladz
+  > Lewę wygrywa Przeciwnik2 kartą As Zoladz (+20 pkt).
+  > Wynik w rozdaniu: My 23 - 20 Oni
+
+-- Lewa #3 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: Dziewiatka Zoladz
+  [Jakub] zagrywa: Dama Wino
+  [Przeciwnik1] zagrywa: Krol Wino
+  [Nasz] zagrywa: Dziesiatka Zoladz
+  > Lewę wygrywa Przeciwnik1 kartą Krol Wino (+17 pkt).
+  > Wynik w rozdaniu: My 23 - 37 Oni
+
+-- Lewa #4 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Dziesiatka Dzwonek
+  [Nasz] zagrywa: As Dzwonek
+  [Przeciwnik2] zagrywa: Dama Dzwonek
+  [Jakub] zagrywa: Dziesiatka Wino
+  > Lewę wygrywa Jakub kartą Dziesiatka Wino (+34 pkt).
+  > Wynik w rozdaniu: My 57 - 37 Oni
+
+-- Lewa #5 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Walet Wino
+  [Przeciwnik1] zagrywa: Krol Dzwonek
+  [Nasz] zagrywa: As Wino
+  [Przeciwnik2] zagrywa: Walet Dzwonek
+  > Lewę wygrywa Nasz kartą As Wino (+19 pkt).
+  > Wynik w rozdaniu: My 76 - 37 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: NORMALNA
+!!! Rozdanie zakończone przed czasem: osiągnięcie 76 punktów !!!
+  Punkty z kart (z bonusem): My 76 - 37 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 2 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 8 - Oni 48
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Przeciwnik2
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Jakub
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: BEZ_PYTANIA (DZWONEK)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Kontra
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: As Zoladz
+  [Przeciwnik1] zagrywa: Dama Zoladz
+  [Nasz] zagrywa: Walet Zoladz
+  [Przeciwnik2] zagrywa: Dziewiatka Zoladz
+  > Lewę wygrywa Jakub kartą As Zoladz (+16 pkt).
+  > Wynik w rozdaniu: My 16 - 0 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Dama Wino
+  [Przeciwnik1] zagrywa: Walet Dzwonek
+  [Nasz] zagrywa: Krol Wino
+  [Przeciwnik2] zagrywa: Walet Wino
+  > Lewę wygrywa Przeciwnik1 kartą Walet Dzwonek (+11 pkt).
+  > Wynik w rozdaniu: My 16 - 11 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: BEZ_PYTANIA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Przeciwnik1 !!!
+  Punkty z kart (z bonusem): My 16 - 11 Oni
+  Rozdanie wygrywa: Oni
+  Przyznane punkty meczowe: 24 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 8 - Oni 72
+=========================
+
+##############################
+!!! KONIEC GRY !!!
+Partię wygrywa drużyna: Oni
+OSTATECZNY WYNIK: My 8 - 72 Oni
+##############################
+
+########################################
+### ROZPOCZYNAMY PARTIĘ #6 ###
+########################################
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Jakub
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik1
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: GORSZA
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: As Zoladz
+  [Nasz] zagrywa: As Czerwien
+  [Jakub] zagrywa: Dziewiatka Zoladz
+  > Lewę wygrywa Przeciwnik1 kartą As Zoladz (+22 pkt).
+  > Wynik w rozdaniu: My 0 - 22 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: GORSZA
+!!! Rozdanie zakończone przed czasem: wzięcie lewy przez gracza Przeciwnik1 !!!
+  Punkty z kart (z bonusem): My 0 - 22 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 48 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 48 - Oni 0
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Przeciwnik1
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Nasz
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: GORSZA
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Krol Wino
+  [Przeciwnik2] zagrywa: Dama Wino
+  [Przeciwnik1] zagrywa: Walet Dzwonek
+  > Lewę wygrywa Nasz kartą Krol Wino (+9 pkt).
+  > Wynik w rozdaniu: My 9 - 0 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: GORSZA
+!!! Rozdanie zakończone przed czasem: wzięcie lewy przez gracza Nasz !!!
+  Punkty z kart (z bonusem): My 9 - 0 Oni
+  Rozdanie wygrywa: Oni
+  Przyznane punkty meczowe: 6 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 48 - Oni 6
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Nasz
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik2
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: GORSZA
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Kontra
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: Dziewiatka Wino
+  [Jakub] zagrywa: Dama Wino
+  [Nasz] zagrywa: As Wino
+  > Lewę wygrywa Nasz kartą As Wino (+14 pkt).
+  > Wynik w rozdaniu: My 14 - 0 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Krol Dzwonek
+  [Przeciwnik2] zagrywa: Dziesiatka Dzwonek
+  [Jakub] zagrywa: Dziewiatka Dzwonek
+  > Lewę wygrywa Przeciwnik2 kartą Dziesiatka Dzwonek (+14 pkt).
+  > Wynik w rozdaniu: My 14 - 14 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: GORSZA
+!!! Rozdanie zakończone przed czasem: wzięcie lewy przez gracza Przeciwnik2 !!!
+  Punkty z kart (z bonusem): My 14 - 14 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 48 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 96 - Oni 6
+=========================
+
+##############################
+!!! KONIEC GRY !!!
+Partię wygrywa drużyna: My
+OSTATECZNY WYNIK: My 96 - 6 Oni
+##############################
+
+########################################
+### ROZPOCZYNAMY PARTIĘ #7 ###
+########################################
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Jakub
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik1
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: NORMALNA (DZWONEK)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Dama Dzwonek
+  [Nasz] zagrywa: Krol Dzwonek
+  [Przeciwnik2] zagrywa: As Dzwonek
+  [Jakub] zagrywa: Dziesiatka Dzwonek
+  > Lewę wygrywa Przeciwnik2 kartą As Dzwonek (+28 pkt).
+  > Wynik w rozdaniu: My 0 - 28 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: Dziesiatka Wino
+  [Jakub] zagrywa: Krol Wino
+  [Przeciwnik1] zagrywa: Dama Wino
+  [Nasz] zagrywa: Walet Wino
+  > Lewę wygrywa Przeciwnik2 kartą Dziesiatka Wino (+19 pkt).
+  > Wynik w rozdaniu: My 0 - 47 Oni
+
+-- Lewa #3 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: Dziewiatka Dzwonek
+  [Jakub] zagrywa: Walet Zoladz
+  [Przeciwnik1] zagrywa: Walet Dzwonek
+  [Nasz] zagrywa: As Zoladz
+  > Lewę wygrywa Przeciwnik1 kartą Walet Dzwonek (+15 pkt).
+  > Wynik w rozdaniu: My 0 - 62 Oni
+
+-- Lewa #4 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Krol Zoladz
+  [Nasz] zagrywa: Dziesiatka Zoladz
+  [Przeciwnik2] zagrywa: Dama Zoladz
+  [Jakub] zagrywa: Dziewiatka Zoladz
+  > Lewę wygrywa Nasz kartą Dziesiatka Zoladz (+17 pkt).
+  > Wynik w rozdaniu: My 17 - 62 Oni
+
+-- Lewa #5 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Dziewiatka Czerwien
+  [Przeciwnik2] zagrywa: Dama Czerwien
+  [Jakub] zagrywa: As Czerwien
+  [Przeciwnik1] zagrywa: Dziesiatka Czerwien
+  > Lewę wygrywa Jakub kartą As Czerwien (+24 pkt).
+  > Wynik w rozdaniu: My 41 - 62 Oni
+
+-- Lewa #6 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: As Wino
+  [Przeciwnik1] zagrywa: Walet Czerwien
+  [Nasz] zagrywa: Krol Czerwien
+  [Przeciwnik2] zagrywa: Dziewiatka Wino
+  > Lewę wygrywa Jakub kartą As Wino (+17 pkt).
+  > Wynik w rozdaniu: My 58 - 62 Oni
+BŁĄD KRYTYCZNY: Gracz Jakub nie ma żadnego legalnego ruchu!
+
+########################################
+### ROZPOCZYNAMY PARTIĘ #8 ###
+########################################
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Jakub
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik1
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: GORSZA
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Krol Dzwonek
+  [Nasz] zagrywa: Walet Dzwonek
+  [Jakub] zagrywa: Dziesiatka Dzwonek
+  > Lewę wygrywa Jakub kartą Dziesiatka Dzwonek (+16 pkt).
+  > Wynik w rozdaniu: My 16 - 0 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Walet Czerwien
+  [Przeciwnik1] zagrywa: Krol Zoladz
+  [Nasz] zagrywa: Dziewiatka Czerwien
+  > Lewę wygrywa Jakub kartą Walet Czerwien (+6 pkt).
+  > Wynik w rozdaniu: My 22 - 0 Oni
+
+-- Lewa #3 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Dama Wino
+  [Przeciwnik1] zagrywa: Krol Wino
+  [Nasz] zagrywa: As Wino
+  > Lewę wygrywa Nasz kartą As Wino (+18 pkt).
+  > Wynik w rozdaniu: My 40 - 0 Oni
+
+-- Lewa #4 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: As Czerwien
+  [Jakub] zagrywa: Dziesiatka Wino
+  [Przeciwnik1] zagrywa: As Dzwonek
+  > Lewę wygrywa Nasz kartą As Czerwien (+32 pkt).
+  > Wynik w rozdaniu: My 72 - 0 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: GORSZA
+!!! Rozdanie zakończone przed czasem: osiągnięcie 72 punktów !!!
+  Punkty z kart (z bonusem): My 72 - 0 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 48 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 48 - Oni 0
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Przeciwnik1
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Nasz
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: NORMALNA (WINO)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Walet Czerwien
+  [Przeciwnik2] zagrywa: Dama Czerwien
+  [Jakub] zagrywa: Dziewiatka Czerwien
+  [Przeciwnik1] zagrywa: As Czerwien
+  > Lewę wygrywa Przeciwnik1 kartą As Czerwien (+16 pkt).
+  > Wynik w rozdaniu: My 0 - 16 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Dziewiatka Zoladz
+  [Nasz] zagrywa: Walet Zoladz
+  [Przeciwnik2] zagrywa: Dama Zoladz
+  [Jakub] zagrywa: Dziesiatka Zoladz
+  > Lewę wygrywa Jakub kartą Dziesiatka Zoladz (+15 pkt).
+  > Wynik w rozdaniu: My 15 - 16 Oni
+
+-- Lewa #3 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Dziesiatka Wino
+  [Przeciwnik1] zagrywa: Krol Czerwien
+  [Nasz] zagrywa: As Wino
+  [Przeciwnik2] zagrywa: Dama Wino
+  > Lewę wygrywa Nasz kartą As Wino (+28 pkt).
+  > Wynik w rozdaniu: My 43 - 16 Oni
+
+-- Lewa #4 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Dama Dzwonek
+  [Przeciwnik2] zagrywa: Krol Dzwonek
+  [Jakub] zagrywa: Dziewiatka Wino
+  [Przeciwnik1] zagrywa: Dziewiatka Dzwonek
+  > Lewę wygrywa Jakub kartą Dziewiatka Wino (+7 pkt).
+  > Wynik w rozdaniu: My 50 - 16 Oni
+
+-- Lewa #5 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Walet Wino
+  [Przeciwnik1] zagrywa: Dziesiatka Czerwien
+  [Nasz] zagrywa: As Dzwonek
+  [Przeciwnik2] zagrywa: Krol Wino
+  > Lewę wygrywa Przeciwnik2 kartą Krol Wino (+27 pkt).
+  > Wynik w rozdaniu: My 50 - 43 Oni
+
+-- Lewa #6 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: Walet Dzwonek
+  [Jakub] zagrywa: As Zoladz
+  [Przeciwnik1] zagrywa: Dziesiatka Dzwonek
+  [Nasz] zagrywa: Krol Zoladz
+  > Lewę wygrywa Przeciwnik1 kartą Dziesiatka Dzwonek (+27 pkt).
+  > Wynik w rozdaniu: My 50 - 70 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: NORMALNA
+!!! Rozdanie zakończone przed czasem: osiągnięcie 70 punktów !!!
+  Punkty z kart (z bonusem): My 50 - 70 Oni
+  Rozdanie wygrywa: Oni
+  Przyznane punkty meczowe: 2 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 48 - Oni 2
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Nasz
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik2
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: BEZ_PYTANIA (CZERWIEN)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Kontra
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: Walet Czerwien
+  [Jakub] zagrywa: Dziesiatka Czerwien
+  [Przeciwnik1] zagrywa: Krol Wino
+  [Nasz] zagrywa: Dama Czerwien
+  > Lewę wygrywa Jakub kartą Dziesiatka Czerwien (+19 pkt).
+  > Wynik w rozdaniu: My 19 - 0 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: BEZ_PYTANIA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Jakub !!!
+  Punkty z kart (z bonusem): My 19 - 0 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 24 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 72 - Oni 2
+=========================
+
+##############################
+!!! KONIEC GRY !!!
+Partię wygrywa drużyna: My
+OSTATECZNY WYNIK: My 72 - 2 Oni
+##############################
+
+########################################
+### ROZPOCZYNAMY PARTIĘ #9 ###
+########################################
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Jakub
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik1
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: NORMALNA (CZERWIEN)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Dama Dzwonek
+  [Nasz] zagrywa: Krol Dzwonek
+  [Przeciwnik2] zagrywa: As Dzwonek
+  [Jakub] zagrywa: Dama Czerwien
+  > Lewę wygrywa Jakub kartą Dama Czerwien (+21 pkt).
+  > Wynik w rozdaniu: My 21 - 0 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Dziesiatka Czerwien
+  [Przeciwnik1] zagrywa: Walet Czerwien
+  [Nasz] zagrywa: Dama Zoladz
+  [Przeciwnik2] zagrywa: Dziewiatka Dzwonek
+  > Lewę wygrywa Jakub kartą Dziesiatka Czerwien (+15 pkt).
+  > Wynik w rozdaniu: My 36 - 0 Oni
+
+-- Lewa #3 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: As Czerwien
+  [Przeciwnik1] zagrywa: Krol Czerwien
+  [Nasz] zagrywa: Walet Zoladz
+  [Przeciwnik2] zagrywa: Walet Dzwonek
+  > Lewę wygrywa Jakub kartą As Czerwien (+19 pkt).
+  > Wynik w rozdaniu: My 55 - 0 Oni
+
+-- Lewa #4 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Dziesiatka Wino
+  [Przeciwnik1] zagrywa: Dziewiatka Czerwien
+  [Nasz] zagrywa: As Wino
+  [Przeciwnik2] zagrywa: Krol Wino
+  > Lewę wygrywa Przeciwnik1 kartą Dziewiatka Czerwien (+25 pkt).
+  > Wynik w rozdaniu: My 55 - 25 Oni
+
+-- Lewa #5 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: As Zoladz
+  [Nasz] zagrywa: Dziesiatka Zoladz
+  [Przeciwnik2] zagrywa: Dziewiatka Wino
+  [Jakub] zagrywa: Dziewiatka Zoladz
+  > Lewę wygrywa Przeciwnik1 kartą As Zoladz (+21 pkt).
+  > Wynik w rozdaniu: My 55 - 46 Oni
+
+-- Lewa #6 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Krol Zoladz
+  [Nasz] zagrywa: Dziesiatka Dzwonek
+  [Przeciwnik2] zagrywa: Dama Wino
+  [Jakub] zagrywa: Walet Wino
+  > Lewę wygrywa Przeciwnik1 kartą Krol Zoladz (+19 pkt).
+  > Wynik w rozdaniu: My 55 - 65 Oni
+BŁĄD KRYTYCZNY: Gracz Przeciwnik1 nie ma żadnego legalnego ruchu!
+
+########################################
+### ROZPOCZYNAMY PARTIĘ #10 ###
+########################################
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Jakub
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik1
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: BEZ_PYTANIA (DZWONEK)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: As Wino
+  [Nasz] zagrywa: Walet Dzwonek
+  [Przeciwnik2] zagrywa: Walet Wino
+  [Jakub] zagrywa: Dama Wino
+  > Lewę wygrywa Nasz kartą Walet Dzwonek (+18 pkt).
+  > Wynik w rozdaniu: My 18 - 0 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: BEZ_PYTANIA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Nasz !!!
+  Punkty z kart (z bonusem): My 18 - 0 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 6 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 6 - Oni 0
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Przeciwnik1
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Nasz
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: BEZ_PYTANIA (DZWONEK)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Walet Czerwien
+  [Przeciwnik2] zagrywa: Krol Czerwien
+  [Jakub] zagrywa: Dziesiatka Czerwien
+  [Przeciwnik1] zagrywa: Dama Czerwien
+  > Lewę wygrywa Jakub kartą Dziesiatka Czerwien (+19 pkt).
+  > Wynik w rozdaniu: My 19 - 0 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: BEZ_PYTANIA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Jakub !!!
+  Punkty z kart (z bonusem): My 19 - 0 Oni
+  Rozdanie wygrywa: Oni
+  Przyznane punkty meczowe: 6 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 6 - Oni 6
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Nasz
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik2
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: BEZ_PYTANIA (WINO)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Kontra
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: As Czerwien
+  [Jakub] zagrywa: Dziewiatka Czerwien
+  [Przeciwnik1] zagrywa: Dama Wino
+  [Nasz] zagrywa: Dama Czerwien
+  > Lewę wygrywa Przeciwnik1 kartą Dama Wino (+17 pkt).
+  > Wynik w rozdaniu: My 0 - 17 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: BEZ_PYTANIA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Przeciwnik1 !!!
+  Punkty z kart (z bonusem): My 0 - 17 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 48 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 54 - Oni 6
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Przeciwnik2
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Jakub
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: BEZ_PYTANIA (ZOLADZ)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Dziesiatka Czerwien
+  [Przeciwnik1] zagrywa: Krol Czerwien
+  [Nasz] zagrywa: Dama Czerwien
+  [Przeciwnik2] zagrywa: Walet Czerwien
+  > Lewę wygrywa Jakub kartą Dziesiatka Czerwien (+19 pkt).
+  > Wynik w rozdaniu: My 19 - 0 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Dama Zoladz
+  [Przeciwnik1] zagrywa: Dziewiatka Zoladz
+  [Nasz] zagrywa: Krol Zoladz
+  [Przeciwnik2] zagrywa: Walet Zoladz
+  > Lewę wygrywa Nasz kartą Krol Zoladz (+9 pkt).
+  > Wynik w rozdaniu: My 28 - 0 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: BEZ_PYTANIA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Nasz !!!
+  Punkty z kart (z bonusem): My 28 - 0 Oni
+  Rozdanie wygrywa: Oni
+  Przyznane punkty meczowe: 6 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 54 - Oni 12
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Jakub
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik1
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: BEZ_PYTANIA (ZOLADZ)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Walet Dzwonek
+  [Nasz] zagrywa: Dziewiatka Dzwonek
+  [Przeciwnik2] zagrywa: Krol Zoladz
+  [Jakub] zagrywa: Dziesiatka Dzwonek
+  > Lewę wygrywa Przeciwnik2 kartą Krol Zoladz (+16 pkt).
+  > Wynik w rozdaniu: My 0 - 16 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: BEZ_PYTANIA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Przeciwnik2 !!!
+  Punkty z kart (z bonusem): My 0 - 16 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 48 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 102 - Oni 12
+=========================
+
+##############################
+!!! KONIEC GRY !!!
+Partię wygrywa drużyna: My
+OSTATECZNY WYNIK: My 102 - 12 Oni
+##############################
+
+########################################
+### ROZPOCZYNAMY PARTIĘ #11 ###
+########################################
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Jakub
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik1
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: BEZ_PYTANIA (CZERWIEN)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Dziewiatka Wino
+  [Nasz] zagrywa: As Wino
+  [Przeciwnik2] zagrywa: Dama Wino
+  [Jakub] zagrywa: Krol Wino
+  > Lewę wygrywa Nasz kartą As Wino (+18 pkt).
+  > Wynik w rozdaniu: My 18 - 0 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: BEZ_PYTANIA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Nasz !!!
+  Punkty z kart (z bonusem): My 18 - 0 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 6 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 6 - Oni 0
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Przeciwnik1
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Nasz
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: BEZ_PYTANIA (CZERWIEN)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Walet Dzwonek
+  [Przeciwnik2] zagrywa: Dziesiatka Dzwonek
+  [Jakub] zagrywa: Dama Dzwonek
+  [Przeciwnik1] zagrywa: As Czerwien
+  > Lewę wygrywa Przeciwnik1 kartą As Czerwien (+26 pkt).
+  > Wynik w rozdaniu: My 0 - 26 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: BEZ_PYTANIA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Przeciwnik1 !!!
+  Punkty z kart (z bonusem): My 0 - 26 Oni
+  Rozdanie wygrywa: Oni
+  Przyznane punkty meczowe: 12 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 6 - Oni 12
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Nasz
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik2
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: NORMALNA (CZERWIEN)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Kontra
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: Walet Zoladz
+  [Jakub] zagrywa: Dama Zoladz
+  [Przeciwnik1] zagrywa: As Zoladz
+  [Nasz] zagrywa: Dziesiatka Zoladz
+  > Lewę wygrywa Przeciwnik1 kartą As Zoladz (+26 pkt).
+  > Wynik w rozdaniu: My 0 - 26 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Krol Dzwonek
+  [Nasz] zagrywa: Walet Czerwien
+  [Przeciwnik2] zagrywa: Walet Dzwonek
+  [Jakub] zagrywa: As Dzwonek
+  > Lewę wygrywa Nasz kartą Walet Czerwien (+19 pkt).
+  > Wynik w rozdaniu: My 19 - 26 Oni
+
+-- Lewa #3 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Dziesiatka Czerwien
+  [Przeciwnik2] zagrywa: Walet Wino
+  [Jakub] zagrywa: As Czerwien
+  [Przeciwnik1] zagrywa: Krol Czerwien
+  > Lewę wygrywa Jakub kartą As Czerwien (+27 pkt).
+  > Wynik w rozdaniu: My 46 - 26 Oni
+
+-- Lewa #4 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Krol Zoladz
+  [Przeciwnik1] zagrywa: Dziesiatka Wino
+  [Nasz] zagrywa: Dziewiatka Zoladz
+  [Przeciwnik2] zagrywa: Krol Wino
+  > Lewę wygrywa Jakub kartą Krol Zoladz (+18 pkt).
+  > Wynik w rozdaniu: My 64 - 26 Oni
+
+-- Lewa #5 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Dziewiatka Czerwien
+  [Przeciwnik1] zagrywa: Dziewiatka Dzwonek
+  [Nasz] zagrywa: Dama Czerwien
+  [Przeciwnik2] zagrywa: Dziewiatka Wino
+  > Lewę wygrywa Nasz kartą Dama Czerwien (+3 pkt).
+  > Wynik w rozdaniu: My 67 - 26 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: NORMALNA
+!!! Rozdanie zakończone przed czasem: osiągnięcie 67 punktów !!!
+  Punkty z kart (z bonusem): My 67 - 26 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 64 (mnożnik: x2)
+  OGÓLNY WYNIK MECZU: My 70 - Oni 12
+=========================
+
+##############################
+!!! KONIEC GRY !!!
+Partię wygrywa drużyna: My
+OSTATECZNY WYNIK: My 70 - 12 Oni
+##############################
+
+########################################
+### ROZPOCZYNAMY PARTIĘ #12 ###
+########################################
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Jakub
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik1
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: BEZ_PYTANIA (DZWONEK)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Dama Dzwonek
+  [Nasz] zagrywa: Krol Dzwonek
+  [Przeciwnik2] zagrywa: Dziewiatka Dzwonek
+  [Jakub] zagrywa: Walet Dzwonek
+  > Lewę wygrywa Nasz kartą Krol Dzwonek (+9 pkt).
+  > Wynik w rozdaniu: My 9 - 0 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: BEZ_PYTANIA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Nasz !!!
+  Punkty z kart (z bonusem): My 9 - 0 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 24 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 24 - Oni 0
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Przeciwnik1
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Nasz
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: NORMALNA (CZERWIEN)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Kontra
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Dama Dzwonek
+  [Przeciwnik2] zagrywa: Walet Dzwonek
+  [Jakub] zagrywa: Krol Dzwonek
+  [Przeciwnik1] zagrywa: Dziesiatka Dzwonek
+  > Lewę wygrywa Przeciwnik1 kartą Dziesiatka Dzwonek (+19 pkt).
+  > Wynik w rozdaniu: My 0 - 19 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: As Zoladz
+  [Nasz] zagrywa: As Czerwien
+  [Przeciwnik2] zagrywa: Dama Zoladz
+  [Jakub] zagrywa: Krol Zoladz
+  > Lewę wygrywa Nasz kartą As Czerwien (+29 pkt).
+  > Wynik w rozdaniu: My 29 - 19 Oni
+
+-- Lewa #3 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Dziesiatka Wino
+  [Przeciwnik2] zagrywa: Dziewiatka Czerwien
+  [Jakub] zagrywa: Walet Wino
+  [Przeciwnik1] zagrywa: Walet Czerwien
+  > Lewę wygrywa Przeciwnik1 kartą Walet Czerwien (+14 pkt).
+  > Wynik w rozdaniu: My 29 - 33 Oni
+
+-- Lewa #4 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Dziesiatka Zoladz
+  [Nasz] zagrywa: Krol Wino
+  [Przeciwnik2] zagrywa: Walet Zoladz
+  [Jakub] zagrywa: Dama Czerwien
+  > Lewę wygrywa Jakub kartą Dama Czerwien (+19 pkt).
+  > Wynik w rozdaniu: My 48 - 33 Oni
+
+-- Lewa #5 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Krol Czerwien
+  [Przeciwnik1] zagrywa: Dziewiatka Zoladz
+  [Nasz] zagrywa: Dziewiatka Wino
+  [Przeciwnik2] zagrywa: Dziesiatka Czerwien
+  > Lewę wygrywa Przeciwnik2 kartą Dziesiatka Czerwien (+14 pkt).
+  > Wynik w rozdaniu: My 48 - 47 Oni
+
+-- Lewa #6 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: As Dzwonek
+  [Jakub] zagrywa: As Wino
+  [Przeciwnik1] zagrywa: Dziewiatka Dzwonek
+  [Nasz] zagrywa: Dama Wino
+  > Lewę wygrywa Przeciwnik2 kartą As Dzwonek (+25 pkt).
+  > Wynik w rozdaniu: My 48 - 72 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: NORMALNA
+!!! Rozdanie zakończone przed czasem: osiągnięcie 72 punktów !!!
+  Punkty z kart (z bonusem): My 48 - 72 Oni
+  Rozdanie wygrywa: Oni
+  Przyznane punkty meczowe: 8 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 24 - Oni 8
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Nasz
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik2
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: NORMALNA (CZERWIEN)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Pytania ---
+  Ponownie decyduje: Przeciwnik2
+  Możliwe akcje: Zmień na LEPSZA, Zmień na GORSZA, Zmień na BEZ_PYTANIA, Pytanie
+  Decyzja: Zmień na BEZ_PYTANIA
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Kontra
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: Walet Wino
+  [Jakub] zagrywa: As Wino
+  [Przeciwnik1] zagrywa: Dziewiatka Wino
+  [Nasz] zagrywa: As Czerwien
+  > Lewę wygrywa Nasz kartą As Czerwien (+24 pkt).
+  > Wynik w rozdaniu: My 24 - 0 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: BEZ_PYTANIA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Nasz !!!
+  Punkty z kart (z bonusem): My 24 - 0 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 48 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 72 - Oni 8
+=========================
+
+##############################
+!!! KONIEC GRY !!!
+Partię wygrywa drużyna: My
+OSTATECZNY WYNIK: My 72 - 8 Oni
+##############################
+
+########################################
+### ROZPOCZYNAMY PARTIĘ #13 ###
+########################################
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Jakub
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik1
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: NORMALNA (DZWONEK)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Pytania ---
+  Ponownie decyduje: Przeciwnik1
+  Możliwe akcje: Zmień na LEPSZA, Zmień na GORSZA, Zmień na BEZ_PYTANIA, Pytanie
+  Decyzja: Zmień na GORSZA
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Walet Wino
+  [Nasz] zagrywa: Dziesiatka Wino
+  [Jakub] zagrywa: Krol Czerwien
+  > Lewę wygrywa Nasz kartą Dziesiatka Wino (+16 pkt).
+  > Wynik w rozdaniu: My 16 - 0 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Dziesiatka Czerwien
+  [Jakub] zagrywa: Dama Czerwien
+  [Przeciwnik1] zagrywa: Walet Czerwien
+  > Lewę wygrywa Nasz kartą Dziesiatka Czerwien (+15 pkt).
+  > Wynik w rozdaniu: My 31 - 0 Oni
+
+-- Lewa #3 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Dama Wino
+  [Jakub] zagrywa: Dziewiatka Dzwonek
+  [Przeciwnik1] zagrywa: Krol Wino
+  > Lewę wygrywa Przeciwnik1 kartą Krol Wino (+7 pkt).
+  > Wynik w rozdaniu: My 31 - 7 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: GORSZA
+!!! Rozdanie zakończone przed czasem: wzięcie lewy przez gracza Przeciwnik1 !!!
+  Punkty z kart (z bonusem): My 31 - 7 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 12 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 12 - Oni 0
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Przeciwnik1
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Nasz
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: NORMALNA (WINO)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Kontra
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Dziewiatka Wino
+  [Przeciwnik2] zagrywa: Dziesiatka Wino
+  [Jakub] zagrywa: As Zoladz
+  [Przeciwnik1] zagrywa: Dama Wino
+  > Lewę wygrywa Przeciwnik2 kartą Dziesiatka Wino (+24 pkt).
+  > Wynik w rozdaniu: My 0 - 24 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: Dziewiatka Zoladz
+  [Jakub] zagrywa: Dama Zoladz
+  [Przeciwnik1] zagrywa: Krol Zoladz
+  [Nasz] zagrywa: Walet Zoladz
+  > Lewę wygrywa Przeciwnik1 kartą Krol Zoladz (+9 pkt).
+  > Wynik w rozdaniu: My 0 - 33 Oni
+
+-- Lewa #3 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Walet Dzwonek
+  [Nasz] zagrywa: Dziewiatka Dzwonek
+  [Przeciwnik2] zagrywa: As Dzwonek
+  [Jakub] zagrywa: Dama Dzwonek
+  > Lewę wygrywa Przeciwnik2 kartą As Dzwonek (+16 pkt).
+  > Wynik w rozdaniu: My 0 - 49 Oni
+
+-- Lewa #4 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: Dziewiatka Czerwien
+  [Jakub] zagrywa: As Czerwien
+  [Przeciwnik1] zagrywa: Krol Czerwien
+  [Nasz] zagrywa: Dama Czerwien
+  > Lewę wygrywa Jakub kartą As Czerwien (+18 pkt).
+  > Wynik w rozdaniu: My 18 - 49 Oni
+
+-- Lewa #5 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Dziesiatka Zoladz
+  [Przeciwnik1] zagrywa: As Wino
+  [Nasz] zagrywa: Walet Wino
+  [Przeciwnik2] zagrywa: Krol Wino
+  > Lewę wygrywa Przeciwnik1 kartą As Wino (+27 pkt).
+  > Wynik w rozdaniu: My 18 - 76 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: NORMALNA
+!!! Rozdanie zakończone przed czasem: osiągnięcie 76 punktów !!!
+  Punkty z kart (z bonusem): My 18 - 76 Oni
+  Rozdanie wygrywa: Oni
+  Przyznane punkty meczowe: 16 (mnożnik: x2)
+  OGÓLNY WYNIK MECZU: My 12 - Oni 16
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Nasz
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik2
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: NORMALNA (CZERWIEN)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Kontra
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Kontra
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: Dziewiatka Zoladz
+  [Jakub] zagrywa: Dziesiatka Zoladz
+  [Przeciwnik1] zagrywa: Krol Zoladz
+  [Nasz] zagrywa: Walet Czerwien
+  > Lewę wygrywa Nasz kartą Walet Czerwien (+16 pkt).
+  > Wynik w rozdaniu: My 16 - 0 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Dama Wino (MELDUNEK! +20 pkt)
+  [Przeciwnik2] zagrywa: Dziesiatka Wino
+  [Jakub] zagrywa: As Wino
+  [Przeciwnik1] zagrywa: Dziewiatka Wino
+  > Lewę wygrywa Jakub kartą As Wino (+24 pkt).
+  > Wynik w rozdaniu: My 60 - 0 Oni
+
+-- Lewa #3 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: As Zoladz
+  [Przeciwnik1] zagrywa: Dziesiatka Czerwien
+  [Nasz] zagrywa: As Dzwonek
+  [Przeciwnik2] zagrywa: Walet Zoladz
+  > Lewę wygrywa Przeciwnik1 kartą Dziesiatka Czerwien (+34 pkt).
+  > Wynik w rozdaniu: My 60 - 34 Oni
+
+-- Lewa #4 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Dama Czerwien
+  [Nasz] zagrywa: Walet Wino
+  [Przeciwnik2] zagrywa: Dziewiatka Czerwien
+  [Jakub] zagrywa: Krol Czerwien
+  > Lewę wygrywa Jakub kartą Krol Czerwien (+9 pkt).
+  > Wynik w rozdaniu: My 69 - 34 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: NORMALNA
+!!! Rozdanie zakończone przed czasem: osiągnięcie 69 punktów !!!
+  Punkty z kart (z bonusem): My 69 - 34 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 32 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 44 - Oni 16
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Przeciwnik2
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Jakub
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: BEZ_PYTANIA (CZERWIEN)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Krol Zoladz
+  [Przeciwnik1] zagrywa: Dziewiatka Zoladz
+  [Nasz] zagrywa: Dziesiatka Zoladz
+  [Przeciwnik2] zagrywa: Dama Zoladz
+  > Lewę wygrywa Nasz kartą Dziesiatka Zoladz (+17 pkt).
+  > Wynik w rozdaniu: My 17 - 0 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: BEZ_PYTANIA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Nasz !!!
+  Punkty z kart (z bonusem): My 17 - 0 Oni
+  Rozdanie wygrywa: Oni
+  Przyznane punkty meczowe: 24 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 44 - Oni 40
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Jakub
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik1
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: LEPSZA
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Krol Zoladz
+  [Nasz] zagrywa: As Zoladz
+  [Jakub] zagrywa: Dziesiatka Zoladz
+  > Lewę wygrywa Nasz kartą As Zoladz (+25 pkt).
+  > Wynik w rozdaniu: My 25 - 0 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: LEPSZA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez przeciwnika !!!
+  Punkty z kart (z bonusem): My 25 - 0 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 12 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 56 - Oni 40
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Przeciwnik1
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Nasz
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: NORMALNA (WINO)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Pytania ---
+  Ponownie decyduje: Nasz
+  Możliwe akcje: Zmień na LEPSZA, Zmień na GORSZA, Zmień na BEZ_PYTANIA, Pytanie
+  Decyzja: Pytanie
+
+--- ETAP: Licytacja 2 (Przebicie) ---
+  Licytuje: Przeciwnik2
+  Możliwe akcje: Pas, Przebij na LEPSZA, Przebij na GORSZA, Lufa
+  Decyzja: Przebij na GORSZA
+
+--- ETAP: Licytacja 2 (Przebicie) ---
+  Licytuje: Jakub
+  Możliwe akcje: Pas, Przebij na LEPSZA, Przebij na GORSZA
+  Decyzja: Pas
+
+--- ETAP: Licytacja 2 (Przebicie) ---
+  Licytuje: Przeciwnik1
+  Możliwe akcje: Pas, Przebij na LEPSZA, Przebij na GORSZA, Lufa
+  Decyzja: Przebij na LEPSZA
+  INFO: Licytację przebił Przeciwnik1 z kontraktem LEPSZA.
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Dama Czerwien
+  [Nasz] zagrywa: Krol Czerwien
+  [Jakub] zagrywa: As Dzwonek
+  > Lewę wygrywa Nasz kartą Krol Czerwien (+18 pkt).
+  > Wynik w rozdaniu: My 18 - 0 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: LEPSZA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez przeciwnika !!!
+  Punkty z kart (z bonusem): My 18 - 0 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 12 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 68 - Oni 40
+=========================
+
+##############################
+!!! KONIEC GRY !!!
+Partię wygrywa drużyna: My
+OSTATECZNY WYNIK: My 68 - 40 Oni
+##############################
+
+########################################
+### ROZPOCZYNAMY PARTIĘ #14 ###
+########################################
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Jakub
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik1
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: BEZ_PYTANIA (ZOLADZ)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Walet Zoladz
+  [Nasz] zagrywa: Dziesiatka Zoladz
+  [Przeciwnik2] zagrywa: As Zoladz
+  [Jakub] zagrywa: Dama Zoladz
+  > Lewę wygrywa Przeciwnik2 kartą As Zoladz (+26 pkt).
+  > Wynik w rozdaniu: My 0 - 26 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: BEZ_PYTANIA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Przeciwnik2 !!!
+  Punkty z kart (z bonusem): My 0 - 26 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 12 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 12 - Oni 0
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Przeciwnik1
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Nasz
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: LEPSZA
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Kontra
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Dziesiatka Dzwonek
+  [Przeciwnik2] zagrywa: Dama Dzwonek
+  [Przeciwnik1] zagrywa: Dziewiatka Dzwonek
+  > Lewę wygrywa Nasz kartą Dziesiatka Dzwonek (+13 pkt).
+  > Wynik w rozdaniu: My 13 - 0 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: As Czerwien
+  [Przeciwnik2] zagrywa: Krol Czerwien
+  [Przeciwnik1] zagrywa: Dziewiatka Czerwien
+  > Lewę wygrywa Nasz kartą As Czerwien (+15 pkt).
+  > Wynik w rozdaniu: My 28 - 0 Oni
+
+-- Lewa #3 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Dziesiatka Czerwien
+  [Przeciwnik2] zagrywa: Dama Zoladz
+  [Przeciwnik1] zagrywa: Krol Dzwonek
+  > Lewę wygrywa Nasz kartą Dziesiatka Czerwien (+17 pkt).
+  > Wynik w rozdaniu: My 45 - 0 Oni
+
+-- Lewa #4 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Walet Czerwien
+  [Przeciwnik2] zagrywa: Dziewiatka Zoladz
+  [Przeciwnik1] zagrywa: Dama Wino
+  > Lewę wygrywa Nasz kartą Walet Czerwien (+5 pkt).
+  > Wynik w rozdaniu: My 50 - 0 Oni
+
+-- Lewa #5 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Walet Dzwonek
+  [Przeciwnik2] zagrywa: Walet Zoladz
+  [Przeciwnik1] zagrywa: Dziesiatka Wino
+  > Lewę wygrywa Nasz kartą Walet Dzwonek (+14 pkt).
+  > Wynik w rozdaniu: My 64 - 0 Oni
+
+-- Lewa #6 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Dziewiatka Wino
+  [Przeciwnik2] zagrywa: Dziesiatka Zoladz
+  [Przeciwnik1] zagrywa: As Zoladz
+  > Lewę wygrywa Nasz kartą Dziewiatka Wino (+21 pkt).
+  > Wynik w rozdaniu: My 85 - 0 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: LEPSZA
+!!! Rozdanie zakończone przed czasem: osiągnięcie 85 punktów !!!
+  Punkty z kart (z bonusem): My 85 - 0 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 48 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 60 - Oni 0
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Nasz
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik2
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: BEZ_PYTANIA (ZOLADZ)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: Krol Czerwien
+  [Jakub] zagrywa: Dama Czerwien
+  [Przeciwnik1] zagrywa: As Czerwien
+  [Nasz] zagrywa: Dziewiatka Czerwien
+  > Lewę wygrywa Przeciwnik1 kartą As Czerwien (+18 pkt).
+  > Wynik w rozdaniu: My 0 - 18 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: BEZ_PYTANIA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Przeciwnik1 !!!
+  Punkty z kart (z bonusem): My 0 - 18 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 6 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 66 - Oni 0
+=========================
+
+##############################
+!!! KONIEC GRY !!!
+Partię wygrywa drużyna: My
+OSTATECZNY WYNIK: My 66 - 0 Oni
+##############################
+
+########################################
+### ROZPOCZYNAMY PARTIĘ #15 ###
+########################################
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Jakub
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik1
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: BEZ_PYTANIA (WINO)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Dziesiatka Dzwonek
+  [Nasz] zagrywa: Walet Dzwonek
+  [Przeciwnik2] zagrywa: Krol Dzwonek
+  [Jakub] zagrywa: Dama Dzwonek
+  > Lewę wygrywa Przeciwnik1 kartą Dziesiatka Dzwonek (+19 pkt).
+  > Wynik w rozdaniu: My 0 - 19 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Dziewiatka Wino
+  [Nasz] zagrywa: Krol Wino
+  [Przeciwnik2] zagrywa: As Wino
+  [Jakub] zagrywa: Dama Wino
+  > Lewę wygrywa Przeciwnik2 kartą As Wino (+18 pkt).
+  > Wynik w rozdaniu: My 0 - 37 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: BEZ_PYTANIA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Przeciwnik2 !!!
+  Punkty z kart (z bonusem): My 0 - 37 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 12 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 12 - Oni 0
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Przeciwnik1
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Nasz
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: LEPSZA
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Dziewiatka Czerwien
+  [Przeciwnik2] zagrywa: Dziewiatka Zoladz
+  [Przeciwnik1] zagrywa: Dziesiatka Czerwien
+  > Lewę wygrywa Przeciwnik1 kartą Dziesiatka Czerwien (+10 pkt).
+  > Wynik w rozdaniu: My 0 - 10 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: LEPSZA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez przeciwnika !!!
+  Punkty z kart (z bonusem): My 0 - 10 Oni
+  Rozdanie wygrywa: Oni
+  Przyznane punkty meczowe: 48 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 12 - Oni 48
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Nasz
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik2
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: NORMALNA (WINO)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: Walet Zoladz
+  [Jakub] zagrywa: Dama Zoladz
+  [Przeciwnik1] zagrywa: As Zoladz
+  [Nasz] zagrywa: Dziesiatka Zoladz
+  > Lewę wygrywa Przeciwnik1 kartą As Zoladz (+26 pkt).
+  > Wynik w rozdaniu: My 0 - 26 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Dziesiatka Wino
+  [Nasz] zagrywa: Walet Wino
+  [Przeciwnik2] zagrywa: As Dzwonek
+  [Jakub] zagrywa: As Wino
+  > Lewę wygrywa Jakub kartą As Wino (+34 pkt).
+  > Wynik w rozdaniu: My 34 - 26 Oni
+
+-- Lewa #3 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Krol Wino
+  [Przeciwnik1] zagrywa: Dama Wino
+  [Nasz] zagrywa: Krol Zoladz
+  [Przeciwnik2] zagrywa: Dziewiatka Zoladz
+  > Lewę wygrywa Jakub kartą Krol Wino (+11 pkt).
+  > Wynik w rozdaniu: My 45 - 26 Oni
+
+-- Lewa #4 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Dziewiatka Wino
+  [Przeciwnik1] zagrywa: Walet Czerwien
+  [Nasz] zagrywa: Krol Dzwonek
+  [Przeciwnik2] zagrywa: Dziewiatka Czerwien
+  > Lewę wygrywa Jakub kartą Dziewiatka Wino (+6 pkt).
+  > Wynik w rozdaniu: My 51 - 26 Oni
+
+-- Lewa #5 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: As Czerwien
+  [Przeciwnik1] zagrywa: Krol Czerwien
+  [Nasz] zagrywa: Dama Czerwien
+  [Przeciwnik2] zagrywa: Dziesiatka Czerwien
+  > Lewę wygrywa Jakub kartą As Czerwien (+28 pkt).
+  > Wynik w rozdaniu: My 79 - 26 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: NORMALNA
+!!! Rozdanie zakończone przed czasem: osiągnięcie 79 punktów !!!
+  Punkty z kart (z bonusem): My 79 - 26 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 4 (mnożnik: x2)
+  OGÓLNY WYNIK MECZU: My 16 - Oni 48
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Przeciwnik2
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Jakub
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: NORMALNA (DZWONEK)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Pytania ---
+  Ponownie decyduje: Jakub
+  Możliwe akcje: Zmień na LEPSZA, Zmień na GORSZA, Zmień na BEZ_PYTANIA, Pytanie
+  Decyzja: Zmień na LEPSZA
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Kontra
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Dziesiatka Czerwien
+  [Przeciwnik1] zagrywa: Walet Czerwien
+  [Przeciwnik2] zagrywa: Krol Czerwien
+  > Lewę wygrywa Jakub kartą Dziesiatka Czerwien (+16 pkt).
+  > Wynik w rozdaniu: My 16 - 0 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Dziewiatka Zoladz
+  [Przeciwnik1] zagrywa: Krol Zoladz
+  [Przeciwnik2] zagrywa: As Wino
+  > Lewę wygrywa Przeciwnik1 kartą Krol Zoladz (+15 pkt).
+  > Wynik w rozdaniu: My 16 - 15 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: LEPSZA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez przeciwnika !!!
+  Punkty z kart (z bonusem): My 16 - 15 Oni
+  Rozdanie wygrywa: Oni
+  Przyznane punkty meczowe: 48 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 16 - Oni 96
+=========================
+
+##############################
+!!! KONIEC GRY !!!
+Partię wygrywa drużyna: Oni
+OSTATECZNY WYNIK: My 16 - 96 Oni
+##############################
+
+########################################
+### ROZPOCZYNAMY PARTIĘ #16 ###
+########################################
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Jakub
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik1
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: NORMALNA (CZERWIEN)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Kontra
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: As Zoladz
+  [Nasz] zagrywa: Dama Zoladz
+  [Przeciwnik2] zagrywa: Walet Zoladz
+  [Jakub] zagrywa: Dziesiatka Zoladz
+  > Lewę wygrywa Przeciwnik1 kartą As Zoladz (+26 pkt).
+  > Wynik w rozdaniu: My 0 - 26 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Walet Dzwonek
+  [Nasz] zagrywa: Dziesiatka Dzwonek
+  [Przeciwnik2] zagrywa: As Dzwonek
+  [Jakub] zagrywa: Dama Czerwien
+  > Lewę wygrywa Jakub kartą Dama Czerwien (+26 pkt).
+  > Wynik w rozdaniu: My 26 - 26 Oni
+
+-- Lewa #3 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Dziesiatka Wino
+  [Przeciwnik1] zagrywa: Krol Czerwien
+  [Nasz] zagrywa: Walet Wino
+  [Przeciwnik2] zagrywa: Dziewiatka Wino
+  > Lewę wygrywa Przeciwnik1 kartą Krol Czerwien (+16 pkt).
+  > Wynik w rozdaniu: My 26 - 42 Oni
+
+-- Lewa #4 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Walet Czerwien
+  [Nasz] zagrywa: Krol Zoladz
+  [Przeciwnik2] zagrywa: Dziesiatka Czerwien
+  [Jakub] zagrywa: Dziewiatka Czerwien
+  > Lewę wygrywa Przeciwnik2 kartą Dziesiatka Czerwien (+16 pkt).
+  > Wynik w rozdaniu: My 26 - 58 Oni
+
+-- Lewa #5 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: As Czerwien
+  [Jakub] zagrywa: As Wino
+  [Przeciwnik1] zagrywa: Dziewiatka Zoladz
+  [Nasz] zagrywa: Dama Wino
+  > Lewę wygrywa Przeciwnik2 kartą As Czerwien (+25 pkt).
+  > Wynik w rozdaniu: My 26 - 83 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: NORMALNA
+!!! Rozdanie zakończone przed czasem: osiągnięcie 83 punktów !!!
+  Punkty z kart (z bonusem): My 26 - 83 Oni
+  Rozdanie wygrywa: Oni
+  Przyznane punkty meczowe: 8 (mnożnik: x2)
+  OGÓLNY WYNIK MECZU: My 0 - Oni 8
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Przeciwnik1
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Nasz
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: BEZ_PYTANIA (ZOLADZ)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Dziewiatka Dzwonek
+  [Przeciwnik2] zagrywa: Dziesiatka Dzwonek
+  [Jakub] zagrywa: As Dzwonek
+  [Przeciwnik1] zagrywa: Dama Zoladz
+  > Lewę wygrywa Przeciwnik1 kartą Dama Zoladz (+24 pkt).
+  > Wynik w rozdaniu: My 0 - 24 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: BEZ_PYTANIA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Przeciwnik1 !!!
+  Punkty z kart (z bonusem): My 0 - 24 Oni
+  Rozdanie wygrywa: Oni
+  Przyznane punkty meczowe: 48 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 0 - Oni 56
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Nasz
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik2
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: NORMALNA (WINO)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Kontra
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Kontra
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: As Czerwien
+  [Jakub] zagrywa: Dziesiatka Czerwien
+  [Przeciwnik1] zagrywa: Dziewiatka Czerwien
+  [Nasz] zagrywa: Walet Czerwien
+  > Lewę wygrywa Przeciwnik2 kartą As Czerwien (+23 pkt).
+  > Wynik w rozdaniu: My 0 - 23 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: Krol Dzwonek
+  [Jakub] zagrywa: As Dzwonek
+  [Przeciwnik1] zagrywa: Dziesiatka Dzwonek
+  [Nasz] zagrywa: As Wino
+  > Lewę wygrywa Nasz kartą As Wino (+36 pkt).
+  > Wynik w rozdaniu: My 36 - 23 Oni
+
+-- Lewa #3 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Walet Wino
+  [Przeciwnik2] zagrywa: Dziewiatka Wino
+  [Jakub] zagrywa: Dziesiatka Wino
+  [Przeciwnik1] zagrywa: Dama Wino
+  > Lewę wygrywa Jakub kartą Dziesiatka Wino (+15 pkt).
+  > Wynik w rozdaniu: My 51 - 23 Oni
+
+-- Lewa #4 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Krol Wino
+  [Przeciwnik1] zagrywa: Dziewiatka Dzwonek
+  [Nasz] zagrywa: Walet Zoladz
+  [Przeciwnik2] zagrywa: Dama Czerwien
+  > Lewę wygrywa Jakub kartą Krol Wino (+9 pkt).
+  > Wynik w rozdaniu: My 60 - 23 Oni
+
+-- Lewa #5 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Dziesiatka Zoladz
+  [Przeciwnik1] zagrywa: Walet Dzwonek
+  [Nasz] zagrywa: Dziewiatka Zoladz
+  [Przeciwnik2] zagrywa: As Zoladz
+  > Lewę wygrywa Przeciwnik2 kartą As Zoladz (+23 pkt).
+  > Wynik w rozdaniu: My 60 - 46 Oni
+
+-- Lewa #6 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: Dama Zoladz
+  [Jakub] zagrywa: Krol Czerwien
+  [Przeciwnik1] zagrywa: Dama Dzwonek
+  [Nasz] zagrywa: Krol Zoladz
+  > Lewę wygrywa Nasz kartą Krol Zoladz (+14 pkt).
+  > Wynik w rozdaniu: My 74 - 46 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: NORMALNA
+!!! Rozdanie zakończone przed czasem: osiągnięcie 74 punktów !!!
+  Punkty z kart (z bonusem): My 74 - 46 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 32 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 32 - Oni 56
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Przeciwnik2
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Jakub
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: BEZ_PYTANIA (CZERWIEN)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Dziesiatka Zoladz
+  [Przeciwnik1] zagrywa: Walet Zoladz
+  [Nasz] zagrywa: Dziewiatka Zoladz
+  [Przeciwnik2] zagrywa: As Czerwien
+  > Lewę wygrywa Przeciwnik2 kartą As Czerwien (+23 pkt).
+  > Wynik w rozdaniu: My 0 - 23 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: BEZ_PYTANIA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Przeciwnik2 !!!
+  Punkty z kart (z bonusem): My 0 - 23 Oni
+  Rozdanie wygrywa: Oni
+  Przyznane punkty meczowe: 24 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 32 - Oni 80
+=========================
+
+##############################
+!!! KONIEC GRY !!!
+Partię wygrywa drużyna: Oni
+OSTATECZNY WYNIK: My 32 - 80 Oni
+##############################
+
+########################################
+### ROZPOCZYNAMY PARTIĘ #17 ###
+########################################
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Jakub
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik1
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: LEPSZA
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Walet Zoladz
+  [Nasz] zagrywa: Dziewiatka Dzwonek
+  [Jakub] zagrywa: Dziewiatka Zoladz
+  > Lewę wygrywa Przeciwnik1 kartą Walet Zoladz (+2 pkt).
+  > Wynik w rozdaniu: My 0 - 2 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Dziesiatka Wino
+  [Nasz] zagrywa: Dama Wino
+  [Jakub] zagrywa: Krol Wino
+  > Lewę wygrywa Przeciwnik1 kartą Dziesiatka Wino (+17 pkt).
+  > Wynik w rozdaniu: My 0 - 19 Oni
+
+-- Lewa #3 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Dama Dzwonek
+  [Nasz] zagrywa: Dziesiatka Dzwonek
+  [Jakub] zagrywa: Krol Dzwonek
+  > Lewę wygrywa Nasz kartą Dziesiatka Dzwonek (+17 pkt).
+  > Wynik w rozdaniu: My 17 - 19 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: LEPSZA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez przeciwnika !!!
+  Punkty z kart (z bonusem): My 17 - 19 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 48 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 48 - Oni 0
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Przeciwnik1
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Nasz
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: BEZ_PYTANIA (WINO)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Walet Dzwonek
+  [Przeciwnik2] zagrywa: As Dzwonek
+  [Jakub] zagrywa: Dziesiatka Dzwonek
+  [Przeciwnik1] zagrywa: Krol Dzwonek
+  > Lewę wygrywa Przeciwnik2 kartą As Dzwonek (+27 pkt).
+  > Wynik w rozdaniu: My 0 - 27 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: BEZ_PYTANIA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Przeciwnik2 !!!
+  Punkty z kart (z bonusem): My 0 - 27 Oni
+  Rozdanie wygrywa: Oni
+  Przyznane punkty meczowe: 6 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 48 - Oni 6
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Nasz
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik2
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: LEPSZA
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: Walet Czerwien
+  [Jakub] zagrywa: Krol Czerwien
+  [Nasz] zagrywa: As Czerwien
+  > Lewę wygrywa Nasz kartą As Czerwien (+17 pkt).
+  > Wynik w rozdaniu: My 17 - 0 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: LEPSZA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez przeciwnika !!!
+  Punkty z kart (z bonusem): My 17 - 0 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 12 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 60 - Oni 6
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Przeciwnik2
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Jakub
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: NORMALNA (ZOLADZ)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: As Dzwonek
+  [Przeciwnik1] zagrywa: Dama Dzwonek
+  [Nasz] zagrywa: Dziesiatka Dzwonek
+  [Przeciwnik2] zagrywa: Walet Dzwonek
+  > Lewę wygrywa Jakub kartą As Dzwonek (+26 pkt).
+  > Wynik w rozdaniu: My 26 - 0 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Krol Czerwien
+  [Przeciwnik1] zagrywa: Dziesiatka Czerwien
+  [Nasz] zagrywa: Dziewiatka Czerwien
+  [Przeciwnik2] zagrywa: Dama Czerwien
+  > Lewę wygrywa Przeciwnik1 kartą Dziesiatka Czerwien (+17 pkt).
+  > Wynik w rozdaniu: My 26 - 17 Oni
+
+-- Lewa #3 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: As Wino
+  [Nasz] zagrywa: Dziewiatka Wino
+  [Przeciwnik2] zagrywa: Dama Wino
+  [Jakub] zagrywa: Dziesiatka Wino
+  > Lewę wygrywa Przeciwnik1 kartą As Wino (+24 pkt).
+  > Wynik w rozdaniu: My 26 - 41 Oni
+
+-- Lewa #4 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Dziewiatka Zoladz
+  [Nasz] zagrywa: Krol Dzwonek
+  [Przeciwnik2] zagrywa: As Zoladz
+  [Jakub] zagrywa: Krol Zoladz
+  > Lewę wygrywa Przeciwnik2 kartą As Zoladz (+19 pkt).
+  > Wynik w rozdaniu: My 26 - 60 Oni
+
+-- Lewa #5 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: Dziesiatka Zoladz
+  [Jakub] zagrywa: Walet Zoladz
+  [Przeciwnik1] zagrywa: Walet Czerwien
+  [Nasz] zagrywa: Walet Wino
+  > Lewę wygrywa Przeciwnik2 kartą Dziesiatka Zoladz (+16 pkt).
+  > Wynik w rozdaniu: My 26 - 76 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: NORMALNA
+!!! Rozdanie zakończone przed czasem: osiągnięcie 76 punktów !!!
+  Punkty z kart (z bonusem): My 26 - 76 Oni
+  Rozdanie wygrywa: Oni
+  Przyznane punkty meczowe: 4 (mnożnik: x2)
+  OGÓLNY WYNIK MECZU: My 60 - Oni 10
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Jakub
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik1
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: GORSZA
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Dziesiatka Dzwonek
+  [Nasz] zagrywa: Dziewiatka Dzwonek
+  [Jakub] zagrywa: Krol Dzwonek
+  > Lewę wygrywa Przeciwnik1 kartą Dziesiatka Dzwonek (+14 pkt).
+  > Wynik w rozdaniu: My 0 - 14 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: GORSZA
+!!! Rozdanie zakończone przed czasem: wzięcie lewy przez gracza Przeciwnik1 !!!
+  Punkty z kart (z bonusem): My 0 - 14 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 6 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 66 - Oni 10
+=========================
+
+##############################
+!!! KONIEC GRY !!!
+Partię wygrywa drużyna: My
+OSTATECZNY WYNIK: My 66 - 10 Oni
+##############################
+
+########################################
+### ROZPOCZYNAMY PARTIĘ #18 ###
+########################################
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Jakub
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik1
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: NORMALNA (WINO)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Walet Wino
+  [Nasz] zagrywa: Krol Wino
+  [Przeciwnik2] zagrywa: Dziesiatka Wino
+  [Jakub] zagrywa: As Wino
+  > Lewę wygrywa Jakub kartą As Wino (+27 pkt).
+  > Wynik w rozdaniu: My 27 - 0 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: As Dzwonek
+  [Przeciwnik1] zagrywa: Walet Zoladz
+  [Nasz] zagrywa: Dziewiatka Dzwonek
+  [Przeciwnik2] zagrywa: Krol Dzwonek
+  > Lewę wygrywa Jakub kartą As Dzwonek (+17 pkt).
+  > Wynik w rozdaniu: My 44 - 0 Oni
+
+-- Lewa #3 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Dziesiatka Dzwonek
+  [Przeciwnik1] zagrywa: Dziewiatka Czerwien
+  [Nasz] zagrywa: Dama Dzwonek
+  [Przeciwnik2] zagrywa: Walet Dzwonek
+  > Lewę wygrywa Jakub kartą Dziesiatka Dzwonek (+15 pkt).
+  > Wynik w rozdaniu: My 59 - 0 Oni
+
+-- Lewa #4 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Krol Zoladz
+  [Przeciwnik1] zagrywa: Dama Zoladz
+  [Nasz] zagrywa: Dziewiatka Wino
+  [Przeciwnik2] zagrywa: Dziesiatka Zoladz
+  > Lewę wygrywa Nasz kartą Dziewiatka Wino (+17 pkt).
+  > Wynik w rozdaniu: My 76 - 0 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: NORMALNA
+!!! Rozdanie zakończone przed czasem: osiągnięcie 76 punktów !!!
+  Punkty z kart (z bonusem): My 76 - 0 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 6 (mnożnik: x3)
+  OGÓLNY WYNIK MECZU: My 6 - Oni 0
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Przeciwnik1
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Nasz
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: BEZ_PYTANIA (WINO)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: As Czerwien
+  [Przeciwnik2] zagrywa: Walet Czerwien
+  [Jakub] zagrywa: Dziesiatka Czerwien
+  [Przeciwnik1] zagrywa: Dziesiatka Wino
+  > Lewę wygrywa Przeciwnik1 kartą Dziesiatka Wino (+33 pkt).
+  > Wynik w rozdaniu: My 0 - 33 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: BEZ_PYTANIA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Przeciwnik1 !!!
+  Punkty z kart (z bonusem): My 0 - 33 Oni
+  Rozdanie wygrywa: Oni
+  Przyznane punkty meczowe: 6 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 6 - Oni 6
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Nasz
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik2
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: LEPSZA
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: Krol Dzwonek
+  [Jakub] zagrywa: Walet Dzwonek
+  [Nasz] zagrywa: Dziewiatka Zoladz
+  > Lewę wygrywa Przeciwnik2 kartą Krol Dzwonek (+6 pkt).
+  > Wynik w rozdaniu: My 0 - 6 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: As Dzwonek
+  [Jakub] zagrywa: As Zoladz
+  [Nasz] zagrywa: Dziewiatka Czerwien
+  > Lewę wygrywa Przeciwnik2 kartą As Dzwonek (+22 pkt).
+  > Wynik w rozdaniu: My 0 - 28 Oni
+
+-- Lewa #3 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: Dziesiatka Wino
+  [Jakub] zagrywa: As Wino
+  [Nasz] zagrywa: Walet Wino
+  > Lewę wygrywa Jakub kartą As Wino (+23 pkt).
+  > Wynik w rozdaniu: My 23 - 28 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: LEPSZA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez przeciwnika !!!
+  Punkty z kart (z bonusem): My 23 - 28 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 48 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 54 - Oni 6
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Przeciwnik2
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Jakub
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: LEPSZA
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Kontra
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Dziesiatka Dzwonek
+  [Przeciwnik1] zagrywa: Walet Dzwonek
+  [Przeciwnik2] zagrywa: Dama Dzwonek
+  > Lewę wygrywa Jakub kartą Dziesiatka Dzwonek (+15 pkt).
+  > Wynik w rozdaniu: My 15 - 0 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: As Dzwonek
+  [Przeciwnik1] zagrywa: Dziewiatka Dzwonek
+  [Przeciwnik2] zagrywa: Dziewiatka Wino
+  > Lewę wygrywa Jakub kartą As Dzwonek (+11 pkt).
+  > Wynik w rozdaniu: My 26 - 0 Oni
+
+-- Lewa #3 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Dziesiatka Zoladz
+  [Przeciwnik1] zagrywa: As Zoladz
+  [Przeciwnik2] zagrywa: Dama Zoladz
+  > Lewę wygrywa Przeciwnik1 kartą As Zoladz (+24 pkt).
+  > Wynik w rozdaniu: My 26 - 24 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: LEPSZA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez przeciwnika !!!
+  Punkty z kart (z bonusem): My 26 - 24 Oni
+  Rozdanie wygrywa: Oni
+  Przyznane punkty meczowe: 48 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 54 - Oni 54
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Jakub
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik1
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: LEPSZA
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Walet Dzwonek
+  [Nasz] zagrywa: Dama Czerwien
+  [Jakub] zagrywa: Dziewiatka Dzwonek
+  > Lewę wygrywa Przeciwnik1 kartą Walet Dzwonek (+5 pkt).
+  > Wynik w rozdaniu: My 0 - 5 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Walet Zoladz
+  [Nasz] zagrywa: As Zoladz
+  [Jakub] zagrywa: Dziewiatka Zoladz
+  > Lewę wygrywa Nasz kartą As Zoladz (+13 pkt).
+  > Wynik w rozdaniu: My 13 - 5 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: LEPSZA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez przeciwnika !!!
+  Punkty z kart (z bonusem): My 13 - 5 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 12 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 66 - Oni 54
+=========================
+
+##############################
+!!! KONIEC GRY !!!
+Partię wygrywa drużyna: My
+OSTATECZNY WYNIK: My 66 - 54 Oni
+##############################
+
+########################################
+### ROZPOCZYNAMY PARTIĘ #19 ###
+########################################
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Jakub
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik1
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: GORSZA
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Kontra
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Walet Dzwonek
+  [Nasz] zagrywa: Dziewiatka Dzwonek
+  [Jakub] zagrywa: Walet Czerwien
+  > Lewę wygrywa Przeciwnik1 kartą Walet Dzwonek (+4 pkt).
+  > Wynik w rozdaniu: My 0 - 4 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: GORSZA
+!!! Rozdanie zakończone przed czasem: wzięcie lewy przez gracza Przeciwnik1 !!!
+  Punkty z kart (z bonusem): My 0 - 4 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 48 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 48 - Oni 0
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Przeciwnik1
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Nasz
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: BEZ_PYTANIA (CZERWIEN)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Dziesiatka Zoladz
+  [Przeciwnik2] zagrywa: Dama Zoladz
+  [Jakub] zagrywa: Krol Zoladz
+  [Przeciwnik1] zagrywa: As Zoladz
+  > Lewę wygrywa Przeciwnik1 kartą As Zoladz (+28 pkt).
+  > Wynik w rozdaniu: My 0 - 28 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: BEZ_PYTANIA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Przeciwnik1 !!!
+  Punkty z kart (z bonusem): My 0 - 28 Oni
+  Rozdanie wygrywa: Oni
+  Przyznane punkty meczowe: 6 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 48 - Oni 6
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Nasz
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik2
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: NORMALNA (WINO)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Kontra
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Kontra
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: Dziewiatka Zoladz
+  [Jakub] zagrywa: Walet Zoladz
+  [Przeciwnik1] zagrywa: Krol Zoladz
+  [Nasz] zagrywa: Dziesiatka Zoladz
+  > Lewę wygrywa Nasz kartą Dziesiatka Zoladz (+16 pkt).
+  > Wynik w rozdaniu: My 16 - 0 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Dama Czerwien
+  [Przeciwnik2] zagrywa: As Czerwien
+  [Jakub] zagrywa: Dziewiatka Czerwien
+  [Przeciwnik1] zagrywa: Walet Czerwien
+  > Lewę wygrywa Przeciwnik2 kartą As Czerwien (+16 pkt).
+  > Wynik w rozdaniu: My 16 - 16 Oni
+
+-- Lewa #3 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: As Zoladz
+  [Jakub] zagrywa: As Wino
+  [Przeciwnik1] zagrywa: Walet Wino
+  [Nasz] zagrywa: Dama Zoladz
+  > Lewę wygrywa Jakub kartą As Wino (+27 pkt).
+  > Wynik w rozdaniu: My 43 - 16 Oni
+
+-- Lewa #4 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Dziesiatka Czerwien
+  [Przeciwnik1] zagrywa: Krol Czerwien
+  [Nasz] zagrywa: Krol Wino
+  [Przeciwnik2] zagrywa: Dziesiatka Wino
+  > Lewę wygrywa Przeciwnik2 kartą Dziesiatka Wino (+28 pkt).
+  > Wynik w rozdaniu: My 43 - 44 Oni
+
+-- Lewa #5 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: Walet Dzwonek
+  [Jakub] zagrywa: Dziewiatka Dzwonek
+  [Przeciwnik1] zagrywa: Dama Dzwonek
+  [Nasz] zagrywa: Dziesiatka Dzwonek
+  > Lewę wygrywa Nasz kartą Dziesiatka Dzwonek (+15 pkt).
+  > Wynik w rozdaniu: My 58 - 44 Oni
+
+-- Lewa #6 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Krol Dzwonek
+  [Przeciwnik2] zagrywa: Dziewiatka Wino
+  [Jakub] zagrywa: As Dzwonek
+  [Przeciwnik1] zagrywa: Dama Wino
+  > Lewę wygrywa Przeciwnik1 kartą Dama Wino (+18 pkt).
+  > Wynik w rozdaniu: My 58 - 62 Oni
+BŁĄD KRYTYCZNY: Gracz Przeciwnik1 nie ma żadnego legalnego ruchu!
+
+########################################
+### ROZPOCZYNAMY PARTIĘ #20 ###
+########################################
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Jakub
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik1
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: NORMALNA (DZWONEK)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Pytania ---
+  Ponownie decyduje: Przeciwnik1
+  Możliwe akcje: Zmień na LEPSZA, Zmień na GORSZA, Zmień na BEZ_PYTANIA, Pytanie
+  Decyzja: Zmień na GORSZA
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Kontra
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Dama Wino
+  [Nasz] zagrywa: Walet Wino
+  [Jakub] zagrywa: As Wino
+  > Lewę wygrywa Jakub kartą As Wino (+16 pkt).
+  > Wynik w rozdaniu: My 16 - 0 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Dziewiatka Czerwien
+  [Przeciwnik1] zagrywa: Dama Czerwien
+  [Nasz] zagrywa: As Czerwien
+  > Lewę wygrywa Nasz kartą As Czerwien (+14 pkt).
+  > Wynik w rozdaniu: My 30 - 0 Oni
+
+-- Lewa #3 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Krol Czerwien
+  [Jakub] zagrywa: Walet Zoladz
+  [Przeciwnik1] zagrywa: Dziewiatka Zoladz
+  > Lewę wygrywa Nasz kartą Krol Czerwien (+6 pkt).
+  > Wynik w rozdaniu: My 36 - 0 Oni
+
+-- Lewa #4 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Dziesiatka Zoladz
+  [Jakub] zagrywa: Krol Zoladz
+  [Przeciwnik1] zagrywa: Dama Zoladz
+  > Lewę wygrywa Nasz kartą Dziesiatka Zoladz (+17 pkt).
+  > Wynik w rozdaniu: My 53 - 0 Oni
+
+-- Lewa #5 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Walet Czerwien
+  [Jakub] zagrywa: Dama Dzwonek
+  [Przeciwnik1] zagrywa: Krol Dzwonek
+  > Lewę wygrywa Nasz kartą Walet Czerwien (+9 pkt).
+  > Wynik w rozdaniu: My 62 - 0 Oni
+
+-- Lewa #6 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: As Zoladz
+  [Jakub] zagrywa: Krol Wino
+  [Przeciwnik1] zagrywa: Dziesiatka Wino
+  > Lewę wygrywa Nasz kartą As Zoladz (+25 pkt).
+  > Wynik w rozdaniu: My 87 - 0 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: GORSZA
+!!! Rozdanie zakończone przed czasem: osiągnięcie 87 punktów !!!
+  Punkty z kart (z bonusem): My 87 - 0 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 48 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 48 - Oni 0
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Przeciwnik1
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Nasz
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: GORSZA
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Dziesiatka Czerwien
+  [Przeciwnik2] zagrywa: As Czerwien
+  [Przeciwnik1] zagrywa: Dama Czerwien
+  > Lewę wygrywa Przeciwnik2 kartą As Czerwien (+24 pkt).
+  > Wynik w rozdaniu: My 0 - 24 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: Dziewiatka Dzwonek
+  [Przeciwnik1] zagrywa: Dziesiatka Dzwonek
+  [Nasz] zagrywa: Dama Dzwonek
+  > Lewę wygrywa Przeciwnik1 kartą Dziesiatka Dzwonek (+13 pkt).
+  > Wynik w rozdaniu: My 0 - 37 Oni
+
+-- Lewa #3 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: As Dzwonek
+  [Nasz] zagrywa: Krol Dzwonek
+  [Przeciwnik2] zagrywa: Dziewiatka Czerwien
+  > Lewę wygrywa Przeciwnik1 kartą As Dzwonek (+15 pkt).
+  > Wynik w rozdaniu: My 0 - 52 Oni
+
+-- Lewa #4 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Dziesiatka Wino
+  [Nasz] zagrywa: Krol Zoladz
+  [Przeciwnik2] zagrywa: As Zoladz
+  > Lewę wygrywa Przeciwnik1 kartą Dziesiatka Wino (+25 pkt).
+  > Wynik w rozdaniu: My 0 - 77 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: GORSZA
+!!! Rozdanie zakończone przed czasem: osiągnięcie 77 punktów !!!
+  Punkty z kart (z bonusem): My 0 - 77 Oni
+  Rozdanie wygrywa: Oni
+  Przyznane punkty meczowe: 48 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 48 - Oni 48
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Nasz
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik2
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: GORSZA
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: Dziesiatka Zoladz
+  [Jakub] zagrywa: Dama Zoladz
+  [Nasz] zagrywa: Krol Zoladz
+  > Lewę wygrywa Przeciwnik2 kartą Dziesiatka Zoladz (+17 pkt).
+  > Wynik w rozdaniu: My 0 - 17 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: GORSZA
+!!! Rozdanie zakończone przed czasem: wzięcie lewy przez gracza Przeciwnik2 !!!
+  Punkty z kart (z bonusem): My 0 - 17 Oni
+  Rozdanie wygrywa: My
+  Przyznane punkty meczowe: 12 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 60 - Oni 48
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Przeciwnik2
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Jakub
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: BEZ_PYTANIA (CZERWIEN)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Jakub
+  [Jakub] zagrywa: Dziewiatka Czerwien
+  [Przeciwnik1] zagrywa: Dama Czerwien
+  [Nasz] zagrywa: Walet Czerwien
+  [Przeciwnik2] zagrywa: As Czerwien
+  > Lewę wygrywa Przeciwnik2 kartą As Czerwien (+16 pkt).
+  > Wynik w rozdaniu: My 0 - 16 Oni
+
+=========================
+--- WYNIK KOŃCOWY ROZDANIA ---
+  Grany kontrakt: BEZ_PYTANIA
+!!! Rozdanie zakończone przed czasem: przejęcie lewy przez gracza Przeciwnik2 !!!
+  Punkty z kart (z bonusem): My 0 - 16 Oni
+  Rozdanie wygrywa: Oni
+  Przyznane punkty meczowe: 6 (mnożnik: x1)
+  OGÓLNY WYNIK MECZU: My 60 - Oni 54
+=========================
+===
+### ROZPOCZYNAMY NOWE ROZDANIE ###
+Rozdającym jest: Jakub
+===
+
+--- ETAP: Deklaracja 1 ---
+  Deklaruje: Przeciwnik1
+  Możliwe akcje: NORMALNA (CZERWIEN), NORMALNA (DZWONEK), NORMALNA (ZOLADZ), NORMALNA (WINO), BEZ_PYTANIA (CZERWIEN), BEZ_PYTANIA (DZWONEK), BEZ_PYTANIA (ZOLADZ), BEZ_PYTANIA (WINO), GORSZA, LEPSZA
+  Decyzja: NORMALNA (DZWONEK)
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Lufa, Pas lufa
+  Decyzja: Lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik1
+  Możliwe akcje: Kontra, Pas lufa
+  Decyzja: Kontra
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Nasz
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Przeciwnik2
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+--- ETAP: Faza Lufy ---
+  Decyzję podejmuje: Jakub
+  Możliwe akcje: Pas lufa
+  Decyzja: Pas lufa
+
+-- Lewa #1 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Walet Wino
+  [Nasz] zagrywa: Dziewiatka Wino
+  [Przeciwnik2] zagrywa: As Wino
+  [Jakub] zagrywa: Krol Wino
+  > Lewę wygrywa Przeciwnik2 kartą As Wino (+17 pkt).
+  > Wynik w rozdaniu: My 0 - 17 Oni
+
+-- Lewa #2 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: Dziewiatka Zoladz
+  [Jakub] zagrywa: Krol Zoladz
+  [Przeciwnik1] zagrywa: Krol Dzwonek
+  [Nasz] zagrywa: As Zoladz
+  > Lewę wygrywa Przeciwnik1 kartą Krol Dzwonek (+19 pkt).
+  > Wynik w rozdaniu: My 0 - 36 Oni
+
+-- Lewa #3 --
+  Rozpoczyna: Przeciwnik1
+  [Przeciwnik1] zagrywa: Dziewiatka Czerwien
+  [Nasz] zagrywa: Dziesiatka Czerwien
+  [Przeciwnik2] zagrywa: Dziesiatka Dzwonek
+  [Jakub] zagrywa: Krol Czerwien
+  > Lewę wygrywa Przeciwnik2 kartą Dziesiatka Dzwonek (+24 pkt).
+  > Wynik w rozdaniu: My 0 - 60 Oni
+
+-- Lewa #4 --
+  Rozpoczyna: Przeciwnik2
+  [Przeciwnik2] zagrywa: Dziesiatka Zoladz
+  [Jakub] zagrywa: Walet Zoladz
+  [Przeciwnik1] zagrywa: Dama Wino
+  [Nasz] zagrywa: Dama Dzwonek
+  > Lewę wygrywa Nasz kartą Dama Dzwonek (+18 pkt).
+  > Wynik w rozdaniu: My 18 - 60 Oni
+
+-- Lewa #5 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Walet Dzwonek
+  [Przeciwnik2] zagrywa: Dziesiatka Wino
+  [Jakub] zagrywa: Dziewiatka Dzwonek
+  [Przeciwnik1] zagrywa: As Czerwien
+  > Lewę wygrywa Nasz kartą Walet Dzwonek (+23 pkt).
+  > Wynik w rozdaniu: My 41 - 60 Oni
+
+-- Lewa #6 --
+  Rozpoczyna: Nasz
+  [Nasz] zagrywa: Dama Czerwien
+  [Przeciwnik2] zagrywa: Dama Zoladz
+  [Jakub] zagrywa: As Dzwonek
+  [Przeciwnik1] zagrywa: Walet Czerwien
+  > Lewę wygrywa Jakub kartą As Dzwonek (+19 pkt).
+  > Wynik w rozdaniu: My 60 - 60 Oni
+BŁĄD KRYTYCZNY: Gracz Jakub nie ma żadnego legalnego ruchu!
