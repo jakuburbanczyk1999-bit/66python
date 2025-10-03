@@ -21,7 +21,7 @@
         <div class="panel-boczny">
             <div class="panel-info" id="info-o-grze"></div>
             <div class="panel-logu">
-                <h3>Historia Rozdania</h3>
+                <h3>Historia Meczu</h3>
                 <div id="log-akcji"></div>
             </div>
         </div>
@@ -41,24 +41,36 @@
         const koniecGryDiv = document.getElementById('koniec-gry');
         const atutDiv = document.getElementById('wskaznik-atutu');
         const stawkaDiv = document.getElementById('wskaznik-stawki');
-        
+
         // === STAN LOKALNY ===
         let ostatniaHistoria = [];
         let ostatniaLiczbaKartNaStole = 0;
         let intervalID;
 
+        // ✅ === POCZĄTEK ZMIANY 1: Spowolnienie reakcji po akcji gracza ===
         async function wykonajAkcje(url, event) {
             if (event) event.preventDefault();
-            clearInterval(intervalID);
+            clearInterval(intervalID); // Zatrzymaj automatyczne odświeżanie
+
             try {
+                // Wyślij akcję na serwer
                 await fetch(url);
+                // Natychmiast odśwież stan, aby zobaczyć swój ruch
                 await odswiezStanGry();
+
+                // Poczekaj chwilę (np. 750ms) zanim wznowisz automatyczne odświeżanie,
+                // co da czas na reakcję AI i płynniejsze przejście.
+                setTimeout(() => {
+                    intervalID = setInterval(odswiezStanGry, 1200);
+                }, 750);
+
             } catch (error) {
                 console.error("Błąd podczas wykonywania akcji:", error);
-            } finally {
+                // W razie błędu, od razu wznów odświeżanie
                 intervalID = setInterval(odswiezStanGry, 1200);
             }
         }
+        // ✅ === KONIEC ZMIANY 1 ===
 
         async function nowyMecz() {
             try {
@@ -68,23 +80,57 @@
                 console.error("Błąd podczas rozpoczynania nowego meczu:", error);
             }
         }
-        
-        function renderujLog(historia) {
-            if (historia.length === ostatniaHistoria.length) return;
-            
-            logDiv.innerHTML = historia.map(akcja => {
-                const [typ, gracz, reszta] = akcja.split(':', 3);
-                switch(typ) {
-                    case 'KARTA': return `<div class="log-karta"><b>${gracz}</b> zagrywa: ${reszta}</div>`;
-                    case 'LEWA': return `<div class="log-lewa">Lewę wygrywa <b>${gracz}</b> (+${reszta} pkt)</div>`;
-                    case 'MELDUNEK': return `<div class="log-meldunek"><b>${gracz}</b> melduje <b>${reszta.match(/\d+/)[0]}</b>!</div>`;
-                    case 'INFO': return `<div class="log-info">${gracz}: ${reszta}</div>`;
-                    default: return `<div>${akcja}</div>`;
-                }
-            }).join('');
-            logDiv.scrollTop = logDiv.scrollHeight;
-            ostatniaHistoria = historia;
+
+        // ✅ === POCZĄTEK ZMIANY 2: Ulepszone, trwałe logowanie ===
+        function renderujLog(nowaHistoria) {
+            // Jeśli historia z serwera jest krótsza niż ta, którą mamy, to znaczy, że zaczęło się nowe rozdanie.
+            if (nowaHistoria.length < ostatniaHistoria.length) {
+                const separator = document.createElement('div');
+                separator.className = 'log-info';
+                separator.style.fontWeight = 'bold';
+                separator.style.borderTop = '2px solid #ccc';
+                separator.style.borderBottom = '2px solid #ccc';
+                separator.textContent = '--- Nowe Rozdanie ---';
+                logDiv.appendChild(separator);
+                ostatniaHistoria = []; // Resetujemy lokalną historię
+            }
+
+            // Znajdź tylko te akcje, których jeszcze nie wyświetliliśmy
+            const noweAkcjeDoDodania = nowaHistoria.slice(ostatniaHistoria.length);
+
+            if (noweAkcjeDoDodania.length > 0) {
+                noweAkcjeDoDodania.forEach(akcja => {
+                    const [typ, gracz, reszta] = akcja.split(':', 3);
+                    const logElement = document.createElement('div');
+                    switch(typ) {
+                        case 'KARTA':
+                            logElement.className = 'log-karta';
+                            logElement.innerHTML = `<b>${gracz}</b> zagrywa: ${reszta}`;
+                            break;
+                        case 'LEWA':
+                             logElement.className = 'log-lewa';
+                            logElement.innerHTML = `Lewę wygrywa <b>${gracz}</b> (+${reszta} pkt)`;
+                            break;
+                        case 'MELDUNEK':
+                             logElement.className = 'log-meldunek';
+                             // Poprawka dla meldunku, aby poprawnie wyciągać punkty
+                            logElement.innerHTML = `<b>${gracz}</b> melduje <b>${reszta.match(/\d+/)?.[0] || '?'}</b>!`;
+                            break;
+                        case 'INFO':
+                             logElement.className = 'log-info';
+                            logElement.textContent = `${gracz}: ${reszta || ''}`;
+                            break;
+                        default:
+                            logElement.textContent = akcja;
+                    }
+                    logDiv.appendChild(logElement);
+                });
+
+                logDiv.scrollTop = logDiv.scrollHeight; // Przewiń na sam dół
+                ostatniaHistoria = nowaHistoria; // Zaktualizuj ostatnią znaną historię
+            }
         }
+        // ✅ === KONIEC ZMIANY 2 ===
 
         function renderujWskazniki(stanGry) {
             stawkaDiv.innerHTML = `<div class="stawka-liczba">${stanGry.aktualna_stawka}</div><div class="stawka-opis">Stawka</div>`;
@@ -112,39 +158,27 @@
 
         function renderujGraczy(stanGry) {
             const pozycje = { [stanGry.gracze[0]]: 'ty', [stanGry.gracze[1]]: 'lewy', [stanGry.gracze[2]]: 'partner', [stanGry.gracze[3]]: 'prawy' };
-            
             document.querySelectorAll('.gracz').forEach(el => el.classList.remove('podswietlony'));
             const pozycjaAktywnego = pozycje[stanGry.kolej_na];
             if(pozycjaAktywnego) graczeDivs[pozycjaAktywnego].classList.add('podswietlony');
-
             stanGry.gracze.forEach((nazwa, index) => {
                 const pozycja = pozycje[nazwa];
                 const iloscKart = stanGry.ilosc_kart_graczy[nazwa] || 0;
                 const divGracza = graczeDivs[pozycja];
                 const rozdajacyMarker = index === stanGry.rozdajacy_idx ? '<span class="rozdajacy-marker">👑</span>' : '';
-
                 if (pozycja === 'ty') {
                     const jestTuraGracza = stanGry.kolej_na === nazwa;
-                    
-                    // ✅ === POCZĄTEK ZMIANY ===
-                    // W fazie rozgrywki używamy nowej listy `legalne_karty_nazwy`
                     const legalneKarty = new Set(stanGry.legalne_karty_nazwy || []);
                     const kartyHTML = stanGry.reka_gracza.map(karta => {
-                        // Sprawdzamy, czy jest tura gracza, faza to rozgrywka i karta jest na liście legalnych
                         if (jestTuraGracza && stanGry.faza_gry === 'ROZGRYWKA' && legalneKarty.has(karta.nazwa)) {
-                            // Tworzymy URL do zagrania karty bezpośrednio
                             const akcjaUrl = `/zagraj_karte/${encodeURIComponent(karta.nazwa)}`;
                             return `<a href="#" onclick="wykonajAkcje('${akcjaUrl}', event)"><img src="/img/${karta.nazwa_pliku}" alt="${karta.nazwa}" class="karta-aktywna"></a>`;
                         }
                         return `<img src="/img/${karta.nazwa_pliku}" alt="${karta.nazwa}" class="karta-nieaktywna">`;
                     }).join('');
-                    // ✅ === KONIEC ZMIANY ===
-
-                    // Akcje nieliczące się jako zagranie karty (np. licytacja) nadal działają jak wcześniej
                     const akcjeHTML = stanGry.faza_gry !== 'ROZGRYWKA' && jestTuraGracza
                         ? stanGry.mozliwe_akcje.map(a => `<a href="#" onclick="wykonajAkcje('${a.url}', event)" class="akcja">${a.opis}</a>`).join('')
                         : '';
-
                     divGracza.innerHTML = `<div class="reka">${kartyHTML}</div><div class="nazwa-gracza">${nazwa}${rozdajacyMarker}</div><div class="akcje">${akcjeHTML}</div>`;
                 } else {
                     divGracza.innerHTML = `<div class="nazwa-gracza">${nazwa}${rozdajacyMarker}</div><div class="reka">${Array(iloscKart).fill('<img src="/img/Rewers.png" alt="Karta" class="karta-odwrocona">').join('')}</div>`;
@@ -155,9 +189,12 @@
         function renderujStol(stanGry) {
             const mapowaniePozycjiKart = { [stanGry.gracze[0]]: 'pozycja-dol', [stanGry.gracze[1]]: 'pozycja-lewo', [stanGry.gracze[2]]: 'pozycja-gora', [stanGry.gracze[3]]: 'pozycja-prawo' };
             const aktualnaLiczbaKartNaStole = stanGry.karty_na_stole.length;
-            
             if (ostatniaLiczbaKartNaStole > 0 && aktualnaLiczbaKartNaStole === 0) {
-                // ... (reszta funkcji bez zmian)
+                 const staryStol = stolDiv.cloneNode(true);
+                 staryStol.style.position = 'absolute';
+                 staryStol.style.opacity = '0.5';
+                 stolDiv.parentNode.appendChild(staryStol);
+                 setTimeout(() => staryStol.remove(), 800);
             }
             
             stolDiv.innerHTML = stanGry.karty_na_stole.map((z, index) => {
@@ -165,7 +202,6 @@
                 const klasaAnimacji = (index === aktualnaLiczbaKartNaStole - 1 && aktualnaLiczbaKartNaStole > ostatniaLiczbaKartNaStole) ? 'nowo-zagrana' : '';
                 return `<div class="zagrana-karta ${klasaPozycji} ${klasaAnimacji}"><img src="/img/${z.nazwa_pliku}" alt="${z.karta}" class="karta"></div>`;
             }).join('');
-                
             ostatniaLiczbaKartNaStole = aktualnaLiczbaKartNaStole;
         }
 
@@ -174,7 +210,6 @@
                 const response = await fetch('/stan_gry');
                 if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
                 const stanGry = await response.json();
-
                 if (stanGry.koniec_meczu) {
                     koniecGryDiv.innerHTML = `<div><h2>Koniec Meczu!</h2><p>Wygrywa drużyna: <b>${stanGry.zwyciezca}</b></p><p>Wynik: ${stanGry.wynik}</p><a href="#" onclick="nowyMecz();" class="akcja">Nowy Mecz</a></div>`;
                     koniecGryDiv.style.display = 'flex';
@@ -187,22 +222,21 @@
                     <div><strong>Kontrakt:</strong> ${stanGry.kontrakt.typ ? `${stanGry.kontrakt.typ} (${stanGry.kontrakt.atut || 'brak atu'})` : 'Brak'}</div>
                     <div><strong>Punkty (rozdanie):</strong> My <b>${stanGry.punkty_w_rozdaniu.My}</b> - <b>${stanGry.punkty_w_rozdaniu.Oni}</b> Oni</div>
                     <div><strong>Punkty (mecz):</strong> My <b>${stanGry.ogolne_punkty_meczu.My}</b> - <b>${stanGry.ogolne_punkty_meczu.Oni}</b> Oni</div>`;
-
                 renderujStol(stanGry);
                 renderujGraczy(stanGry);
                 renderujWskazniki(stanGry);
                 renderujLog(stanGry.historia_akcji);
-
             } catch (error) {
                 console.error("Nie udało się pobrać stanu gry:", error);
                 infoDiv.innerHTML = "Błąd połączenia z serwerem.";
                 clearInterval(intervalID);
             }
         }
-
         // === START APLIKACJI ===
-        intervalID = setInterval(odswiezStanGry, 1200);
-        odswiezStanGry();
+        document.addEventListener('DOMContentLoaded', () => {
+            odswiezStanGry();
+            intervalID = setInterval(odswiezStanGry, 1200);
+        });
     </script>
 </body>
 </html>
