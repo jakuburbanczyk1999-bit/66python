@@ -16,13 +16,9 @@ if not logger.handlers:
 
 app = FastAPI()
 
-
 # --- Główna Logika Gry ---
-
 aktualny_mecz = Mecz(nazwy_graczy=["Jakub", "Przeciwnik1", "Nasz", "Przeciwnik2"])
 aktualny_mecz.rozpocznij_mecz()
-
-
 
 def formatuj_akcje_json(akcje: list[dict], akcja_url_prefix: str) -> list[dict]:
     formatowane = []
@@ -37,7 +33,6 @@ def formatuj_akcje_json(akcje: list[dict], akcja_url_prefix: str) -> list[dict]:
             opis = f"{typ_akcji}{atut_str}"
         else:
             opis = akcja['typ'].replace('_', ' ').capitalize()
-        
         formatowane.append({"opis": opis, "url": f"/{akcja_url_prefix}/{i}"})
     return formatowane
 
@@ -51,92 +46,66 @@ def formatuj_karty_json(karty: list[Karta], akcja_url_prefix: str) -> list[dict]
 def uruchom_ture_ai(mecz: Mecz):
     rozdanie = mecz.rozdanie
     gracz_czlowieka = mecz.gracze[0]
-    
     for _ in range(4): 
         if not rozdanie or rozdanie.rozdanie_zakonczone: break
-        
         aktualny_gracz = rozdanie.gracze[rozdanie.kolej_gracza_idx]
         if aktualny_gracz == gracz_czlowieka: break
-
-        gracz_ai = aktualny_gracz
-        
         if rozdanie.faza == FazaGry.ROZGRYWKA:
-            legalne_karty = rozdanie.get_legalne_karty(gracz_ai)
-            if legalne_karty:
-                wybrana_karta = random.choice(legalne_karty)
-                rozdanie.zagraj_karte(gracz_ai, wybrana_karta)
+            mozliwe_karty = rozdanie.get_legalne_karty(aktualny_gracz)
+            if mozliwe_karty:
+                wybrana_karta = random.choice(mozliwe_karty)
+                rozdanie.zagraj_karte(aktualny_gracz, wybrana_karta)
         else: 
-            mozliwe_akcje_ai = rozdanie.get_mozliwe_akcje(gracz_ai)
-            if mozliwe_akcje_ai:
-                if rozdanie.faza in [FazaGry.LUFA, FazaGry.LICYTACJA]:
-                    wybrana_akcja_ai = next((a for a in mozliwe_akcje_ai if 'pas' in a['typ']), None) or random.choice(mozliwe_akcje_ai)
-                else: 
-                    wybrana_akcja_ai = random.choice(mozliwe_akcje_ai)
-                
-                if wybrana_akcja_ai:
-                    logger.info(f"Tura AI: {gracz_ai.nazwa} (Faza: {rozdanie.faza.name})")
-                    logger.info(f"  AI '{gracz_ai.nazwa}' wykonuje akcję: {wybrana_akcja_ai}")
-                    rozdanie.wykonaj_akcje(gracz_ai, wybrana_akcja_ai)
+            mozliwe_akcje = rozdanie.get_mozliwe_akcje(aktualny_gracz)
+            if mozliwe_akcje:
+                wybrana_akcja = random.choice(mozliwe_akcje)
+                rozdanie.wykonaj_akcje(aktualny_gracz, wybrana_akcja)
             else:
-                logger.warning(f"  AI '{gracz_ai.nazwa}' nie ma żadnych możliwych akcji w fazie {rozdanie.faza.name}.")
                 break
-# --- Endpointy API ---
 
 @app.get("/stan_gry")
 def get_stan_gry():
     global aktualny_mecz
-    
     uruchom_ture_ai(aktualny_mecz)
     rozdanie = aktualny_mecz.rozdanie
 
     if rozdanie and rozdanie.rozdanie_zakonczone and not aktualny_mecz.zwyciezca_meczu:
-        logger.info("\n" + "="*25)
-        logger.info("--- WYNIK KOŃCOWY ROZDANIA ---")
-        logger.info(f"  Grany kontrakt: {rozdanie.kontrakt.name}")
-        logger.info(f"  Powód zakończenia: {rozdanie.powod_zakonczenia}")
-
+        logger.info("\n" + "="*25 + "\n--- WYNIK KOŃCOWY ROZDANIA ---\n" + f"  Grany kontrakt: {rozdanie.kontrakt.name}\n" + f"  Powód zakończenia: {rozdanie.powod_zakonczenia}")
         zwyciezca, punkty, mnoznik = rozdanie.rozlicz_rozdanie()
-        
-        logger.info(f"  Rozdanie wygrywa: {zwyciezca.nazwa}")
-        logger.info(f"  Przyznane punkty meczowe: {punkty} (mnożnik: x{mnoznik})")
-        logger.info(f"  OGÓLNY WYNIK MECZU: My {aktualny_mecz.druzyna_a.punkty_meczu} - Oni {aktualny_mecz.druzyna_b.punkty_meczu}")
-        logger.info("="*25 + "\n")
-
+        logger.info(f"  Rozdanie wygrywa: {zwyciezca.nazwa}\n" + f"  Przyznane punkty meczowe: {punkty} (mnożnik: x{mnoznik})\n" + f"  OGÓLNY WYNIK MECZU: My {aktualny_mecz.druzyna_a.punkty_meczu} - Oni {aktualny_mecz.druzyna_b.punkty_meczu}\n" + "="*25 + "\n")
         aktualny_mecz.sprawdz_koniec_meczu()
         if aktualny_mecz.zwyciezca_meczu:
-            logger.info("##############################")
-            logger.info("!!! KONIEC GRY !!!")
-            logger.info(f"Partię wygrywa drużyna: {aktualny_mecz.zwyciezca_meczu.nazwa}")
-            logger.info(f"OSTATECZNY WYNIK: My {aktualny_mecz.druzyna_a.punkty_meczu} - {aktualny_mecz.druzyna_b.punkty_meczu}")
-            logger.info("##############################")
+             logger.info(f"##############################\n!!! KONIEC GRY !!!\nPartię wygrywa drużyna: {aktualny_mecz.zwyciezca_meczu.nazwa}\nOSTATECZNY WYNIK: My {aktualny_mecz.druzyna_a.punkty_meczu} - {aktualny_mecz.druzyna_b.punkty_meczu} Oni\n##############################")
         else:
             aktualny_mecz.przygotuj_nastepne_rozdanie()
             rozdanie = aktualny_mecz.rozdanie
-
-    # Budowanie odpowiedzi JSON
+    
     if aktualny_mecz.zwyciezca_meczu:
         return {"koniec_meczu": True, "zwyciezca": aktualny_mecz.zwyciezca_meczu.nazwa, "wynik": f"My {aktualny_mecz.druzyna_a.punkty_meczu} - {aktualny_mecz.druzyna_b.punkty_meczu} Oni"}
 
     gracz_widza = aktualny_mecz.gracze[0]
-    faza = rozdanie.faza
     akcje_do_wyslania = []
     if rozdanie.gracze[rozdanie.kolej_gracza_idx] == gracz_widza:
-        if faza == FazaGry.ROZGRYWKA:
+        if rozdanie.faza == FazaGry.ROZGRYWKA:
             akcje_do_wyslania = formatuj_karty_json(rozdanie.get_legalne_karty(gracz_widza), "zagraj_karte")
         else: 
             akcje_do_wyslania = formatuj_akcje_json(rozdanie.get_mozliwe_akcje(gracz_widza), "wykonaj_akcje")
             
     return {
-        "faza_gry": faza.name,
+        "gracze": [g.nazwa for g in aktualny_mecz.gracze],
+        "ilosc_kart_graczy": {g.nazwa: len(g.reka) for g in rozdanie.gracze},
+        "faza_gry": rozdanie.faza.name,
         "kolej_na": rozdanie.gracze[rozdanie.kolej_gracza_idx].nazwa,
-        "reka_gracza": [{"nazwa": str(k)} for k in sorted(gracz_widza.reka, key=lambda k: (k.kolor.name, k.ranga.value))],
-        "karty_na_stole": [{"gracz": g.nazwa, "karta": str(k)} for g, k in rozdanie.aktualna_lewa],
+        "reka_gracza": [{"nazwa": str(k), "nazwa_pliku": k.nazwa_pliku} for k in sorted(gracz_widza.reka, key=lambda k: (k.kolor.name, k.ranga.value))],
+        "karty_na_stole": [{"gracz": g.nazwa, "karta": str(k), "nazwa_pliku": k.nazwa_pliku} for g, k in rozdanie.aktualna_lewa],
         "kontrakt": {"typ": rozdanie.kontrakt.name if rozdanie.kontrakt else None, "atut": rozdanie.atut.name if rozdanie.atut else None},
         "punkty_w_rozdaniu": rozdanie.punkty_w_rozdaniu,
         "ogolne_punkty_meczu": {"My": aktualny_mecz.druzyna_a.punkty_meczu, "Oni": aktualny_mecz.druzyna_b.punkty_meczu},
-        "mozliwe_akcje": akcje_do_wyslania
+        "mozliwe_akcje": akcje_do_wyslania,
+        "historia_akcji": rozdanie.historia_akcji,
+        "aktualna_stawka": rozdanie.get_aktualna_stawka()
+        
     }
-
 
 @app.get("/wykonaj_akcje/{akcja_idx}")
 def wykonaj_akcje_gracza(akcja_idx: int):
@@ -150,15 +119,15 @@ def wykonaj_akcje_gracza(akcja_idx: int):
             uruchom_ture_ai(aktualny_mecz)
     return get_stan_gry()
 
-@app.get("/zagraj_karte/{karta_idx}")
-def zagraj_karte_gracza(karta_idx: int):
+@app.get("/zagraj_karte/{akcja_idx}")
+def zagraj_karte_gracza(akcja_idx: int):
     gracz_czlowieka = aktualny_mecz.gracze[0]
     rozdanie = aktualny_mecz.rozdanie
     if rozdanie.gracze[rozdanie.kolej_gracza_idx] == gracz_czlowieka:
         legalne_karty = rozdanie.get_legalne_karty(gracz_czlowieka)
         posortowane_legalne = sorted(legalne_karty, key=lambda k: (k.kolor.name, k.ranga.value))
-        if 0 <= karta_idx < len(posortowane_legalne):
-            wybrana_karta = posortowane_legalne[karta_idx]
+        if 0 <= akcja_idx < len(posortowane_legalne):
+            wybrana_karta = posortowane_legalne[akcja_idx]
             rozdanie.zagraj_karte(gracz_czlowieka, wybrana_karta)
             uruchom_ture_ai(aktualny_mecz)
     return get_stan_gry()

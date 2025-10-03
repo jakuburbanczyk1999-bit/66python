@@ -3,114 +3,152 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gra w 66</title>
-    <style>
-        body { font-family: sans-serif; background-color: #f0f0f0; display: flex; flex-direction: column; align-items: center; }
-        .kontener-gry { width: 90%; max-width: 800px; background-color: white; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); padding: 20px; margin-top: 20px; }
-        h1, h2 { text-align: center; color: #333; }
-        h2 { border-bottom: 1px solid #ddd; padding-bottom: 10px; margin-top: 25px; }
-        .info-o-grze, .karty-na-stole, .reka-gracza, .mozliwe-akcje { margin-top: 15px; }
-        .info-o-grze div, .karty-na-stole div { background-color: #fafafa; border: 1px solid #eee; padding: 10px; border-radius: 4px; margin-bottom: 5px; }
-        .reka-gracza { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; min-height: 50px; }
-        .mozliwe-akcje { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; min-height: 50px; }
-        .karta { padding: 15px 20px; border: 1px solid #ccc; border-radius: 8px; background-color: #f9f9f9; box-shadow: 0 2px 4px rgba(0,0,0,0.05); color: #555; }
-        .akcja { padding: 15px 20px; border: 1px solid #0275d8; color: #0275d8; text-decoration: none; border-radius: 8px; background-color: #fff; cursor: pointer; transition: all 0.2s; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
-        .akcja:hover { background-color: #0275d8; color: white; }
-        .koniec-gry { text-align: center; font-size: 1.5em; color: #d9534f; padding: 40px; }
-        .punkty { font-weight: bold; }
-        .punkty-my { color: #0275d8; }
-        .punkty-oni { color: #f0ad4e; }
-    </style>
+    <title>Stół do Gry w 66</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <div class="kontener-gry">
-        <h1>Gra w 66</h1>
-
-        <div class="info-o-grze" id="info-o-grze"></div>
-        
-        <h2>Karty na Stole</h2>
-        <div class="karty-na-stole" id="karty-na-stole"></div>
-
-        <h2>Twoja Ręka</h2>
-        <div class="reka-gracza" id="reka-gracza"></div>
-
-        <h2>Możliwe Akcje</h2>
-        <div class="mozliwe-akcje" id="mozliwe-akcje"></div>
-
-        <div class="koniec-gry" id="koniec-gry" style="display: none;"></div>
+    <div class="kontener-stolu">
+        <div class="stolik">
+            <div class="gracz gracz-gora" id="gracz-partner"></div>
+            <div class="gracz gracz-lewo" id="gracz-lewy-przeciwnik"></div>
+            <div class="gracz gracz-prawo" id="gracz-prawy-przeciwnik"></div>
+            <div class="gracz gracz-dol" id="gracz-ty"></div>
+            <div class="stol-srodek" id="stol-srodek"></div>
+            <div id="wskaznik-atutu"></div>
+            <div id="wskaznik-stawki"></div>
+            <div class="koniec-gry-overlay" id="koniec-gry"></div>
+        </div>
+        <div class="panel-boczny">
+            <div class="panel-info" id="info-o-grze"></div>
+            <div class="panel-logu">
+                <h3>Historia Akcji</h3>
+                <div id="log-akcji"></div>
+            </div>
+        </div>
     </div>
 
     <script>
+        const graczeDivs = { ty: document.getElementById('gracz-ty'), partner: document.getElementById('gracz-partner'), lewyPrzeciwnik: document.getElementById('gracz-lewy-przeciwnik'), prawyPrzeciwnik: document.getElementById('gracz-prawy-przeciwnik'), };
+        const stolDiv = document.getElementById('stol-srodek');
         const infoDiv = document.getElementById('info-o-grze');
-        const stolDiv = document.getElementById('karty-na-stole');
-        const rekaDiv = document.getElementById('reka-gracza');
-        const akcjeDiv = document.getElementById('mozliwe-akcje');
+        const logDiv = document.getElementById('log-akcji');
         const koniecGryDiv = document.getElementById('koniec-gry');
+        const atutDiv = document.getElementById('wskaznik-atutu');
+        const stawkaDiv = document.getElementById('wskaznik-stawki');
+        
+        let ostatniaHistoria = [];
+        let ostatniaLiczbaKartNaStole = 0;
+        let intervalID;
 
-        // === NOWA FUNKCJA DO OBSŁUGI KLIKNIĘĆ ===
-        // Ta funkcja będzie wywoływana po kliknięciu na akcję.
-        // Zapobiegnie przeładowaniu strony i wyśle zapytanie w tle.
         async function wykonajAkcje(url, event) {
-            // event.preventDefault() zatrzymuje domyślne zachowanie linku (przejście do nowej strony)
             event.preventDefault();
-            
-            try {
-                // Wyślij zapytanie do API w tle
-                await fetch(url);
-                // Natychmiast po wykonaniu akcji, odśwież stan gry, aby zobaczyć rezultat
-                odswiezStanGry();
-            } catch (error) {
-                console.error("Błąd podczas wykonywania akcji:", error);
-            }
+            // Natychmiastowe odświeżenie po akcji, aby animacja była płynna
+            try { await fetch(url); await odswiezStanGry(); } catch (error) { console.error("Błąd podczas wykonywania akcji:", error); }
         }
 
-        // Główna funkcja do aktualizacji interfejsu
+        async function nowyMecz() {
+            try { await fetch('/nowy_mecz'); window.location.reload(); } catch (error) { console.error("Błąd podczas rozpoczynania nowego meczu:", error); }
+        }
+
         async function odswiezStanGry() {
             try {
                 const response = await fetch('/stan_gry');
+                if (!response.ok) { throw new Error(`HTTP error! status: ${response.status}`); }
                 const stanGry = await response.json();
 
                 if (stanGry.koniec_meczu) {
-                    koniecGryDiv.innerHTML = `<h2>Koniec Gry!</h2><p>Wygrywa drużyna: ${stanGry.zwyciezca}</p><p>Wynik: ${stanGry.wynik}</p><a href="/nowy_mecz" class="akcja">Nowy Mecz</a>`;
-                    koniecGryDiv.style.display = 'block';
-                    infoDiv.style.display = 'none';
-                    stolDiv.style.display = 'none';
-                    rekaDiv.style.display = 'none';
-                    akcjeDiv.style.display = 'none';
-                    // Zatrzymujemy interwał odświeżania po końcu gry
+                    koniecGryDiv.innerHTML = `<div><h2>Koniec Gry!</h2><p>Wygrywa: ${stanGry.zwyciezca}</p><p>Wynik: ${stanGry.wynik}</p><a href="#" onclick="event.preventDefault(); nowyMecz();" class="akcja">Nowy Mecz</a></div>`;
+                    koniecGryDiv.style.display = 'flex';
                     clearInterval(intervalID);
                     return;
                 }
 
-                infoDiv.innerHTML = `
-                    <div>Faza Gry: <strong>${stanGry.faza_gry}</strong></div>
-                    <div>Kolej na: <strong>${stanGry.kolej_na}</strong></div>
-                    <div>Kontrakt: <strong>${stanGry.kontrakt.typ || 'Brak'} ${stanGry.kontrakt.atut ? `(${stanGry.kontrakt.atut})` : ''}</strong></div>
-                    <div>Punkty w rozdaniu: <span class="punkty punkty-my">My ${stanGry.punkty_w_rozdaniu.My}</span> - <span class="punkty punkty-oni">${stanGry.punkty_w_rozdaniu.Oni} Oni</span></div>
-                    <div>Punkty w meczu: <span class="punkty punkty-my">My ${stanGry.ogolne_punkty_meczu.My}</span> - <span class="punkty punkty-oni">${stanGry.ogolne_punkty_meczu.Oni} Oni</span></div>
-                `;
-
-                if (stanGry.karty_na_stole.length > 0) {
-                    stolDiv.innerHTML = stanGry.karty_na_stole.map(z => `<div><strong>${z.gracz}:</strong> ${z.karta}</div>`).join('');
-                } else {
-                    stolDiv.innerHTML = '<div>Brak kart na stole.</div>';
+                const nazwyGraczy = stanGry.gracze;
+                const pozycje = { [nazwyGraczy[0]]: 'ty', [nazwyGraczy[1]]: 'lewyPrzeciwnik', [nazwyGraczy[2]]: 'partner', [nazwyGraczy[3]]: 'prawyPrzeciwnik' };
+                const mapowaniePozycjiKart = { [nazwyGraczy[0]]: 'pozycja-dol', [nazwyGraczy[1]]: 'pozycja-lewo', [nazwyGraczy[2]]: 'pozycja-gora', [nazwyGraczy[3]]: 'pozycja-prawo' };
+                
+                const aktualnaLiczbaKartNaStole = stanGry.karty_na_stole.length;
+                if (ostatniaLiczbaKartNaStole > 0 && aktualnaLiczbaKartNaStole === 0) {
+                    const zwyciezcaLewy = stanGry.kolej_na;
+                    const pozycjaZwyciezcy = pozycje[zwyciezcaLewy];
+                    if (pozycjaZwyciezcy) {
+                        const divZwyciezcy = graczeDivs[pozycjaZwyciezcy];
+                        divZwyciezcy.classList.add('blysk-zwyciestwa');
+                        setTimeout(() => { divZwyciezcy.classList.remove('blysk-zwyciestwa'); }, 1200);
+                    }
                 }
+                
+                // Renderowanie stołu z logiką animacji
+                stolDiv.innerHTML = stanGry.karty_na_stole.map((z, index) => {
+                    const klasaPozycji = mapowaniePozycjiKart[z.gracz] || '';
+                    // Dodaj klasę animacji tylko jeśli karta jest "nowa"
+                    const klasaAnimacji = (index === aktualnaLiczbaKartNaStole - 1 && aktualnaLiczbaKartNaStole > ostatniaLiczbaKartNaStole) ? 'nowo-zagrana' : '';
+                    return `<div class="zagrana-karta ${klasaPozycji} ${klasaAnimacji}"><img src="/img/${z.nazwa_pliku}" alt="${z.karta}" class="karta"></div>`;
+                }).join('');
+                
+                ostatniaLiczbaKartNaStole = aktualnaLiczbaKartNaStole;
 
-                rekaDiv.innerHTML = stanGry.reka_gracza.map(k => `<div class="karta">${k.nazwa}</div>`).join('');
+                // Renderowanie wskaźników
+                stawkaDiv.innerHTML = `<div class="stawka-liczba">${stanGry.aktualna_stawka}</div><div class="stawka-opis">Stawka</div>`;
+                atutDiv.innerHTML = '';
+                const kontrakt = stanGry.kontrakt;
+                if (kontrakt && kontrakt.typ) {
+                    const symbole = { CZERWIEN: '♥', DZWONEK: '♦', ZOLADZ: '♣', WINO: '♠' };
+                    switch(kontrakt.typ) {
+                        case 'NORMALNA':
+                            if (kontrakt.atut) atutDiv.innerHTML = `<div class="atut-symbol ${kontrakt.atut}">${symbole[kontrakt.atut]}</div>`; break;
+                        case 'BEZ_PYTANIA':
+                            if (kontrakt.atut) atutDiv.innerHTML = `<div class="korona">👑</div><div class="atut-symbol ${kontrakt.atut}">${symbole[kontrakt.atut]}</div>`; break;
+                        case 'LEPSZA': case 'GORSZA':
+                            atutDiv.innerHTML = `<div class="kontrakt-tekst">${kontrakt.typ.toLowerCase()}</div>`; break;
+                    }
+                }
+                
+                document.querySelectorAll('.gracz').forEach(el => el.classList.remove('podswietlony'));
+                const pozycjaAktywnego = pozycje[stanGry.kolej_na];
+                if(pozycjaAktywnego) graczeDivs[pozycjaAktywnego].classList.add('podswietlony');
 
-                // === ZMODYFIKOWANA LINIJKA ===
-                // Teraz każdy link ma dodane zdarzenie 'onclick', które wywołuje naszą nową funkcję.
-                akcjeDiv.innerHTML = stanGry.mozliwe_akcje.map(a => `<a href="${a.url}" onclick="wykonajAkcje('${a.url}', event)" class="akcja">${a.opis}</a>`).join('');
+                nazwyGraczy.forEach(nazwa => {
+                    const pozycja = pozycje[nazwa];
+                    const iloscKart = stanGry.ilosc_kart_graczy[nazwa] || 0;
+                    const divGracza = graczeDivs[pozycja];
+                    if (pozycja === 'ty') {
+                        let kartyHTML = '';
+                        if (stanGry.faza_gry === 'ROZGRYWKA' && stanGry.kolej_na === nazwa) {
+                            const legalneAkcjeMap = new Map(stanGry.mozliwe_akcje.map(akcja => [akcja.opis, akcja.url]));
+                            kartyHTML = stanGry.reka_gracza.map(karta => {
+                                if (legalneAkcjeMap.has(karta.nazwa)) {
+                                    const url = legalneAkcjeMap.get(karta.nazwa);
+                                    return `<a href="${url}" onclick="wykonajAkcje('${url}', event)"><img src="/img/${karta.nazwa_pliku}" alt="${karta.nazwa}" class="karta-aktywna"></a>`;
+                                } else {
+                                    return `<img src="/img/${karta.nazwa_pliku}" alt="${karta.nazwa}" class="karta-nieaktywna">`;
+                                }
+                            }).join('');
+                        } else {
+                            kartyHTML = stanGry.reka_gracza.map(karta => `<img src="/img/${karta.nazwa_pliku}" alt="${karta.nazwa}" class="karta-nieaktywna">`).join('');
+                        }
+                        const akcjeHTML = stanGry.mozliwe_akcje.map(a => `<a href="${a.url}" onclick="wykonajAkcje('${a.url}', event)" class="akcja">${a.opis}</a>`).join('');
+                        const finalneAkcjeHTML = stanGry.faza_gry !== 'ROZGRYWKA' ? akcjeHTML : '';
+                        divGracza.innerHTML = `<div class="reka">${kartyHTML}</div><div class="nazwa-gracza">${nazwa}</div><div class="akcje">${finalneAkcjeHTML}</div>`;
+                    } else {
+                         divGracza.innerHTML = `<div class="nazwa-gracza">${nazwa}</div><div class="reka">${Array(iloscKart).fill('<img src="/img/Rewers.png" alt="Karta" class="karta-odwrocona">').join('')}</div>`;
+                    }
+                });
 
+                infoDiv.innerHTML = `<h3>Informacje</h3><div><strong>Faza:</strong> ${stanGry.faza_gry}</div><div><strong>Kontrakt:</strong> ${stanGry.kontrakt.typ || 'Brak'} ${stanGry.kontrakt.atut ? `(${stanGry.kontrakt.atut})` : ''}</div><div><strong>Punkty (rozdanie):</strong> My ${stanGry.punkty_w_rozdaniu.My} - ${stanGry.punkty_w_rozdaniu.Oni} Oni</div><div><strong>Punkty (mecz):</strong> My ${stanGry.ogolne_punkty_meczu.My} - ${stanGry.ogolne_punkty_meczu.Oni} Oni</div>`;
+
+                if (stanGry.historia_akcji && stanGry.historia_akcji.length !== ostatniaHistoria.length) {
+                    logDiv.innerHTML = stanGry.historia_akcji.map(akcja => `<div>${akcja}</div>`).join('');
+                    logDiv.scrollTop = logDiv.scrollHeight;
+                    ostatniaHistoria = stanGry.historia_akcji;
+                }
             } catch (error) {
-                console.error("Nie udało się pobrać stanu gry:", error);
-                infoDiv.innerHTML = "Błąd połączenia z serwerem gry.";
+                console.error("Nie udało się pobrać lub przetworzyć stanu gry:", error);
+                infoDiv.innerHTML = "Błąd połączenia z serwerem. Sprawdź konsolę serwera.";
             }
         }
 
-        // Uruchom odświeżanie co 1.5 sekundy
-        const intervalID = setInterval(odswiezStanGry, 1500);
-        // Uruchom od razu po załadowaniu strony
+        intervalID = setInterval(odswiezStanGry, 1500);
         odswiezStanGry();
     </script>
 </body>

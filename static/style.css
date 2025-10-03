@@ -1,0 +1,93 @@
+:root { --kolor-tla: #006400; --kolor-stolu: #004d00; --kolor-karty: #fff; --kolor-rewersu: #5d5d5d; }
+body { font-family: sans-serif; background-color: #f0f0f0; margin: 0; padding: 20px; display: flex; justify-content: center; align-items: center; min-height: 100vh; box-sizing: border-box; }
+.kontener-stolu { display: flex; gap: 20px; width: 100%; max-width: 1400px; }
+.stolik {
+    width: 85vw; height: 85vh; max-width: 1100px; max-height: 800px;
+    background-color: var(--kolor-tla); border: 10px solid #5C4033;
+    border-radius: 50px; display: grid; position: relative;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    grid-template-areas:
+        ". gora ."
+        "lewo srodek prawo"
+        ". dol .";
+}
+.stol-srodek {
+    grid-area: srodek; background-color: var(--kolor-stolu); border-radius: 20px;
+    padding: 10px; display: grid; grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; align-items: center; justify-items: center;
+}
+
+/* === ZMIANA: Animacja przeniesiona do osobnej klasy === */
+@keyframes pojawienieSieKarty {
+    from { transform: scale(0.5) rotate(-15deg); opacity: 0; }
+    to { transform: scale(1) rotate(0deg); opacity: 1; }
+}
+.zagrana-karta { 
+    display: flex; flex-direction: column; align-items: center;
+}
+.nowo-zagrana {
+    animation: pojawienieSieKarty 0.3s ease-out;
+}
+/* ======================================================= */
+
+.zagrana-karta.pozycja-gora { grid-area: 1 / 2; transform: translateY(45%); }
+.zagrana-karta.pozycja-lewo { grid-area: 2 / 1; transform: translateX(45%); }
+.zagrana-karta.pozycja-prawo { grid-area: 2 / 3; transform: translateX(-45%); }
+.zagrana-karta.pozycja-dol { grid-area: 3 / 2; transform: translateY(-45%); }
+.gracz { display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 10px; position: relative; }
+.gracz-gora { grid-area: gora; }
+.gracz-lewo { grid-area: lewo; }
+.gracz-prawo { grid-area: prawo; }
+.gracz-dol { grid-area: dol; flex-direction: column-reverse; }
+.nazwa-gracza { color: white; background-color: rgba(0,0,0,0.5); padding: 5px 10px; border-radius: 10px; margin-bottom: 5px; font-weight: bold; transition: all 0.3s ease; }
+.reka { display: flex; justify-content: center; gap: -30px; }
+.gracz-lewo .reka,
+.gracz-prawo .reka { flex-direction: column; gap: -90px; }
+.karta, .karta-odwrocona, .karta-aktywna, .karta-nieaktywna {
+    width: 80px; height: 120px; border-radius: 6px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    background-color: transparent; border: none; font-size: 0; color: transparent;
+    transition: all 0.2s ease-in-out;
+}
+.karta-aktywna { cursor: pointer; border: 2px solid #0275d8; }
+.karta-aktywna:hover { transform: scale(1.1) translateY(-15px); z-index: 5; }
+.karta-nieaktywna { opacity: 0.8; filter: grayscale(50%); cursor: not-allowed; }
+.akcje { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-top: 10px; }
+.akcja { padding: 8px 12px; border: 1px solid #0275d8; color: #0275d8; text-decoration: none; border-radius: 8px; background-color: #fff; cursor: pointer; transition: all 0.2s; }
+.akcja:hover { background-color: #0275d8; color: white; }
+.podswietlony .nazwa-gracza { background-color: #f0ad4e; color: #333; transform: scale(1.1); }
+@keyframes blysk {
+    0%, 100% { box-shadow: 0 0 0px rgba(255, 215, 0, 0); }
+    50% { box-shadow: 0 0 20px 10px rgba(255, 215, 0, 0.7); }
+}
+.blysk-zwyciestwa { animation: blysk 1.2s ease-out; }
+.panel-boczny { width: 300px; display: flex; flex-direction: column; gap: 15px; }
+.panel-info, .panel-logu { background-color: white; border-radius: 8px; padding: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+h3 { margin-top: 0; border-bottom: 1px solid #ddd; padding-bottom: 5px;}
+#log-akcji { height: 300px; overflow-y: auto; font-size: 0.9em; }
+#log-akcji div { padding: 4px 0; border-bottom: 1px solid #f0f0f0; }
+.koniec-gry-overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.7); color: white; display: none; justify-content: center; align-items: center; text-align: center; z-index: 10; border-radius: 40px; }
+
+/* === STYLE DLA WSKAŹNIKÓW === */
+#wskaznik-stawki {
+    position: absolute; top: 20px; left: 30px; padding: 10px;
+    background-color: rgba(0, 0, 0, 0.4); border-radius: 10px;
+    min-width: 50px; min-height: 50px; display: flex; flex-direction: column;
+    justify-content: center; align-items: center; color: white; font-weight: bold;
+}
+#wskaznik-stawki .stawka-liczba { font-size: 2.5em; line-height: 1; }
+#wskaznik-stawki .stawka-opis { font-size: 0.8em; text-transform: uppercase; }
+
+#wskaznik-atutu {
+    position: absolute; top: 20px; right: 30px; padding: 10px;
+    background-color: rgba(0, 0, 0, 0.4); border-radius: 10px;
+    min-width: 50px; min-height: 50px; display: flex; justify-content: center;
+    align-items: center; text-align: center;
+}
+.atut-symbol { font-size: 3em; line-height: 1; text-shadow: 0 0 5px rgba(0,0,0,0.5); }
+.atut-symbol.CZERWIEN, .atut-symbol.DZWONEK { color: #ff4d4d; }
+.atut-symbol.ZOLADZ, .atut-symbol.WINO { color: #333; }
+.korona { position: absolute; top: 0px; font-size: 2em; color: #ffd700; }
+.kontrakt-tekst { font-size: 1.5em; font-weight: bold; color: white; text-transform: capitalize; text-shadow: 1px 1px 3px black; }
+/* ============================= */

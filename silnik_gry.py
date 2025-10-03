@@ -20,6 +20,8 @@ class Karta:
     @property
     def wartosc(self) -> int: return WARTOSCI_KART[self.ranga]
     def __str__(self) -> str: return f"{self.ranga.name.capitalize()} {self.kolor.name.capitalize()}"
+    @property
+    def nazwa_pliku(self) -> str: return f"{self.ranga.name.capitalize()}{self.kolor.name.capitalize()}.png"
 
 class Talia:
     def __init__(self):
@@ -67,9 +69,12 @@ class Rozdanie:
         self.aktualna_lewa: list[tuple[Gracz, Karta]] = []; self.zadeklarowane_meldunki: list[tuple[Gracz, Kolor]] = []
         self.rozdanie_zakonczone: bool = False; self.powod_zakonczenia: str = ""
         self.zwyciezca_rozdania: Optional[Druzyna] = None; self.zwyciezca_ostatniej_lewy: Optional[Gracz] = None
-        self.faza: FazaGry = FazaGry.PRZED_ROZDANIEM; self.historia_licytacji: list[tuple[Gracz, dict]] = []
+        self.faza: FazaGry = FazaGry.PRZED_ROZDANIEM
+        self.historia_licytacji: list[tuple[Gracz, dict]] = [] 
+        self.historia_akcji: list[str] = []
         self.pasujacy_gracze: list[Gracz] = []; self.oferty_przebicia: list[tuple[Gracz, dict]] = []
         self.nieaktywny_gracz: Optional[Gracz] = None; self.liczba_aktywnych_graczy = 4; self.numer_lewy = 0
+        self.ostatni_podbijajacy: Optional[Gracz] = None
 
     def _ustaw_kontrakt(self, gracz_grajacy: Gracz, kontrakt: Kontrakt, atut: Optional[Kolor]):
         self.grajacy, self.kontrakt, self.atut = gracz_grajacy, kontrakt, atut
@@ -85,6 +90,13 @@ class Rozdanie:
     def _czy_lufa_mozliwa(self) -> bool:
         stawka_bazowa = STAWKI_KONTRAKTOW.get(self.kontrakt, 1)
         return stawka_bazowa * (self.mnoznik_lufy * 2) <= self._oblicz_limit_stawki()
+    
+    def _pomin_ture_partnera_w_lufie(self):
+        if not self.grajacy: return
+        nastepny_gracz = self.gracze[self.kolej_gracza_idx]
+        if nastepny_gracz.druzyna == self.grajacy.druzyna and nastepny_gracz != self.grajacy:
+            self.pasujacy_gracze.append(nastepny_gracz)
+            self.kolej_gracza_idx = (self.kolej_gracza_idx + 1) % 4
 
     def rozpocznij_nowe_rozdanie(self):
         self.rozdaj_karty(3); self.faza = FazaGry.DEKLARACJA_1; self.kolej_gracza_idx = (self.rozdajacy_idx + 1) % 4
@@ -99,39 +111,64 @@ class Rozdanie:
             return [{'typ': 'zmiana_kontraktu', 'kontrakt': k} for k in [Kontrakt.LEPSZA, Kontrakt.GORSZA, Kontrakt.BEZ_PYTANIA]] + [{'typ': 'pytanie'}]
         if self.faza == FazaGry.LICYTACJA:
             akcje = [{'typ': 'pas'}, {'typ': 'przebicie', 'kontrakt': Kontrakt.LEPSZA}, {'typ': 'przebicie', 'kontrakt': Kontrakt.GORSZA}]
-            if self._czy_lufa_mozliwa() and gracz.druzyna != self.grajacy.druzyna: akcje.append({'typ': 'lufa'})
+            if self.grajacy and self._czy_lufa_mozliwa() and gracz.druzyna != self.grajacy.druzyna: akcje.append({'typ': 'lufa'})
             return akcje
         if self.faza == FazaGry.LUFA:
-            akcja_podbicia = {'typ': 'kontra'} if gracz.druzyna == self.grajacy.druzyna else {'typ': 'lufa'}
-            if gracz.druzyna == self.grajacy.druzyna and gracz != self.grajacy: return [{'typ': 'pas_lufa'}]
+            akcja_podbicia = {'typ': 'kontra'} if self.grajacy and gracz.druzyna == self.grajacy.druzyna else {'typ': 'lufa'}
+            if self.grajacy and gracz.druzyna == self.grajacy.druzyna and gracz != self.grajacy: return [{'typ': 'pas_lufa'}]
             return [akcja_podbicia, {'typ': 'pas_lufa'}] if self._czy_lufa_mozliwa() else [{'typ': 'pas_lufa'}]
         return []
 
     def wykonaj_akcje(self, gracz: Gracz, akcja: dict):
+        akcja_str = f"{gracz.nazwa}: {akcja['typ'].replace('_', ' ')}"
+        if akcja.get('kontrakt'): akcja_str += f" {akcja['kontrakt'].name}"
+        if akcja.get('atut'): akcja_str += f" w {akcja['atut'].name}"
+        self.historia_akcji.append(akcja_str)
         self.historia_licytacji.append((gracz, akcja))
+
         if self.faza == FazaGry.DEKLARACJA_1 and akcja['typ'] == 'deklaracja':
             self._ustaw_kontrakt(gracz, akcja['kontrakt'], akcja.get('atut')); self.faza = FazaGry.LUFA; self.kolej_gracza_idx = (self.gracze.index(self.grajacy) + 1) % 4
+            self._pomin_ture_partnera_w_lufie()
         elif self.faza == FazaGry.LUFA:
             if akcja['typ'] in ['lufa', 'kontra']:
-                self.mnoznik_lufy *= 2; self.czy_byla_lufa = True; self.pasujacy_gracze.clear(); self.kolej_gracza_idx = (self.kolej_gracza_idx + 1) % 4
+                self.mnoznik_lufy *= 2; self.czy_byla_lufa = True; self.pasujacy_gracze.clear()
+                self.ostatni_podbijajacy = gracz
+                if akcja['typ'] == 'lufa':
+                    self.kolej_gracza_idx = self.gracze.index(self.grajacy)
+                else: 
+                    self.kolej_gracza_idx = (self.kolej_gracza_idx + 1) % 4
+                    self._pomin_ture_partnera_w_lufie()
             elif akcja['typ'] == 'pas_lufa':
+                koniec_licytacji = False
+                if self.ostatni_podbijajacy and gracz.druzyna != self.ostatni_podbijajacy.druzyna:
+                    koniec_licytacji = True
+                
                 self.pasujacy_gracze.append(gracz)
-                if all(p in self.pasujacy_gracze for p in gracz.druzyna.gracze) or len(self.pasujacy_gracze) >= 3:
-                    self.pasujacy_gracze.clear()
+                if all(p in self.pasujacy_gracze for p in gracz.druzyna.gracze):
+                    koniec_licytacji = True
+
+                if koniec_licytacji:
+                    self.pasujacy_gracze.clear(); self.ostatni_podbijajacy = None
                     if len(self.gracze[0].reka) < 6: self.rozdaj_karty(3)
                     if self.kontrakt == Kontrakt.NORMALNA and not self.czy_byla_lufa:
                         self.faza = FazaGry.FAZA_PYTANIA; self.kolej_gracza_idx = self.gracze.index(self.grajacy)
                     else:
                         self.faza = FazaGry.ROZGRYWKA; self.kolej_gracza_idx = self.gracze.index(self.grajacy)
-                else: self.kolej_gracza_idx = (self.kolej_gracza_idx + 1) % 4
+                else:
+                    self.kolej_gracza_idx = (self.kolej_gracza_idx + 1) % 4
+                    self._pomin_ture_partnera_w_lufie()
         elif self.faza == FazaGry.FAZA_PYTANIA:
             if akcja['typ'] == 'zmiana_kontraktu':
                 self._ustaw_kontrakt(self.grajacy, akcja['kontrakt'], self.atut); self.faza = FazaGry.LUFA; self.kolej_gracza_idx = (self.gracze.index(self.grajacy) + 1) % 4
+                self.ostatni_podbijajacy = self.grajacy
+                self._pomin_ture_partnera_w_lufie()
             elif akcja['typ'] == 'pytanie':
                 self.faza = FazaGry.LICYTACJA; self.kolej_gracza_idx = (self.kolej_gracza_idx + 1) % 4
         elif self.faza == FazaGry.LICYTACJA:
             if akcja['typ'] == 'lufa':
-                self.czy_byla_lufa = True; self.mnoznik_lufy *= 2; self.faza = FazaGry.LUFA; self.kolej_gracza_idx = self.gracze.index(self.grajacy)
+                self.czy_byla_lufa = True; self.mnoznik_lufy *= 2; self.faza = FazaGry.LUFA
+                self.ostatni_podbijajacy = gracz; self.kolej_gracza_idx = self.gracze.index(self.grajacy)
+                self._pomin_ture_partnera_w_lufie()
                 return
             if akcja['typ'] == 'pas': self.pasujacy_gracze.append(gracz)
             elif akcja['typ'] == 'przebicie': self.oferty_przebicia.append((gracz, akcja))
@@ -146,20 +183,34 @@ class Rozdanie:
                 if karta: self.gracze[(start_idx + i) % 4].reka.append(karta)
     
     def rozlicz_rozdanie(self) -> tuple[Druzyna, int, int]:
+        logger.debug("--- Wchodzę do rozlicz_rozdanie ---")
+        logger.debug(f"  Stan wejściowy: self.zwyciezca_rozdania={self.zwyciezca_rozdania}, self.zwyciezca_ostatniej_lewy={self.zwyciezca_ostatniej_lewy}")
+        
         mnoznik = 1
         druzyna_wygrana = None
 
-        # === POPRAWKA: Zasada ostatniej lewy ===
-        if self.zwyciezca_ostatniej_lewy and not self.zwyciezca_rozdania:
-            druzyna_wygrana = self.zwyciezca_ostatniej_lewy.druzyna
-            self.powod_zakonczenia = f"zdobycie ostatniej lewy przez {self.zwyciezca_ostatniej_lewy.nazwa}"
-        elif self.zwyciezca_rozdania:
+        if self.zwyciezca_rozdania:
+            logger.debug("  Ścieżka 1: Zwycięzca rozdania był już określony wcześniej.")
             druzyna_wygrana = self.zwyciezca_rozdania
-        else: # Sytuacja awaryjna, nie powinna wystąpić
+        elif self.zwyciezca_ostatniej_lewy:
+            logger.debug("  Ścieżka 2: Rozdanie zakończone po 6 lewach.")
+            if self.kontrakt in [Kontrakt.GORSZA, Kontrakt.LEPSZA]:
+                logger.debug("  Kontrakt to Gorsza/Lepsza, więc grający, który dotrwał do końca, wygrywa.")
+                druzyna_wygrana = self.grajacy.druzyna
+                self.powod_zakonczenia = "spełnienie warunków kontraktu"
+            else:
+                logger.debug("  Kontrakt to Normalna/Bez Pytania, więc wygrywa zdobywca ostatniej lewy.")
+                druzyna_wygrana = self.zwyciezca_ostatniej_lewy.druzyna
+                self.powod_zakonczenia = f"zdobycie ostatniej lewy przez {self.zwyciezca_ostatniej_lewy.nazwa}"
+        
+        if not druzyna_wygrana:
+            logger.debug("  Ścieżka 3 (awaryjna): Brak zwycięzcy, porównuję punkty.")
             punkty_grajacego = self.punkty_w_rozdaniu[self.grajacy.druzyna.nazwa]
             punkty_przeciwnikow = self.punkty_w_rozdaniu[self.grajacy.druzyna.przeciwnicy.nazwa]
-            druzyna_wygrana = self.grajacy.druzyna if punkty_grajacego > punkty_przeciwnikow else self.grajacy.druzyna.przeciwnicy
+            druzyna_wygrana = self.grajacy.druzyna if punkty_grajacego >= punkty_przeciwnikow else self.grajacy.druzyna.przeciwnicy
 
+        logger.debug(f"  Ostatecznie ustalony zwycięzca rozdania: {druzyna_wygrana.nazwa}")
+        
         punkty_przegranego = self.punkty_w_rozdaniu[druzyna_wygrana.przeciwnicy.nazwa]
         punkty_meczu = STAWKI_KONTRAKTOW.get(self.kontrakt, 0)
         
@@ -170,27 +221,38 @@ class Rozdanie:
             
         punkty_meczu *= self.mnoznik_lufy
         druzyna_wygrana.punkty_meczu += punkty_meczu
+        logger.debug("--- Opuszczam rozlicz_rozdanie ---")
         return druzyna_wygrana, punkty_meczu, mnoznik
         
     def _waliduj_ruch(self, gracz: Gracz, karta: Karta) -> bool:
         if gracz != self.gracze[self.kolej_gracza_idx] or karta not in gracz.reka: return False
         if not self.aktualna_lewa: return True
+        
         kolor_wiodacy = self.aktualna_lewa[0][1].kolor
         reka_gracza = gracz.reka
+        
         karty_do_koloru = [k for k in reka_gracza if k.kolor == kolor_wiodacy]
-        if karty_do_koloru: return karta.kolor == kolor_wiodacy
+        if karty_do_koloru:
+            if self.atut and kolor_wiodacy == self.atut:
+                atuty_na_stole = [k for _, k in self.aktualna_lewa if k.kolor == self.atut]
+                if atuty_na_stole:
+                    najwyzszy_atut_na_stole = max(atuty_na_stole, key=lambda k: k.ranga.value)
+                    wyzsze_atuty_w_rece = [k for k in karty_do_koloru if k.ranga.value > najwyzszy_atut_na_stole.ranga.value]
+                    if wyzsze_atuty_w_rece:
+                        return karta in wyzsze_atuty_w_rece
+            return karta.kolor == kolor_wiodacy
+
         if not self.atut: return True
+        
         karty_atutowe_w_rece = [k for k in reka_gracza if k.kolor == self.atut]
         if not karty_atutowe_w_rece: return True
+
         if karta.kolor != self.atut: return False
-        atuty_na_stole = [k for _, k in self.aktualna_lewa if k.kolor == self.atut]
-        if not atuty_na_stole: return True
-        najwyzszy_atut_na_stole = max(atuty_na_stole, key=lambda k: k.ranga.value)
-        wyzsze_atuty_w_rece = [k for k in karty_atutowe_w_rece if k.ranga.value > najwyzszy_atut_na_stole.ranga.value]
-        if wyzsze_atuty_w_rece: return karta in wyzsze_atuty_w_rece
-        else: return True
+        
+        return True
 
     def _zakoncz_lewe(self):
+        logger.debug(f"--- Wchodzę do _zakoncz_lewe (lewa #{self.numer_lewy}) ---")
         if not self.aktualna_lewa: return None
         kolor_wiodacy = self.aktualna_lewa[0][1].kolor
         karty_atutowe = [(g, k) for g, k in self.aktualna_lewa if k.kolor == self.atut]
@@ -198,31 +260,41 @@ class Rozdanie:
         else:
             karty_wiodace = [(g, k) for g, k in self.aktualna_lewa if k.kolor == kolor_wiodacy]
             zwyciezca_pary = max(karty_wiodace, key=lambda p: p[1].ranga.value)
-        zwyciezca_lewy, karta_zwycieska = zwyciezca_pary
+        zwyciezca_lewy, _ = zwyciezca_pary
+        logger.debug(f"  Lewę wygrał: {zwyciezca_lewy.nazwa}")
         punkty_w_lewie = sum(k.wartosc for _, k in self.aktualna_lewa)
         druzyna_zwyciezcy = zwyciezca_lewy.druzyna
         self.punkty_w_rozdaniu[druzyna_zwyciezcy.nazwa] += punkty_w_lewie
         zwyciezca_lewy.wygrane_karty.extend([k for _, k in self.aktualna_lewa])
-        
-        # === POPRAWKA: Logowanie przeniesione, aby było spójne ===
         druzyna_grajacego = self.grajacy.druzyna
-        if self.punkty_w_rozdaniu[druzyna_zwyciezcy.nazwa] >= 66:
-            self.rozdanie_zakonczone, self.zwyciezca_rozdania, self.powod_zakonczenia = True, druzyna_zwyciezcy, f"osiągnięcie {self.punkty_w_rozdaniu[druzyna_zwyciezcy.nazwa]} punktów"
+        
+        logger.debug(f"  Sprawdzam warunek punktowy dla kontraktu {self.kontrakt.name}...")
+        if self.kontrakt in [Kontrakt.NORMALNA, Kontrakt.BEZ_PYTANIA]:
+            if self.punkty_w_rozdaniu[druzyna_zwyciezcy.nazwa] >= 66:
+                logger.debug(f"    Warunek punktowy spełniony przez {druzyna_zwyciezcy.nazwa} ({self.punkty_w_rozdaniu[druzyna_zwyciezcy.nazwa]} pkt).")
+                self.rozdanie_zakonczone, self.zwyciezca_rozdania, self.powod_zakonczenia = True, druzyna_zwyciezcy, f"osiągnięcie {self.punkty_w_rozdaniu[druzyna_zwyciezcy.nazwa]} punktów"
+        
+        logger.debug("  Sprawdzam warunki złamania kontraktu...")
         if not self.rozdanie_zakonczone:
-            if self.kontrakt == Kontrakt.BEZ_PYTANIA and zwyciezca_lewy != self.grajacy: self.rozdanie_zakonczone, self.zwyciezca_rozdania, self.powod_zakonczenia = True, druzyna_grajacego.przeciwnicy, f"przejęcie lewy przez gracza {zwyciezca_lewy.nazwa}"
-            elif self.kontrakt == Kontrakt.LEPSZA and druzyna_zwyciezcy != druzyna_grajacego: self.rozdanie_zakonczone, self.zwyciezca_rozdania, self.powod_zakonczenia = True, druzyna_grajacego.przeciwnicy, "przejęcie lewy przez przeciwnika"
-            elif self.kontrakt == Kontrakt.GORSZA and zwyciezca_lewy == self.grajacy: self.rozdanie_zakonczone, self.zwyciezca_rozdania, self.powod_zakonczenia = True, druzyna_grajacego.przeciwnicy, f"wzięcie lewy przez gracza {self.grajacy.nazwa}"
-
-        # === POPRAWKA: Sprawdzenie końca rozdania ===
-        # Jeśli ręce są puste, a nikt nie wygrał, to jest ostatnia lewa
-        if sum(len(g.reka) for g in self.gracze) == 0 and not self.rozdanie_zakonczone:
+            if self.kontrakt == Kontrakt.BEZ_PYTANIA and zwyciezca_lewy != self.grajacy: 
+                logger.debug("    Warunek złamania BEZ_PYTANIA spełniony.")
+                self.rozdanie_zakonczone, self.zwyciezca_rozdania, self.powod_zakonczenia = True, druzyna_grajacego.przeciwnicy, f"przejęcie lewy przez gracza {zwyciezca_lewy.nazwa}"
+            elif self.kontrakt == Kontrakt.LEPSZA and druzyna_zwyciezcy != druzyna_grajacego: 
+                logger.debug("    Warunek złamania LEPSZA spełniony.")
+                self.rozdanie_zakonczone, self.zwyciezca_rozdania, self.powod_zakonczenia = True, druzyna_grajacego.przeciwnicy, "przejęcie lewy przez przeciwnika"
+            elif self.kontrakt == Kontrakt.GORSZA and zwyciezca_lewy == self.grajacy: 
+                logger.debug("    Warunek złamania GORSZA spełniony.")
+                self.rozdanie_zakonczone, self.zwyciezca_rozdania, self.powod_zakonczenia = True, druzyna_grajacego.przeciwnicy, f"wzięcie lewy przez gracza {self.grajacy.nazwa}"
+        
+        logger.debug(f"  Sprawdzam czy to ostatnia lewa (numer {self.numer_lewy})...")
+        if self.numer_lewy == 6 and not self.rozdanie_zakonczone:
+            logger.debug("    Tak, to ostatnia lewa. Ustawiam zwycięzcę ostatniej lewy i kończę rozdanie.")
             self.zwyciezca_ostatniej_lewy = zwyciezca_lewy
-            self.rozdanie_zakonczone = True # Zakończ rozdanie, ale bez zwycięzcy
+            self.rozdanie_zakonczone = True
 
         self.aktualna_lewa.clear()
-        if not self.rozdanie_zakonczone:
-            self.kolej_gracza_idx = self.gracze.index(zwyciezca_lewy)
-        
+        if not self.rozdanie_zakonczone: self.kolej_gracza_idx = self.gracze.index(zwyciezca_lewy)
+        logger.debug("--- Opuszczam _zakoncz_lewe ---")
         return (zwyciezca_lewy, punkty_w_lewie)
         
     def zagraj_karte(self, gracz: Gracz, karta: Karta):
@@ -230,7 +302,8 @@ class Rozdanie:
         if not self._waliduj_ruch(gracz, karta):
             logger.error(f"BŁĄD: Ruch gracza {gracz} kartą {karta} jest nielegalny!"); return wynik
         if not self.aktualna_lewa:
-            self.numer_lewy += 1; logger.info(f"\n-- Lewa #{self.numer_lewy} --\n  Rozpoczyna: {gracz.nazwa}")
+            self.numer_lewy += 1
+            logger.info(f"\n-- Lewa #{self.numer_lewy} --\n  Rozpoczyna: {gracz.nazwa}")
         
         punkty_z_meldunku = 0
         if len(self.aktualna_lewa) == 0 and self.kontrakt in [Kontrakt.NORMALNA, Kontrakt.BEZ_PYTANIA] and karta.ranga in [Ranga.KROL, Ranga.DAMA]:
@@ -241,7 +314,9 @@ class Rozdanie:
                 self.zadeklarowane_meldunki.append((gracz, karta.kolor)); wynik['meldunek_pkt'] = punkty_z_meldunku
         
         meldunek_str = f" (MELDUNEK! +{punkty_z_meldunku} pkt)" if punkty_z_meldunku > 0 else ""
-        logger.info(f"  [{gracz.nazwa}] zagrywa: {karta}{meldunek_str}")
+        log_msg = f"[{gracz.nazwa}] zagrywa: {karta}{meldunek_str}"
+        self.historia_akcji.append(log_msg)
+        logger.info(f"  {log_msg}")
         
         gracz.reka.remove(karta); self.aktualna_lewa.append((gracz, karta))
         
@@ -250,7 +325,9 @@ class Rozdanie:
             if wynik_lewy:
                 zwyciezca, punkty = wynik_lewy
                 wynik['wynik_lewy'] = (zwyciezca, punkty)
-                logger.info(f"  > Lewę wygrywa {zwyciezca.nazwa} kartą {zwyciezca.wygrane_karty[-1]} (+{punkty} pkt).")
+                log_msg = f"> Lewę wygrywa {zwyciezca.nazwa} (+{punkty} pkt)."
+                self.historia_akcji.append(log_msg)
+                logger.info(f"  {log_msg}")
                 logger.info(f"  > Wynik w rozdaniu: My {self.punkty_w_rozdaniu['My']} - {self.punkty_w_rozdaniu['Oni']} Oni")
         elif not self.rozdanie_zakonczone:
             self.kolej_gracza_idx = (self.kolej_gracza_idx + 1) % 4
@@ -266,13 +343,30 @@ class Rozdanie:
             if oferty_gorsza: nowy_grajacy, nowa_akcja = oferty_gorsza[0]
         if nowy_grajacy and nowa_akcja:
             logger.info(f"  INFO: Licytację przebił {nowy_grajacy.nazwa} z kontraktem {nowa_akcja['kontrakt'].name}.")
+            self.historia_akcji.append(f"INFO: {nowy_grajacy.nazwa} przebił na {nowa_akcja['kontrakt'].name}.")
             self._ustaw_kontrakt(nowy_grajacy, nowa_akcja['kontrakt'], None)
-        else: logger.info("  INFO: Wszyscy spasowali, pierwotny kontrakt zostaje.")
+        else: 
+            logger.info("  INFO: Wszyscy spasowali, pierwotny kontrakt zostaje.")
+            self.historia_akcji.append(f"INFO: Wszyscy spasowali.")
         self.faza = FazaGry.ROZGRYWKA; self.kolej_gracza_idx = self.gracze.index(self.grajacy)
 
     def get_legalne_karty(self, gracz: Gracz) -> list[Karta]:
         if gracz != self.gracze[self.kolej_gracza_idx] or not gracz.reka: return []
         return [karta for karta in gracz.reka if self._waliduj_ruch(gracz, karta)]
+        
+    def get_aktualna_stawka(self) -> int:
+        if not self.kontrakt: return 0
+        if self.kontrakt != Kontrakt.NORMALNA:
+            return STAWKI_KONTRAKTOW.get(self.kontrakt, 1) * self.mnoznik_lufy
+        if not self.grajacy:
+            return 1 * self.mnoznik_lufy
+        druzyna_przeciwnikow = self.grajacy.druzyna.przeciwnicy
+        punkty_przeciwnika = self.punkty_w_rozdaniu[druzyna_przeciwnikow.nazwa]
+        przeciwnik_wzial_lewe = any(gracz.wygrane_karty for gracz in druzyna_przeciwnikow.gracze)
+        mnoznik_punktowy = 1
+        if not przeciwnik_wzial_lewe: mnoznik_punktowy = 3
+        elif punkty_przeciwnika < 33: mnoznik_punktowy = 2
+        return mnoznik_punktowy * self.mnoznik_lufy
 
 class Mecz:
     def __init__(self, nazwy_graczy: list[str]):

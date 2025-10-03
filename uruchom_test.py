@@ -4,19 +4,15 @@ import logging
 from silnik_gry import Mecz, FazaGry
 
 # --- KONFIGURACJA ---
-LICZBA_PARTII = 20
+LICZBA_PARTII = 30
 NAZWA_PLIKU_LOGU = "log_finalny.txt"
 
 # --- Konfiguracja Logowania ---
-# Przekierowujemy logger używany przez silnik gry do naszego pliku.
-# To lepsze podejście niż przekierowywanie sys.stdout.
 logger = logging.getLogger('szesc_szesc_logger')
-logger.setLevel(logging.INFO)
-# Czyścimy ewentualne stare konfiguracje
+logger.setLevel(logging.DEBUG)
 if logger.hasHandlers():
     logger.handlers.clear()
 handler = logging.FileHandler(NAZWA_PLIKU_LOGU, mode='w', encoding='utf-8')
-# Używamy prostego formatowania, aby log był czysty
 formatter = logging.Formatter('%(message)s')
 handler.setFormatter(formatter)
 logger.addHandler(handler)
@@ -51,13 +47,12 @@ def uruchom_symulacje():
         licznik_ruchow_w_partii = 0
         while not mecz.zwyciezca_meczu:
             licznik_ruchow_w_partii += 1
-            if licznik_ruchow_w_partii > 500: # Zabezpieczenie przed pętlą nieskończoną
+            if licznik_ruchow_w_partii > 500:
                 logger.error("!!! PRZERWANO PARTIĘ - PRZEKROCZONO LIMIT RUCHÓW !!!")
                 break
                 
             rozdanie = mecz.rozdanie
 
-            # Jeśli rozdanie się zakończyło, rozlicz je i przygotuj następne
             if rozdanie.rozdanie_zakonczone:
                 logger.info("\n" + "="*25)
                 logger.info("--- WYNIK KOŃCOWY ROZDANIA ---")
@@ -78,10 +73,21 @@ def uruchom_symulacje():
                     mecz.przygotuj_nastepne_rozdanie()
                 continue
 
-            # Symulacja ruchu gracza
             aktualny_gracz = rozdanie.gracze[rozdanie.kolej_gracza_idx]
 
             if rozdanie.faza == FazaGry.ROZGRYWKA:
+                # === NOWY BLOK: Logowanie rąk graczy na początku lewy ===
+                if len(rozdanie.aktualna_lewa) == 0:
+                    logger.info("\n  --- Ręce graczy: ---")
+                    for p in rozdanie.gracze:
+                        if p == rozdanie.nieaktywny_gracz:
+                            continue
+                        # Sortujemy karty, aby log był czytelny
+                        reka_str = ", ".join(sorted([str(k) for k in p.reka]))
+                        logger.info(f"    {p.nazwa}: [{reka_str}]")
+                    logger.info("  --------------------")
+                # =========================================================
+
                 mozliwe_karty = rozdanie.get_legalne_karty(aktualny_gracz)
                 if not mozliwe_karty:
                     logger.error(f"BŁĄD KRYTYCZNY: Gracz {aktualny_gracz.nazwa} nie ma żadnego legalnego ruchu!")
@@ -89,7 +95,6 @@ def uruchom_symulacje():
                 wybrana_karta = random.choice(mozliwe_karty)
                 rozdanie.zagraj_karte(aktualny_gracz, wybrana_karta)
             else: # Fazy licytacji
-                # Logowanie fazy licytacji dla czytelności
                 if rozdanie.faza == FazaGry.DEKLARACJA_1:
                     logger.info("\n--- ETAP: Deklaracja 1 ---")
                     logger.info(f"  Deklaruje: {aktualny_gracz.nazwa}")
@@ -112,7 +117,6 @@ def uruchom_symulacje():
                 logger.info(f"  Decyzja: {formatuj_akcje_dla_logu([wybrana_akcja])}")
                 rozdanie.wykonaj_akcje(aktualny_gracz, wybrana_akcja)
         
-        # Logowanie końca partii
         if mecz.zwyciezca_meczu:
             logger.info("\n" + "#"*30)
             logger.info("!!! KONIEC GRY !!!")
