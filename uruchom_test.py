@@ -13,6 +13,7 @@ logger.setLevel(logging.DEBUG)
 if logger.hasHandlers():
     logger.handlers.clear()
 handler = logging.FileHandler(NAZWA_PLIKU_LOGU, mode='w', encoding='utf-8')
+# Prostszy formatter, bo silnik dodaje swoje wcięcia
 formatter = logging.Formatter('%(message)s')
 handler.setFormatter(formatter)
 logger.addHandler(handler)
@@ -56,13 +57,15 @@ def uruchom_symulacje():
             if rozdanie.rozdanie_zakonczone:
                 logger.info("\n" + "="*25)
                 logger.info("--- WYNIK KOŃCOWY ROZDANIA ---")
-                logger.info(f"  Grany kontrakt: {rozdanie.kontrakt.name}")
+                grany_kontrakt_str = f"{rozdanie.kontrakt.name} (gra: {rozdanie.grajacy.nazwa})" if rozdanie.kontrakt else "Brak"
+                logger.info(f"  Grany kontrakt: {grany_kontrakt_str}")
+
                 if rozdanie.powod_zakonczenia:
                     logger.info(f"!!! Rozdanie zakończone przed czasem: {rozdanie.powod_zakonczenia} !!!")
 
                 zwyciezca, punkty, mnoznik = rozdanie.rozlicz_rozdanie()
                 
-                logger.info(f"  Punkty z kart (z bonusem): My {rozdanie.punkty_w_rozdaniu['My']} - {rozdanie.punkty_w_rozdaniu['Oni']} Oni")
+                logger.info(f"  Punkty z kart: My {rozdanie.punkty_w_rozdaniu['My']} - {rozdanie.punkty_w_rozdaniu['Oni']} Oni")
                 logger.info(f"  Rozdanie wygrywa: {zwyciezca.nazwa}")
                 logger.info(f"  Przyznane punkty meczowe: {punkty} (mnożnik: x{mnoznik})")
                 logger.info(f"  OGÓLNY WYNIK MECZU: My {mecz.druzyna_a.punkty_meczu} - Oni {mecz.druzyna_b.punkty_meczu}")
@@ -76,17 +79,13 @@ def uruchom_symulacje():
             aktualny_gracz = rozdanie.gracze[rozdanie.kolej_gracza_idx]
 
             if rozdanie.faza == FazaGry.ROZGRYWKA:
-                # === NOWY BLOK: Logowanie rąk graczy na początku lewy ===
                 if len(rozdanie.aktualna_lewa) == 0:
-                    logger.info("\n  --- Ręce graczy: ---")
-                    for p in rozdanie.gracze:
-                        if p == rozdanie.nieaktywny_gracz:
-                            continue
-                        # Sortujemy karty, aby log był czytelny
+                    logger.info(f"\n--- Lewa #{rozdanie.numer_lewy + 1} (zaczyna: {aktualny_gracz.nazwa}) ---")
+                    # Logowanie rąk graczy na początku lewy
+                    for p in sorted(rozdanie.gracze, key=lambda x: x.nazwa):
+                        if p == rozdanie.nieaktywny_gracz: continue
                         reka_str = ", ".join(sorted([str(k) for k in p.reka]))
-                        logger.info(f"    {p.nazwa}: [{reka_str}]")
-                    logger.info("  --------------------")
-                # =========================================================
+                        logger.info(f"    {p.nazwa:<12}: [{reka_str}]")
 
                 mozliwe_karty = rozdanie.get_legalne_karty(aktualny_gracz)
                 if not mozliwe_karty:
@@ -94,27 +93,21 @@ def uruchom_symulacje():
                     break
                 wybrana_karta = random.choice(mozliwe_karty)
                 rozdanie.zagraj_karte(aktualny_gracz, wybrana_karta)
-            else: # Fazy licytacji
-                if rozdanie.faza == FazaGry.DEKLARACJA_1:
-                    logger.info("\n--- ETAP: Deklaracja 1 ---")
-                    logger.info(f"  Deklaruje: {aktualny_gracz.nazwa}")
-                elif rozdanie.faza == FazaGry.LUFA:
-                    logger.info("\n--- ETAP: Faza Lufy ---")
-                    logger.info(f"  Decyzję podejmuje: {aktualny_gracz.nazwa}")
-                elif rozdanie.faza == FazaGry.FAZA_PYTANIA:
-                    logger.info("\n--- ETAP: Faza Pytania ---")
-                    logger.info(f"  Ponownie decyduje: {aktualny_gracz.nazwa}")
-                elif rozdanie.faza == FazaGry.LICYTACJA:
-                    logger.info("\n--- ETAP: Licytacja 2 (Przebicie) ---")
-                    logger.info(f"  Licytuje: {aktualny_gracz.nazwa}")
+            else: 
+                # Logowanie faz licytacji
+                if rozdanie.faza != getattr(rozdanie, '_ostatnia_faza_logu', None):
+                    logger.info(f"\n--- ETAP: {rozdanie.faza.name.replace('_', ' ')} ---")
+                    rozdanie._ostatnia_faza_logu = rozdanie.faza
                 
                 mozliwe_akcje = rozdanie.get_mozliwe_akcje(aktualny_gracz)
                 if not mozliwe_akcje:
                     logger.error(f"BŁĄD KRYTYCZNY: Brak możliwych akcji dla gracza {aktualny_gracz} w fazie {rozdanie.faza.name}!")
                     break
                 wybrana_akcja = random.choice(mozliwe_akcje)
-                logger.info(f"  Możliwe akcje: {formatuj_akcje_dla_logu(mozliwe_akcje)}")
-                logger.info(f"  Decyzja: {formatuj_akcje_dla_logu([wybrana_akcja])}")
+                
+                logger.info(f"  Tura gracza: {aktualny_gracz.nazwa}")
+                logger.info(f"    Możliwe akcje: {formatuj_akcje_dla_logu(mozliwe_akcje)}")
+                logger.info(f"    Decyzja: {formatuj_akcje_dla_logu([wybrana_akcja])}")
                 rozdanie.wykonaj_akcje(aktualny_gracz, wybrana_akcja)
         
         if mecz.zwyciezca_meczu:
@@ -124,11 +117,11 @@ def uruchom_symulacje():
             logger.info(f"OSTATECZNY WYNIK: {mecz.druzyna_a.nazwa} {mecz.druzyna_a.punkty_meczu} - {mecz.druzyna_b.punkty_meczu} {mecz.druzyna_b.nazwa}")
             logger.info("#"*30)
 
-
 if __name__ == "__main__":
     try:
         uruchom_symulacje()
         print(f"✅ Symulacja zakończona. Pełny log z {LICZBA_PARTII} partii został zapisany do pliku: {NAZWA_PLIKU_LOGU}")
     except Exception as e:
+        logging.exception("Krytyczny błąd w trakcie symulacji") # Loguje stack trace do pliku
         print(f"❌ WYSTĄPIŁ KRYTYCZNY BŁĄD PODCZAS SYMULACJI: {e}")
-        print(f"Sprawdź plik {NAZWA_PLIKU_LOGU}, aby zobaczyć zapis partii, która spowodowała błąd.")
+        print(f"Sprawdź plik {NAZWA_PLIKU_LOGU}, aby zobaczyć zapis partii i szczegóły błędu.")

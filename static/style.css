@@ -1,10 +1,44 @@
-:root { --kolor-tla: #006400; --kolor-stolu: #004d00; --kolor-karty: #fff; --kolor-rewersu: #5d5d5d; }
-body { font-family: sans-serif; background-color: #f0f0f0; margin: 0; padding: 20px; display: flex; justify-content: center; align-items: center; min-height: 100vh; box-sizing: border-box; }
-.kontener-stolu { display: flex; gap: 20px; width: 100%; max-width: 1400px; }
+/* Definicje głównych kolorów i zmiennych */
+:root {
+    --kolor-tla: #006400;
+    --kolor-stolu: #004d00;
+    --kolor-karty: #fff;
+    --kolor-akcentu-aktywny: #f0ad4e;
+    --kolor-akcentu-blekit: #0275d8;
+    --kolor-tekstu-jasny: #fff;
+    --kolor-tekstu-ciemny: #333;
+    --cień-elementu: 2px 2px 8px rgba(0,0,0,0.4);
+}
+/* Podstawowe style dla całej strony */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+/* Kontener obejmujący stół i panel boczny */
+.kontener-stolu {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    max-width: 1500px;
+}
+/* Główny stół do gry */
 .stolik {
-    width: 85vw; height: 85vh; max-width: 1100px; max-height: 800px;
-    background-color: var(--kolor-tla); border: 10px solid #5C4033;
-    border-radius: 50px; display: grid; position: relative;
+    flex-grow: 1;
+    height: 90vh;
+    max-height: 850px;
+    background-image: radial-gradient(circle, #007A00, #004d00), url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"%3E%3Cg fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.08"%3E%3Cpath d="M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+    border: 15px solid #5C4033;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5), inset 0 0 20px rgba(0,0,0,0.3);
+    border-radius: 100px;
+    display: grid;
+    position: relative;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr 2fr 1fr;
     grid-template-areas:
@@ -12,82 +46,196 @@ body { font-family: sans-serif; background-color: #f0f0f0; margin: 0; padding: 2
         "lewo srodek prawo"
         ". dol .";
 }
+/* Środek stołu, gdzie lądują karty */
 .stol-srodek {
-    grid-area: srodek; background-color: var(--kolor-stolu); border-radius: 20px;
-    padding: 10px; display: grid; grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr; align-items: center; justify-items: center;
+    grid-area: srodek;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
 }
 
-/* === ZMIANA: Animacja przeniesiona do osobnej klasy === */
+/* === ANIMACJE === */
 @keyframes pojawienieSieKarty {
-    from { transform: scale(0.5) rotate(-15deg); opacity: 0; }
-    to { transform: scale(1) rotate(0deg); opacity: 1; }
-}
-.zagrana-karta { 
-    display: flex; flex-direction: column; align-items: center;
+    from { transform: translateY(20px) scale(0.8); opacity: 0; }
+    to { transform: translateY(0) scale(1); opacity: 1; }
 }
 .nowo-zagrana {
     animation: pojawienieSieKarty 0.3s ease-out;
 }
-/* ======================================================= */
+@keyframes blysk {
+    50% { box-shadow: 0 0 25px 12px rgba(255, 255, 150, 0.8); }
+}
+.blysk-zwyciestwa {
+    animation: blysk 1s ease-out;
+}
 
-.zagrana-karta.pozycja-gora { grid-area: 1 / 2; transform: translateY(45%); }
-.zagrana-karta.pozycja-lewo { grid-area: 2 / 1; transform: translateX(45%); }
-.zagrana-karta.pozycja-prawo { grid-area: 2 / 3; transform: translateX(-45%); }
-.zagrana-karta.pozycja-dol { grid-area: 3 / 2; transform: translateY(-45%); }
-.gracz { display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 10px; position: relative; }
+/* === KARTY === */
+.zagrana-karta { 
+    display: flex; flex-direction: column; align-items: center;
+}
+.zagrana-karta.pozycja-gora { grid-area: 1 / 2; transform: translateY(50%); }
+.zagrana-karta.pozycja-lewo { grid-area: 2 / 1; transform: translateX(50%); }
+.zagrana-karta.pozycja-prawo { grid-area: 2 / 3; transform: translateX(-50%); }
+.zagrana-karta.pozycja-dol { grid-area: 3 / 2; transform: translateY(-50%); }
+
+.karta, .karta-odwrocona, .karta-aktywna, .karta-nieaktywna {
+    width: 90px;
+    height: 135px;
+    border-radius: 8px;
+    box-shadow: var(--cień-elementu);
+    background-color: var(--kolor-karty);
+    border: 1px solid #bbb;
+    font-size: 0;
+    color: transparent;
+    transition: all 0.2s ease-in-out;
+}
+.karta-aktywna {
+    cursor: pointer;
+    border: 3px solid var(--kolor-akcentu-blekit);
+}
+.karta-aktywna:hover {
+    transform: scale(1.15) translateY(-20px);
+    z-index: 10;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+.karta-nieaktywna {
+    opacity: 0.9;
+    filter: grayscale(40%);
+    cursor: not-allowed;
+}
+
+/* === GRACZE I ICH RĘCE === */
+.gracz {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+}
 .gracz-gora { grid-area: gora; }
 .gracz-lewo { grid-area: lewo; }
 .gracz-prawo { grid-area: prawo; }
 .gracz-dol { grid-area: dol; flex-direction: column-reverse; }
-.nazwa-gracza { color: white; background-color: rgba(0,0,0,0.5); padding: 5px 10px; border-radius: 10px; margin-bottom: 5px; font-weight: bold; transition: all 0.3s ease; }
-.reka { display: flex; justify-content: center; gap: -30px; }
-.gracz-lewo .reka,
-.gracz-prawo .reka { flex-direction: column; gap: -90px; }
-.karta, .karta-odwrocona, .karta-aktywna, .karta-nieaktywna {
-    width: 80px; height: 120px; border-radius: 6px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
-    background-color: transparent; border: none; font-size: 0; color: transparent;
-    transition: all 0.2s ease-in-out;
-}
-.karta-aktywna { cursor: pointer; border: 2px solid #0275d8; }
-.karta-aktywna:hover { transform: scale(1.1) translateY(-15px); z-index: 5; }
-.karta-nieaktywna { opacity: 0.8; filter: grayscale(50%); cursor: not-allowed; }
-.akcje { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-top: 10px; }
-.akcja { padding: 8px 12px; border: 1px solid #0275d8; color: #0275d8; text-decoration: none; border-radius: 8px; background-color: #fff; cursor: pointer; transition: all 0.2s; }
-.akcja:hover { background-color: #0275d8; color: white; }
-.podswietlony .nazwa-gracza { background-color: #f0ad4e; color: #333; transform: scale(1.1); }
-@keyframes blysk {
-    0%, 100% { box-shadow: 0 0 0px rgba(255, 215, 0, 0); }
-    50% { box-shadow: 0 0 20px 10px rgba(255, 215, 0, 0.7); }
-}
-.blysk-zwyciestwa { animation: blysk 1.2s ease-out; }
-.panel-boczny { width: 300px; display: flex; flex-direction: column; gap: 15px; }
-.panel-info, .panel-logu { background-color: white; border-radius: 8px; padding: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
-h3 { margin-top: 0; border-bottom: 1px solid #ddd; padding-bottom: 5px;}
-#log-akcji { height: 300px; overflow-y: auto; font-size: 0.9em; }
-#log-akcji div { padding: 4px 0; border-bottom: 1px solid #f0f0f0; }
-.koniec-gry-overlay { position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0,0,0,0.7); color: white; display: none; justify-content: center; align-items: center; text-align: center; z-index: 10; border-radius: 40px; }
 
-/* === STYLE DLA WSKAŹNIKÓW === */
-#wskaznik-stawki {
-    position: absolute; top: 20px; left: 30px; padding: 10px;
-    background-color: rgba(0, 0, 0, 0.4); border-radius: 10px;
-    min-width: 50px; min-height: 50px; display: flex; flex-direction: column;
-    justify-content: center; align-items: center; color: white; font-weight: bold;
+.reka { display: flex; justify-content: center; gap: -40px; }
+.gracz-lewo .reka, .gracz-prawo .reka {
+    flex-direction: column;
+    gap: -110px; /* Większe nachodzenie dla kart pionowych */
 }
+.nazwa-gracza {
+    color: var(--kolor-tekstu-jasny);
+    background-color: rgba(0,0,0,0.6);
+    padding: 5px 12px;
+    border-radius: 12px;
+    margin: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.podswietlony .nazwa-gracza {
+    background-color: var(--kolor-akcentu-aktywny);
+    color: var(--kolor-tekstu-ciemny);
+    transform: scale(1.1);
+    box-shadow: 0 0 10px var(--kolor-akcentu-aktywny);
+}
+.rozdajacy-marker {
+    font-size: 1.2em;
+    opacity: 0.8;
+}
+
+/* === AKCJE GRACZA === */
+.akcje { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-top: 15px; }
+.akcja {
+    padding: 10px 15px;
+    border: 1px solid var(--kolor-akcentu-blekit);
+    color: var(--kolor-akcentu-blekit);
+    text-decoration: none;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.akcja:hover {
+    background-color: var(--kolor-akcentu-blekit);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/* === PANEL BOCZNY === */
+.panel-boczny { width: 350px; display: flex; flex-direction: column; gap: 15px; }
+.panel-info, .panel-logu {
+    background-color: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+h3 { margin-top: 0; border-bottom: 1px solid #ddd; padding-bottom: 10px; font-weight: 600; }
+#log-akcji {
+    height: 400px;
+    overflow-y: auto;
+    font-size: 0.9em;
+    line-height: 1.5;
+}
+/* Style dla różnych typów logów */
+#log-akcji div { padding: 5px; border-bottom: 1px solid #f0f0f0; }
+#log-akcji div:last-child { border-bottom: none; }
+#log-akcji .log-karta b { color: #0056b3; }
+#log-akcji .log-lewa { background-color: #e9f5ff; font-weight: bold; color: #004085; }
+#log-akcji .log-meldunek { background-color: #fff3cd; font-style: italic; color: #856404; }
+#log-akcji .log-info { color: #555; font-size: 0.85em; text-align: center; background: #fafafa;}
+
+/* === WSKAŹNIKI NA STOLE === */
+.wskaznik {
+    position: absolute;
+    padding: 10px 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    border-radius: 12px;
+    min-width: 60px;
+    min-height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    box-shadow: var(--cień-elementu);
+}
+#wskaznik-stawki { top: 20px; left: 30px; }
 #wskaznik-stawki .stawka-liczba { font-size: 2.5em; line-height: 1; }
-#wskaznik-stawki .stawka-opis { font-size: 0.8em; text-transform: uppercase; }
+#wskaznik-stawki .stawka-opis { font-size: 0.8em; text-transform: uppercase; letter-spacing: 1px; }
 
-#wskaznik-atutu {
-    position: absolute; top: 20px; right: 30px; padding: 10px;
-    background-color: rgba(0, 0, 0, 0.4); border-radius: 10px;
-    min-width: 50px; min-height: 50px; display: flex; justify-content: center;
-    align-items: center; text-align: center;
-}
-.atut-symbol { font-size: 3em; line-height: 1; text-shadow: 0 0 5px rgba(0,0,0,0.5); }
+#wskaznik-atutu { top: 20px; right: 30px; text-align: center; }
+.atut-symbol { font-size: 3em; line-height: 1; text-shadow: 0 0 8px rgba(0,0,0,0.6); }
 .atut-symbol.CZERWIEN, .atut-symbol.DZWONEK { color: #ff4d4d; }
-.atut-symbol.ZOLADZ, .atut-symbol.WINO { color: #333; }
-.korona { position: absolute; top: 0px; font-size: 2em; color: #ffd700; }
-.kontrakt-tekst { font-size: 1.5em; font-weight: bold; color: white; text-transform: capitalize; text-shadow: 1px 1px 3px black; }
-/* ============================= */
+.atut-symbol.ZOLADZ, .atut-symbol.WINO { color: #333; text-shadow: 0 0 5px rgba(255,255,255,0.7); }
+.korona { position: absolute; top: -5px; font-size: 2.2em; color: #ffd700; opacity: 0.9; }
+.kontrakt-tekst { font-size: 1.3em; font-weight: bold; color: white; text-transform: capitalize; text-shadow: 1px 1px 3px black; }
+
+/* === EKRAN KOŃCA GRY === */
+.koniec-gry-overlay {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0,0,0,0.8);
+    color: white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 100;
+    border-radius: 90px;
+    flex-direction: column;
+    font-size: 1.5em;
+}
+.koniec-gry-overlay h2 { font-size: 2.5em; color: var(--kolor-akcentu-aktywny); }
